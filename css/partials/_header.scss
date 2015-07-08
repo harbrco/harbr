@@ -1,0 +1,78 @@
+.header-wrapper {
+   @extend .wrapper;
+
+   .header {
+      //position: fixed;
+      z-index: 9;
+      background-color: rgba($white, 0);
+      padding: 20px 0;
+
+      .menu-button,
+      .logo {
+         @extend %hoverTrans;
+         cursor: pointer;
+
+         &:hover {
+            @extend %hoverFade;
+         }
+      }
+
+      .menu-button {
+         color: $white;
+         @extend %sans;
+         display: inline-block;
+         float: left;
+         font-size: 18px;
+         line-height: 30px;
+         position: relative;
+         z-index: 9;
+      }
+
+      .logo {
+         color: $white;
+         @extend %sansB;
+         font-size: 28px;
+         line-height: 30px;
+         float: right;
+      }
+
+      &.onWhite {
+         background-color: rgba($white, .97);
+
+         .menu-button,
+         .logo {
+            color: $darkGray;
+         }
+      }
+   }
+
+   &.hero-header {
+      position: absolute;
+      top: 0;
+   }
+}
+
+.sticky-header-wrapper {
+   @extend .wrapper;
+
+   .sticky-header {
+      width: 100%;
+      background-color: rgba($white, .97);
+      z-index: 3;
+      opacity: 0;
+      @extend %hoverTrans;
+
+      &.sticky {
+         opacity: 1;
+      }
+
+      .menu-button,
+      .logo {
+         color: $darkGray;
+      }
+   }
+}
+
+
+// HEADER BREAKPOINTS = = = = = = =
+

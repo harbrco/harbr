@@ -1,0 +1,16 @@
+.downArrow {
+   width: 24px;
+   height: 32px;
+   background-image: url(../img/icons/downArrow-sprite.png);
+   background-position: top left;
+   background-repeat: no-repeat;
+   display: inline-block;
+   position: absolute;
+   bottom: 6%;
+   right: 10%;
+   @extend %hoverTrans;
+
+   &:hover {
+      @extend %hoverFade;
+   }
+}

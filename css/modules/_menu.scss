@@ -1,0 +1,222 @@
+%menuShiftTrans {
+   transition: all 800ms cubic-bezier(0.770, 0.025, 0.175, 0.975); /* custom */
+}
+
+.menu {
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   //display: none;
+   opacity: 0;
+   z-index: -1;
+   transition: z-index 0.4s step-end 2s, opacity 0.4s linear;
+}
+body.menuActive {
+   overflow: hidden;
+
+   .menu {
+      //display: block;
+      opacity: 1;
+      z-index: 5;
+      transition: z-index 0.6s step-start, opacity 0.6s linear;
+   }
+}
+
+
+.menu-close {
+   color: $white;
+   position: fixed;
+   left: 50%;
+   transform: translateX(-50%);
+   top: 100px;
+   z-index: 10;
+   cursor: pointer;
+   @extend %hoverTrans;
+
+   &:hover {
+      color: $white;
+      @extend %hoverFade;
+   }
+}
+
+.home .menu-links-wrapper {
+   opacity: 0;
+   transition: opacity 300ms linear, top 650ms cubic-bezier(0.860, 0.000, 0.070, 1.000) 50ms; /* easeInOutQuint */
+
+   &.active {
+      opacity: 1;
+      transition: opacity 600ms linear 80ms, top 600ms cubic-bezier(0.860, 0.000, 0.070, 1.000); /* easeInOutQuint */
+   }
+}
+
+.menu-links-wrapper {
+   //display: none;
+
+   width: 100%;
+   height: 100%;
+   position: fixed;
+   z-index: 6;
+
+   ul {
+      text-align: center;
+   }
+
+   .littleLinks {
+      width: 100%;
+
+      .divWave {
+         background-position: left top;
+      }
+
+      li {
+         @extend %sans;
+         font-size: 18px;
+         line-height: 20px;
+         text-transform: uppercase;
+         text-align: center;
+         height: 80px;
+      }
+
+      &.littleLinksBefore {
+         overflow: hidden;
+         position: absolute;
+         top: 0;
+         height: calc(50% - 46px);
+
+         ul {
+            position: absolute;
+            width: 100%;
+            padding-bottom: 10px;
+            bottom: -320px;
+            @extend %menuShiftTrans;
+         }
+
+         li {
+            .divWave {
+               margin: 10px auto 0;
+            }
+         }
+      }
+
+      &.littleLinksAfter {
+         overflow: hidden;
+         //padding-top: 30px;
+         position: absolute;
+         bottom: 0;
+         height: calc(50% - 56px);
+
+         ul {
+            position: absolute;
+            width: 100%;
+            padding-top: 80px;
+            top: -80px;
+            @extend %menuShiftTrans;
+         }
+
+         li {
+            .divWave {
+               margin: 0 auto 10px;
+            }
+         }
+      }
+
+      a {
+         color: rgba($white, .5);
+         line-height: 50px;
+         @extend %hoverTrans;
+
+         &:hover {
+            color: $white;
+         }
+      }
+   }
+
+   .bigLinks {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      overflow: hidden;
+      height: 92px;
+
+      ul {
+         height: 92px;
+         width: 100%;
+         position: absolute;
+         top: 0px;
+         @extend %menuShiftTrans;
+      }
+
+      li {
+         font-size: 74px;
+         line-height: 80px;
+         margin-bottom: 6px;
+         text-align: center;
+
+         a {
+            color: $white;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 7px;
+
+            &:after {
+               content: '';
+               position: relative;
+               bottom: -8px;
+               display: block;
+               margin: 0 auto -4px;
+               height: 2px;
+               width: 0px;
+               background: transparent;
+               transition: width .5s ease, background-color .5s ease;
+            }
+
+            &:hover {
+               &:after {
+                  width: 100%;
+                  background-color: $white;
+               }
+            }
+         }
+      }
+   }
+
+}
+.menu-section {
+   background-color: $darkGray;
+   position: relative;
+   overflow: hidden;
+
+   &:before {
+      content: "";
+      display: block;
+      @extend %absFill;
+      background-color: rgba($darkDkGray, .5);
+      transition: all .5s linear;
+      z-index: 2;
+   }
+
+   &.linkHovered {
+      &:before {
+         background-color: rgba($darkGray, .8);
+      }
+   }
+
+   .menu-image {
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      transition: all 1000ms cubic-bezier(0.990, 0.010, 0.970, 0.735); /* custom */
+   }
+
+   &.active {
+      .menu-image {
+         transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+         transition: all 9000ms linear;
+      }
+   }
+}

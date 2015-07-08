@@ -1,0 +1,104 @@
+.sticky {
+   position: fixed;
+   top: 0;
+}
+
+.vAlign {
+   position: relative;
+   visibility: hidden; /* <- needed to hide flash of non vertical aligned content before complete page load. */
+}
+
+.section {
+   @extend %clear;
+}
+
+
+// * Note: MENU styles are in _menu.scss
+
+
+.divWave {
+   display: block;
+   width: 42px;
+   height: 8px;
+   background-image: url(../img/icons/divWave-sprite.png);
+   background-position: left top;
+   margin: 20px 0;
+}
+
+.hero {
+   @extend .wrapper;
+   position: relative;
+
+   .hero-text {
+      margin-left: 7%;
+   }
+
+   h1 {
+      @extend %sans;
+      font-size: 16px;
+      line-height: 19px;
+      text-transform: uppercase;
+      @include letSpc(2px);
+   }
+
+   h3 {
+      font-size: 70px;
+      line-height: 78px;
+      @include letSpc(5px);
+   }
+}
+
+.italic {
+   @extend %serifIt;
+}
+
+.isDarkGray {
+   color: $white;
+   background-color: $darkGray;
+}
+
+.isWhite {
+   background-color: $white;
+}
+
+.popPrimary {
+   .clrPop {
+      color: $primary;
+   }
+
+   .downArrow,
+   .divWave {
+      background-position-y: -100px;
+   }
+}
+.popSecondary {
+   .clrPop {
+      color: $secondary;
+   }
+
+   .downArrow,
+   .divWave {
+      background-position-y: -200px;
+   }
+}
+.popTertiary {
+   .clrPop {
+      color: $tertiary;
+   }
+
+   .downArrow,
+   .divWave {
+      background-position-y: -300px;
+   }
+}
+.popQuaternary {
+   .clrPop {
+      color: $quaternary;
+   }
+
+   .downArrow,
+   .divWave {
+      background-position-y: -400px;
+   }
+}
+

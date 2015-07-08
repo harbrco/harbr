@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  //-webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+/* html element 62.5% font-size for REM use */
+html {
+   font-size: 62.5%;
+   //height: 100%;
+}
+body {
+   font-size: 14px;
+   line-height: 1.6;
+   font-family: $serif;
+   background: $white;
+   color: $darkGray;
+   height: 100%;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+   -webkit-touch-callout: none !important;
+   overflow: auto;
+}
+
+%hoverTrans {
+   transition: all 0.2s ease;
+}
+%hoverTransL {
+   transition: all 1s ease;
+}
+
+%hoverFade {
+   opacity: .7;
+}
+
+img {
+   max-width: 100%;
+   vertical-align: bottom;
+}
+a {
+   color: #444;
+   text-decoration: none;
+   -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:hover {
+   color: #444;
+}
+a:focus {
+   outline: 0;
+}
+a:hover,
+a:active {
+   outline: 0;
+}
+// disables touch callouts on links
+.hover {
+   -webkit-user-select: none;
+   -webkit-touch-callout: none;
+}
+
+input:focus {
+   outline: 0;
+   border: 1px solid $primary;
+}
+
+.wrapper {
+   @extend %clear;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   position: relative;
+}
+
+.container {
+   @extend %clear;
+   width: 93%;
+   margin: 0 auto;
+   position: relative;
+}
+
+.snap-section {
+   @extend %clear;
+   width: 100%;
+   position: relative;
+}
+
+// Reset responsivegridsystem
+.col {
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+// Reset bxSlider
+.bx-wrapper {
+   margin-bottom: 0;
+}
+.bx-wrapper .bx-viewport {
+   -moz-box-shadow: none;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+   border: none;
+   left: 0;
+   background: #fff;
+   margin: 0 !important;
+}
+.bx-viewport li { min-height: 1px; min-width: 1px; }  // Fix for infinite loop weirdness

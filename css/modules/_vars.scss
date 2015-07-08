@@ -1,0 +1,42 @@
+$primary: #61A4EA;         // Primary is Blue
+$primaryDk: #4A8BCF;       // PrimaryDk is Darker Blue
+$secondary: #78B97F;       // Secondary is Green
+$secondaryDk: #3E7544;     // SecondaryDk is Darker Green
+$tertiary: #FCCDC6;        // Tertiary is Pink
+$tertiaryDk: #E4B4A4;      // TertiaryDk is Darker Pink
+$quaternary: #F7D974;      // Quaternary is Yellow
+
+
+$lightGray: #EEEEEE;
+$medGray: #777777;
+$darkGray: #292728;
+$darkDkGray: #111011;
+
+$white: #fff;
+$black: #000;
+
+$test: #62e920;      // Test is a bright green just for testing purposes
+
+
+$sans: 'Montserrat', Helvetica, sans-serif;  // Montserrat has weights of 400 & 700
+$serif: 'Playfair Display', Times, Serif;  // Playfair Display has normal (400) weight with italic option
+
+%sans {
+   font-family: $sans;
+   font-weight: 400;
+}
+
+%sansB {
+   font-family: $sans;
+   font-weight: 700;
+}
+
+%serif {
+   font-family: $serif;
+   font-weight: 400;
+}
+
+%serifIt {
+   @extend %serif;
+   font-style: italic;
+}
