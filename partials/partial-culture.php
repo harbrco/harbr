@@ -1,57 +1,177 @@
-
-
 <div id="main" class="main-content section isWhite">
-   <div class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies, eros sit amet blandit bibendum, nisl metus volutpat massa, non tempus metus libero in risus. In elementum sagittis ipsum, et commodo odio pharetra sit amet. Fusce lobortis, nisi id pellentesque porttitor, dolor lectus iaculis libero, a pulvinar leo dolor in tortor. <a href="#">Here's an example text link</a></p>
-      <h1>Here's an H1 Heading inside of the content</h1>
-      <p>Cras placerat nulla auctor sem lacinia non consequat libero tincidunt. Suspendisse sem felis, tincidunt vitae blandit at, sagittis nec justo. Integer et odio ac magna mattis adipiscing eu in erat. <em>Vivamus consectetur, mauris eget pharetra consequat, lorem lectus auctor metus, at commodo magna ante ac mauris.</em></p>
-      <h2>This Is An Example H2 Title</h2>
-      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam at eros sed orci venenatis egestas at vel eros. Mauris euismod fermentum accumsan. Donec posuere nisi at justo vulputate sit amet viverra sem blandit.</p>
-      <ul>
-         <li>Mauris vel lacus nec leo mattis malesuada.</li>
-         <li>Donec et augue non ligula venenatis sodales eu in nunc. Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui.</li>
-         <li>Donec facilisis libero nec mauris feugiat ac sagittis dui semper.</li>
-         <li>Nulla vestibulum tellus ante, vel semper mi. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo.</li>
-         <li>Integer lobortis pharetra libero, eu malesuada lorem scelerisque nec.</li>
-      </ul>
-      <p>Fusce eget nisi semper nibh volutpat blandit eu sit amet augue. Integer adipiscing augue quis mi rhoncus tincidunt. In hac habitasse platea dictumst. Mauris mollis, orci in condimentum ullamcorper, felis augue pharetra nunc, ut porta massa augue non dui.</p>
-      <h3>Here is an H3 Example Title</h3>
-      <p>Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisis ipsum a nisl dictum pellentesque.</p>
-      <blockquote>"Here's a block quote styled section of text... I'll make it a little bit longer to actually simulate what a quote could possibly look like."</blockquote>
-      <p><strong>This is just some bold text -</strong> Phasellus eget tellus nisi, vel scelerisque mauris. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo. Suspendisse potenti. Morbi ac rutrum mi. Etiam non lobortis libero.</p>
-      <ol>
-         <li>Mauris vel lacus nec leo mattis malesuada.</li>
-         <li>Donec et augue non ligula venenatis sodales eu in nunc. Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui.</li>
-         <li>Donec facilisis libero nec mauris feugiat ac sagittis dui semper.</li>
-         <li>Nulla vestibulum tellus ante, vel semper mi. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo.</li>
-         <li>Integer lobortis pharetra libero, eu malesuada lorem scelerisque nec.</li>
-      </ol>
-      <h4>This is an H4 Sample Title</h4>
-      <p>Cras placerat nulla auctor sem lacinia non consequat libero tincidunt. Suspendisse sem felis, tincidunt vitae blandit at, sagittis nec justo. Integer et odio ac magna mattis adipiscing eu in erat. Vivamus consectetur, mauris eget pharetra consequat, lorem lectus auctor metus, at commodo magna ante ac mauris.</p>
-      <p>Sed quis interdum magna. Nulla nec eros non orci accumsan condimentum at placerat justo. Suspendisse mattis tincidunt lacus, ut luctus ante porta eu. Nullam viverra aliquet sem non rhoncus. Vestibulum ullamcorper ipsum vitae turpis congue adipiscing. Nullam mattis congue ornare.</p>
-      <h1>Here's an H1 Heading inside of the content</h1>
-      <p>Cras placerat nulla auctor sem lacinia non consequat libero tincidunt. Suspendisse sem felis, tincidunt vitae blandit at, sagittis nec justo. Integer et odio ac magna mattis adipiscing eu in erat. <em>Vivamus consectetur, mauris eget pharetra consequat, lorem lectus auctor metus, at commodo magna ante ac mauris.</em></p>
-      <h2>This Is An Example H2 Title</h2>
-      <p>Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam at eros sed orci venenatis egestas at vel eros. Mauris euismod fermentum accumsan. Donec posuere nisi at justo vulputate sit amet viverra sem blandit.</p>
-      <ul>
-         <li>Mauris vel lacus nec leo mattis malesuada.</li>
-         <li>Donec et augue non ligula venenatis sodales eu in nunc. Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui.</li>
-         <li>Donec facilisis libero nec mauris feugiat ac sagittis dui semper.</li>
-         <li>Nulla vestibulum tellus ante, vel semper mi. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo.</li>
-         <li>Integer lobortis pharetra libero, eu malesuada lorem scelerisque nec.</li>
-      </ul>
-      <p>Fusce eget nisi semper nibh volutpat blandit eu sit amet augue. Integer adipiscing augue quis mi rhoncus tincidunt. In hac habitasse platea dictumst. Mauris mollis, orci in condimentum ullamcorper, felis augue pharetra nunc, ut porta massa augue non dui.</p>
-      <h3>Here is an H3 Example Title</h3>
-      <p>Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla facilisis ipsum a nisl dictum pellentesque.</p>
-      <blockquote>"Here's a block quote styled section of text... I'll make it a little bit longer to actually simulate what a quote could possibly look like."</blockquote>
-      <p><strong>This is just some bold text -</strong> Phasellus eget tellus nisi, vel scelerisque mauris. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo. Suspendisse potenti. Morbi ac rutrum mi. Etiam non lobortis libero.</p>
-      <ol>
-         <li>Mauris vel lacus nec leo mattis malesuada.</li>
-         <li>Donec et augue non ligula venenatis sodales eu in nunc. Proin dolor magna, lacinia eget vestibulum vitae, lobortis vitae libero. Vestibulum eu tempus dui.</li>
-         <li>Donec facilisis libero nec mauris feugiat ac sagittis dui semper.</li>
-         <li>Nulla vestibulum tellus ante, vel semper mi. Sed volutpat, ligula nec rhoncus ornare, quam urna congue enim, at tristique justo arcu vitae leo.</li>
-         <li>Integer lobortis pharetra libero, eu malesuada lorem scelerisque nec.</li>
-      </ol>
-      <h4>This is an H4 Sample Title</h4>
+   <div id="values" class="section-heading intro-section">
+      <h1 class="clrPop">Values</h1>
+      <span class="divWave"></span>
+      <h3>It's Not a Job, <br />It's a Lifestyle</h3>
+   </div>
+
+   <div class="core-values number-cards section group flexWrap">
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+            <span class="card-number clrPop">01</span>
+            <h3 class="card-title sansBUpperSpc">Build</h3>
+            <p class="card-text">We aim high at being focused on building relationships with our clients and community as well as impact them with our creative gifts.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <span class="card-number clrPop">02</span>
+            <h3 class="card-title sansBUpperSpc">Humble</h3>
+            <p class="card-text">Working together on the daily requires each individual to let the greater good of the team’s work surface above their own ego.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+         <span class="card-number clrPop">03</span>
+            <h3 class="card-title sansBUpperSpc">Focus</h3>
+            <p class="card-text">It’s important to stay detail oriented with every project we tackle. Staying focused allows us to turn every project we complete into something we love.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <span class="card-number clrPop">04</span>
+            <h3 class="card-title sansBUpperSpc">Change</h3>
+            <p class="card-text">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
+         </div>
+      </div>
+   </div>
+
+
+   <div id="crew" class="section-heading">
+      <h1 class="clrPop">Crew</h1>
+      <span class="divWave"></span>
+      <h3>Meet Your Creative <br />Geek Squad</h3>
+   </div>
+
+   <div class="crew-members crew-cards section group">
+   <?php if( have_rows('crew_member') ): ?>
+      <?php while ( have_rows('crew_member') ) : the_row(); ?>
+         <div class="crew-member card col span_4_of_12 wow fadeIn" style="background-image: url(<?php the_sub_field('crew_member_photo'); ?>);" data-wow-delay=".25s">
+            <div class="crew-text">
+               <h3 class="crew-name"><?php the_sub_field('crew_member_name'); ?></h3>
+               <h4 class="crew-title"><?php the_sub_field('crew_member_title'); ?></h4>
+            </div>
+         </div>
+      <?php endwhile; ?>
+   <?php endif; ?>
+   </div>
+
+
+   <div id="hustle" class="section-heading">
+      <h1 class="clrPop">Hustle</h1>
+      <span class="divWave"></span>
+      <h3>Finding Our Flow <br />On The Daily</h3>
+   </div>
+
+   <div class="media-boxes">
+      <?php if( have_rows('flexible_layouts') ): ?>
+         <?php while ( have_rows('flexible_layouts') ) : the_row(); ?>
+            <?php if( get_row_layout() == 'full-width-image' ): ?>
+               <div class="full-width-image wow fadeIn" data-wow-delay=".25s">
+                  <img src="<?php the_sub_field('full_width_image'); ?>" />
+               </div>
+
+            <?php elseif( get_row_layout() == 'stat_slider_lg_sq_sm_sq' ): ?>
+               <div class="stat-slider-lg-sq-sm-sq section group">
+                  <div class="col span_8_of_12">
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('large_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+
+                  <div class="col span_4_of_12">
+                     <div class="stat-slider-wrapper isPrimary wow fadeIn" data-wow-delay=".25s">
+                        <div class="stat-slider card card--sq">
+                        <?php if( have_rows('stat_slide') ): ?>
+                           <?php while ( have_rows('stat_slide') ) : the_row(); ?>
+                           <div class="slide">
+                              <span class="slide-icon"></span>
+                              <h3><?php the_sub_field('stat_headline'); ?></h3>
+                              <p><?php the_sub_field('stat_text'); ?></p>
+                           </div>
+                           <?php endwhile; ?>
+                        <?php endif; ?>
+                        </div>
+
+                        <div class="next-stat next-slide"></div>
+                     </div>
+
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+               </div>
+
+            <?php elseif( get_row_layout() == 'quote_slider_sm_sq' ): ?>
+               <div class="quote-slider-sm-sq section group">
+                  <div class="col span_4_of_12">
+                     <div class="quote-slider-wrapper isDarkGray wow fadeIn" data-wow-delay=".25s">
+                        <div class="quote-slider card card--sq">
+                        <?php if( have_rows('quote_slide') ): ?>
+                           <?php while ( have_rows('quote_slide') ) : the_row(); ?>
+                              <div class="slide">
+                                 <span class="slide-icon"></span>
+                                 <p class="quote-text">“<?php the_sub_field('quote_text'); ?>”</p>
+                                 <p class="quote-author">– <?php the_sub_field('quote_author'); ?></p>
+                              </div>
+                           <?php endwhile; ?>
+                        <?php endif; ?>
+                        </div>
+
+                        <div class="next-quote next-slide"></div>
+                     </div>
+
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+
+                  <div class="col span_8_of_12">
+                     <?php
+                     $args = array(
+                        'post_type' => 'case-studies',
+                        'posts_per_page' => 1
+                     );
+                     $caseStudiesQuery = new WP_Query( $args ); ?>
+                     <?php if ( $caseStudiesQuery->have_posts() ) : ?>
+                     <div class="section group twoSq">
+                        <!-- the loop -->
+                        <?php while ( $caseStudiesQuery->have_posts() ) : $caseStudiesQuery->the_post(); ?>
+                        <div class="featured-case-study hoverZoomFade card card--sq wow fadeIn" data-wow-delay=".25s">
+                           <div class="background-image" style="background-image: url(<?php the_field('featured_square') ?>);">
+                           </div>
+                           <div class="inner vAlign vAlign-abs">
+                              <h3 class="clrPop">Case Study</h3>
+
+                              <a href="<?php the_permalink(); ?>" class="case-study-title">
+                                 <h2><?php the_title(); ?></h2>
+                              </a>
+                           </div>
+                        </div>
+                        <?php endwhile; ?>
+                        <!-- end of the loop -->
+                     </div>
+                     <?php wp_reset_postdata(); ?>
+                     <?php else: ?>
+                     <div class="no-posts">
+                        <h3>Sorry, there are no posts here.</h3>
+                     </div>
+                     <?php endif; ?>
+                  </div>
+               </div>
+
+            <?php endif; ?>
+         <?php endwhile; ?>
+      <?php endif; ?>
+   </div>
+
+
+   <div class="next-page-cta big-cta isTertiary">
+      <div id="strategy" class="section-heading vAlign">
+         <h1 class="clrPop">Strategy</h1>
+         <span class="divWave"></span>
+         <h3>Jacks of All Trades <br /><span class="italic">Experts</span> In All.</h3>
+         <a href="/strategy/" class="btn btn--uline">View Our Strategy</a>
+      </div>
    </div>
 </div>

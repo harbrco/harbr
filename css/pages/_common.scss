@@ -6,6 +6,16 @@
 .vAlign {
    position: relative;
    visibility: hidden; /* <- needed to hide flash of non vertical aligned content before complete page load. */
+
+   &.vAlign-abs {
+      position: absolute;
+      visibility: hidden; /* <- needed to hide flash of non vertical aligned content before complete page load. */
+   }
+}
+
+// fix for *flash* of animated elements before animation happens.
+.wow {
+   opacity: 0;
 }
 
 .section {
@@ -25,12 +35,58 @@
    margin: 20px 0;
 }
 
-.hero {
-   @extend .wrapper;
-   position: relative;
 
-   .hero-text {
-      margin-left: 7%;
+.hoverZoomFade {
+   background-color: $darkGray;
+   position: relative;
+   overflow: hidden;
+
+   &:before {
+      content: "";
+      display: block;
+      @extend %absFill;
+      background-color: rgba($darkDkGray, 0);
+      transition: all .5s linear;
+      z-index: 2;
+   }
+
+   &.linkHovered {
+      &:before {
+         background-color: rgba($darkGray, .5);
+      }
+   }
+
+   .background-image {
+      background-size: cover;
+      background-position: center center;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      transform: matrix(1, 0, 0, 1, 0, 0);
+      transition: all 1000ms linear;
+   }
+
+   &.boxHovered {
+      .background-image {
+         transform: matrix(1.15, 0, 0, 1.15, 0, 0);
+         transition: all 9000ms linear;
+      }
+   }
+
+   .inner {
+      z-index: 3;
+   }
+}
+
+.section-heading {
+   margin-left: 7%;
+   margin-top: 12%;
+   margin-bottom: 6%;
+
+   &.intro-section {
+      margin-top: 16%;
+      margin-bottom: 9%;
    }
 
    h1 {
@@ -48,8 +104,41 @@
    }
 }
 
-.italic {
-   @extend %serifIt;
+.hero {
+   @extend .wrapper;
+   position: relative;
+
+   .hero-text {
+      margin-left: 7%;
+   }
+
+   .section-heading {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+}
+
+.big-cta {
+   @extend %clear;
+}
+
+.next-page-cta {
+   .section-heading {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   .clrPop {
+      color: $white !important;
+   }
+
+   .divWave {
+      background-position-y: 0px !important;
+   }
+
+   .btn--uline {
+      margin-top: 50px;
+   }
 }
 
 .isDarkGray {
@@ -60,6 +149,27 @@
 .isWhite {
    background-color: $white;
 }
+
+.isPrimary {
+   color: $white;
+   background-color: $primary;
+}
+
+.isSecondary {
+   color: $white;
+   background-color: $secondary;
+}
+
+.isTertiary {
+   color: $white;
+   background-color: $tertiary;
+}
+
+.isQuaternary {
+   color: $white;
+   background-color: $quaternary;
+}
+
 
 .popPrimary {
    .clrPop {
@@ -102,3 +212,69 @@
    }
 }
 
+
+// flexbox - - - - - - -
+// via: http://codepen.io/imohkay/pen/gpard
+.flexWrap {
+   display: flex;
+   flex-wrap: wrap;
+
+   &:before,
+   &:after {
+      display: none;
+   }
+}
+
+
+// "card" elements - - - - - - -
+.number-cards {
+   .card-number {
+      font-size: 30px;
+      line-height: 32px;
+      display: block;
+      margin-bottom: 16px;
+   }
+
+   .card-title {
+      font-size: 25px;
+      line-height: 30px;
+      margin-bottom: 16px;
+   }
+
+   .card-text {
+      font-size: 18px;
+      line-height: 28px;
+   }
+
+   .card {
+      margin-left: 0;
+      border-bottom: 1px solid $lightGray;
+      padding: 6% 10%;
+
+      &:nth-child(even) {
+         border-left: 1px solid $lightGray;
+      }
+
+      &:nth-child(-n+2) {
+         border-top: 1px solid $lightGray;
+      }
+   }
+}
+
+
+
+// misc font styles
+.italic {
+   @extend %serifIt;
+}
+
+.sansUpperSpc {
+   @extend %sans;
+   @include letSpc(1px);
+   text-transform: uppercase;
+}
+
+.sansBUpperSpc {
+   @extend .sansUpperSpc;
+   @extend %sansB;
+}

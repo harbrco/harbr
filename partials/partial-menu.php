@@ -2,6 +2,9 @@
 
 <div class="menu-links-wrapper">
    <div class="littleLinksBefore littleLinks">
+
+      <!-- These links also need to be updated in page-home.php -->
+
       <ul id="pagination">
          <li data-menuanchor="get-to-know-us">
             <a href="#get-to-know-us">Get To Know Us</a>
@@ -27,16 +30,16 @@
             <a href="/culture/">Get To Know Us</a>
          </li>
          <li>
-            <a href="#">Our Strategic Vision</a>
+            <a href="/strategy/">Our Strategic Vision</a>
          </li>
          <li>
-            <a href="#">Explore The Latest</a>
+            <a href="/collective/">Explore The Latest</a>
          </li>
          <li>
-            <a href="#">Reach Out To Us</a>
+            <a href="/contact/">Reach Out To Us</a>
          </li>
          <li>
-            <a href="#">Let's Build Something</a>
+            <a href="/project-planner/">Let's Build Something</a>
          </li>
       </ul>
    </div>

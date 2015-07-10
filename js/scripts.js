@@ -4,7 +4,17 @@
 // @codekit-prepend "libs/fastclick.js"
 // @codekit-prepend "libs/jquery.easings.min.js"
 // @codekit-prepend "libs/jquery.slimscroll.min.js"
+// @codekit-prepend "libs/wow.min.js"
 // @codekit-prepend "libs/jquery.fullPage.js"
+
+
+// fix for *flash* of animated elements before animation happens.
+$('.wow').fadeIn(50).css('visibility', 'visible');
+
+// Elements Animate when user scrolls. - WOW.js - http://mynameismatthieu.com/WOW/docs.html
+/* global WOW */
+new WOW().init();
+
 
 // DOM Ready
 (function($, window, undefined) {
@@ -23,14 +33,14 @@
     // });
 
 
-    // Add dynamic color body classes:
+    // Add dynamic accent color body classes:
     if ( $('body').hasClass('culture') ) {
       $('body').addClass('popPrimary');
-    } else if ( $('body').hasClass('collective') ) {
+    } else if ( $('body').hasClass('blog') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
       $('body').addClass('popTertiary');
-    } else if ( $('body').hasClass('project-planner') ) {
+    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') ) {
       $('body').addClass('popQuaternary');
     }
 
@@ -57,29 +67,18 @@
     var bigHero = function(){
       $('.hero').height($(window).height());
     };
-
     bigHero();
+
+    // Backpage "next-page-cta" full screen box
+    var bigCTA = function(){
+      $('.big-cta').height($(window).height());
+    };
+    bigCTA();
 
     $(window).resize(function() {
       bigHero();
+      bigCTA();
     }).resize();
-
-
-    // Sticky Header waypoint
-    var nav_container = $('.sticky-header-wrapper');
-    var nav = $('.sticky-header');
-
-    nav_container.waypoint({
-      handler: function(direction) {
-        if (direction === 'down') {
-          nav.stop().addClass('sticky');
-          nav_container.css({ 'height': '70px' });
-
-        } else {
-          nav.stop().removeClass('sticky');
-        }
-      }
-    });
 
 
 
@@ -132,8 +131,18 @@
       w2.forEach(function(w) { w.context.refresh(); });
     };
 
+
+    // Hover Zoom Fade effect
     $('.bigLinks a').hover(function() {
       $('.menu-section').toggleClass('linkHovered');
+    });
+
+    $('.hoverZoomFade').hover(function() {
+      $(this).toggleClass('boxHovered').next().stop( true, true );
+    });
+
+    $('.hoverZoomFade a').hover(function() {
+      $(this).closest('.hoverZoomFade').toggleClass('linkHovered').next().stop( true, true );
     });
 
 
@@ -143,7 +152,6 @@
     // Home / Landing Menu
     if ($('body').hasClass('home')) {
       $('#landing-menu').fullpage({
-        scrollOverflow: true,
         verticalCentered: false,
         scrollBar: true, // <- needed to make Waypoints.js work
         recordHistory: false,
@@ -153,6 +161,7 @@
         menu: '#pagination',
         afterResize: function(){
           vAlignFun();
+          reloadWaypoints();
         }
       });
 
@@ -222,10 +231,58 @@
     // Backpage Menu
     } else {
 
+      // Sticky Header waypoint
+      var nav_container = $('.sticky-header-wrapper');
+      var nav = $('.sticky-header');
+
+      nav_container.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            nav.stop().addClass('sticky');
+            nav_container.css({ 'height': '70px' });
+
+          } else {
+            nav.stop().removeClass('sticky');
+          }
+        }
+      });
+
+      if (!$('body').hasClass('contact')) {
+        var stickyWrap = $('.sticky-header-wrapper').one();
+        var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
+        var lastScrollTop = 0;
+        $(window).scroll(function(){
+          if ( $(nav).hasClass('sticky') ) {
+            var st = $(this).scrollTop();
+            if (st > menuAppearBuffer && st > lastScrollTop){
+              stickyWrap.addClass('menuHidden');
+
+            } else {
+              stickyWrap.removeClass('menuHidden');
+            }
+            lastScrollTop = st;
+          }
+        });
+      }
+
+      var menuActiveClass = function() {
+        if ( $('body').hasClass('culture') ){
+          $('.menu-section-1').addClass('active');
+        } else if ( $('body').hasClass('strategy') ){
+          $('.menu-section-2').addClass('active');
+        } else if ( $('body').hasClass('blog') ){
+          $('.menu-section-3').addClass('active');
+        } else if ( $('body').hasClass('contact') ){
+          $('.menu-section-4').addClass('active');
+        } else if ( $('body').hasClass('project-planner') ){
+          $('.menu-section-5').addClass('active');
+        }
+      };
+      menuActiveClass();
+
       // fullPage.js initialization
       var menuBuild = function(){
         $('#menu').fullpage({
-          scrollOverflow: true,
           verticalCentered: false,
           scrollBar: true, // <- needed to make Waypoints.js work
           recordHistory: false,
@@ -259,6 +316,9 @@
 
           // re-render big hero section
           bigHero();
+
+          // re-render current page active class in menu
+          menuActiveClass();
         }, 400);
       });
 
@@ -330,12 +390,58 @@
 
 
     // bxSlider(s)
-    $('.CLASSofSLIDER').bxSlider({
-      adaptiveHeight: true,
-      nextSelector: '.slide-next',
-      prevSelector: '.slide-prev',
+    $('.stat-slider').bxSlider({
+      auto: false,
+      pause: 6000,
+      speed: 5,
+      mode: 'fade',
+      controls: true,
+      nextSelector: '.next-stat',
+      prevSelector: '.prev-stat',
       nextText: '',
-      prevText: ''
+      prevText: '',
+      onSlideBefore: function(){
+        $('.stat-slider .slide').animate({
+          opacity: 0
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      onSlideAfter: function(){
+        $('.stat-slider .slide').animate({
+          opacity: 1
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      pager: ($(".stat-slider>.slide").length > 1) ? true: false
+    });
+
+    $('.quote-slider').bxSlider({
+      auto: false,
+      pause: 6000,
+      speed: 50,
+      mode: 'fade',
+      controls: true,
+      nextSelector: '.next-quote',
+      prevSelector: '.prev-quote',
+      nextText: '',
+      prevText: '',
+      onSlideBefore: function(){
+        $('.quote-slider .slide').animate({
+          opacity: 0
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      onSlideAfter: function(){
+        $('.quote-slider .slide').animate({
+          opacity: 1
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      pager: ($(".quote-slider>.slide").length > 1) ? true: false
     });
 
 

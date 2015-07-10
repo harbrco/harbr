@@ -7,6 +7,9 @@
    <?php } /* STRATEGY */ elseif ( is_page( 'strategy' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'strategy' ); ?>
 
+   <?php } /* CONTACT */ elseif ( is_page( 'contact' ) ) { ?>
+      <?php get_template_part( 'partials/partial', 'contact' ); ?>
+
 
    <?php } /* GENERIC PAGES */ else { ?>
 

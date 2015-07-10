@@ -2,6 +2,9 @@
 
 <div class="menu-links-wrapper">
    <div class="littleLinksBefore littleLinks">
+
+      <!-- These links also need to be updated in page-home.php -->
+
       <ul id="pagination">
          <li style="width: 0; height: 0;" data-menuanchor="landing">
             <a href="#landing" style="opacity: 0;"> </a>
@@ -33,16 +36,16 @@
             <a href="/culture/">Get To Know Us</a>
          </li>
          <li>
-            <a href="#">Our Strategic Vision</a>
+            <a href="/strategy/">Our Strategic Vision</a>
          </li>
          <li>
-            <a href="#">Explore The Latest</a>
+            <a href="/collective/">Explore The Latest</a>
          </li>
          <li>
-            <a href="#">Reach Out To Us</a>
+            <a href="/contact/">Reach Out To Us</a>
          </li>
          <li>
-            <a href="#">Let's Build Something</a>
+            <a href="/project-planner/">Let's Build Something</a>
          </li>
       </ul>
    </div>
@@ -70,9 +73,20 @@
 
 <div id="landing-menu" class="main-menu">
    <div id="section0" class="landing-section section" data-anchor="landing">
-      <div class="stuff vAlign">
-         <h1 style="margin-top: 0;">h logo</h1>
-         <h3>a virtual creative agency</h3>
+      <!-- <div class="top-overlay overlay">
+      </div>
+      <div class="h-brand vAlign">
+         <div class="inner">
+            <h1 style="margin-top: 0;">h logo</h1>
+            <h3>a virtual creative agency</h3>
+         </div>
+      </div>
+      <div class="bottom-overlay overlay">
+      </div> -->
+
+      <div class="left-overlay overlay">
+      </div>
+      <div class="right-overlay h-brand overlay">
       </div>
 
       <a id="down" href="#" class="downArrow"></a>

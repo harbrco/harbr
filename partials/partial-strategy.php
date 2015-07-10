@@ -1,40 +1,147 @@
-<div class="intro-wrapper">
-	<div class="intro-content">
-		<h2>Always here when you need to</h2>
-		<h1>GET IN TOUCH</h1>
-	</div>
-	<div class="header-swap">
-	</div>
-</div><!-- /.intro-wrapper -->
+<div id="main" class="main-content section isWhite">
+   <div id="approach" class="section-heading intro-section">
+      <h1 class="clrPop">Approach</h1>
+      <span class="divWave"></span>
+      <h3>There are a Couple Ways <br />To Skin a Cat.</h3>
+   </div>
+
+   <div class="approach-steps number-cards section group flexWrap">
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+            <span class="card-number clrPop">01</span>
+            <h3 class="card-title sansBUpperSpc">Consult</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <span class="card-number clrPop">02</span>
+            <h3 class="card-title sansBUpperSpc">Plan</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+         <span class="card-number clrPop">03</span>
+            <h3 class="card-title sansBUpperSpc">Architect</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <span class="card-number clrPop">04</span>
+            <h3 class="card-title sansBUpperSpc">Develop</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+            <span class="card-number clrPop">05</span>
+            <h3 class="card-title sansBUpperSpc">Launch</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+
+      <div class="card col span_6_of_12">
+         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <span class="card-number clrPop">06</span>
+            <h3 class="card-title sansBUpperSpc">Maintain</h3>
+            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+         </div>
+      </div>
+   </div>
 
 
-<div class="form-wrapper">
-	<div class="form-question">
-		<!-- this is needed just for the white area - the top field section is negative margined up into this area -->
-	</div>
-	<div class="form-container">
-		<?php gravity_form(1, false, false, false, '', false, 1); ?>
-	</div><!-- /.form-container -->
-</div><!-- /.form-wrapper -->
+   <div id="hustle" class="section-heading">
+      <h1 class="clrPop">Hustle</h1>
+      <span class="divWave"></span>
+      <h3>Finding Our Flow <br />On The Daily</h3>
+   </div>
+
+   <div class="media-boxes">
+      <?php if( have_rows('flexible_layouts') ): ?>
+         <?php while ( have_rows('flexible_layouts') ) : the_row(); ?>
+            <?php if( get_row_layout() == 'full-width-image' ): ?>
+               <div class="full-width-image wow fadeIn" data-wow-delay=".25s">
+                  <img src="<?php the_sub_field('full_width_image'); ?>" />
+               </div>
+
+            <?php elseif( get_row_layout() == 'stat_slider_lg_sq_sm_sq' ): ?>
+               <div class="stat-slider-lg-sq-sm-sq section group">
+                  <div class="col span_8_of_12">
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('large_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+
+                  <div class="col span_4_of_12">
+                     <div class="stat-slider-wrapper isTertiary wow fadeIn" data-wow-delay=".25s">
+                        <div class="stat-slider card card--sq">
+                        <?php if( have_rows('stat_slide') ): ?>
+                           <?php while ( have_rows('stat_slide') ) : the_row(); ?>
+                           <div class="slide">
+                              <span class="slide-icon"></span>
+                              <h3><?php the_sub_field('stat_headline'); ?></h3>
+                              <p><?php the_sub_field('stat_text'); ?></p>
+                           </div>
+                           <?php endwhile; ?>
+                        <?php endif; ?>
+                        </div>
+
+                        <div class="next-stat next-slide"></div>
+                     </div>
+
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+               </div>
+
+            <?php elseif( get_row_layout() == 'quote_slider_sm_sq' ): ?>
+               <div class="quote-slider-sm-sq section group">
+                  <div class="col span_4_of_12">
+                     <div class="quote-slider-wrapper isDarkGray wow fadeIn" data-wow-delay=".25s">
+                        <div class="quote-slider card card--sq">
+                        <?php if( have_rows('quote_slide') ): ?>
+                           <?php while ( have_rows('quote_slide') ) : the_row(); ?>
+                              <div class="slide">
+                                 <span class="slide-icon"></span>
+                                 <p class="quote-text">“<?php the_sub_field('quote_text'); ?>”</p>
+                                 <p class="quote-author">– <?php the_sub_field('quote_author'); ?></p>
+                              </div>
+                           <?php endwhile; ?>
+                        <?php endif; ?>
+                        </div>
+
+                        <div class="next-quote next-slide"></div>
+                     </div>
+
+                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     </div>
+                  </div>
+
+                  <div class="col span_8_of_12">
+                     <div class="featured-case-study card card--sq wow fadeIn" style="" data-wow-delay=".25s">
+                        <h3>Case Study</h3>
+                        <h2>Case Study Title</h2>
+                     </div>
+                  </div>
+               </div>
+
+            <?php endif; ?>
+         <?php endwhile; ?>
+      <?php endif; ?>
+   </div>
 
 
-<div class="info-wrapper">
-	<ul class="section group">
-		<li class="col span_4_of_12">
-			<h3>Email Us</h3>
-			<p><a href="mailto:info@trinitygrapics.com">info@trinity...</a></p>
-		</li>
-		<li class="col span_4_of_12">
-			<h3>Stop By</h3>
-			<p>1005 19th st n / st. petersburg, FL 33713</p>
-		</li>
-		<li class="col span_4_of_12">
-			<h3>Call Us</h3>
-			<p>727-709-6536 (cell)<br />
-				727-231-1077 (office)</p>
-		</li>
-	</ul>
-	<div class="map-link">
-		<a href="#" class="btn-round-white">Map it</a>
-	</div>
-</div><!-- /.info-wrapper -->
+   <div class="next-page-cta big-cta isQuaternary">
+      <div id="project-planner" class="section-heading vAlign">
+         <h1 class="clrPop">Project Planner</h1>
+         <span class="divWave"></span>
+         <h3>We're Accepting <br /><span class="italic">Projects</span> Today.</h3>
+         <a href="/project-planner/" class="btn btn--uline">Get Started</a>
+      </div>
+   </div>
+</div>

@@ -1,11 +1,30 @@
-// add contact page specific styles here:
+// * note: Contact page doesn't really have content.  Content is in the "hero" in the 'header.php' file.
 
+.hero-text {
+   h4 {
+      @extend %sans;
+      font-size: 22px;
+      line-height: 27px;
+      margin: 3% 0 4%;
 
+      a {
+         color: $white;
+         @extend %hoverTrans;
 
-// CONTACT PAGE TYPOGRAPHY = = = = = = =
+         &.phone {
+            cursor: default;
 
+            &:hover {
+               opacity: 1;
+            }
+         }
 
-
+         &:hover {
+            @extend %hoverFade;
+         }
+      }
+   }
+}
 
 // CONTACT PAGE BREAKPOINTS = = = = = = =
 

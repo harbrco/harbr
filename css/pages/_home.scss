@@ -1,7 +1,29 @@
 .landing-section {
-   background-color: $lightGray;
    position: relative;
    z-index: 99;
+   background-image: url(../img/section-bgs/landing-hero-bg.jpg);
+   @extend %bgCover--center;
+
+   .overlay {
+      height: 100%;
+      display: block;
+      position: absolute;
+
+      &.left-overlay {
+         left: 0;
+         width: 12.5%;
+         background-color: rgba($white, .9);
+      }
+
+      &.right-overlay.h-brand {
+         width: 87.5%;
+         left: 12.5%;
+         background-image: url(../img/landing-h-brand@2x.png);
+         background-position: left center;
+         background-size: 2500px 1500px;
+         background-repeat: repeat-y;
+      }
+   }
 }
 
 

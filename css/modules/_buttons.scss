@@ -14,3 +14,37 @@
       @extend %hoverFade;
    }
 }
+
+.btn {
+   font-size: 16px;
+   line-height: 19px;
+   @extend .sansUpperSpc;
+}
+
+.btn--uline {
+   color: $white;
+   position: relative;
+   display: inline-block;
+   padding-bottom: 7px;
+
+   &:after {
+      content: '';
+      position: relative;
+      bottom: -8px;
+      display: block;
+      margin: 0 auto -4px;
+      height: 2px;
+      width: 100%;
+      background-color: $white;
+      transition: width .5s ease, background-color .5s ease;
+   }
+
+   &:hover {
+      color: $white;
+
+      &:after {
+         width: 0%;
+         background: transparent;
+      }
+   }
+}
