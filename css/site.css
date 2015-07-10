@@ -1088,6 +1088,8 @@ input:focus {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 2%; }
+    .featured-case-study h3.clrPop {
+      color: #61A4EA; }
   .featured-case-study .case-study-title h2 {
     color: #fff;
     font-size: 55px;
