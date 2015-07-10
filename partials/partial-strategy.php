@@ -123,10 +123,36 @@
                   </div>
 
                   <div class="col span_8_of_12">
-                     <div class="featured-case-study card card--sq wow fadeIn" style="" data-wow-delay=".25s">
-                        <h3>Case Study</h3>
-                        <h2>Case Study Title</h2>
+                     <?php
+                     $args = array(
+                        'post_type' => 'case-studies',
+                        'posts_per_page' => 1
+                     );
+                     $caseStudiesQuery = new WP_Query( $args ); ?>
+                     <?php if ( $caseStudiesQuery->have_posts() ) : ?>
+                     <div class="section group twoSq">
+                        <!-- the loop -->
+                        <?php while ( $caseStudiesQuery->have_posts() ) : $caseStudiesQuery->the_post(); ?>
+                        <div class="featured-case-study hoverZoomFade card card--sq wow fadeIn" data-wow-delay=".25s">
+                           <div class="background-image" style="background-image: url(<?php the_field('featured_square') ?>);">
+                           </div>
+                           <div class="inner vAlign vAlign-abs">
+                              <h3 class="clrPop">Case Study</h3>
+
+                              <a href="<?php the_permalink(); ?>" class="case-study-title">
+                                 <h2><?php the_title(); ?></h2>
+                              </a>
+                           </div>
+                        </div>
+                        <?php endwhile; ?>
+                        <!-- end of the loop -->
                      </div>
+                     <?php wp_reset_postdata(); ?>
+                     <?php else: ?>
+                     <div class="no-posts">
+                        <h3>Sorry, there are no posts here.</h3>
+                     </div>
+                     <?php endif; ?>
                   </div>
                </div>
 
