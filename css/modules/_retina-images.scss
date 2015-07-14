@@ -5,15 +5,27 @@
    // Common elements = = = = = = =
 
    .downArrow {
-      background-position-x: -100px;
+      background-position-x: -50px;
+      background-size: 100px 250px;
    }
 
-   .divWave {
-      background-position-x: -100px;
+   .divWave,
+   .menu-links-wrapper .littleLinks .divWave {
+      background-position-x: -50px;
+      background-size: 100px 250px;
    }
 
 
 
    // Page specific = = = = = = =
+
+   // Landing
+   .landing-section .overlay {
+      &.right-overlay.h-brand {
+         background-image: url(../img/landing-h-brand@2x.png);
+         background-size: 2500px 1500px;
+      }
+   }
+
 
 }

@@ -822,6 +822,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/landing-h-brand.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 26320,
+		"inputAbbreviatedPath": "\/img\/landing-h-brand.png",
+		"outputAbbreviatedPath": "\/img\/landing-h-brand.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/landing-h-brand@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,

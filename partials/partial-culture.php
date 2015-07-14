@@ -98,7 +98,7 @@
                         <div class="next-stat next-slide"></div>
                      </div>
 
-                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     <div class="sm-sq card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
                      </div>
                   </div>
                </div>
@@ -122,7 +122,7 @@
                         <div class="next-quote next-slide"></div>
                      </div>
 
-                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
+                     <div class="sm-sq card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('small_square_image'); ?>);" data-wow-delay=".25s">
                      </div>
                   </div>
 
@@ -134,7 +134,7 @@
                      );
                      $caseStudiesQuery = new WP_Query( $args ); ?>
                      <?php if ( $caseStudiesQuery->have_posts() ) : ?>
-                     <div class="section group twoSq">
+                     <div class="featured-case-study-wrapper">
                         <!-- the loop -->
                         <?php while ( $caseStudiesQuery->have_posts() ) : $caseStudiesQuery->the_post(); ?>
                         <div class="featured-case-study hoverZoomFade card card--sq wow fadeIn" data-wow-delay=".25s">
