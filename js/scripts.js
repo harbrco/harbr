@@ -46,7 +46,10 @@ new WOW().init();
 
 
     // Vertical Align Elements
-    $('.vAlign').fadeIn(50).css('visibility', 'visible'); // fixes the css "hidden" style for the flash before complete page load (.vAlign in _common.scss)
+    var vAlignShow = function() {
+      $('.vAlign').fadeIn(50).css('visibility', 'visible'); // fixes the css "hidden" style for the flash before complete page load (.vAlign in _common.scss)
+    };
+    vAlignShow();
     var vAlignFun = function() {
       (function ($) {
       $.fn.vAlign = function() {
@@ -61,6 +64,11 @@ new WOW().init();
       })(jQuery);
       $('.vAlign').parent().vAlign();
     };
+    vAlignFun();
+
+    $(window).resize(function() {
+      vAlignFun();
+    }).resize();
 
 
     // Backpage (non-FullPage.js) full screen hero
@@ -75,9 +83,16 @@ new WOW().init();
     };
     bigCTA();
 
+    // Backpage "next-page-cta" full screen box
+    var fullSection = function(){
+      $('.full-section').height($(window).height());
+    };
+    fullSection();
+
     $(window).resize(function() {
       bigHero();
       bigCTA();
+      fullSection();
     }).resize();
 
 
@@ -344,12 +359,6 @@ new WOW().init();
       $(document).ready(function() {
         $('.menu-links-wrapper').css({'top': menuHeight + 'px'});
       });
-
-      // scroll down to next section
-      $('#down').click(function(e){
-        e.preventDefault();
-        $.fn.fullpage.moveSectionDown();
-      });
     }
 
 
@@ -361,12 +370,46 @@ new WOW().init();
 
 
 
-    // Vertical Align Elements (Defined as variable above fullPage.js)
-    vAlignFun();
+    // Add 'darkHeader' class to proper pages
+    if ( $('body').hasClass('project-planner') ) {
+      $('.sticky-header-wrapper').addClass('darkHeader');
+    }
 
-    $(window).resize(function() {
-      vAlignFun();
-    });
+
+    // Project Planner page
+    if ( $('body').hasClass('project-planner') ) {
+
+      // active form section actions
+      $('.projectPlannerForm').addClass('full-section');
+      $('.gform_body').addClass('vAlign');
+
+      setTimeout(function() {
+        fullSection();
+        vAlignFun();
+      }, 10);
+
+      // remove active form page clases from #main wrapper
+      var removeClasses = function(){
+        $('#main').removeClass('form-step-1 form-step-2 form-step-3');
+      };
+
+      $(document).bind('gform_post_render', function(){
+        vAlignShow();
+        vAlignFun();
+        fullSection();
+
+        if ( $('#gf_step_1_1').hasClass('gf_step_active') ) {
+          removeClasses();
+          $('#main').addClass('form-step-1');
+        } else if ( $('#gf_step_1_2').hasClass('gf_step_active') ) {
+          removeClasses();
+          $('#main').addClass('form-step-2');
+        } else if ( $('#gf_step_1_3').hasClass('gf_step_active') ) {
+          removeClasses();
+          $('#main').addClass('form-step-3');
+        }
+      });
+    }
 
 
 

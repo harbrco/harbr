@@ -8,8 +8,10 @@
       <?php get_template_part( 'partials/partial', 'strategy' ); ?>
 
    <?php } /* CONTACT */ elseif ( is_page( 'contact' ) ) { ?>
-      <?php get_template_part( 'partials/partial', 'contact' ); ?>
+      <!-- CONTACT is populated only with "hero" content located in "header.php" -->
 
+   <?php } /* PROJECT PLANNER */ elseif ( is_page( 'project-planner' ) ) { ?>
+      <?php get_template_part( 'partials/partial', 'project-planner' ); ?>
 
    <?php } /* GENERIC PAGES */ else { ?>
 

@@ -36,6 +36,13 @@
 }
 
 
+.darkOverlay {
+   @extend %absFill;
+   background-color: rgba($darkGray, .93);
+   z-index: 1;
+}
+
+
 .hoverZoomFade {
    background-color: $darkGray;
    position: relative;

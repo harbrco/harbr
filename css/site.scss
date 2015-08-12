@@ -6,6 +6,7 @@
 @import 'modules/_vars.scss';
 @import 'modules/_grid.scss';
 @import 'modules/_misc.scss';
+@import 'modules/_forms.scss';
 
 //----------------------------------*\
 // SCSS MIXINS
@@ -37,6 +38,7 @@
 
 @import 'pages/_home.scss';
 @import 'pages/_contact.scss';
+@import 'pages/_project-planner.scss';
 @import 'pages/_culture-strategy.scss';
 @import 'pages/_blog.scss';
 @import 'pages/_common.scss';

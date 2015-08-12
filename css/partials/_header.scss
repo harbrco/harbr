@@ -53,11 +53,11 @@
 
 .sticky-header-wrapper {
    @extend .wrapper;
+   z-index: 3;
 
    .sticky-header {
       width: 100%;
       background-color: rgba($white, .97);
-      z-index: 3;
       opacity: 0;
       @extend %hoverTrans;
 
@@ -68,6 +68,22 @@
       .menu-button,
       .logo {
          color: $darkGray;
+      }
+   }
+
+   &.darkHeader {
+      background-color: transparent;
+
+      .sticky-header {
+         background-color: transparent;
+
+         .menu-button {
+            color: $white;
+         }
+
+         .logo {
+            color: $white;
+         }
       }
    }
 }

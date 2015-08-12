@@ -1,0 +1,66 @@
+// GRAVITY FORMS = = = = = = =
+.gform_wrapper {
+   display: block !important;
+   max-width: 100% !important;
+   margin: 0 !important;
+
+   .gform_body,
+   .gform_body ul {
+      @extend %clear;
+   }
+
+   ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+         margin-bottom: 20px;
+
+         input,
+         input[type=text],
+         input[type=url],
+         input[type=email],
+         input[type=tel],
+         input[type=number],
+         input[type=password],
+         textarea, {
+            color: $medGray;
+            font-size: 20px;
+            line-height: 20px;
+            font-family: $sans;
+            border: 2px solid $medGray;
+            padding: 8px;
+            @extend %hoverTrans;
+
+            &:hover {
+               border-color: darken($medGray, 20%);
+            }
+
+            &:focus {
+               outline: none;
+               border-color: $primary;
+            }
+         }
+         textarea {
+            width: 100%;
+            padding: 12px 17px;
+         }
+      }
+   }
+
+   label.gfield_label {
+      //display: none;
+   }
+
+   .gfield.hideLabel {
+      .gfield_label {
+         display: none;
+      }
+   }
+
+   .gform_body .ginput_complex label {
+      margin: 0 0 10px;
+   }
+
+}
