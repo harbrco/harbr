@@ -1,65 +1,116 @@
 <?php get_header(); ?>
-	
-	<!-- section -->
-	<section role="main">
-	
-	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
-	
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
-			
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
-			
-			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' )); ?></span>
-			<!-- /post details -->
-			
-			<?php the_content(); // Dynamic Content ?>
-			
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-			
-			<p><?php _e( 'Categorized in: ', 'html5blank' ); the_category(', '); // Separated by commas ?></p>
-			
-			<p><?php _e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-			
-			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-			
-			<?php comments_template(); ?>
-			
-		</article>
-		<!-- /article -->
-		
-	<?php endwhile; ?>
-	
-	<?php else: ?>
-	
-		<!-- article -->
-		<article>
-			
-			<h1><?php _e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-			
-		</article>
-		<!-- /article -->
-	
-	<?php endif; ?>
-	
-	</section>
-	<!-- /section -->
-	
-<?php get_sidebar(); ?>
+
+   <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+
+      <!-- article -->
+      <article id="post-<?php the_ID(); ?>" <?php post_class('popSecondary'); ?>>
+
+         <div class="section-heading">
+            <h3 class="clrPop"><?php the_category(); ?></h3>
+            <span class="divWave"></span>
+            <h1><?php the_title(); ?></h1>
+            <div class="post-meta">
+               <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+            </div>
+         </div>
+
+
+         <!-- FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
+         <?php if( get_field('flexible_layouts') ): ?>
+         <div class="isContentArea">
+            <?php while ( has_sub_field('flexible_layouts') ) : ?>
+               <?php if( get_row_layout() == 'left_content_right_image' ): ?>
+                  <div class="left-content-right-image wrapper flexWrap isSecondary section group">
+                     <div class="left-content boxPadding col span_6_of_12">
+                        <div class="inner vAlign">
+                           <h3><?php the_sub_field('left_content_headline'); ?></h3>
+                           <p><?php the_sub_field('left_content_text'); ?></p>
+                        </div>
+                     </div>
+
+                     <div class="right-image col span_6_of_12">
+                        <div class="inner" style="background-image: url(<?php the_sub_field('right_image'); ?>);">
+                        </div>
+                     </div>
+                  </div>
+
+               <?php elseif( get_row_layout() == 'quote_block_section' ): ?>
+                  <div class="quote-block-section wrapper flexWrap isSecondary section group">
+                     <div class="left-content boxPadding col span_6_of_12">
+                        <div class="inner vAlign">
+                           <h4 class="quote-text">“<?php the_sub_field('quote_text'); ?>”</h4>
+                           <p class="quote-author-name">– <?php the_sub_field('quote_author_name'); ?></p>
+                           <p class="quote-author-title"><?php the_sub_field('quote_author_title'); ?></p>
+                        </div>
+                     </div>
+
+                     <div class="right-image col span_6_of_12">
+                        <div class="inner" style="background-image: url(<?php the_sub_field('quote_image'); ?>);">
+                        </div>
+                     </div>
+                  </div>
+
+               <?php elseif( get_row_layout() == 'single_column_content' ): ?>
+                  <div class="single-column-content wrapper well isWhite">
+                     <div class="container">
+                        <div class="inner">
+                           <h3><?php the_sub_field('single_col_headline'); ?></h3>
+                           <?php the_sub_field('single_col_text'); ?>
+                        </div>
+                     </div>
+                  </div>
+
+               <?php elseif( get_row_layout() == 'full_width_image_video' ): ?>
+                  <div class="full-width-image-video wrapper isDarkGray">
+                     <?php if(get_sub_field('video_section')) { ?>
+                        <a href="<?php the_sub_field('video_url'); ?>" class="video-play-btn fancybox-video" data-width="1280" data-height="720">
+                           <i class="video-play-icon"></i>
+                        </a>
+                        <div class="video-overlay overlay50">
+                        </div>
+                     <?php } ?>
+                     <img src="<?php the_sub_field('full_width_image'); ?>" />
+                  </div>
+
+               <?php endif; ?>
+            <?php endwhile; ?>
+
+         </div>
+         <?php else : ?>
+            <!-- no layouts found -->
+         <?php endif; ?>
+         <!-- ENDS FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
+
+
+         <!-- Social Share Modal -->
+         <?php get_template_part( 'partials/partial', 'share-modal' ); ?>
+
+      </article>
+      <!-- /article -->
+
+   <?php endwhile; ?>
+   <?php endif; ?>
+
+
+   <?php $prevPost = get_previous_post(); ?>
+   <?php $prevPostID = $prevPost->ID; ?>
+   <?php $category = get_the_category( $prevPostID ); ?>
+   <?php if($prevPost) { ?>
+
+   <article class="prev-page-cta big-cta isDarkGray popSecondary" style="background-image: url(<?php the_field('hero_background_image', $prevPostID) ?>);">
+      <div class="medDarkOverlay">
+      </div>
+      <div class="section-heading vAlign">
+         <h3 class="clrPop"><?php echo $category[0]->cat_name; ?></h3>
+         <span class="divWave"></span>
+         <h1><a href="<?php echo get_permalink( $prevPost->ID ); ?>"><?php echo $prevPost->post_title; ?></a></h1>
+         <div class="post-meta">
+            <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+         </div>
+
+         <a href="<?php echo get_permalink( $prevPost->ID ); ?>" class="btn btn--uline">View Story</a>
+      </div>
+   </article>
+   <?php } ?>
 
 <?php get_footer(); ?>

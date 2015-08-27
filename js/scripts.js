@@ -4,6 +4,9 @@
 // @codekit-prepend "libs/fastclick.js"
 // @codekit-prepend "libs/jquery.easings.min.js"
 // @codekit-prepend "libs/jquery.slimscroll.min.js"
+// @codekit-prepend "libs/jquery.fancybox.pack.js"
+// @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-buttons.js"
+// @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-media.js"
 // @codekit-prepend "libs/wow.min.js"
 // @codekit-prepend "libs/jquery.fullPage.js"
 
@@ -85,7 +88,7 @@ new WOW().init();
 
     // Backpage "next-page-cta" full screen box
     var fullSection = function(){
-      $('.full-section').height($(window).height());
+      $('.full-section').css("min-height", $(window).height());
     };
     fullSection();
 
@@ -262,7 +265,7 @@ new WOW().init();
         }
       });
 
-      if (!$('body').hasClass('contact')) {
+      if (!$('body').hasClass('contact') && !$('body').hasClass('blog') && !$('body').hasClass('single')) {
         var stickyWrap = $('.sticky-header-wrapper').one();
         var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
         var lastScrollTop = 0;
@@ -375,28 +378,53 @@ new WOW().init();
       $('.sticky-header-wrapper').addClass('darkHeader');
     }
 
+    // remove active form page clases from #main wrapper
+    var removeClasses = function(){
+      $('#main').removeClass('form-step-1 form-step-2 form-step-3');
+    };
+
 
     // Project Planner page
     if ( $('body').hasClass('project-planner') ) {
-
-      // active form section actions
-      $('.projectPlannerForm').addClass('full-section');
-      $('.gform_body').addClass('vAlign');
-
-      setTimeout(function() {
-        fullSection();
-        vAlignFun();
-      }, 10);
-
-      // remove active form page clases from #main wrapper
-      var removeClasses = function(){
-        $('#main').removeClass('form-step-1 form-step-2 form-step-3');
-      };
+      /* jshint ignore:start */
+      $('#field_1_1').waypoint(function(direction) {
+        // Add initial focus state to "name" field
+        $('#input_1_1').focus();
+        this.destroy();
+      }, {
+        offset: 'bottom-in-view'
+      });
+      /* jshint ignore:end */
 
       $(document).bind('gform_post_render', function(){
+        // active form section actions
+        $('.projectPlannerForm_wrapper').addClass('full-section');
+        $('.projectPlannerForm').addClass('full-section');
+        $('.gf_page_steps').wrap("<div class='gf_page_steps_wrapper'></div>");
+        $('.gform_page_footer .button').after("<div class='button-underline'></div>");
+
+        $('.gform_body').waypoint({
+          handler: function(direction) {
+            if (direction === 'down') {
+              $('.gf_page_steps').addClass('visible');
+            } else {
+              $('.gf_page_steps').removeClass('visible');
+            }
+          },
+          offset: '60%'
+        });
+
+        if ($(window).width() > 840) {
+          $('.gform_body').addClass('vAlign');
+        }
+
         vAlignShow();
-        vAlignFun();
         fullSection();
+
+        setTimeout(function() {
+          fullSection();
+          vAlignFun();
+        }, 10);
 
         if ( $('#gf_step_1_1').hasClass('gf_step_active') ) {
           removeClasses();
@@ -408,9 +436,41 @@ new WOW().init();
           removeClasses();
           $('#main').addClass('form-step-3');
         }
-      });
-    }
 
+        // Expanding textarea - - - - - - -
+        // Add special markup:
+        $('.hasTextarea .ginput_container').prepend("<pre><span></span><br></pre>").wrapInner("<div class='expandingArea'></div>");
+
+        // Expanding textarea function:
+        $(function() {
+          $('div.expandingArea').each(function() {
+            var area = $('textarea', $(this));
+            var span = $('span', $(this));
+            area.bind('input', function() { span.text(area.val()); });
+            span.text(area.val());
+            $(this).addClass('active');
+          });
+        });
+
+      }); // gform_post_render
+
+      // Confirmation message
+      /* jshint ignore:start */
+      $(document).bind('gform_confirmation_loaded', function(event, formId){
+        removeClasses();
+        $('#main').addClass('form-step-4');
+
+        $('.gforms_confirmation_message').addClass('full-section');
+        $('.gform_confirmation_wrapper').addClass('full-section');
+        fullSection();
+
+        $('.gform_confirmation_message').addClass('vAlign');
+        vAlignShow();
+        vAlignFun();
+      });
+      /* jshint ignore:end */
+
+    } // if body has class 'project-planner'
 
 
 
@@ -429,6 +489,40 @@ new WOW().init();
         }
       });
     });
+
+
+
+    // Share modal popups
+    $('.post-header, .modal').on('click', '.modal-toggle', function(e) {
+      e.preventDefault();
+      $('.modal').toggleClass('is-visible');
+    });
+
+
+
+    // Fancybox - Modal popup
+      // video modal
+      var viewportWidth = $(window).width();
+      if (viewportWidth >= 450){
+
+        $(".fancybox-video").fancybox({
+          width: "100%",
+          height: "85%",
+          type:'iframe',
+          helpers: {
+            overlay: {
+              locked: false
+            },
+            media :{}
+          },
+          afterShow: function() {
+            $('.fancybox-close').addClass('close-btn').prepend("<i class='close-icon'></i>");
+          }
+        });
+
+      } else {
+        //mobile video action - vimeo embed currently not supported on mobile
+      }
 
 
 

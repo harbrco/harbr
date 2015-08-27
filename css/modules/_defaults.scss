@@ -78,11 +78,43 @@ input:focus {
    position: relative;
 }
 
+.narrowContent {
+   max-width: 90%;
+   margin: 0 auto;
+}
+
 .snap-section {
    @extend %clear;
    width: 100%;
    position: relative;
 }
+
+
+// Fancybox modal popup
+.fancybox-close {
+   position: fixed;
+   top: 5px;
+   right: 5px;
+   width: 36px;
+   height: 36px;
+   cursor: pointer;
+   z-index: 8040;
+   background: transparent;
+}
+.fancybox-overlay {
+   background-color: rgba($black, .9);
+   background-image: none;
+}
+.fancybox-skin {
+   position: relative;
+   background: transparent;
+   color: #444;
+   text-shadow: none;
+}
+.fancybox-opened .fancybox-skin {
+   box-shadow: none;
+}
+
 
 // Reset responsivegridsystem
 .col {
@@ -114,7 +146,7 @@ input:focus {
    }
 }
 
-// Scale
+// Scaling pagination dots
 .bx-wrapper {
    .bx-controls {
       .bx-pager.bx-default-pager {

@@ -1,15 +1,658 @@
-// add blog specific styles here:
+.blog {
+   background-color: $darkGray;
+
+   .hero-text {
+      max-width: 1000px;
+
+      a {
+         color: $white;
+         @extend %hoverTrans;
+
+         &:hover {
+            @extend %hoverFade;
+         }
+      }
+
+      .post-meta {
+         font-size: 19px;
+         line-height: 26px;
+         margin-top: 20px;
+
+         span {
+            vertical-align: bottom;
+
+            &.clrPop {
+               display: inline-block;
+               vertical-align: top;
+               margin-top: -2px;
+            }
+         }
+      }
+
+      .btn {
+         margin-top: 5%;
+      }
+   }
+
+   .post-feed-wrapper {
+      article {
+         overflow: hidden;
+
+         &:nth-child(even) {
+            display: flex;
+            flex-direction: row-reverse;
+
+            &:before,
+            &:after {
+               display: none;
+            }
+         }
+
+         &.category-industry {
+
+         }
+
+         &.category-wallpapers {
+
+         }
+      }
+   }
+
+   .post-main {
+      text-align: center;
+      position: relative;
+      padding-bottom: 100%;
+
+      .inner {
+         padding: 0 4%;
+         width: 100%;
+      }
+
+      h3 {
+         @extend .sansUpperSpc;
+         font-size: 16px;
+         line-height: 19px;
+         margin-bottom: 2%;
+
+         &.clrPop {
+            color: $secondary;
+         }
+      }
+
+      .post-title {
+         h2 {
+            color: $white;
+            font-size: 55px;
+            line-height: 64px;
+         }
+      }
+
+      .post-meta {
+         color: $white;
+         font-size: 19px;
+         line-height: 26px;
+         margin-top: 20px;
+         text-align: center;
+
+         span {
+            vertical-align: bottom;
+
+            &.clrPop {
+               display: inline-block;
+               vertical-align: top;
+               margin-top: -2px;
+            }
+         }
+      }
+
+      &.hoverZoomFade {
+         &:before {
+            background-color: rgba($darkDkGray, .65);
+         }
+         &.linkHovered {
+            &:before {
+               background-color: rgba($darkDkGray, .8);
+            }
+         }
+      }
+   }
+
+   .two-squares {
+      .text-square,
+      .image-square {
+         width: 100%;
+         display: block;
+         padding-bottom: 100%;
+      }
+
+      .text-square {
+         position: relative;
+
+         .inner {
+            display: block;
+            width: 100%;
+         }
+
+         .pull-quote {
+            font-size: 30px;
+            line-height: 36px;
+            @extend %serifIt;
+            padding: 0 7% 0 10%;
+            text-indent: -0.4em;
+         }
+
+         .design-by {
+            color: $secondaryDk;
+            font-size: 18px;
+            line-height: 24px;
+            @extend %sans;
+            text-transform: uppercase;
+            padding: 0 7%;
+            text-align: center;
+            margin-bottom: 4px;
+         }
+
+         .designer-info {
+            font-size: 24px;
+            line-height: 28px;
+            @extend %sans;
+            padding: 0 7%;
+            text-align: center;
+         }
+      }
+
+      .image-square {
+         @extend %bgCover--center;
+      }
+   }
+}
 
 
 
+// Single Post -------
+.single {
+   .section-heading {
+      h3 {
+         @extend %sans;
+         font-size: 16px;
+         line-height: 19px;
+         text-transform: uppercase;
+         @include letSpc(2px);
+      }
 
-// BLOG PAGE TYPOGRAPHY = = = = = = =
+      h1 {
+         font-size: 70px;
+         line-height: 78px;
+         @include letSpc(5px);
+         @extend %serif;
+         text-transform: none;
+      }
+   }
 
+   .close-btn {
+      float: right;
+   }
 
+   .section-heading {
+      margin-top: 6%;
+      margin-bottom: 10%;
+      max-width: 860px;
 
-// Single Post Typography -------
+      .post-meta {
+         font-size: 19px;
+         line-height: 26px;
+         margin-top: 20px;
+
+         span {
+            vertical-align: bottom;
+
+            &.clrPop {
+               display: inline-block;
+               vertical-align: top;
+               margin-top: -2px;
+            }
+         }
+      }
+   }
+
+   .boxPadding {
+      padding-right: 7%;
+      padding-left: 7%;
+   }
+
+   .isContentArea {
+      h3 {
+         @extend %sans;
+         font-size: 35px;
+         line-height: 40px;
+         margin-bottom: 22px;
+      }
+
+      p {
+         font-size: 20px;
+         line-height: 34px;
+      }
+   }
+
+   // flexible content sections
+   .left-content-right-image,
+   .quote-block-section {
+      .left-content {
+         h3 {
+            color: $white;
+         }
+
+         p {
+            color: $secondaryDk;
+         }
+      }
+
+      .right-image {
+         .inner {
+            padding-bottom: 100%;
+            @extend %bgCover--center;
+         }
+      }
+   }
+
+   .quote-block-section {
+      .left-content {
+         h4 {
+            @extend %serifIt;
+            font-size: 42px;
+            line-height: 57px;
+            margin-bottom: 22px;
+         }
+
+         p {
+            @extend %sans;
+            color: $secondaryDk;
+
+            &.quote-author-name {
+               font-size: 18px;
+               line-height: 22px;
+               text-transform: uppercase;
+               margin-bottom: 10px;
+            }
+
+            &.quote-author-title {
+               font-size: 14px;
+               line-height: 18px;
+            }
+         }
+      }
+
+      .right-image {
+         .inner {
+            padding-bottom: 100%;
+            @extend %bgCover--center;
+         }
+      }
+   }
+
+   .single-column-content {
+      .container {
+         width: 86%;
+         margin-left: 7%;
+         margin-right: 7%;
+
+         .inner {
+            max-width: 800px;
+         }
+      }
+
+      h3 {
+         color: $secondary;
+      }
+
+      p {
+         color: $medLtGray;
+      }
+   }
+
+   .full-width-image-video {
+      .video-play-btn {
+         position: absolute;
+         right: 30px;
+         bottom: 30px;
+      }
+   }
+
+   .prev-page-cta {
+      position: relative;
+      @extend %bgCover--center;
+
+      .section-heading {
+         position: relative;
+         z-index: 2;
+         margin-top: 0;
+         margin-bottom: 0;
+
+         h1 a {
+            color: $white;
+            @extend %hoverTrans;
+
+            &:hover {
+               @extend %hoverFade;
+            }
+         }
+      }
+
+      .btn--uline {
+         margin-top: 50px;
+      }
+   }
+
+   .modal {
+      @extend %bgCover--center;
+
+      .share-modal {
+         text-align: center;
+         color: $white;
+
+         h3 {
+            @extend %white50;
+            @extend %sans;
+            text-transform: uppercase;
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 10px;
+         }
+
+         h1 {
+            font-size: 74px;
+            line-height: 84px;
+            @include letSpc(1px);
+         }
+
+         .social-links {
+            margin-top: 7%;
+            overflow: visible;
+            display: block;
+
+            li {
+               height: 32px;
+               display: inline-block;
+               margin: 0 20px 20px;
+            }
+         }
+      }
+   }
+}
+
 
 
 
 // BLOG PAGE BREAKPOINTS = = = = = = =
+@media only screen and (max-width:1024px) {
+   .single {
+      .section-heading,
+      .modal .share-modal {
+         h1 {
+            font-size: 60px;
+            line-height: 68px;
+         }
+      }
 
+      .boxPadding {
+         padding-right: 5%;
+         padding-left: 5%;
+      }
+
+      .left-content-right-image {
+         .left-content {
+            h3 {
+               font-size: 32px;
+               line-height: 37px;
+               margin-bottom: 14px;
+            }
+
+            p {
+               font-size: 18px;
+               line-height: 31px;
+            }
+         }
+      }
+
+      .quote-block-section {
+         .left-content {
+            h4 {
+               font-size: 36px;
+               line-height: 52px;
+               margin-bottom: 20px;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:860px) {
+   .single {
+      .isContentArea {
+         h3 {
+            font-size: 32px;
+            line-height: 37px;
+            margin-bottom: 20px;
+         }
+
+         p {
+            font-size: 18px;
+            line-height: 32px;
+            margin-bottom: 20px;
+
+            &:last-child {
+               margin-bottom: 0;
+            }
+         }
+      }
+
+      .left-content-right-image {
+         .left-content {
+            h3 {
+               font-size: 29px;
+               line-height: 34px;
+               margin-bottom: 10px;
+            }
+
+            p {
+               font-size: 18px;
+               line-height: 28px;
+            }
+         }
+      }
+
+      .quote-block-section {
+         .left-content {
+            h4 {
+               font-size: 32px;
+               line-height: 48px;
+               margin-bottom: 18px;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:768px) {
+   .single {
+      .section-heading,
+      .modal .share-modal {
+         h1 {
+            font-size: 50px;
+            line-height: 58px;
+            @include letSpc(4px);
+         }
+
+         .social-links {
+            li {
+               margin: 0 14px 20px;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:730px) {
+   .single {
+      .boxPadding {
+         padding: 5% 7%;
+      }
+
+      .isContentArea {
+         h3 {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 20px;
+         }
+
+         p {
+            font-size: 17px;
+            line-height: 30px;
+            margin-bottom: 18px;
+         }
+      }
+
+      .left-content-right-image,
+      .quote-block-section {
+         display: block;
+
+         .left-content {
+            width: 100%;
+
+            .inner {
+               position: static;
+            }
+         }
+
+         .right-image {
+            width: 100%;
+
+            .inner {
+               padding-bottom: 100%;
+            }
+         }
+      }
+
+      .quote-block-section {
+         .left-content {
+            p {
+               &.quote-author-name {
+                  margin-bottom: 6px;
+               }
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:580px) {
+   .single {
+      .isContentArea {
+         h3 {
+            font-size: 24px;
+            line-height: 30px;
+            margin-bottom: 16px;
+         }
+
+         p {
+            font-size: 16px;
+            line-height: 28px;
+            margin-bottom: 16px;
+         }
+      }
+
+      .section-heading,
+      .modal .share-modal {
+         h1 {
+            font-size: 40px;
+            line-height: 48px;
+            @include letSpc(3px);
+         }
+
+         .social-links {
+            li a {
+               font-size: 15px;
+            }
+         }
+      }
+
+      .section-heading {
+         .post-meta {
+            font-size: 17px;
+            line-height: 24px;
+         }
+      }
+
+      .quote-block-section {
+         .left-content {
+            h4 {
+               font-size: 28px;
+               line-height: 42px;
+               margin-bottom: 12px;
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:460px) {
+   .blog {
+      .hero-text {
+         .btn {
+            margin-top: 7%;
+         }
+      }
+   }
+
+   .single {
+      .section-heading,
+      .modal .share-modal {
+         h3 {
+            font-size: 15px;
+            line-height: 18px;
+         }
+
+         h1 {
+            font-size: 32px;
+            line-height: 40px;
+            @include letSpc(3px);
+         }
+
+         .social-links {
+            li {
+               margin: 0 10px 12px;
+
+               a {
+                  font-size: 14px;
+               }
+            }
+         }
+      }
+   }
+}
+@media only screen and (max-width:400px) {
+   .blog {
+      .hero-text {
+         .post-meta {
+            font-size: 17px;
+            line-height: 24px;
+         }
+
+         .btn {
+            margin-top: 8%;
+         }
+      }
+   }
+
+   .single {
+      .section-heading,
+      .modal .share-modal {
+         h1 {
+            font-size: 28px;
+            line-height: 34px;
+            @include letSpc(2px);
+         }
+
+         .post-meta {
+            font-size: 15px;
+            line-height: 22px;
+         }
+      }
+   }
+}

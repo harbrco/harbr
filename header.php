@@ -58,6 +58,15 @@
                background-position-y: -220px;
             }
          </style>
+      <?php } /* blog/collective internal post */ elseif(is_single()) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #78B97F; /* green */
+            }
+            .js div#preloader .h-brand {
+               background-position-y: -220px;
+            }
+         </style>
       <?php } elseif(is_page('strategy')) { ?>
          <style>
             .js div#preloader {
@@ -111,7 +120,7 @@
          </div>
       </div>
 
-   <?php if(!is_page('home')) { ?>
+   <?php if(!is_page('home') && !is_single() && !is_home()) { ?>
       <div class="menu">
          <?php get_template_part( 'partials/partial', 'menu' ); ?>
       </div>
@@ -128,24 +137,21 @@
                <span class="divWave"></span>
                <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
             </div>
+
          <?php } elseif(is_page('strategy')) { ?>
             <div class="hero-text section-heading vAlign">
                <h1 class="clrPop">Strategy</h1>
                <span class="divWave"></span>
                <h3>Jacks of All Trades <br /><span class="italic">Experts</span> In All.</h3>
             </div>
-         <?php } /* blog/collective */ elseif(is_home()) { ?>
-            <div class="hero-text section-heading vAlign">
-               <h1 class="clrPop">Blog Category</h1>
-               <span class="divWave"></span>
-               <h3>The Post Title <br /><span class="italic">Will</span> Go Right Here.</h3>
-            </div>
+
          <?php } elseif(is_page('project-planner')) { ?>
             <div class="hero-text section-heading vAlign">
                <h1 class="clrPop">Project Planner</h1>
                <span class="divWave"></span>
                <h3>Let's Create <br />Something <span class="italic">Great</span>.</h3>
             </div>
+
          <?php } elseif(is_page('contact')) { ?>
             <div class="hero-text section-heading vAlign">
                <h1 class="clrPop">Contact</h1>
@@ -165,11 +171,62 @@
 
 
       <!-- Sticky Header Bar -->
-      <?php if(!is_page('contact')) { ?>
+      <?php if(!is_page('contact') && !is_home()) { ?>
       <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
          <div class="sticky-header">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div>
       </div><!-- /.header-wrapper -->
       <?php } ?>
+
+
+   <!-- Blog page -->
+   <?php } elseif(is_home()) { ?>
+      <div class="menu">
+         <?php get_template_part( 'partials/partial', 'menu' ); ?>
+      </div>
+
+      <div class="hero section isDarkGray" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
+         <div class="medDarkOverlay">
+         </div>
+         <div class="hero-header header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="hero-text section-heading vAlign">
+         <?php $latestPost = new WP_Query( 'posts_per_page=1' );
+            if ( $latestPost->have_posts() ) : while ( $latestPost->have_posts() ) : $latestPost->the_post(); ?>
+               <div class="hero-text section-heading vAlign">
+                  <h1 class="clrPop"><?php the_category(); ?></h1>
+                  <span class="divWave"></span>
+                  <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
+                  <div class="post-meta">
+                     <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+                  </div>
+                  <a href="<?php the_permalink(); ?>" class="btn btn--uline" title="<?php the_title(); ?>">View Story</a>
+               </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+         <?php endif; ?>
+         </div>
+
+         <!-- Scroll Down Button -->
+         <?php if(!is_page('contact')) { ?>
+            <a href="#scrollmain" class="downArrow wow fadeInUp" data-wow-delay=".5s"></a>
+         <?php } ?>
+      </div>
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+
+
+   <!-- Single Post page -->
+   <?php } elseif(is_single()) { ?>
+      <div class="header-wrapper">
+         <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
+      </div><!-- /.header-wrapper -->
    <?php } ?>

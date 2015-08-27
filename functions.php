@@ -43,6 +43,22 @@ if (function_exists('add_theme_support'))
    Functions
 \*------------------------------------*/
 
+
+// Gravity Forms - custom AJAX loading spinner
+add_filter( 'gform_ajax_spinner_url', 'tgm_io_custom_gforms_spinner' );
+/**
+ * Changes the default Gravity Forms AJAX spinner.
+ *
+ * @since 1.0.0
+ *
+ * @param string $src  The default spinner URL.
+ * @return string $src The new spinner URL.
+ */
+function tgm_io_custom_gforms_spinner( $src ) {
+   return get_template_directory_uri() . '/img/icons/loading.gif';
+}
+
+
 // HTML5 Blank navigation
 function html5blank_nav()
 {

@@ -8,11 +8,14 @@ $quaternary: #F7D974;      // Quaternary is Yellow
 
 
 $lightGray: #EEEEEE;
+$medLtGray: #8b8b8b;
 $medGray: #777777;
 $darkGray: #292728;
 $darkDkGray: #111011;
 
 $white: #fff;
+%white50 { color: rgba($white, .5); }
+
 $black: #000;
 
 $test: #62e920;      // Test is a bright green just for testing purposes

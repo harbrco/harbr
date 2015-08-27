@@ -13,9 +13,13 @@
       list-style: none;
       padding: 0;
       margin: 0;
+      font-size: 0;
 
       li {
+         font-size: 17px;
+         margin-top: 0;
          margin-bottom: 20px;
+         display: inline-block;
 
          input,
          input[type=text],
@@ -25,16 +29,21 @@
          input[type=number],
          input[type=password],
          textarea, {
-            color: $medGray;
-            font-size: 20px;
-            line-height: 20px;
+            width: 100% !important;
+            color: $white;
+            font-size: 17px;
+            line-height: 22px;
             font-family: $sans;
-            border: 2px solid $medGray;
-            padding: 8px;
+            border-radius: 0;
+            border: none;
+            border-bottom: 2px solid rgba($white, .5);
+            padding: 6px 0;
+            background-color: transparent;
+            text-transform: uppercase;
             @extend %hoverTrans;
 
             &:hover {
-               border-color: darken($medGray, 20%);
+               border-color: rgba($white, .9);
             }
 
             &:focus {
@@ -43,14 +52,132 @@
             }
          }
          textarea {
-            width: 100%;
+            width: 100% !important;
             padding: 12px 17px;
+         }
+
+
+         &.gfield_html {
+            display: block;
+            max-width: 100%;
+         }
+
+
+         // custom radio/checkboxes
+         .gfield_checkbox,
+         .gfield_radio {
+            li {
+               display: block;
+               @extend %sans;
+               text-transform: uppercase;
+               margin-bottom: 20px;
+
+               &:hover {
+                  input[type=checkbox]:not(old) + label:before,
+                  input[type=radio   ]:not(old) + label:before{
+                     border-color: $white;
+                  }
+
+                  input[type=checkbox]:not(old):checked + label:before,
+                  input[type=radio   ]:not(old):checked + label:before {
+                     border-color: $quaternary;
+                  }
+               }
+
+               label {
+                  margin-left: 0;
+               }
+            }
+         }
+
+         input[type=checkbox]:not(old),
+         input[type=radio   ]:not(old){
+            width     : 2em;
+            margin    : 0 0 0 -20px !important;
+            padding   : 0;
+            font-size : 1em;
+            opacity   : 0;
+
+            &:focus + label{
+               &:before{
+                  border-color: $white;
+               }
+
+               input[type=checkbox]:not(old):checked + label:before,
+               input[type=radio   ]:not(old):checked + label:before {
+                  border-color: $quaternary;
+               }
+            }
+         }
+
+         input[type=checkbox]:not(old) + label,
+         input[type=radio   ]:not(old) + label{
+            display      : inline-block;
+            line-height  : 1.5em;
+            font-weight: 400 !important;
+            @extend %hoverTrans;
+         }
+         input[type=checkbox]:not(old):checked + label,
+         input[type=radio   ]:not(old):checked + label {
+            font-weight: 400 !important;
+         }
+
+         input[type=checkbox]:not(old) + label:before,
+         input[type=radio   ]:not(old) + label:before{
+            content         : '';
+            display          : inline-block;
+            width            : 20px;
+            height           : 20px;
+            margin           : 0 12px 0 0;
+            border           : 2px solid rgba($white, .5);
+            border-radius    : 50em;
+            background-color : transparent;
+            vertical-align   : bottom;
+            @extend %hoverTrans;
+         }
+
+         input[type=checkbox]:not(old):checked + label,
+         input[type=radio   ]:not(old):checked + label {
+            color: $quaternary;
+         }
+
+         input[type=checkbox]:not(old):checked + label:before,
+         input[type=radio   ]:not(old):checked + label:before {
+            border-color: $quaternary;
+            background-color: $quaternary;
          }
       }
    }
 
-   label.gfield_label {
-      //display: none;
+   // grid layouts
+   form .top_label {
+      li.gfield.gf_left_third {
+         width: 29.33% !important;
+         margin-left: 0 !important;
+         margin-bottom: 5% !important;
+      }
+      li.gfield.gf_middle_third {
+         width: 29.33% !important;
+         margin-left: 6% !important;
+         margin-bottom: 5% !important;
+      }
+      li.gfield.gf_right_third {
+         width: 29.33% !important;
+         margin-left: 6% !important;
+         margin-bottom: 5% !important;
+      }
+
+      li.gfield {
+         &.gf_2of3 {
+            width: 64.66% !important;
+         }
+
+         &.fg_3of3 {
+            width: 100% !important;
+            margin-right: 0 !important;
+            margin-bottom: 5% !important;
+         }
+      }
    }
 
    .gfield.hideLabel {
@@ -63,4 +190,247 @@
       margin: 0 0 10px;
    }
 
+   .gf_page_steps,
+   .gform_page_footer {
+      border: none !important;
+   }
+
+   .gform_page_footer {
+      margin: 5% 0 0 !important;
+      padding: 0 !important;
+      text-align: center;
+
+      .button {
+         background-color: transparent;
+         border: none;
+         border-bottom: 2px solid $white;
+         font-size: 17px;
+         line-height: 22px;
+         font-family: $sans;
+         padding: 6px;
+         @extend %hoverTrans;
+         margin-left: 10px;
+         margin-right: 10px;
+         text-transform: uppercase;
+      }
+
+      .gform_previous_button {
+         color: rgba($white, .5);
+         border-color: rgba($white, .5);
+
+         &:hover {
+            color: $white;
+         }
+      }
+   }
+
+   textarea {
+      min-height: 20px;
+      //height: inherit !important;
+   }
+
+
+   &.projectPlannerForm_wrapper {
+      .validation_error {
+         display: none;
+      }
+
+      li.gfield.gfield_error {
+         background-color: transparent;
+         border: 0;
+         position: relative;
+
+         &.gfield_contains_required {
+            div.ginput_container {
+               margin-left: 0;
+               max-width: 100%;
+            }
+
+            div.gfield_description {
+               padding: 0 !important;
+               margin: 3px 0 0 !important;
+               @extend %sans;
+            }
+         }
+
+         input[type=email],
+         input[type=number],
+         input[type=password],
+         input[type=tel],
+         input[type=text],
+         input[type=url],
+         textarea {
+            border: 0;
+            border-bottom: 2px solid $secondary;
+         }
+
+         .validation_message {
+            color: $secondary;
+            font-size: 13px;
+         }
+      }
+
+      .gfield.gfield_error.gfield_contains_required {
+         div.ginput_container,
+         label.gfield_label {
+            margin-top: 0;
+         }
+      }
+
+      label.gfield_label+div.ginput_container {
+         margin-top: 0 !important;
+      }
+   }
+
+
+
+   // Expanding Textarea
+   .hasTextarea {
+      display: block;
+      margin: 0 auto !important;
+      width: 100%;
+      max-width: 630px !important;
+   }
+
+   textarea.small {
+      //height: inherit !important;
+      text-align: center;
+   }
+
+   .expandingArea {
+     position: relative;
+     border: 0;
+     //border-bottom: 2px solid rgba($white, .5);
+     background-color: transparent;
+   }
+
+   .expandingArea > textarea,
+   .expandingArea > pre {
+     padding: 5px 5px 9px;
+     background: transparent;
+     /* Make the text soft-wrap */
+     white-space: pre-wrap;
+     word-wrap: break-word;
+     max-height: 148px;
+     line-height: 24px;
+   }
+
+   .expandingArea > textarea {
+     /* The border-box box model is used to allow
+      * padding whilst still keeping the overall width
+      * at exactly that of the containing element.
+      */
+     -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+         -ms-box-sizing: border-box;
+             box-sizing: border-box;
+     padding: -moz-calc( 5px ) -moz-calc( 4px );
+     width: 100%;
+     /* This height is used when JS is disabled */
+     height: 100px;
+   }
+
+   .expandingArea.active > textarea {
+     /* Hide any scrollbars */
+     overflow: scroll;
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 100%;
+     /* Remove WebKit user-resize widget */
+     resize: none;
+   }
+
+   .expandingArea > pre {
+     //display: none;
+   }
+   .expandingArea.active > pre {
+     display: block;
+     /* Hide the text; just using it for sizing */
+     visibility: hidden;
+     //height: 0;
+   }
+
+}
+
+
+@media only screen and (max-width:840px) {
+   .gform_wrapper {
+      // grid layouts
+      form .top_label {
+         li.gfield.gf_left_third {
+            width: 47% !important;
+            margin-left: 0 !important;
+            margin-bottom: 5% !important;
+         }
+         li.gfield.gf_middle_third {
+            width: 47% !important;
+            margin-left: 6% !important;
+            margin-bottom: 5% !important;
+         }
+         li.gfield.gf_right_third {
+            width: 47% !important;
+            margin-left: 0% !important;
+            margin-right: 6% !important;
+            margin-bottom: 5% !important;
+         }
+
+         li.gfield {
+            &.gf_2of3 {
+               width: 100% !important;
+               margin-left: 0 !important;
+            }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:550px) {
+   .gform_wrapper {
+      padding-right: 3%;
+
+      ul {
+         li {
+            input,
+            input[type=text],
+            input[type=url],
+            input[type=email],
+            input[type=tel],
+            input[type=number],
+            input[type=password],
+            textarea, {
+               font-size: 15px;
+               line-height: 20px;
+               padding: 5px 0;
+            }
+         }
+      }
+
+      // grid layouts
+      form .top_label {
+         li.gfield.gf_left_third {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-bottom: 5% !important;
+         }
+         li.gfield.gf_middle_third {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-bottom: 5% !important;
+         }
+         li.gfield.gf_right_third {
+            width: 100% !important;
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+            margin-bottom: 5% !important;
+         }
+
+         li.gfield {
+            &.gf_2of3 {
+               width: 100% !important;
+               margin-left: 0 !important;
+            }
+         }
+      }
+   }
 }
