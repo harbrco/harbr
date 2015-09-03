@@ -49,6 +49,24 @@
                background-position-y: -220px;
             }
          </style>
+      <?php } elseif(is_post_type_archive('case-studies')) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #61A4EA; /* blue */
+            }
+            .js div#preloader .h-brand {
+               background-position-y: -220px;
+            }
+         </style>
+      <?php } /* case studies internal post */ elseif(is_singular('case-studies')) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #61A4EA; /* blue */
+            }
+            .js div#preloader .h-brand {
+               background-position-y: -220px;
+            }
+         </style>
       <?php } /* blog/collective */ elseif(is_home()) { ?>
          <style>
             .js div#preloader {
@@ -59,6 +77,24 @@
             }
          </style>
       <?php } /* blog/collective internal post */ elseif(is_single()) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #78B97F; /* green */
+            }
+            .js div#preloader .h-brand {
+               background-position-y: -220px;
+            }
+         </style>
+      <?php } /* blog/collective category */ elseif(is_category()) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #78B97F; /* green */
+            }
+            .js div#preloader .h-brand {
+               background-position-y: -220px;
+            }
+         </style>
+      <?php } elseif(is_archive()) { ?>
          <style>
             .js div#preloader {
                background-color: #78B97F; /* green */
@@ -120,13 +156,13 @@
          </div>
       </div>
 
-   <?php if(!is_page('home') && !is_single() && !is_home()) { ?>
+   <?php if(!is_page('home') && !is_single() && !is_home()  && !is_archive()) { ?>
       <div class="menu">
-         <?php get_template_part( 'partials/partial', 'menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
 
-      <div class="hero section isDarkGray">
+      <div class="hero section big-cta isDarkGray">
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
@@ -165,7 +201,7 @@
 
          <!-- Scroll Down Button -->
          <?php if(!is_page('contact')) { ?>
-            <a href="#scrollmain" class="downArrow wow fadeInUp" data-wow-delay=".5s"></a>
+            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
          <?php } ?>
       </div>
 
@@ -183,7 +219,7 @@
    <!-- Blog page -->
    <?php } elseif(is_home()) { ?>
       <div class="menu">
-         <?php get_template_part( 'partials/partial', 'menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
       <div class="hero section isDarkGray" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
@@ -212,16 +248,31 @@
 
          <!-- Scroll Down Button -->
          <?php if(!is_page('contact')) { ?>
-            <a href="#scrollmain" class="downArrow wow fadeInUp" data-wow-delay=".5s"></a>
+            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
          <?php } ?>
       </div>
 
       <!-- Sticky Header Bar -->
-      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper darkHeader">
          <div class="sticky-header">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div>
       </div><!-- /.header-wrapper -->
+
+
+   <!-- Archive Page -->
+   <?php } elseif(is_archive()) { ?>
+      <div class="menu">
+         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+      </div>
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper darkHeader">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+
 
 
    <!-- Single Post page -->

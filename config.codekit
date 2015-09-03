@@ -11,6 +11,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/archive-case-studies.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/archive-case-studies.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/archive.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -412,6 +421,22 @@
 		"shouldRunBless": 0,
 		"useLibsass": 0
 		},
+	"\/css\/pages\/_case-studies.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/css\/pages\/_case-studies.scss",
+		"outputAbbreviatedPath": "\/css\/css\/_case-studies.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 1,
+		"shouldRunBless": 0,
+		"useLibsass": 0
+		},
 	"\/css\/pages\/_common.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -674,6 +699,215 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/cs-ff-hero-highlight-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 605965,
+		"inputAbbreviatedPath": "\/img\/cs-ff-hero-highlight-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff-hero-highlight-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot-featured-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171969,
+		"inputAbbreviatedPath": "\/img\/cs-spot-featured-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-spot-featured-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-fw-big-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 816633,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-fw-big-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-fw-big-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-40p-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 114470,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-40p-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-40p-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-60p-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 162415,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-60p-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-60p-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-fw-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 280876,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-fw-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-fw-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-hwl-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 189905,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-hwl-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-hwl-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-hwr-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 140905,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-hwr-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-hwr-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-sq1-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 145995,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-sq1-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-sq1-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-sq2-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 172897,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-sq2-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-sq2-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-stack1-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 115246,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack1-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack1-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-stack2-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108748,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack2-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack2-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-stack3-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 59466,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack3-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack3-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-gal-stack4-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 80369,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack4-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack4-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-hero-bg-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84076,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-hero-bg-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-hero-bg-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-hero-highlight-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146250,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-hero-highlight-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-hero-highlight-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-slide-img1-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 309954,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-slide-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-slide-img1-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug-slide-img2-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 123370,
+		"inputAbbreviatedPath": "\/img\/cs-wbug-slide-img2-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug-slide-img2-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-weather-bug-featured.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 282109,
+		"inputAbbreviatedPath": "\/img\/cs-weather-bug-featured.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-weather-bug-featured.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/culture-fw-photo-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -839,13 +1073,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/icons\/share-icon.png": {
+	"\/img\/icons\/share-icon-sprite.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1555,
-		"inputAbbreviatedPath": "\/img\/icons\/share-icon.png",
-		"outputAbbreviatedPath": "\/img\/icons\/share-icon.png",
+		"initialSize": 2903,
+		"inputAbbreviatedPath": "\/img\/icons\/share-icon-sprite.png",
+		"outputAbbreviatedPath": "\/img\/icons\/share-icon-sprite.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -923,6 +1157,94 @@
 		"initialSize": 918,
 		"inputAbbreviatedPath": "\/img\/icons\/wave@2x.png",
 		"outputAbbreviatedPath": "\/img\/icons\/wave@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-icon@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8060,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-icon@2x.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-icon@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-desktop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 5599,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-desktop.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-desktop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-desktop@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 10406,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-desktop@2x.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-desktop@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-mobile.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4834,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-mobile.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-mobile.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-mobile@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7957,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-mobile@2x.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-mobile@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-tablet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4834,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-tablet.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-tablet.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-tablet@2x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 7529,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-tablet@2x.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-tablet@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/wb-day-night-toggle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 965,
+		"inputAbbreviatedPath": "\/img\/icons\/wb-day-night-toggle.png",
+		"outputAbbreviatedPath": "\/img\/icons\/wb-day-night-toggle.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1310,6 +1632,15 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
+	"\/loop-case-studies.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/loop-case-studies.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/loop.php": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -1369,6 +1700,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/partial-menu.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/partials\/partial-mobile-menu.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/partial-mobile-menu.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -1443,6 +1783,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/sidebar.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/single-case-studies.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/single-case-studies.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

@@ -1,4 +1,4 @@
-<a class="menu-close menu-toggle">CLOSE</a>
+<a class="menu-close close-btn menu-toggle"><i class="close-icon"></i></a>
 
 <div class="menu-links-wrapper">
    <div class="littleLinksBefore littleLinks">

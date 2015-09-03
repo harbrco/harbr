@@ -1,4 +1,4 @@
-.downArrow {
+%baseArrow {
    width: 24px;
    height: 32px;
    background-image: url(../img/icons/downArrow-sprite.png);
@@ -14,6 +14,13 @@
    &:hover {
       @extend %hoverFade;
    }
+}
+.downArrow {
+   @extend %baseArrow;
+}
+.upArrow {
+   @extend %baseArrow;
+   transform: rotate(180deg) !important;
 }
 
 .btn {
@@ -52,16 +59,16 @@
 
 
 .share-btn {
-   width: 60px;
-   height: 60px;
+   width: 66px;
+   height: 66px;
    position: relative;
    display: inline-block;
 
    &:before {
       position: absolute;
       content: '';
-      top: 5px;
-      left: 5px;
+      top: 8px;
+      left: 8px;
       width: 45px;
       height: 45px;
       border: 2px solid $darkGray;
@@ -72,17 +79,19 @@
    &:hover {
       &:before {
          position: absolute;
-         top: -3px;
-         left: -3px;
+         top: 0px;
+         left: 0px;
          width: 60px;
          height: 60px;
       }
    }
 
    .share-icon {
-      background-image: url(../img/icons/share-icon.png);
-      background-size: 21px 24px;
+      background-image: url(../img/icons/share-icon-sprite.png);
+      background-size: 50px 24px;
+      background-repeat: no-repeat;
       position: absolute;
+      background-position: 0 top;
       left: 50%;
       top: 50%;
       margin-left: -13px;
@@ -94,16 +103,16 @@
 }
 
 .close-btn {
-   width: 60px;
-   height: 60px;
+   width: 66px;
+   height: 66px;
    position: relative;
    display: inline-block;
 
    &:before {
       position: absolute;
       content: '';
-      top: 5px;
-      left: 5px;
+      top: 8px;
+      left: 8px;
       width: 45px;
       height: 45px;
       border: 2px solid $darkGray;
@@ -114,8 +123,8 @@
    &:hover {
       &:before {
          position: absolute;
-         top: -3px;
-         left: -3px;
+         top: 0;
+         left: 0;
          width: 60px;
          height: 60px;
       }
@@ -124,6 +133,7 @@
    .close-icon {
       background-image: url(../img/icons/close-x-sprite.png);
       background-size: 50px 25px;
+      background-repeat: no-repeat;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -160,6 +170,20 @@
          border: 2px solid $white;
       }
 
+      .close-icon {
+         background-position: -25px top;
+      }
+   }
+}
+
+.white-btns {
+   .share-btn,
+   .close-btn {
+      &:before {
+         border-color: $white;
+      }
+
+      .share-icon,
       .close-icon {
          background-position: -25px top;
       }

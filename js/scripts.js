@@ -37,9 +37,9 @@ new WOW().init();
 
 
     // Add dynamic accent color body classes:
-    if ( $('body').hasClass('culture') ) {
+    if ( $('body').hasClass('culture') || $('body').hasClass('post-type-archive-case-studies') || $('body').hasClass('single-case-studies') ) {
       $('body').addClass('popPrimary');
-    } else if ( $('body').hasClass('blog') ) { //<- 'blog' is "collective"
+    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
       $('body').addClass('popTertiary');
@@ -72,6 +72,11 @@ new WOW().init();
     $(window).resize(function() {
       vAlignFun();
     }).resize();
+
+    // Listen for resize changes (mobile orientation change)
+    window.addEventListener("resize", function() {
+      vAlignFun();
+    }, false);
 
 
     // Backpage (non-FullPage.js) full screen hero
@@ -169,81 +174,85 @@ new WOW().init();
 
     // Home / Landing Menu
     if ($('body').hasClass('home')) {
-      $('#landing-menu').fullpage({
-        verticalCentered: false,
-        scrollBar: true, // <- needed to make Waypoints.js work
-        recordHistory: false,
-        scrollingSpeed: 900,
-        easing: 'easeInOutQuint',
-        anchors: ['landing', 'get-to-know-us', 'our-strategic-vision', 'explore-the-latest', 'reach-out-to-us', 'lets-build-something'],
-        menu: '#pagination',
-        afterResize: function(){
-          vAlignFun();
-          reloadWaypoints();
-        }
-      });
+      // use Fullpage.js menu only if NOT on touch devices
+      if (!$('html').hasClass('touch')) {
 
-      // Home/Landing Menu Shifting up/down
-      // (NOTE - Homepage menu has extra "landing" section at index #section0 to account for the landing/hero section)
-      menuChanges = function(){
-        if ($("#section0").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -92px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: -320px');
-          $('.littleLinksAfter ul').attr('style', 'top: -80px');
-
-        } else if ($("#section1").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -92px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: -320px');
-          $('.littleLinksAfter ul').attr('style', 'top: -80px');
-
-        } else if ($("#section2").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -184px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: -240px');
-          $('.littleLinksAfter ul').attr('style', 'top: -160px');
-
-        } else if ($("#section3").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -276px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: -160px');
-          $('.littleLinksAfter ul').attr('style', 'top: -240px');
-
-        } else if ($("#section4").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -368px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: -80px');
-          $('.littleLinksAfter ul').attr('style', 'top: -320px');
-
-        } else if ($("#section5").hasClass('active')) {
-          $('.bigLinks ul').attr('style', 'top: -460px');
-          $('.littleLinksBefore ul').attr('style', 'bottom: 0px');
-          $('.littleLinksAfter ul').attr('style', 'top: -400px');
-        }
-      };
-
-      // Menu Visibility Waypoint
-      var menuHeight = $('.menu-links-wrapper').height();
-
-      $(document).ready(function() {
-        $('.menu-links-wrapper').css({'top': menuHeight + 'px'});
-      });
-
-      // Menu Visibility Waypoint
-      $('.menu-section-1').waypoint({
-        handler: function(direction) {
-          if (direction === 'down') {
-            $('.menu-links-wrapper').addClass('active').css({'top': '0'});
+        $('#landing-menu').fullpage({
+          verticalCentered: false,
+          scrollBar: true, // <- needed to make Waypoints.js work
+          recordHistory: false,
+          scrollingSpeed: 900,
+          easing: 'easeInOutQuint',
+          anchors: ['landing', 'get-to-know-us', 'our-strategic-vision', 'explore-the-latest', 'reach-out-to-us', 'lets-build-something'],
+          menu: '#pagination',
+          afterResize: function(){
+            vAlignFun();
+            reloadWaypoints();
           }
-        },
-        offset: '99.5%'
-      });
+        });
 
-      $('.menu-section-1').waypoint({
-        handler: function(direction) {
-          if (direction === 'up') {
-            $('.menu-links-wrapper').removeClass('active').css({'top': menuHeight + 'px'});
+        // Home/Landing Menu Shifting up/down
+        // (NOTE - Homepage menu has extra "landing" section at index #section0 to account for the landing/hero section)
+        menuChanges = function(){
+          if ($("#section0").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -92px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: -320px');
+            $('.littleLinksAfter ul').attr('style', 'top: -80px');
+
+          } else if ($("#section1").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -92px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: -320px');
+            $('.littleLinksAfter ul').attr('style', 'top: -80px');
+
+          } else if ($("#section2").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -184px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: -240px');
+            $('.littleLinksAfter ul').attr('style', 'top: -160px');
+
+          } else if ($("#section3").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -276px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: -160px');
+            $('.littleLinksAfter ul').attr('style', 'top: -240px');
+
+          } else if ($("#section4").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -368px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: -80px');
+            $('.littleLinksAfter ul').attr('style', 'top: -320px');
+
+          } else if ($("#section5").hasClass('active')) {
+            $('.bigLinks ul').attr('style', 'top: -460px');
+            $('.littleLinksBefore ul').attr('style', 'bottom: 0px');
+            $('.littleLinksAfter ul').attr('style', 'top: -400px');
           }
-        },
-        offset: 'bottom-in-view'
-      });
+        };
 
+        // Menu Visibility Waypoint
+        var menuHeight = $('.menu-links-wrapper').height();
+
+        $(document).ready(function() {
+          $('.menu-links-wrapper').css({'top': menuHeight + 'px'});
+        });
+
+        // Menu Visibility Waypoint
+        $('.menu-section-1').waypoint({
+          handler: function(direction) {
+            if (direction === 'down') {
+              $('.menu-links-wrapper').addClass('active').css({'top': '0'});
+            }
+          },
+          offset: '99.5%'
+        });
+
+        $('.menu-section-1').waypoint({
+          handler: function(direction) {
+            if (direction === 'up') {
+              $('.menu-links-wrapper').removeClass('active').css({'top': menuHeight + 'px'});
+            }
+          },
+          offset: 'bottom-in-view'
+        });
+
+      } // end if NOT touch
 
 
     // Backpage Menu
@@ -257,7 +266,11 @@ new WOW().init();
         handler: function(direction) {
           if (direction === 'down') {
             nav.stop().addClass('sticky');
-            nav_container.css({ 'height': '70px' });
+
+            // If is Case Studies Archive page, don't add height to ".sticky-header-wrapper"
+            if ( !$('body').hasClass('post-type-archive-case-studies') ) {
+              nav_container.css({ 'height': '70px' });
+            }
 
           } else {
             nav.stop().removeClass('sticky');
@@ -265,7 +278,7 @@ new WOW().init();
         }
       });
 
-      if (!$('body').hasClass('contact') && !$('body').hasClass('blog') && !$('body').hasClass('single')) {
+      if (!$('body').hasClass('contact') && !$('body').hasClass('single')) {
         var stickyWrap = $('.sticky-header-wrapper').one();
         var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
         var lastScrollTop = 0;
@@ -283,45 +296,45 @@ new WOW().init();
         });
       }
 
-      var menuActiveClass = function() {
-        if ( $('body').hasClass('culture') ){
-          $('.menu-section-1').addClass('active');
-        } else if ( $('body').hasClass('strategy') ){
-          $('.menu-section-2').addClass('active');
-        } else if ( $('body').hasClass('blog') ){
-          $('.menu-section-3').addClass('active');
-        } else if ( $('body').hasClass('contact') ){
-          $('.menu-section-4').addClass('active');
-        } else if ( $('body').hasClass('project-planner') ){
-          $('.menu-section-5').addClass('active');
-        }
-      };
-      menuActiveClass();
+      // var menuActiveClass = function() {
+      //   if ( $('body').hasClass('culture') ){
+      //     $('.menu-section-1').addClass('active');
+      //   } else if ( $('body').hasClass('strategy') ){
+      //     $('.menu-section-2').addClass('active');
+      //   } else if ( $('body').hasClass('blog') ){
+      //     $('.menu-section-3').addClass('active');
+      //   } else if ( $('body').hasClass('contact') ){
+      //     $('.menu-section-4').addClass('active');
+      //   } else if ( $('body').hasClass('project-planner') ){
+      //     $('.menu-section-5').addClass('active');
+      //   }
+      // };
+      // menuActiveClass();
 
-      // fullPage.js initialization
-      var menuBuild = function(){
-        $('#menu').fullpage({
-          verticalCentered: false,
-          scrollBar: true, // <- needed to make Waypoints.js work
-          recordHistory: false,
-          scrollingSpeed: 900,
-          easing: 'easeInOutQuint',
-          anchors: ['get-to-know-us', 'our-strategic-vision', 'explore-the-latest', 'reach-out-to-us', 'lets-build-something'],
-          menu: '#pagination',
-          afterResize: function(){
-            vAlignFun();
-          }
-        });
+      // // fullPage.js initialization
+      // var menuBuild = function(){
+      //   $('#menu').fullpage({
+      //     verticalCentered: false,
+      //     scrollBar: true, // <- needed to make Waypoints.js work
+      //     recordHistory: false,
+      //     scrollingSpeed: 900,
+      //     easing: 'easeInOutQuint',
+      //     anchors: ['get-to-know-us', 'our-strategic-vision', 'explore-the-latest', 'reach-out-to-us', 'lets-build-something'],
+      //     menu: '#pagination',
+      //     afterResize: function(){
+      //       vAlignFun();
+      //     }
+      //   });
 
-        reloadWaypoints();
-      };
+      //   reloadWaypoints();
+      // };
 
       // Menu toggle & fullPage menu initialization
       $('body').on('click', '.menu-button', function(event) {
         event.preventDefault();
         $('body').addClass('menuActive');
 
-        menuBuild();
+        //menuBuild();
       });
 
       $('body').on('click', '.menu-close', function(event) {
@@ -329,39 +342,39 @@ new WOW().init();
         $('body').removeClass('menuActive');
 
         // remove fullPage.js
-        setTimeout(function() {
-          $.fn.fullpage.destroy('all');
+        // setTimeout(function() {
+        //   $.fn.fullpage.destroy('all');
 
-          // re-render big hero section
-          bigHero();
+        //   // re-render big hero section
+        //   bigHero();
 
-          // re-render current page active class in menu
-          menuActiveClass();
-        }, 400);
+        //   // re-render current page active class in menu
+        //   menuActiveClass();
+        // }, 400);
       });
 
 
-      $('.menu-section-1').waypoint({
-        handler: function(direction) {
-          if (direction === 'down') {
-            $('.menu-links-wrapper').addClass('active').css({'top': '0'});
-          }
-        },
-        offset: '99.5%'
-      });
+      // $('.menu-section-1').waypoint({
+      //   handler: function(direction) {
+      //     if (direction === 'down') {
+      //       $('.menu-links-wrapper').addClass('active').css({'top': '0'});
+      //     }
+      //   },
+      //   offset: '99.5%'
+      // });
 
-      $('.menu-section-1').waypoint({
-        handler: function(direction) {
-          if (direction === 'up') {
-            $('.menu-links-wrapper').removeClass('active').css({'top': menuHeight + 'px'});
-          }
-        },
-        offset: 'bottom-in-view'
-      });
+      // $('.menu-section-1').waypoint({
+      //   handler: function(direction) {
+      //     if (direction === 'up') {
+      //       $('.menu-links-wrapper').removeClass('active').css({'top': menuHeight + 'px'});
+      //     }
+      //   },
+      //   offset: 'bottom-in-view'
+      // });
 
-      $(document).ready(function() {
-        $('.menu-links-wrapper').css({'top': menuHeight + 'px'});
-      });
+      // $(document).ready(function() {
+      //   $('.menu-links-wrapper').css({'top': menuHeight + 'px'});
+      // });
     }
 
 
@@ -492,10 +505,39 @@ new WOW().init();
 
 
 
+    // Case Studies down arrow - 'next case study' links
+    jQuery.fn.extend({
+      scrollTo : function(speed, easing) {
+        return this.each(function() {
+          var targetOffset = $(this).offset().top;
+          $('html,body').animate({scrollTop: targetOffset}, speed, easing);
+        });
+      }
+    });
+
+    $('.next-case-study').last().removeClass('downArrow').addClass('upArrow');
+
+    $('.case-studies-wrapper').on('click', '.next-case-study.downArrow', function(e) {
+        e.preventDefault();
+        var $this = $(this),
+            $next = $this.parent().next();
+
+        $next.scrollTo(900, 'easeInOutQuint');
+    });
+
+    $('.case-studies-wrapper').on('click', '.next-case-study.upArrow', function(e) {
+      e.preventDefault();
+      $('html, body').animate({scrollTop : 0}, 900, "easeInOutQuint");
+      return false;
+    });
+
+
+
     // Share modal popups
     $('.post-header, .modal').on('click', '.modal-toggle', function(e) {
       e.preventDefault();
       $('.modal').toggleClass('is-visible');
+      $('body').toggleClass('modalOpen');
     });
 
 
@@ -528,8 +570,8 @@ new WOW().init();
 
     // bxSlider(s)
     $('.stat-slider').bxSlider({
-      auto: false,
-      pause: 6000,
+      auto: true,
+      pause: 7000,
       speed: 5,
       mode: 'fade',
       controls: true,
@@ -555,8 +597,8 @@ new WOW().init();
     });
 
     $('.quote-slider').bxSlider({
-      auto: false,
-      pause: 6000,
+      auto: true,
+      pause: 7000,
       speed: 50,
       mode: 'fade',
       controls: true,
@@ -580,6 +622,37 @@ new WOW().init();
       },
       pager: ($(".quote-slider>.slide").length > 1) ? true: false
     });
+
+    $('.feature-highlight-slider').bxSlider({
+      auto: false,
+      pause: 6000,
+      speed: 5,
+      mode: 'fade',
+      controls: true,
+      nextSelector: '.next-stat',
+      prevSelector: '.prev-stat',
+      nextText: '',
+      prevText: '',
+      onSlideBefore: function(){
+        $('.feature-highlight-slider .slide').animate({
+          opacity: 0
+        }, 600, function() {
+          vAlignFun();
+          // Animation complete.
+        });
+      },
+      onSlideAfter: function(){
+        $('.feature-highlight-slider .slide').animate({
+          opacity: 1
+        }, 600, function() {
+          vAlignFun();
+          // Animation complete.
+        });
+      },
+      pager: ($(".feature-highlight-slider>.slide").length > 1) ? true: false
+    });
+
+
 
 
   });

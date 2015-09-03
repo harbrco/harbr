@@ -1,4 +1,10 @@
-<div class="modal" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
+<?php if (is_singular('case-studies')) { ?>
+   <?php $featBg = get_field('featured_full_width'); ?>
+<?php } else { ?>
+   <?php $featBg = get_field('hero_background_image'); ?>
+<?php } ?>
+
+<div class="modal" style="background-image: url(<?php echo $featBg; ?>);">
    <div class="modal-overlay"></div>
    <a href="#" class="close-share-modal close-btn modal-toggle">
       <i class="close-icon"></i>

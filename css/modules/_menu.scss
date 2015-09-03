@@ -6,7 +6,6 @@
    position: absolute;
    height: 100%;
    width: 100%;
-   //display: none;
    opacity: 0;
    z-index: -1;
    transition: z-index 0.2s step-end 0.3s, opacity 0.2s linear;
@@ -15,7 +14,6 @@ body.menuActive {
    overflow: hidden;
 
    .menu {
-      //display: block;
       opacity: 1;
       z-index: 5;
       transition: z-index 0.3s step-start, opacity 0.3s linear;
@@ -28,7 +26,7 @@ body.menuActive {
    position: fixed;
    left: 50%;
    transform: translateX(-50%);
-   top: 100px;
+   top: 50px;
    z-index: 10;
    cursor: pointer;
    @extend %hoverTrans;
@@ -36,6 +34,17 @@ body.menuActive {
    &:hover {
       color: $white;
       @extend %hoverFade;
+   }
+
+   &.close-btn {
+      position: fixed; // overwrites style in buttons.scss
+
+      &:before {
+         border-color: $white;
+      }
+      .close-icon {
+         background-position: -25px top;
+      }
    }
 }
 
@@ -221,6 +230,73 @@ body.menuActive {
 }
 
 
+
+
+// MOBILE MENU
+.mobile-menu-wrapper {
+   position: fixed !important;
+   background-color: rgba($darkGray, .97);
+}
+
+.mobile-menu-links {
+   position: relative;
+   width: 100%;
+   text-align: center;
+
+   li {
+      font-size: 24px;
+      line-height: 52px;
+      margin-bottom: 20px;
+      position: relative;
+
+      &:last-child {
+         margin-bottom: 0;
+      }
+   }
+
+   a {
+      @extend %linkblock;
+      color: rgba($white, .6);
+      position: relative;
+
+      .link-inactive {
+         display: block;
+         opacity: 1;
+         text-transform: uppercase;
+         @extend %sans;
+         transition: all 0.4s ease;
+      }
+
+      .link-active {
+         color: $white;
+         font-size: 50px;
+         line-height: 52px;
+         position: absolute;
+         display: block;
+         opacity: 0;
+         top: -7%;
+         left: 50%;
+         transform: translateX(-50%);
+         transition: all 0.4s ease;
+         width: 100%;
+      }
+
+      &:hover {
+         color: $white;
+
+         .link-inactive {
+            opacity: 0;
+         }
+
+         .link-active {
+            opacity: 1;
+         }
+      }
+   }
+}
+
+
+
 // MENU BREAKPOINTS = = = = = = =
 @media only screen and (max-width:1024px) {
    .menu-links-wrapper {
@@ -239,6 +315,22 @@ body.menuActive {
             a:after {
                bottom: 0px;
             }
+         }
+      }
+   }
+
+   // MOBILE MENU
+   .mobile-menu-links {
+   li {
+      font-size: 20px;
+      line-height: 42px;
+      margin-bottom: 12px;
+   }
+
+   a {
+      .link-active {
+         font-size: 40px;
+         line-height: 42px;
          }
       }
    }
@@ -264,6 +356,26 @@ body.menuActive {
          }
       }
    }
+
+   .menu-close {
+      top: 30px;
+   }
+
+   // MOBILE MENU
+   .mobile-menu-links {
+   li {
+      font-size: 18px;
+      line-height: 40px;
+      margin-bottom: 10px;
+   }
+
+   a {
+      .link-active {
+         font-size: 36px;
+         line-height: 40px;
+         }
+      }
+   }
 }
 
 @media only screen and (max-width:600px) {
@@ -283,6 +395,50 @@ body.menuActive {
             a:after {
                bottom: 14px;
             }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:500px) {
+   .menu-close {
+      top: 15px;
+   }
+
+   // MOBILE MENU
+   .mobile-menu-links {
+   li {
+      font-size: 17px;
+      line-height: 36px;
+      margin-bottom: 6px;
+   }
+
+   a {
+      .link-active {
+         font-size: 24px;
+         line-height: 36px;
+         }
+      }
+   }
+}
+@media only screen and (max-height:450px) {
+   .menu-close {
+      top: 10px;
+      left: 10px;
+      transform: none;
+   }
+
+   .mobile-menu-links {
+   li {
+      font-size: 17px;
+      line-height: 30px;
+      margin-bottom: 3px;
+   }
+
+   a {
+      .link-active {
+         font-size: 24px;
+         line-height: 30px;
          }
       }
    }

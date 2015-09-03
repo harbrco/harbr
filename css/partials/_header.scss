@@ -75,7 +75,7 @@
       background-color: transparent;
 
       .sticky-header {
-         background-color: transparent;
+         background-color: rgba($darkGray, .97);
 
          .menu-button {
             color: $white;
@@ -83,6 +83,17 @@
 
          .logo {
             color: $white;
+         }
+      }
+   }
+}
+
+.project-planner,
+.post-type-archive-case-studies {
+   .sticky-header-wrapper {
+      &.darkHeader {
+         .sticky-header {
+            background-color: transparent;
          }
       }
    }

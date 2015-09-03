@@ -1,17 +1,19 @@
 <?php get_header(); ?>
-	
-	<!-- section -->
-	<section role="main">
-	
-		<h1><?php _e( 'Archives', 'html5blank' ); ?></h1>
-	
-		<?php get_template_part('loop'); ?>
-		
-		<?php get_template_part('pagination'); ?>
-	
-	</section>
-	<!-- /section -->
-	
-<?php get_sidebar(); ?>
+
+   <div class="post-feed-wrapper">
+
+      <div class="section-heading">
+         <h3 class="clrPop">Archives</h3>
+         <span class="divWave"></span>
+         <h1><?php single_month_title(' '); ?> </h1>
+      </div>
+
+      <!-- section -->
+      <section role="main">
+         <?php get_template_part('loop'); ?>
+      </section>
+      <!-- /section -->
+
+   </div><!-- /.post-feed-wrapper -->
 
 <?php get_footer(); ?>

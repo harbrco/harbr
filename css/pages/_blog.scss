@@ -1,4 +1,5 @@
-.blog {
+.blog,
+.archive {
    background-color: $darkGray;
 
    .hero-text {
@@ -168,9 +169,19 @@
 }
 
 
+// Archive specific
+.archive {
+   .section-heading {
+      h1 {
+         color: $white;
+      }
+   }
+}
+
 
 // Single Post -------
-.single {
+.single,
+.archive {
    .section-heading {
       h3 {
          @extend %sans;
@@ -290,7 +301,8 @@
       }
    }
 
-   .single-column-content {
+   .single,
+   .archive-column-content {
       .container {
          width: 86%;
          margin-left: 7%;
@@ -385,7 +397,8 @@
 
 // BLOG PAGE BREAKPOINTS = = = = = = =
 @media only screen and (max-width:1024px) {
-   .single {
+   .single,
+   .archive {
       .section-heading,
       .modal .share-modal {
          h1 {
@@ -426,7 +439,8 @@
    }
 }
 @media only screen and (max-width:860px) {
-   .single {
+   .single,
+   .archive {
       .isContentArea {
          h3 {
             font-size: 32px;
@@ -472,7 +486,8 @@
    }
 }
 @media only screen and (max-width:768px) {
-   .single {
+   .single,
+   .archive {
       .section-heading,
       .modal .share-modal {
          h1 {
@@ -491,7 +506,8 @@
 }
 
 @media only screen and (max-width:730px) {
-   .single {
+   .single,
+   .archive {
       .boxPadding {
          padding: 5% 7%;
       }
@@ -543,7 +559,8 @@
    }
 }
 @media only screen and (max-width:580px) {
-   .single {
+   .single,
+   .archive {
       .isContentArea {
          h3 {
             font-size: 24px;
@@ -592,7 +609,8 @@
    }
 }
 @media only screen and (max-width:460px) {
-   .blog {
+   .blog,
+   .archive {
       .hero-text {
          .btn {
             margin-top: 7%;
@@ -600,7 +618,8 @@
       }
    }
 
-   .single {
+   .single,
+   .archive {
       .section-heading,
       .modal .share-modal {
          h3 {
@@ -627,7 +646,8 @@
    }
 }
 @media only screen and (max-width:400px) {
-   .blog {
+   .blog,
+   .archive {
       .hero-text {
          .post-meta {
             font-size: 17px;
@@ -640,7 +660,8 @@
       }
    }
 
-   .single {
+   .single,
+   .archive {
       .section-heading,
       .modal .share-modal {
          h1 {

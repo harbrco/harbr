@@ -91,6 +91,7 @@
    <?php endwhile; ?>
    <?php endif; ?>
 
+   <?php get_sidebar(); ?>
 
    <?php $prevPost = get_previous_post(); ?>
    <?php $prevPostID = $prevPost->ID; ?>
