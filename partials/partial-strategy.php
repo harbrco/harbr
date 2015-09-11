@@ -137,11 +137,13 @@
                            <div class="background-image" style="background-image: url(<?php the_field('featured_square') ?>);">
                            </div>
                            <div class="inner vAlign vAlign-abs">
-                              <h3 class="clrPop">Case Study</h3>
+                              <h3 class="clrPop">Case Studies</h3>
 
-                              <a href="<?php the_permalink(); ?>" class="case-study-title">
-                                 <h2><?php the_title(); ?></h2>
+                              <a href="/case-studies/" class="case-study-title">
+                                 <h2>Our Recent Work</h2>
                               </a>
+
+                              <a href="/case-studies/" class="btn btn--uline">View All</a>
                            </div>
                         </div>
                         <?php endwhile; ?>

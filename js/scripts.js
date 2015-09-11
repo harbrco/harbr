@@ -570,7 +570,7 @@ new WOW().init();
 
     // bxSlider(s)
     $('.stat-slider').bxSlider({
-      auto: true,
+      auto: ($(".stat-slider>.slide").length > 1) ? true: false,
       pause: 7000,
       speed: 5,
       mode: 'fade',
@@ -597,7 +597,7 @@ new WOW().init();
     });
 
     $('.quote-slider').bxSlider({
-      auto: true,
+      auto: ($(".quote-slider>.slide").length > 1) ? true: false,
       pause: 7000,
       speed: 50,
       mode: 'fade',

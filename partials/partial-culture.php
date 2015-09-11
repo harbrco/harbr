@@ -77,8 +77,38 @@
             <?php elseif( get_row_layout() == 'stat_slider_lg_sq_sm_sq' ): ?>
                <div class="stat-slider-lg-sq-sm-sq section group">
                   <div class="col span_8_of_12">
-                     <div class="card card--sq wow fadeIn" style="background-image: url(<?php the_sub_field('large_square_image'); ?>);" data-wow-delay=".25s">
+                     <?php
+                     $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 1
+                     );
+                     $blogPostQuery = new WP_Query( $args ); ?>
+                     <?php if ( $blogPostQuery->have_posts() ) : ?>
+                     <div class="latest-post-wrapper">
+                        <!-- the loop -->
+                        <?php while ( $blogPostQuery->have_posts() ) : $blogPostQuery->the_post(); ?>
+                        <div class="latest-post hoverZoomFade card card--sq wow fadeIn" data-wow-delay=".25s">
+                           <div class="background-image" style="background-image: url(<?php the_field('feature_image') ?>);">
+                           </div>
+                           <div class="inner vAlign vAlign-abs">
+                              <h3 class="clrPop">Latest Story</h3>
+
+                              <a href="<?php the_permalink(); ?>" class="post-title">
+                                 <h2><?php the_title(); ?></h2>
+                              </a>
+
+                              <a href="<?php the_permalink(); ?>" class="btn btn--uline">View Story</a>
+                           </div>
+                        </div>
+                        <?php endwhile; ?>
+                        <!-- end of the loop -->
                      </div>
+                     <?php wp_reset_postdata(); ?>
+                     <?php else: ?>
+                     <div class="no-posts">
+                        <h3>Sorry, there are no posts here.</h3>
+                     </div>
+                     <?php endif; ?>
                   </div>
 
                   <div class="col span_4_of_12">
@@ -146,6 +176,8 @@
                               <a href="<?php the_permalink(); ?>" class="case-study-title">
                                  <h2><?php the_title(); ?></h2>
                               </a>
+
+                              <a href="<?php the_permalink(); ?>" class="btn btn--uline">View Case Study</a>
                            </div>
                         </div>
                         <?php endwhile; ?>

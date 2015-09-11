@@ -168,9 +168,22 @@
    }
 }
 
+.latest-post,
 .featured-case-study {
    text-align: center;
    position: relative;
+
+   &.hoverZoomFade {
+      &:before {
+         background-color: rgba($darkGray, .55);
+      }
+
+      &.linkHovered {
+         &:before {
+            background-color: rgba($darkGray, .8);
+         }
+      }
+   }
 
    .inner {
       padding: 0 4%;
@@ -188,11 +201,13 @@
       }
    }
 
+   .post-title,
    .case-study-title {
       h2 {
          color: $white;
          font-size: 55px;
          line-height: 64px;
+         margin-bottom: 24px;
       }
    }
 }
@@ -231,7 +246,9 @@
       }
    }
 
+   .latest-post,
    .featured-case-study {
+      .post-title,
       .case-study-title {
          h2 {
             font-size: 50px;
@@ -292,7 +309,9 @@
       }
    }
 
+   .latest-post,
    .featured-case-study {
+      .post-title,
       .case-study-title {
          h2 {
             font-size: 42px;
@@ -417,7 +436,9 @@
       }
    }
 
+   .latest-post,
    .featured-case-study {
+      .post-title,
       .case-study-title {
          h2 {
             font-size: 36px;
@@ -469,7 +490,9 @@
       }
    }
 
+   .latest-post,
    .featured-case-study {
+      .post-title,
       .case-study-title {
          h2 {
             font-size: 30px;
