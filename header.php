@@ -34,10 +34,10 @@
       <?php if(is_page('home')) { ?>
          <style>
             .js div#preloader {
-               background-color: #fff; /* white */
+               background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
-               background-position-y: -110px;
+               background-position-y: -220px;
             }
          </style>
       <?php } elseif(is_page('culture')) { ?>
@@ -198,6 +198,67 @@
                <a href="/project-planner/" class="btn btn--uline">Project Planner</a>
             </div>
          <?php } ?>
+
+         <!-- Scroll Down Button -->
+         <?php if(!is_page('contact')) { ?>
+            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
+         <?php } ?>
+      </div>
+
+
+      <!-- Sticky Header Bar -->
+      <?php if(!is_page('contact') && !is_home()) { ?>
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+      <?php } ?>
+
+
+   <!-- Home page -->
+   <?php } elseif(is_page('home')) { ?>
+      <div class="menu">
+         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+      </div>
+
+      <div class="landing-section hero section big-cta">
+         <div class="header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="landing-hero hero-text section-heading vAlign">
+            <h1 class="clrPop">Harbr</h1>
+            <span class="divWave"></span>
+            <h3>A <span class="italic">Digital</span> <br /> Creative Agency</h3>
+
+            <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
+               <i class="video-play-icon"></i>
+            </a>
+         </div>
+
+         <div class="landing-overlay">
+         </div>
+
+         <video autoplay muted loop poster="<?php echo get_template_directory_uri(); ?>/img/section-bgs/landing-hero-bg.jpg" id="bgvid" data-stellar-ratio="0.5">
+            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.webm" type="video/webm">
+            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.mp4" type="video/mp4">
+            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.ogv" type="video/ogv">
+         </video>
+
+         <a href="#culture" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
+      </div>
+
+      <div id="culture" class="hero section big-cta isDarkGray">
+         <div class="hero-header header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="hero-text section-heading vAlign">
+            <h1 class="clrPop">Culture</h1>
+            <span class="divWave"></span>
+            <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
+         </div>
 
          <!-- Scroll Down Button -->
          <?php if(!is_page('contact')) { ?>

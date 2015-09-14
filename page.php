@@ -1,10 +1,7 @@
 <?php get_header(); ?>
 
    <!-- PAGE SPECIFIC CONDITIONALS -->
-   <?php /* CULTURE */ if ( is_page( 'culture' ) ) { ?>
-      <?php get_template_part( 'partials/partial', 'culture' ); ?>
-
-   <?php } /* STRATEGY */ elseif ( is_page( 'strategy' ) ) { ?>
+   <?php /* STRATEGY */ if ( is_page( 'strategy' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'strategy' ); ?>
 
    <?php } /* CONTACT */ elseif ( is_page( 'contact' ) ) { ?>

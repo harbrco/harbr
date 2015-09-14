@@ -581,7 +581,7 @@ th {
 .single-case-studies .hero .hero-background-image {
   background-position-y: bottom; }
 
-.menu-section:before, .media-boxes .next-slide, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-day,
+.menu-section:before, .landing-section .landing-overlay, .media-boxes .next-slide, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-day,
 .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-night, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
   position: absolute;
   top: 0;
@@ -1555,7 +1555,16 @@ input:focus {
 .landing-section {
   position: relative;
   z-index: 99;
-  background-image: url(../img/section-bgs/landing-hero-bg.jpg); }
+  background-image: url(../img/section-bgs/landing-hero-bg.jpg);
+  overflow: hidden; }
+  .landing-section .header-wrapper {
+    position: absolute; }
+  .landing-section .header .menu-button,
+  .landing-section .header .logo {
+    color: #292728; }
+  .landing-section .landing-overlay {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 1; }
   .landing-section .overlay {
     height: 100%;
     display: block;
@@ -1571,6 +1580,34 @@ input:focus {
       background-position: left center;
       background-size: 2500px 1500px;
       background-repeat: repeat-y; }
+  .landing-section .video-play-btn {
+    margin-top: 25px; }
+  .landing-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    background-image: url("../img/section-bgs/landing-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-transition: 1s opacity;
+            transition: 1s opacity; }
+
+@media only screen and (max-width: 800px) {
+  #bgvid {
+    display: none !important; }
+
+  .landing-section {
+    background-position-y: top !important; } }
+.popPrimary .landing-section .downArrow {
+  background-position: left 0; }
 
 .hero-text h4 {
   font-size: 22px;
@@ -1850,9 +1887,11 @@ input:focus {
     font-size: 20px;
     line-height: 24px; }
 
-.culture .media-boxes .stat-slider .slide-icon {
+.culture .media-boxes .stat-slider .slide-icon,
+.home .media-boxes .stat-slider .slide-icon {
   background-position-y: 0; }
-.culture .media-boxes .quote-slider .slide-icon {
+.culture .media-boxes .quote-slider .slide-icon,
+.home .media-boxes .quote-slider .slide-icon {
   background-position-y: 0; }
 
 .strategy .media-boxes .stat-slider .slide-icon {
@@ -2269,39 +2308,23 @@ input:focus {
 .single .quote-block-section .right-image .inner,
 .archive .quote-block-section .right-image .inner {
   padding-bottom: 100%; }
-.single .single .container, .single .single .project-planner .gform_body, .project-planner .single .single .gform_body,
-.single .archive-column-content .container,
-.single .archive-column-content .project-planner .gform_body,
-.project-planner .single .archive-column-content .gform_body,
-.archive .single .container,
-.archive .single .project-planner .gform_body,
-.project-planner .archive .single .gform_body,
-.archive .archive-column-content .container,
-.archive .archive-column-content .project-planner .gform_body,
-.project-planner .archive .archive-column-content .gform_body {
+.single .single-column-content .container, .single .single-column-content .project-planner .gform_body, .project-planner .single .single-column-content .gform_body,
+.archive .single-column-content .container,
+.archive .single-column-content .project-planner .gform_body,
+.project-planner .archive .single-column-content .gform_body {
   width: 86%;
   margin-left: 7%;
   margin-right: 7%; }
-  .single .single .container .inner, .single .single .project-planner .gform_body .inner, .project-planner .single .single .gform_body .inner,
-  .single .archive-column-content .container .inner,
-  .single .archive-column-content .project-planner .gform_body .inner,
-  .project-planner .single .archive-column-content .gform_body .inner,
-  .archive .single .container .inner,
-  .archive .single .project-planner .gform_body .inner,
-  .project-planner .archive .single .gform_body .inner,
-  .archive .archive-column-content .container .inner,
-  .archive .archive-column-content .project-planner .gform_body .inner,
-  .project-planner .archive .archive-column-content .gform_body .inner {
+  .single .single-column-content .container .inner, .single .single-column-content .project-planner .gform_body .inner, .project-planner .single .single-column-content .gform_body .inner,
+  .archive .single-column-content .container .inner,
+  .archive .single-column-content .project-planner .gform_body .inner,
+  .project-planner .archive .single-column-content .gform_body .inner {
     max-width: 800px; }
-.single .single h3,
-.single .archive-column-content h3,
-.archive .single h3,
-.archive .archive-column-content h3 {
+.single .single-column-content h3,
+.archive .single-column-content h3 {
   color: #78B97F; }
-.single .single p,
-.single .archive-column-content p,
-.archive .single p,
-.archive .archive-column-content p {
+.single .single-column-content p,
+.archive .single-column-content p {
   color: #8b8b8b; }
 .single .full-width-image-video .video-play-btn,
 .archive .full-width-image-video .video-play-btn {
@@ -3392,7 +3415,7 @@ input:focus {
   display: inline-block;
   position: absolute;
   z-index: 3;
-  bottom: 6%;
+  bottom: 8%;
   right: 10%; }
 
 .upArrow {
@@ -3554,7 +3577,7 @@ input:focus {
     height: 100px; }
   .video-play-btn .video-play-icon {
     background-image: url(../img/icons/play-icon.png);
-    background-size: 17px 18px;
+    background-size: 67px 18px;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -3563,6 +3586,10 @@ input:focus {
     display: block;
     width: 17px;
     height: 18px; }
+  .video-play-btn.primaryPop:before {
+    border-color: #61A4EA; }
+  .video-play-btn.primaryPop .video-play-icon {
+    background-position: -50px top; }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .popPrimary .downArrow,

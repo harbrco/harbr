@@ -5,7 +5,7 @@
    <div class="mobile-menu-links vAlign">
       <ul>
          <li>
-            <a href="/culture/"><span class="link-inactive">Get To Know Us</span><span class="link-active">Get To Know Us</span></a>
+            <a href="/home#culture"><span class="link-inactive">Get To Know Us</span><span class="link-active">Get To Know Us</span></a>
          </li>
          <li>
             <a href="/strategy/"><span class="link-inactive">Our Strategic Vision</span><span class="link-active">Our Strategic Vision</span></a>

@@ -7,7 +7,7 @@
    display: inline-block;
    position: absolute;
    z-index: 3;
-   bottom: 6%;
+   bottom: 8%;
    right: 10%;
    @extend %hoverTrans;
 
@@ -221,7 +221,7 @@
 
    .video-play-icon {
       background-image: url(../img/icons/play-icon.png);
-      background-size: 17px 18px;
+      background-size: 67px 18px;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -230,5 +230,15 @@
       display: block;
       width: 17px;
       height: 18px;
+   }
+
+   &.primaryPop {
+      &:before {
+         border-color: $primary;
+      }
+
+      .video-play-icon {
+         background-position: -50px top;
+      }
    }
 }

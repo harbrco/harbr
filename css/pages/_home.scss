@@ -3,6 +3,24 @@
    z-index: 99;
    background-image: url(../img/section-bgs/landing-hero-bg.jpg);
    @extend %bgCover--center;
+   overflow: hidden;
+
+   .header-wrapper {
+      position: absolute;
+   }
+
+   .header {
+      .menu-button,
+      .logo {
+         color: $darkGray;
+      }
+   }
+
+   .landing-overlay {
+      background-color: rgba($white, .9);
+      @extend %absFill;
+      z-index: 1;
+   }
 
    .overlay {
       height: 100%;
@@ -23,6 +41,43 @@
          background-size: 2500px 1500px;
          background-repeat: repeat-y;
       }
+   }
+
+   .video-play-btn {
+      margin-top: 25px;
+   }
+
+   // Hero video background
+   video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      z-index: 0;
+      transform: translateX(-50%) translateY(-50%);
+      background-image: url('../img/section-bgs/landing-hero-bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 1s opacity;
+   }
+}
+
+@media only screen and (max-width: 800px) {
+   #bgvid {
+      display: none !important;
+   }
+   .landing-section {
+      background-position-y: top !important;
+   }
+}
+
+
+.popPrimary .landing-section {
+   .downArrow {
+      background-position: left 0;
    }
 }
 
