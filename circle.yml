@@ -9,7 +9,7 @@ machine:
 
 test:
   override:
-    - echo 'fake tests'
+    - echo 'fake tests!'
 
 deployment:
   development:
