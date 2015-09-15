@@ -4,7 +4,7 @@ require 'bundler/inline'
 
 gemfile true do
   source 'https://rubygems.org'
-  gem 'sshkit'
+  gem 'sshkit', '~> 1.7.1'
 end
 
 require 'sshkit'
