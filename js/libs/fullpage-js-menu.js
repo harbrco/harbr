@@ -57,15 +57,6 @@
       $('.menu-section').toggleClass('linkHovered');
     });
 
-    $('.hoverZoomFade').hover(function() {
-      $(this).toggleClass('boxHovered').next().stop( true, true );
-    });
-
-    $('.hoverZoomFade a').hover(function() {
-      $(this).closest('.hoverZoomFade').toggleClass('linkHovered').next().stop( true, true );
-    });
-
-
 
 
     // Full page section scroll snap - fullPage.js - https://github.com/alvarotrigo/fullPage.js#fullpagejs

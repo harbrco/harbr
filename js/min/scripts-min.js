@@ -5111,6 +5111,16 @@ new WOW().init();
     }
 
 
+    // Hover Zoom Fade effect
+    $('.hoverZoomFade').hover(function() {
+      $(this).toggleClass('boxHovered').next().stop( true, true );
+    });
+
+    $('.hoverZoomFade a').hover(function() {
+      $(this).closest('.hoverZoomFade').toggleClass('linkHovered').next().stop( true, true );
+    });
+
+
     // Vertical Align Elements
     var vAlignShow = function() {
       $('.vAlign').fadeIn(50).css('visibility', 'visible'); // fixes the css "hidden" style for the flash before complete page load (.vAlign in _common.scss)
