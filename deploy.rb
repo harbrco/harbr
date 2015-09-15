@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
 
+# Version v1.0.0
+
 require 'bundler/inline'
 
 gemfile true do
