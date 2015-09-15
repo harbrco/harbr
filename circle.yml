@@ -15,4 +15,4 @@ deployment:
   development:
     branch: master
     commands:
-      - ./deploy.rb
+      - chmod +x ./deploy.rb && ./deploy.rb
