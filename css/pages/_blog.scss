@@ -59,15 +59,15 @@
       }
    }
 
-   .post-main {
+   .section-heading {
       text-align: center;
       position: relative;
       padding-bottom: 100%;
 
-      .inner {
-         padding: 0 4%;
-         width: 100%;
-      }
+      // .inner {
+      //    padding: 0 4%;
+      //    width: 100%;
+      // }
 
       h3 {
          @extend .sansUpperSpc;
@@ -80,12 +80,10 @@
          }
       }
 
-      .post-title {
-         h2 {
-            color: $white;
-            font-size: 55px;
-            line-height: 64px;
-         }
+      h1.post-title {
+         color: $white;
+         font-size: 55px;
+         line-height: 64px;
       }
 
       .post-meta {
@@ -106,64 +104,93 @@
          }
       }
 
-      &.hoverZoomFade {
-         &:before {
-            background-color: rgba($darkDkGray, .65);
-         }
-         &.linkHovered {
-            &:before {
-               background-color: rgba($darkDkGray, .8);
+      // &.hoverZoomFade {
+      //    &:before {
+      //       background-color: rgba($darkDkGray, .65);
+      //    }
+      //    &.linkHovered {
+      //       &:before {
+      //          background-color: rgba($darkDkGray, .8);
+      //       }
+      //    }
+      // }
+   }
+
+   // .two-squares {
+   //    .text-square,
+   //    .image-square {
+   //       width: 100%;
+   //       display: block;
+   //       padding-bottom: 100%;
+   //    }
+
+   //    .text-square {
+   //       position: relative;
+
+   //       .inner {
+   //          display: block;
+   //          width: 100%;
+   //       }
+
+   //       .pull-quote {
+   //          font-size: 30px;
+   //          line-height: 36px;
+   //          @extend %serifIt;
+   //          padding: 0 7% 0 10%;
+   //          text-indent: -0.4em;
+   //       }
+
+   //       .design-by {
+   //          color: $secondaryDk;
+   //          font-size: 18px;
+   //          line-height: 24px;
+   //          @extend %sans;
+   //          text-transform: uppercase;
+   //          padding: 0 7%;
+   //          text-align: center;
+   //          margin-bottom: 4px;
+   //       }
+
+   //       .designer-info {
+   //          font-size: 24px;
+   //          line-height: 28px;
+   //          @extend %sans;
+   //          padding: 0 7%;
+   //          text-align: center;
+   //       }
+   //    }
+
+   //    .image-square {
+   //       @extend %bgCover--center;
+   //    }
+   // }
+}
+
+.blog,
+.archive,
+.single {
+   .view-post-cta {
+      position: relative;
+      @extend %bgCover--center;
+
+      .section-heading {
+         position: relative;
+         z-index: 2;
+         margin-top: 0;
+         margin-bottom: 0;
+
+         h1 a {
+            color: $white;
+            @extend %hoverTrans;
+
+            &:hover {
+               @extend %hoverFade;
             }
          }
       }
-   }
 
-   .two-squares {
-      .text-square,
-      .image-square {
-         width: 100%;
-         display: block;
-         padding-bottom: 100%;
-      }
-
-      .text-square {
-         position: relative;
-
-         .inner {
-            display: block;
-            width: 100%;
-         }
-
-         .pull-quote {
-            font-size: 30px;
-            line-height: 36px;
-            @extend %serifIt;
-            padding: 0 7% 0 10%;
-            text-indent: -0.4em;
-         }
-
-         .design-by {
-            color: $secondaryDk;
-            font-size: 18px;
-            line-height: 24px;
-            @extend %sans;
-            text-transform: uppercase;
-            padding: 0 7%;
-            text-align: center;
-            margin-bottom: 4px;
-         }
-
-         .designer-info {
-            font-size: 24px;
-            line-height: 28px;
-            @extend %sans;
-            padding: 0 7%;
-            text-align: center;
-         }
-      }
-
-      .image-square {
-         @extend %bgCover--center;
+      .btn--uline {
+         margin-top: 50px;
       }
    }
 }
@@ -326,31 +353,6 @@
          position: absolute;
          right: 30px;
          bottom: 30px;
-      }
-   }
-
-   .prev-page-cta {
-      position: relative;
-      @extend %bgCover--center;
-
-      .section-heading {
-         position: relative;
-         z-index: 2;
-         margin-top: 0;
-         margin-bottom: 0;
-
-         h1 a {
-            color: $white;
-            @extend %hoverTrans;
-
-            &:hover {
-               @extend %hoverFade;
-            }
-         }
-      }
-
-      .btn--uline {
-         margin-top: 50px;
       }
    }
 

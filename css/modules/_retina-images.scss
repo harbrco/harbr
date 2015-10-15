@@ -7,36 +7,36 @@
    .popPrimary {
       .downArrow,
       .divWave {
-         background-position-y: -50px;
+         background-position: -50px -50px;
       }
    }
    .popSecondary {
       .downArrow,
       .divWave {
-         background-position-y: -100px;
+         background-position: -50px -100px;
       }
    }
    .popTertiary {
       .downArrow,
       .divWave {
-         background-position-y: -150px;
+         background-position: -50px -150px;
       }
    }
    .popQuaternary {
       .downArrow,
       .divWave {
-         background-position-y: -200px;
+         background-position: -50px -200px;
       }
    }
 
    .downArrow {
-      background-position-x: -50px;
+      background-position: -50px 0;
       background-size: 100px 250px;
    }
 
    .divWave,
    .menu-links-wrapper .littleLinks .divWave {
-      background-position-x: -50px;
+      background-position: -50px 0;
       background-size: 100px 250px;
    }
 
@@ -45,10 +45,9 @@
    // Page specific = = = = = = =
 
    // Landing
-   .landing-section .overlay {
-      &.right-overlay.h-brand {
-         background-image: url(../img/landing-h-brand@2x.png);
-         background-size: 2500px 1500px;
+   .popPrimary .landing-section {
+      .downArrow {
+         background-position: -50px top;
       }
    }
 

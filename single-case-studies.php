@@ -274,7 +274,7 @@
    <?php $category = get_the_category( $prevPostID ); ?>
    <?php if($prevPost) { ?>
 
-   <article class="prev-page-cta big-cta isDarkGray popSecondary" style="background-image: url(<?php the_field('featured_full_width', $prevPostID) ?>);">
+   <article class="view-post-cta big-cta isDarkGray popSecondary" style="background-image: url(<?php the_field('featured_full_width', $prevPostID) ?>);">
       <div class="medDarkOverlay">
       </div>
       <div class="section-heading vAlign">

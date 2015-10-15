@@ -37,7 +37,7 @@
                background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_page('culture')) { ?>
@@ -46,7 +46,7 @@
                background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_post_type_archive('case-studies')) { ?>
@@ -55,7 +55,7 @@
                background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } /* case studies internal post */ elseif(is_singular('case-studies')) { ?>
@@ -64,7 +64,7 @@
                background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective */ elseif(is_home()) { ?>
@@ -73,7 +73,7 @@
                background-color: #78B97F; /* green */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective internal post */ elseif(is_single()) { ?>
@@ -82,7 +82,7 @@
                background-color: #78B97F; /* green */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective category */ elseif(is_category()) { ?>
@@ -91,7 +91,7 @@
                background-color: #78B97F; /* green */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_archive()) { ?>
@@ -100,7 +100,7 @@
                background-color: #78B97F; /* green */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_page('strategy')) { ?>
@@ -109,7 +109,7 @@
                background-color: #FCCDC6; /* pink */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_page('contact') || is_page('project-planner') ) { ?>
@@ -118,7 +118,7 @@
                background-color: #F7D974; /* yellow */
             }
             .js div#preloader .h-brand {
-               background-position-y: -220px;
+               background-position: 0 -220px;
             }
          </style>
       <?php } ?>
@@ -156,8 +156,8 @@
          </div>
       </div>
 
-   <?php if(!is_page('home') && !is_single() && !is_home()  && !is_archive()) { ?>
-      <div class="menu">
+   <?php if(!is_page('home') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
+      <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
@@ -167,25 +167,11 @@
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
 
-         <?php if(is_page('culture')) { ?>
-            <div class="hero-text section-heading vAlign">
-               <h1 class="clrPop">Culture</h1>
-               <span class="divWave"></span>
-               <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
-            </div>
-
-         <?php } elseif(is_page('strategy')) { ?>
+         <?php if(is_page('strategy')) { ?>
             <div class="hero-text section-heading vAlign">
                <h1 class="clrPop">Strategy</h1>
                <span class="divWave"></span>
                <h3>Jacks of All Trades <br /><span class="italic">Experts</span> In All.</h3>
-            </div>
-
-         <?php } elseif(is_page('project-planner')) { ?>
-            <div class="hero-text section-heading vAlign">
-               <h1 class="clrPop">Project Planner</h1>
-               <span class="divWave"></span>
-               <h3>Let's Create <br />Something <span class="italic">Great</span>.</h3>
             </div>
 
          <?php } elseif(is_page('contact')) { ?>
@@ -216,9 +202,9 @@
       <?php } ?>
 
 
-   <!-- Home page -->
    <?php } elseif(is_page('home')) { ?>
-      <div class="menu">
+   <!-- Home page -->
+      <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
@@ -228,9 +214,9 @@
          </div><!-- /.header-wrapper -->
 
          <div class="landing-hero hero-text section-heading vAlign">
-            <h1 class="clrPop">Harbr</h1>
+            <h1 class="clrPop">Digital Agency</h1>
             <span class="divWave"></span>
-            <h3>A <span class="italic">Digital</span> <br /> Creative Agency</h3>
+            <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
 
             <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
                <i class="video-play-icon"></i>
@@ -246,24 +232,7 @@
             <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.ogv" type="video/ogv">
          </video>
 
-         <a href="#culture" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
-      </div>
-
-      <div id="culture" class="hero section big-cta isDarkGray">
-         <div class="hero-header header-wrapper">
-            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-         </div><!-- /.header-wrapper -->
-
-         <div class="hero-text section-heading vAlign">
-            <h1 class="clrPop">Culture</h1>
-            <span class="divWave"></span>
-            <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
-         </div>
-
-         <!-- Scroll Down Button -->
-         <?php if(!is_page('contact')) { ?>
-            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
-         <?php } ?>
+         <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
 
 
@@ -277,9 +246,9 @@
       <?php } ?>
 
 
-   <!-- Blog page -->
    <?php } elseif(is_home()) { ?>
-      <div class="menu">
+   <!-- Blog page -->
+      <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
@@ -321,9 +290,29 @@
       </div><!-- /.header-wrapper -->
 
 
-   <!-- Archive Page -->
+   <?php } elseif(is_page('project-planner')) { ?>
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+      </div>
+      <div class="hero section big-cta isDarkGray">
+         <div class="hero-header header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="hero-text section-heading vAlign">
+            <h1 class="clrPop">Project Planner</h1>
+            <span class="divWave"></span>
+            <h3>Let's Create <br />Something <span class="italic">Great</span>.</h3>
+         </div>
+
+         <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
+      </div>
+
+
+
    <?php } elseif(is_archive()) { ?>
-      <div class="menu">
+   <!-- Archive Page -->
+      <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
       </div>
 
@@ -336,8 +325,8 @@
 
 
 
-   <!-- Single Post page -->
    <?php } elseif(is_single()) { ?>
+   <!-- Single Post page -->
       <div class="header-wrapper">
          <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
       </div><!-- /.header-wrapper -->

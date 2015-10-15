@@ -409,15 +409,12 @@ th {
   color: rgba(255, 255, 255, 0.5); }
 
 .gform_wrapper ul li .gfield_checkbox li,
-.gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .menu-links-wrapper .littleLinks li, .mobile-menu-links a .link-inactive, .header-wrapper .header .menu-button, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .blog .two-squares .text-square .design-by,
-.archive .two-squares .text-square .design-by, .blog .two-squares .text-square .designer-info,
-.archive .two-squares .text-square .designer-info, .single .section-heading h3,
+.gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .menu-links-wrapper .littleLinks li, .mobile-menu-links a .link-inactive, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .section-heading h3,
 .archive .section-heading h3, .single .isContentArea h3,
 .archive .isContentArea h3, .single .quote-block-section .left-content p,
 .archive .quote-block-section .left-content p, .single .modal .share-modal h3,
 .archive .modal .share-modal h3, .weatherbug-earth-networks .weather-icons-wrapper .text-wrapper h3, .section-heading h1, .sansUpperSpc, .media-boxes .stat-slider p, .latest-post h3,
-.featured-case-study h3, .blog .post-main h3,
-.archive .post-main h3, .sansBUpperSpc, .btn {
+.featured-case-study h3, .blog .section-heading h3, .sansBUpperSpc, .btn {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 400; }
 
@@ -425,15 +422,13 @@ th {
   font-family: "Montserrat", Helvetica, sans-serif;
   font-weight: 700; }
 
-.blog .two-squares .text-square .pull-quote,
-.archive .two-squares .text-square .pull-quote, .single .quote-block-section .left-content h4,
+.single .quote-block-section .left-content h4,
 .archive .quote-block-section .left-content h4, .italic, .single .section-heading h1,
 .archive .section-heading h1, .single-case-studies .narrow-centered-content h2 {
   font-family: "Playfair Display", Times, Serif;
   font-weight: 400; }
 
-.blog .two-squares .text-square .pull-quote,
-.archive .two-squares .text-square .pull-quote, .single .quote-block-section .left-content h4,
+.single .quote-block-section .left-content h4,
 .archive .quote-block-section .left-content h4, .italic {
   font-style: italic; }
 
@@ -555,12 +550,12 @@ th {
   display: block;
   cursor: pointer; }
 
-.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .two-squares .image-square,
-.archive .two-squares .image-square, .single .left-content-right-image .right-image .inner,
+.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .view-post-cta,
+.archive .view-post-cta,
+.single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner,
 .archive .left-content-right-image .right-image .inner,
-.archive .quote-block-section .right-image .inner, .single .prev-page-cta,
-.archive .prev-page-cta, .single .modal,
+.archive .quote-block-section .right-image .inner, .single .modal,
 .archive .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
 .single-case-studies .img-gal-left-2stack-right-big .image, .hero, .single-case-studies .hero .hero-background-image, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-day,
 .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-night {
@@ -568,12 +563,12 @@ th {
   background-repeat: no-repeat;
   background-position: center top; }
 
-.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .two-squares .image-square,
-.archive .two-squares .image-square, .single .left-content-right-image .right-image .inner,
+.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .view-post-cta,
+.archive .view-post-cta,
+.single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner,
 .archive .left-content-right-image .right-image .inner,
-.archive .quote-block-section .right-image .inner, .single .prev-page-cta,
-.archive .prev-page-cta, .single .modal,
+.archive .quote-block-section .right-image .inner, .single .modal,
 .archive .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
 .single-case-studies .img-gal-left-2stack-right-big .image, .hero {
   background-position-y: center; }
@@ -923,7 +918,7 @@ th {
           transition: all 800ms cubic-bezier(0.77, 0.025, 0.175, 0.975);
   /* custom */ }
 
-.menu {
+.menu-wrap {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -934,7 +929,7 @@ th {
 
 body.menuActive {
   overflow: hidden; }
-  body.menuActive .menu {
+  body.menuActive .menu-wrap {
     opacity: 1;
     z-index: 5;
     -webkit-transition: z-index 0.3s step-start, opacity 0.3s linear;
@@ -1328,10 +1323,11 @@ body {
 .gform_wrapper ul li textarea, .gform_wrapper ul li input[type=checkbox]:not(old) + label,
 .gform_wrapper ul li input[type=radio]:not(old) + label, .gform_wrapper ul li input[type=checkbox]:not(old) + label:before,
 .gform_wrapper ul li input[type=radio]:not(old) + label:before, .gform_wrapper .gform_page_footer .button, .menu-close, .menu-links-wrapper .littleLinks a, .header-wrapper .header .menu-button,
-.header-wrapper .header .logo, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .gform_confirmation_message .confirm-social ul li a, .project-planner .gform_wrapper .gf_page_steps,
+.header-wrapper .header .logo, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle .down-arrow, .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper, .header-wrapper .header .blog-categories li, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .gform_confirmation_message .confirm-social ul li a, .project-planner .gform_wrapper .gf_page_steps,
 .project-planner .gforms_confirmation_message .gf_page_steps, .blog .hero-text a,
-.archive .hero-text a, .single .prev-page-cta .section-heading h1 a,
-.archive .prev-page-cta .section-heading h1 a, .weatherbug-earth-networks .weather-icons-wrapper, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
+.archive .hero-text a, .blog .view-post-cta .section-heading h1 a,
+.archive .view-post-cta .section-heading h1 a,
+.single .view-post-cta .section-heading h1 a, .weatherbug-earth-networks .weather-icons-wrapper, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
 .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
 .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
 .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night, .downArrow, .upArrow {
@@ -1339,9 +1335,10 @@ body {
           transition: all 0.2s ease; }
 
 .menu-close:hover, .header-wrapper .header .menu-button:hover,
-.header-wrapper .header .logo:hover, .hero-text h4 a:hover, .blog .hero-text a:hover,
-.archive .hero-text a:hover, .single .prev-page-cta .section-heading h1 a:hover,
-.archive .prev-page-cta .section-heading h1 a:hover, .downArrow:hover, .upArrow:hover {
+.header-wrapper .header .logo:hover, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle:hover, .header-wrapper .header .blog-categories li:hover, .hero-text h4 a:hover, .blog .hero-text a:hover,
+.archive .hero-text a:hover, .blog .view-post-cta .section-heading h1 a:hover,
+.archive .view-post-cta .section-heading h1 a:hover,
+.single .view-post-cta .section-heading h1 a:hover, .downArrow:hover, .upArrow:hover {
   opacity: .7; }
 
 img {
@@ -1501,7 +1498,68 @@ input:focus {
     font-size: 18px;
     line-height: 30px;
     position: relative;
-    z-index: 9; }
+    z-index: 9;
+    margin-top: 3px; }
+  .header-wrapper .header .blog-categories {
+    width: calc(100% - 243px);
+    float: left;
+    margin-left: 40px;
+    position: relative; }
+    .header-wrapper .header .blog-categories .mobile-cat-menu-toggle {
+      display: none;
+      color: #fff;
+      padding: 5px;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 3px 0 0;
+      float: right; }
+      .header-wrapper .header .blog-categories .mobile-cat-menu-toggle .down-arrow {
+        display: inline-block;
+        margin-bottom: -1px;
+        margin-left: 3px;
+        width: 18px;
+        height: 12px;
+        background-image: url(../img/icons/cat-menu-arrow@2x.png);
+        background-size: 18px 12px; }
+      .header-wrapper .header .blog-categories .mobile-cat-menu-toggle.catMenuVisible .down-arrow {
+        -webkit-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+            transform: scaleY(-1);
+        -webkit-filter: FlipW;
+                filter: FlipW;
+        -ms-filter: "FlipW"; }
+    .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper {
+      max-height: 0;
+      -webkit-transition: max-height 0.25s ease-out;
+              transition: max-height 0.25s ease-out;
+      overflow: hidden;
+      width: 100%;
+      max-width: 200px;
+      background-color: rgba(0, 0, 0, 0.75);
+      position: absolute;
+      top: 32px;
+      right: -9%; }
+      .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper li {
+        display: block;
+        text-align: center;
+        margin: 18px 0; }
+    .header-wrapper .header .blog-categories ul {
+      text-align: right;
+      margin-top: 7px; }
+    .header-wrapper .header .blog-categories li {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 12px; }
+      .header-wrapper .header .blog-categories li:first-child {
+        margin-left: 0; }
+      .header-wrapper .header .blog-categories li:last-child {
+        margin-right: 0; }
+      .header-wrapper .header .blog-categories li a {
+        color: #fff;
+        padding: 5px 5px 4px; }
+      .header-wrapper .header .blog-categories li.current_page_item a {
+        border-bottom: 2px solid #fff; }
   .header-wrapper .header .logo {
     color: #fff;
     font-size: 28px;
@@ -1540,9 +1598,29 @@ input:focus {
 .post-type-archive-case-studies .sticky-header-wrapper.darkHeader .sticky-header {
   background-color: transparent; }
 
+.project-planner .sticky-header-wrapper {
+  position: absolute;
+  height: 0 !important; }
+
 .sticky-header-wrapper.menuHidden .sticky-header {
   margin-top: -70px; }
 
+@media only screen and (max-width: 850px) {
+  .header-wrapper .header .blog-categories ul {
+    display: none; }
+  .header-wrapper .header .blog-categories .mobile-cat-menu-toggle,
+  .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper {
+    display: block; }
+  .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper.catMenuVisible {
+    height: auto;
+    max-height: 1000px;
+    -webkit-transition: max-height 0.25s ease-in;
+            transition: max-height 0.25s ease-in; }
+  .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper ul {
+    display: block; } }
+@media only screen and (max-width: 500px) {
+  .header-wrapper .header .blog-categories {
+    width: calc(100% - 220px); } }
 .footer-copyright p {
   font-family: "Playfair Display", Times, Serif;
   font-size: 16px;
@@ -1565,21 +1643,6 @@ input:focus {
   .landing-section .landing-overlay {
     background-color: rgba(255, 255, 255, 0.9);
     z-index: 1; }
-  .landing-section .overlay {
-    height: 100%;
-    display: block;
-    position: absolute; }
-    .landing-section .overlay.left-overlay {
-      left: 0;
-      width: 12.5%;
-      background-color: rgba(255, 255, 255, 0.9); }
-    .landing-section .overlay.right-overlay.h-brand {
-      width: 87.5%;
-      left: 12.5%;
-      background-image: url(../img/landing-h-brand.png);
-      background-position: left center;
-      background-size: 2500px 1500px;
-      background-repeat: repeat-y; }
   .landing-section .video-play-btn {
     margin-top: 25px; }
   .landing-section video {
@@ -1623,8 +1686,7 @@ input:focus {
 .project-planner .sticky-header.sticky {
   position: static; }
 .project-planner #main {
-  position: relative;
-  margin-top: -70px; }
+  position: relative; }
   .project-planner #main.form-step-1 {
     background-image: url(../img/section-bgs/pp-fs1.jpg); }
   .project-planner #main.form-step-2 {
@@ -2144,84 +2206,59 @@ input:focus {
       .archive .post-feed-wrapper article:nth-child(even):before,
       .archive .post-feed-wrapper article:nth-child(even):after {
         display: none; }
-  .blog .post-main,
-  .archive .post-main {
+  .blog .section-heading,
+  .archive .section-heading {
     text-align: center;
     position: relative;
     padding-bottom: 100%; }
-    .blog .post-main .inner,
-    .archive .post-main .inner {
-      padding: 0 4%;
-      width: 100%; }
-    .blog .post-main h3,
-    .archive .post-main h3 {
+    .blog .section-heading h3,
+    .archive .section-heading h3 {
       font-size: 16px;
       line-height: 19px;
       margin-bottom: 2%; }
-      .blog .post-main h3.clrPop,
-      .archive .post-main h3.clrPop {
+      .blog .section-heading h3.clrPop,
+      .archive .section-heading h3.clrPop {
         color: #78B97F; }
-    .blog .post-main .post-title h2,
-    .archive .post-main .post-title h2 {
+    .blog .section-heading h1.post-title,
+    .archive .section-heading h1.post-title {
       color: #fff;
       font-size: 55px;
       line-height: 64px; }
-    .blog .post-main .post-meta,
-    .archive .post-main .post-meta {
+    .blog .section-heading .post-meta,
+    .archive .section-heading .post-meta {
       color: #fff;
       font-size: 19px;
       line-height: 26px;
       margin-top: 20px;
       text-align: center; }
-      .blog .post-main .post-meta span,
-      .archive .post-main .post-meta span {
+      .blog .section-heading .post-meta span,
+      .archive .section-heading .post-meta span {
         vertical-align: bottom; }
-        .blog .post-main .post-meta span.clrPop,
-        .archive .post-main .post-meta span.clrPop {
+        .blog .section-heading .post-meta span.clrPop,
+        .archive .section-heading .post-meta span.clrPop {
           display: inline-block;
           vertical-align: top;
           margin-top: -2px; }
-    .blog .post-main.hoverZoomFade:before,
-    .archive .post-main.hoverZoomFade:before {
-      background-color: rgba(17, 16, 17, 0.65); }
-    .blog .post-main.hoverZoomFade.linkHovered:before,
-    .archive .post-main.hoverZoomFade.linkHovered:before {
-      background-color: rgba(17, 16, 17, 0.8); }
-  .blog .two-squares .text-square,
-  .blog .two-squares .image-square,
-  .archive .two-squares .text-square,
-  .archive .two-squares .image-square {
-    width: 100%;
-    display: block;
-    padding-bottom: 100%; }
-  .blog .two-squares .text-square,
-  .archive .two-squares .text-square {
-    position: relative; }
-    .blog .two-squares .text-square .inner,
-    .archive .two-squares .text-square .inner {
-      display: block;
-      width: 100%; }
-    .blog .two-squares .text-square .pull-quote,
-    .archive .two-squares .text-square .pull-quote {
-      font-size: 30px;
-      line-height: 36px;
-      padding: 0 7% 0 10%;
-      text-indent: -0.4em; }
-    .blog .two-squares .text-square .design-by,
-    .archive .two-squares .text-square .design-by {
-      color: #3E7544;
-      font-size: 18px;
-      line-height: 24px;
-      text-transform: uppercase;
-      padding: 0 7%;
-      text-align: center;
-      margin-bottom: 4px; }
-    .blog .two-squares .text-square .designer-info,
-    .archive .two-squares .text-square .designer-info {
-      font-size: 24px;
-      line-height: 28px;
-      padding: 0 7%;
-      text-align: center; }
+
+.blog .view-post-cta,
+.archive .view-post-cta,
+.single .view-post-cta {
+  position: relative; }
+  .blog .view-post-cta .section-heading,
+  .archive .view-post-cta .section-heading,
+  .single .view-post-cta .section-heading {
+    position: relative;
+    z-index: 2;
+    margin-top: 0;
+    margin-bottom: 0; }
+    .blog .view-post-cta .section-heading h1 a,
+    .archive .view-post-cta .section-heading h1 a,
+    .single .view-post-cta .section-heading h1 a {
+      color: #fff; }
+  .blog .view-post-cta .btn--uline,
+  .archive .view-post-cta .btn--uline,
+  .single .view-post-cta .btn--uline {
+    margin-top: 50px; }
 
 .archive .section-heading h1 {
   color: #fff; }
@@ -2331,21 +2368,6 @@ input:focus {
   position: absolute;
   right: 30px;
   bottom: 30px; }
-.single .prev-page-cta,
-.archive .prev-page-cta {
-  position: relative; }
-  .single .prev-page-cta .section-heading,
-  .archive .prev-page-cta .section-heading {
-    position: relative;
-    z-index: 2;
-    margin-top: 0;
-    margin-bottom: 0; }
-    .single .prev-page-cta .section-heading h1 a,
-    .archive .prev-page-cta .section-heading h1 a {
-      color: #fff; }
-  .single .prev-page-cta .btn--uline,
-  .archive .prev-page-cta .btn--uline {
-    margin-top: 50px; }
 .single .modal .share-modal,
 .archive .modal .share-modal {
   text-align: center;
@@ -3170,7 +3192,7 @@ input:focus {
 .popPrimary .downArrow,
 .popPrimary .upArrow,
 .popPrimary .divWave {
-  background-position-y: -100px; }
+  background-position: 0 -100px; }
 .popPrimary .gform_wrapper ul li input:focus,
 .popPrimary .gform_wrapper ul li input[type=text]:focus,
 .popPrimary .gform_wrapper ul li input[type=url]:focus,
@@ -3189,7 +3211,7 @@ input:focus {
 .popSecondary .downArrow,
 .popSecondary .upArrow,
 .popSecondary .divWave {
-  background-position-y: -200px; }
+  background-position: 0 -200px; }
 .popSecondary .gform_wrapper ul li input:focus,
 .popSecondary .gform_wrapper ul li input[type=text]:focus,
 .popSecondary .gform_wrapper ul li input[type=url]:focus,
@@ -3207,7 +3229,7 @@ input:focus {
 .popTertiary .downArrow,
 .popTertiary .upArrow,
 .popTertiary .divWave {
-  background-position-y: -300px; }
+  background-position: 0 -300px; }
 .popTertiary .gform_wrapper ul li input:focus,
 .popTertiary .gform_wrapper ul li input[type=text]:focus,
 .popTertiary .gform_wrapper ul li input[type=url]:focus,
@@ -3225,7 +3247,7 @@ input:focus {
 .popQuaternary .downArrow,
 .popQuaternary .upArrow,
 .popQuaternary .divWave {
-  background-position-y: -400px; }
+  background-position: 0 -400px; }
 .popQuaternary .gform_wrapper ul li input:focus,
 .popQuaternary .gform_wrapper ul li input[type=text]:focus,
 .popQuaternary .gform_wrapper ul li input[type=url]:focus,
@@ -3249,6 +3271,8 @@ input:focus {
   .flexWrap:before, .flexWrap:after {
     display: none; }
 
+.number-cards .card-wrap {
+  display: inline; }
 .number-cards .card-number {
   font-size: 30px;
   line-height: 32px;
@@ -3262,17 +3286,20 @@ input:focus {
   font-size: 18px;
   line-height: 28px; }
 .number-cards .card {
+  overflow: hidden;
   margin-left: 0;
   border-bottom: 1px solid #EEEEEE;
-  padding: 6% 10%; }
+  padding: 0 10%; }
+  .number-cards .card .inner {
+    padding: 12% 0; }
   .number-cards .card:nth-child(even) {
     border-left: 1px solid #EEEEEE; }
   .number-cards .card:nth-child(-n+2) {
     border-top: 1px solid #EEEEEE; }
 
 .sansUpperSpc, .media-boxes .stat-slider p, .latest-post h3,
-.featured-case-study h3, .blog .post-main h3,
-.archive .post-main h3, .sansBUpperSpc, .btn {
+.featured-case-study h3, .blog .section-heading h3,
+.archive .section-heading h3, .sansBUpperSpc, .btn {
   letter-spacing: 1px;
   text-transform: uppercase; }
 
@@ -3322,7 +3349,9 @@ input:focus {
 
 @media only screen and (max-width: 1140px) {
   .number-cards .card {
-    padding: 6%; } }
+    padding: 0 6%; }
+    .number-cards .card .inner {
+      padding: 12% 0; } }
 @media only screen and (max-width: 1024px) {
   .divWave {
     margin: 20px 0 16px; }
@@ -3353,7 +3382,9 @@ input:focus {
   .number-cards .card {
     margin-left: 0;
     border-bottom: 1px solid #EEEEEE;
-    padding: 6% 7%; }
+    padding: 0 7%; }
+    .number-cards .card .inner {
+      padding: 6% 0; }
     .number-cards .card:nth-child(even) {
       border-left: none; }
     .number-cards .card:nth-child(-n+2) {
@@ -3594,32 +3625,31 @@ input:focus {
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
   .popPrimary .downArrow,
   .popPrimary .divWave {
-    background-position-y: -50px; }
+    background-position: -50px -50px; }
 
   .popSecondary .downArrow,
   .popSecondary .divWave {
-    background-position-y: -100px; }
+    background-position: -50px -100px; }
 
   .popTertiary .downArrow,
   .popTertiary .divWave {
-    background-position-y: -150px; }
+    background-position: -50px -150px; }
 
   .popQuaternary .downArrow,
   .popQuaternary .divWave {
-    background-position-y: -200px; }
+    background-position: -50px -200px; }
 
   .downArrow {
-    background-position-x: -50px;
+    background-position: -50px 0;
     background-size: 100px 250px; }
 
   .divWave,
   .menu-links-wrapper .littleLinks .divWave {
-    background-position-x: -50px;
+    background-position: -50px 0;
     background-size: 100px 250px; }
 
-  .landing-section .overlay.right-overlay.h-brand {
-    background-image: url(../img/landing-h-brand@2x.png);
-    background-size: 2500px 1500px; }
+  .popPrimary .landing-section .downArrow {
+    background-position: -50px top; }
 
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {

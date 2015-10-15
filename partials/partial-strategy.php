@@ -7,7 +7,7 @@
 
    <div class="approach-steps number-cards section group flexWrap">
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">01</span>
             <h3 class="card-title sansBUpperSpc">Consult</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
@@ -15,7 +15,7 @@
       </div>
 
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">02</span>
             <h3 class="card-title sansBUpperSpc">Plan</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
@@ -23,7 +23,7 @@
       </div>
 
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
          <span class="card-number clrPop">03</span>
             <h3 class="card-title sansBUpperSpc">Architect</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
@@ -31,7 +31,7 @@
       </div>
 
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">04</span>
             <h3 class="card-title sansBUpperSpc">Develop</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
@@ -39,7 +39,7 @@
       </div>
 
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">05</span>
             <h3 class="card-title sansBUpperSpc">Launch</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
@@ -47,7 +47,7 @@
       </div>
 
       <div class="card col span_6_of_12">
-         <div class="inner wow fadeInRight" data-wow-delay=".25s">
+         <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">06</span>
             <h3 class="card-title sansBUpperSpc">Maintain</h3>
             <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>

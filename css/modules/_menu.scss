@@ -2,7 +2,7 @@
    transition: all 800ms cubic-bezier(0.770, 0.025, 0.175, 0.975); /* custom */
 }
 
-.menu {
+.menu-wrap {
    position: absolute;
    height: 100%;
    width: 100%;
@@ -13,7 +13,7 @@
 body.menuActive {
    overflow: hidden;
 
-   .menu {
+   .menu-wrap {
       opacity: 1;
       z-index: 5;
       transition: z-index 0.3s step-start, opacity 0.3s linear;

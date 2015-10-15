@@ -5199,7 +5199,7 @@ new WOW().init();
       }
     });
 
-    if (!$('body').hasClass('contact') && !$('body').hasClass('single')) {
+    if (!$('body').hasClass('contact') && !$('body').hasClass('single') && !$('body').hasClass('project-planner')) {
       var stickyWrap = $('.sticky-header-wrapper').one();
       var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
       var lastScrollTop = 0;
@@ -5245,6 +5245,34 @@ new WOW().init();
 
 
 
+    // Blog/Collective Category Menu Toggle
+    if ($('html').hasClass('touch')) {
+      $('.mobile-cat-menu-toggle').on('click', function(){
+        $(this).toggleClass('catMenuVisible');
+        $('.mobile-cat-menu-wrapper').toggleClass('catMenuVisible');
+      });
+
+    } else {
+      $('.mobile-cat-menu-toggle').hover(
+        function() {
+          $(this).addClass('catMenuVisible');
+          $('.mobile-cat-menu-wrapper').addClass('catMenuVisible');
+        }, function() {
+          $(this).removeClass('catMenuVisible');
+          $('.mobile-cat-menu-wrapper').removeClass('catMenuVisible');
+        }
+      );
+      $('.mobile-cat-menu-wrapper').hover(
+        function() {
+          $('.mobile-cat-menu-toggle').addClass('catMenuVisible');
+          $(this).addClass('catMenuVisible');
+        }, function() {
+          $('.mobile-cat-menu-toggle').removeClass('catMenuVisible');
+          $(this).removeClass('catMenuVisible');
+        }
+      );
+    }
+
 
 
     // Down Arrow - fullPage.js scroll down to next section
@@ -5270,13 +5298,17 @@ new WOW().init();
     if ( $('body').hasClass('project-planner') ) {
       /* jshint ignore:start */
       $('#field_1_1').waypoint(function(direction) {
-        // Add initial focus state to "name" field
-        $('#input_1_1').focus();
+        // Add initial focus state to "name" field - Chrome needed delay to make focus work
+        setTimeout(function(){
+          $('#input_1_1').focus();
+        }, 1);
         this.destroy();
       }, {
-        offset: 'bottom-in-view'
+        offset: '65%'
       });
       /* jshint ignore:end */
+
+
 
       $(document).bind('gform_post_render', function(){
         // active form section actions
@@ -5384,9 +5416,9 @@ new WOW().init();
       }
     });
 
-    $('.next-case-study').last().removeClass('downArrow').addClass('upArrow');
+    $('.next-post-section').last().removeClass('downArrow').addClass('upArrow');
 
-    $('.case-studies-wrapper').on('click', '.next-case-study.downArrow', function(e) {
+    $('.blog, .case-studies-wrapper').on('click', '.next-post-section.downArrow', function(e) {
         e.preventDefault();
         var $this = $(this),
             $next = $this.parent().next();
@@ -5394,7 +5426,7 @@ new WOW().init();
         $next.scrollTo(900, 'easeInOutQuint');
     });
 
-    $('.case-studies-wrapper').on('click', '.next-case-study.upArrow', function(e) {
+    $('.blog, .case-studies-wrapper').on('click', '.next-post-section.upArrow', function(e) {
       e.preventDefault();
       $('html, body').animate({scrollTop : 0}, 900, "easeInOutQuint");
       return false;

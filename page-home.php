@@ -9,7 +9,7 @@
 
       <div class="core-values number-cards section group flexWrap">
          <div class="card col span_6_of_12">
-            <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
                <span class="card-number clrPop">01</span>
                <h3 class="card-title sansBUpperSpc">Build</h3>
                <p class="card-text">We aim high at being focused on building relationships with our clients and community as well as impact them with our creative gifts.</p>
@@ -17,7 +17,7 @@
          </div>
 
          <div class="card col span_6_of_12">
-            <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
                <span class="card-number clrPop">02</span>
                <h3 class="card-title sansBUpperSpc">Humble</h3>
                <p class="card-text">Working together on the daily requires each individual to let the greater good of the team’s work surface above their own ego.</p>
@@ -25,7 +25,7 @@
          </div>
 
          <div class="card col span_6_of_12">
-            <div class="inner wow fadeInLeft" data-wow-delay=".25s">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
             <span class="card-number clrPop">03</span>
                <h3 class="card-title sansBUpperSpc">Focus</h3>
                <p class="card-text">It’s important to stay detail oriented with every project we tackle. Staying focused allows us to turn every project we complete into something we love.</p>
@@ -33,7 +33,7 @@
          </div>
 
          <div class="card col span_6_of_12">
-            <div class="inner wow fadeInRight" data-wow-delay=".25s">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
                <span class="card-number clrPop">04</span>
                <h3 class="card-title sansBUpperSpc">Change</h3>
                <p class="card-text">We strive to embrace and drive change in our industry which allows us to keep our clients relevant and ready to adapt.</p>
