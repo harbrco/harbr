@@ -5188,8 +5188,8 @@ new WOW().init();
         if (direction === 'down') {
           nav.stop().addClass('sticky');
 
-          // If is Case Studies Archive page, don't add height to ".sticky-header-wrapper"
-          if ( !$('body').hasClass('post-type-archive-case-studies') ) {
+          // If is Blog or Case Studies Archive page, don't add height to ".sticky-header-wrapper"
+          if ( !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies') ) {
             nav_container.css({ 'height': '70px' });
           }
 
@@ -5199,7 +5199,7 @@ new WOW().init();
       }
     });
 
-    if (!$('body').hasClass('contact') && !$('body').hasClass('single') && !$('body').hasClass('project-planner')) {
+    if (!$('body').hasClass('contact') && !$('body').hasClass('single') && !$('body').hasClass('project-planner') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
       var stickyWrap = $('.sticky-header-wrapper').one();
       var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
       var lastScrollTop = 0;
@@ -5552,8 +5552,6 @@ new WOW().init();
       },
       pager: ($(".feature-highlight-slider>.slide").length > 1) ? true: false
     });
-
-
 
 
   });

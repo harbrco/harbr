@@ -226,10 +226,10 @@
          <div class="landing-overlay">
          </div>
 
-         <video autoplay muted loop poster="<?php echo get_template_directory_uri(); ?>/img/section-bgs/landing-hero-bg.jpg" id="bgvid" data-stellar-ratio="0.5">
-            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.webm" type="video/webm">
-            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.mp4" type="video/mp4">
-            <source src="http://crnt.co/wp-content/uploads/2015/05/LOOP_720.ogv" type="video/ogv">
+         <video autoplay muted loop poster="<?php the_field('video_still_image'); ?>" id="bgvid" data-stellar-ratio="0.5">
+            <source src="<?php the_field('video_url_webm'); ?>" type="video/webm">
+            <source src="<?php the_field('video_url_mp4'); ?>" type="video/mp4">
+            <source src="<?php the_field('video_url_ogv'); ?>" type="video/ogv">
          </video>
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
@@ -250,36 +250,6 @@
    <!-- Blog page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
-      </div>
-
-      <div class="hero section isDarkGray" style="background-image: url(<?php the_field('hero_background_image'); ?>);">
-         <div class="medDarkOverlay">
-         </div>
-         <div class="hero-header header-wrapper">
-            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-         </div><!-- /.header-wrapper -->
-
-         <div class="hero-text section-heading vAlign">
-         <?php $latestPost = new WP_Query( 'posts_per_page=1' );
-            if ( $latestPost->have_posts() ) : while ( $latestPost->have_posts() ) : $latestPost->the_post(); ?>
-               <div class="hero-text section-heading vAlign">
-                  <h1 class="clrPop"><?php the_category(); ?></h1>
-                  <span class="divWave"></span>
-                  <h3><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h3>
-                  <div class="post-meta">
-                     <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
-                  </div>
-                  <a href="<?php the_permalink(); ?>" class="btn btn--uline" title="<?php the_title(); ?>">View Story</a>
-               </div>
-            <?php endwhile; ?>
-            <?php wp_reset_postdata(); ?>
-         <?php endif; ?>
-         </div>
-
-         <!-- Scroll Down Button -->
-         <?php if(!is_page('contact')) { ?>
-            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
-         <?php } ?>
       </div>
 
       <!-- Sticky Header Bar -->
@@ -324,10 +294,4 @@
       </div><!-- /.header-wrapper -->
 
 
-
-   <?php } elseif(is_single()) { ?>
-   <!-- Single Post page -->
-      <div class="header-wrapper">
-         <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
-      </div><!-- /.header-wrapper -->
    <?php } ?>

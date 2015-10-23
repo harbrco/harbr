@@ -71,7 +71,7 @@
       left: 8px;
       width: 45px;
       height: 45px;
-      border: 2px solid $darkGray;
+      border: 2px solid $white;
       border-radius: 50%;
       transition: all 0.125s linear;
    }
@@ -91,7 +91,7 @@
       background-size: 50px 24px;
       background-repeat: no-repeat;
       position: absolute;
-      background-position: 0 top;
+      background-position: -25px top;
       left: 50%;
       top: 50%;
       margin-left: -13px;
@@ -115,7 +115,7 @@
       left: 8px;
       width: 45px;
       height: 45px;
-      border: 2px solid $darkGray;
+      border: 2px solid $white;
       border-radius: 50%;
       transition: all 0.125s linear;
    }
@@ -134,6 +134,7 @@
       background-image: url(../img/icons/close-x-sprite.png);
       background-size: 50px 25px;
       background-repeat: no-repeat;
+      background-position: -25px top;
       position: absolute;
       left: 50%;
       top: 50%;
@@ -176,16 +177,16 @@
    }
 }
 
-.white-btns {
+.dark-btns {
    .share-btn,
    .close-btn {
       &:before {
-         border-color: $white;
+         border-color: $darkGray;
       }
 
       .share-icon,
       .close-icon {
-         background-position: -25px top;
+         background-position: left top;
       }
    }
 }

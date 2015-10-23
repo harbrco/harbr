@@ -30,6 +30,10 @@
          ?>
 
          <div class="hero section isDarkGray" style="background-color: #<?php echo $brandColor; ?>;">
+            <div class="header-wrapper">
+               <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
+            </div><!-- /.header-wrapper -->
+
             <div class="hero-background-image" style="background-image: url(<?php the_field('hero_background_image') ?>);">
                <div class="colorOverlay" style="background-color: rgba(<?php echo $rgb; ?>, .9);">
                </div>

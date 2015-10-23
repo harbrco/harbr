@@ -1,7 +1,7 @@
 <header class="header container" role="banner">
    <a class="menu-button menu-toggle">MENU</a>
 
-   <?php if(is_home()) { ?>
+   <?php if(is_home() || is_category()) { ?>
       <div class="blog-categories">
          <?php wp_nav_menu( array('menu' => 'blog-categories' )); ?>
 

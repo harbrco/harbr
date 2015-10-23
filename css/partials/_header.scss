@@ -117,7 +117,7 @@
                padding: 5px 5px 4px;
             }
 
-            &.current_page_item {
+            &.current-menu-item {
                a {
                   border-bottom: 2px solid $white;
                }
@@ -191,6 +191,8 @@
 }
 
 .project-planner,
+.blog,
+.category,
 .post-type-archive-case-studies {
    .sticky-header-wrapper {
       &.darkHeader {

@@ -5,14 +5,39 @@
       <!-- article -->
       <article id="post-<?php the_ID(); ?>" <?php post_class('popSecondary'); ?>>
 
-         <div class="section-heading">
-            <h3 class="clrPop"><?php the_category(); ?></h3>
-            <span class="divWave"></span>
-            <h1><?php the_title(); ?></h1>
-            <div class="post-meta">
-               <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+         <div <?php post_class('post-hero view-post-cta big-cta isDarkGray'); ?> style="background-image: url(<?php the_field('hero_background_image'); ?>);">
+            <div class="medDarkOverlay">
+            </div>
+
+            <div class="header-wrapper">
+               <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
+            </div><!-- /.header-wrapper -->
+
+            <div class="section-heading vAlign">
+               <h3 class="clrPop"><?php the_category(); ?></h3>
+               <span class="divWave"></span>
+               <h1 class="post-title"><?php the_title(); ?></h1>
+               <div class="post-meta">
+                  <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+               </div>
             </div>
          </div>
+
+         <div class="post-hero-spacer">
+         </div>
+
+         <?php if(get_field('post_intro_text')) { ?>
+         <div class="isContentArea wrapper">
+            <div class="single-column-content wrapper well isWhite">
+               <div class="container">
+                  <div class="inner">
+                     <h2><?php the_field('post_intro_heading'); ?></h2>
+                     <?php the_field('post_intro_text'); ?>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <?php } ?>
 
 
          <!-- FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
@@ -91,14 +116,14 @@
    <?php endwhile; ?>
    <?php endif; ?>
 
-   <?php get_sidebar(); ?>
+   <?php //get_sidebar(); ?>
 
    <?php $prevPost = get_previous_post(); ?>
    <?php $prevPostID = $prevPost->ID; ?>
    <?php $category = get_the_category( $prevPostID ); ?>
    <?php if($prevPost) { ?>
 
-   <article class="prev-page-cta big-cta isDarkGray popSecondary" style="background-image: url(<?php the_field('hero_background_image', $prevPostID) ?>);">
+   <article class="view-post-cta big-cta isDarkGray popSecondary" style="background-image: url(<?php the_field('hero_background_image', $prevPostID) ?>);">
       <div class="medDarkOverlay">
       </div>
       <div class="section-heading vAlign">
