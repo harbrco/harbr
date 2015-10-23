@@ -158,7 +158,7 @@
 
    <?php if(!is_page('home') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
       <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
 
@@ -205,7 +205,7 @@
    <?php } elseif(is_page('home')) { ?>
    <!-- Home page -->
       <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
       <div class="landing-section hero section big-cta">
@@ -249,7 +249,7 @@
    <?php } elseif(is_home()) { ?>
    <!-- Blog page -->
       <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
       <!-- Sticky Header Bar -->
@@ -262,7 +262,7 @@
 
    <?php } elseif(is_page('project-planner')) { ?>
       <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
       <div class="hero section big-cta isDarkGray">
          <div class="hero-header header-wrapper">
@@ -283,7 +283,7 @@
    <?php } elseif(is_archive()) { ?>
    <!-- Archive Page -->
       <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'mobile-menu' ); ?>
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
       <!-- Sticky Header Bar -->
