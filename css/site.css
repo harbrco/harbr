@@ -1438,9 +1438,6 @@ input:focus {
 
   .landing-section {
     background-position-y: top !important; } }
-.popPrimary .landing-section .downArrow {
-  background-position: left 0; }
-
 .hero-text h4 {
   font-size: 22px;
   line-height: 27px;
@@ -3457,9 +3454,6 @@ input:focus {
 
   .main-menu-wrapper .centerBtn .divWave {
     background-position: -50px 0; }
-
-  .popPrimary .landing-section .downArrow {
-    background-position: -50px top; }
 
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
