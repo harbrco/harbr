@@ -408,7 +408,7 @@ th {
   color: rgba(255, 255, 255, 0.5); }
 
 .gform_wrapper ul li .gfield_checkbox li,
-.gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .main-menu-links a, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .weatherbug-earth-networks .weather-icons-wrapper .text-wrapper h3, .section-heading h1, .sansUpperSpc, .media-boxes .stat-slider p, .latest-post h3,
+.gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .main-menu-links a, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .weatherbug .weather-icons-wrapper .text-wrapper h3, .section-heading h1, .sansUpperSpc, .media-boxes .stat-slider p, .latest-post h3,
 .featured-case-study h3, .blog .section-heading h3,
 .archive .section-heading h3,
 .single .section-heading h3, .sansBUpperSpc, .btn {
@@ -550,8 +550,8 @@ th {
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
-.single-case-studies .img-gal-left-2stack-right-big .image, .hero, .single-case-studies .hero .hero-background-image, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-day,
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-night {
+.single-case-studies .img-gal-left-2stack-right-big .image, .single-case-studies .full-width-image-centered-text, .hero, .single-case-studies .hero .hero-background-image, .single-case-studies .tools-used-images .tool-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
+.weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-night {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top; }
@@ -560,14 +560,14 @@ th {
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
-.single-case-studies .img-gal-left-2stack-right-big .image, .hero {
+.single-case-studies .img-gal-left-2stack-right-big .image, .single-case-studies .full-width-image-centered-text, .hero {
   background-position-y: center; }
 
 .single-case-studies .hero .hero-background-image {
   background-position-y: bottom; }
 
-.landing-section .landing-overlay, .media-boxes .next-slide, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-day,
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icons-img-night, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
+.landing-section .landing-overlay, .media-boxes .next-slide, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
+.weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-night, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
   position: absolute;
   top: 0;
   right: 0;
@@ -1048,15 +1048,19 @@ body.menuActive {
     .main-menu-wrapper .social-links li {
       margin: 0 10px 20px; } }
 .gform_wrapper .gform_body,
-.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, .footer, .single-case-studies .feature-highlight-slider, .section, .big-cta {
+.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, .footer, .single-case-studies .feature-highlight-slider,
+.single-case-studies .second-feature-highlight-slider, .section, .big-cta {
   *zoom: 1; }
   .gform_wrapper .gform_body:before,
-  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, .footer:before, .single-case-studies .feature-highlight-slider:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after, .section:after, .big-cta:after {
+  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, .footer:before, .single-case-studies .feature-highlight-slider:before,
+  .single-case-studies .second-feature-highlight-slider:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
+  .single-case-studies .second-feature-highlight-slider:after, .section:after, .big-cta:after {
     content: " ";
     display: table; }
   .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after, .section:after, .big-cta:after {
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
+  .single-case-studies .second-feature-highlight-slider:after, .section:after, .big-cta:after {
     clear: both; }
 
 * {
@@ -1095,10 +1099,10 @@ body {
 .header-wrapper .header .logo, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle .down-arrow, .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper, .header-wrapper .header .blog-categories li, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .gform_confirmation_message .confirm-social ul li a, .project-planner .gform_wrapper .gf_page_steps,
 .project-planner .gforms_confirmation_message .gf_page_steps, .blog .section-heading h1 a,
 .archive .section-heading h1 a,
-.single .section-heading h1 a, .weatherbug-earth-networks .weather-icons-wrapper, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night, .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night, .downArrow, .upArrow {
+.single .section-heading h1 a, .single-case-studies .tool-pager a, .weatherbug .weather-icons-wrapper, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
+.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
+.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
+.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night, .downArrow, .upArrow {
   -webkit-transition: all 0.2s ease;
           transition: all 0.2s ease; }
 
@@ -1210,7 +1214,6 @@ input:focus {
   cursor: default;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  -khtml-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
@@ -1954,7 +1957,7 @@ input:focus {
       color: #fff;
       font-size: 70px;
       line-height: 78px;
-      letter-spacing: 5px;
+      letter-spacing: 3px;
       text-transform: none; }
       .blog .section-heading h1 a,
       .archive .section-heading h1 a,
@@ -1985,7 +1988,7 @@ input:focus {
     .blog .view-post-cta .btn--uline,
     .archive .view-post-cta .btn--uline,
     .single .view-post-cta .btn--uline {
-      margin-top: 50px; }
+      margin-top: 34px; }
 
 .blog .post-feed-wrapper article {
   overflow: hidden; }
@@ -2003,7 +2006,7 @@ input:focus {
 .single .close-btn {
   float: right; }
 .single .section-heading {
-  margin-top: -37px; }
+  margin-top: -30px; }
   .single .section-heading h3 {
     font-size: 16px;
     line-height: 19px;
@@ -2011,7 +2014,7 @@ input:focus {
   .single .section-heading h1 {
     font-size: 70px;
     line-height: 78px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     text-transform: none; }
   .single .section-heading .post-meta {
     font-size: 19px;
@@ -2194,7 +2197,7 @@ input:focus {
   .archive .modal .share-modal h1 {
     font-size: 50px;
     line-height: 58px;
-    letter-spacing: 4px; }
+    letter-spacing: 3px; }
   .blog .section-heading .social-links li,
   .blog .modal .share-modal .social-links li,
   .single .section-heading .social-links li,
@@ -2282,7 +2285,7 @@ input:focus {
   .archive .modal .share-modal h1 {
     font-size: 40px;
     line-height: 48px;
-    letter-spacing: 3px; }
+    letter-spacing: 2px; }
   .blog .section-heading .social-links li a,
   .blog .modal .share-modal .social-links li a,
   .single .section-heading .social-links li a,
@@ -2332,7 +2335,7 @@ input:focus {
   .archive .modal .share-modal h1 {
     font-size: 32px;
     line-height: 40px;
-    letter-spacing: 3px; }
+    letter-spacing: 2px; }
   .blog .section-heading .social-links li,
   .blog .modal .share-modal .social-links li,
   .single .section-heading .social-links li,
@@ -2364,7 +2367,7 @@ input:focus {
   .archive .modal .share-modal h1 {
     font-size: 28px;
     line-height: 34px;
-    letter-spacing: 2px; }
+    letter-spacing: 1px; }
   .blog .section-heading .post-meta,
   .blog .modal .share-modal .post-meta,
   .single .section-heading .post-meta,
@@ -2386,6 +2389,30 @@ input:focus {
   .archive .left-content-right-image .left-content h3 {
     font-size: 22px;
     line-height: 26px; } }
+.post-type-archive-case-studies .downArrow,
+.post-type-archive-case-studies .upArrow {
+  right: inherit;
+  left: 7%; }
+
+.post-type-archive-case-studies .hero .hero-highlight-image,
+.single-case-studies .hero .hero-highlight-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 70%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right bottom; }
+.post-type-archive-case-studies .hero .section-heading,
+.single-case-studies .hero .section-heading {
+  max-width: 48%;
+  margin-top: -100px; }
+
+.single-case-studies .isContentArea {
+  background-color: #fff;
+  position: relative;
+  z-index: 0; }
 .single-case-studies.popPrimary .clrPop {
   color: #fff; }
 .single-case-studies.popPrimary .downArrow,
@@ -2394,23 +2421,15 @@ input:focus {
 .single-case-studies .header-wrapper {
   position: absolute;
   top: 0; }
-.single-case-studies .hero .colorOverlay {
-  z-index: 1; }
-.single-case-studies .hero .hero-background-image {
-  background-size: contain;
+.single-case-studies .hero {
   z-index: 0; }
-.single-case-studies .hero .hero-highlight-image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 45%;
-  height: calc(100% - 130px);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom; }
-.single-case-studies .hero .section-heading {
-  max-width: 48%;
-  margin-top: -5%; }
+  .single-case-studies .hero .colorOverlay {
+    z-index: 1; }
+  .single-case-studies .hero .hero-background-image {
+    background-size: contain;
+    z-index: 0; }
+  .single-case-studies .hero .section-heading h1 {
+    padding-bottom: 58px; }
 .single-case-studies .narrow-centered-content .container, .single-case-studies .narrow-centered-content .project-planner .gform_body, .project-planner .single-case-studies .narrow-centered-content .gform_body {
   text-align: center;
   max-width: 700px; }
@@ -2487,31 +2506,44 @@ input:focus {
   .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
   .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
     margin-right: 20px; }
-.single-case-studies .feature-highlight-slider-wrapper {
+.single-case-studies .feature-highlight-slider-wrapper,
+.single-case-studies .second-feature-highlight-slider-wrapper {
   position: relative; }
-  .single-case-studies .feature-highlight-slider-wrapper .bx-controls {
+  .single-case-studies .feature-highlight-slider-wrapper .bx-controls,
+  .single-case-studies .second-feature-highlight-slider-wrapper .bx-controls {
     position: absolute;
     bottom: 5%;
     width: 100%;
     z-index: 55; }
-    .single-case-studies .feature-highlight-slider-wrapper .bx-controls .bx-pager {
+    .single-case-studies .feature-highlight-slider-wrapper .bx-controls .bx-pager,
+    .single-case-studies .second-feature-highlight-slider-wrapper .bx-controls .bx-pager {
       bottom: inherit; }
-.single-case-studies .feature-highlight-slider {
+  .single-case-studies .feature-highlight-slider-wrapper .bx-wrapper .bx-controls .bx-pager.bx-default-pager,
+  .single-case-studies .second-feature-highlight-slider-wrapper .bx-wrapper .bx-controls .bx-pager.bx-default-pager {
+    text-align: left;
+    padding-left: 5%; }
+.single-case-studies .feature-highlight-slider,
+.single-case-studies .second-feature-highlight-slider {
   height: 100%; }
-  .single-case-studies .feature-highlight-slider .slide-text {
+  .single-case-studies .feature-highlight-slider .slide-text,
+  .single-case-studies .second-feature-highlight-slider .slide-text {
     padding-left: 5%;
     padding-right: 5%;
     color: #fff; }
-    .single-case-studies .feature-highlight-slider .slide-text h3 {
+    .single-case-studies .feature-highlight-slider .slide-text h3,
+    .single-case-studies .second-feature-highlight-slider .slide-text h3 {
       font-size: 25px;
       line-height: 30px;
       text-transform: uppercase;
       margin-bottom: 18px; }
-    .single-case-studies .feature-highlight-slider .slide-text p {
+    .single-case-studies .feature-highlight-slider .slide-text p,
+    .single-case-studies .second-feature-highlight-slider .slide-text p {
       font-size: 18px;
       line-height: 30px; }
-  .single-case-studies .feature-highlight-slider .slide-image {
-    max-height: 800px; }
+  .single-case-studies .feature-highlight-slider .slide-image,
+  .single-case-studies .second-feature-highlight-slider .slide-image {
+    max-height: 800px;
+    margin-top: 5%; }
 .single-case-studies .img-gal-intro-text .text-wrapper,
 .single-case-studies .full-width-image-centered-text .text-wrapper {
   margin: 0 auto 5%;
@@ -2526,188 +2558,220 @@ input:focus {
 .single-case-studies .full-width-image-centered-text p {
   font-size: 18px;
   line-height: 30px; }
-.single-case-studies .prev-page-cta .section-heading {
+.single-case-studies .full-width-image-centered-text {
+  position: relative;
+  padding-bottom: 42%;
+  overflow: hidden; }
+  .single-case-studies .full-width-image-centered-text .container, .single-case-studies .full-width-image-centered-text .project-planner .gform_body, .project-planner .single-case-studies .full-width-image-centered-text .gform_body,
+  .single-case-studies .full-width-image-centered-text .fw-img {
+    position: relative;
+    z-index: 1; }
+  .single-case-studies .full-width-image-centered-text .fw-img {
+    z-index: 2;
+    position: absolute; }
+.single-case-studies .prev-cs .section-heading {
+  margin-top: -100px; }
+.single-case-studies .tools-used-wrapper .container, .single-case-studies .tools-used-wrapper .project-planner .gform_body, .project-planner .single-case-studies .tools-used-wrapper .gform_body {
+  max-width: 1300px; }
+.single-case-studies .tools-used-text .text-wrapper {
+  margin: 0 auto 30px;
   text-align: center;
-  padding-right: 0;
-  margin-right: auto;
-  margin-left: auto; }
-  .single-case-studies .prev-page-cta .section-heading .divWave {
-    margin-right: auto;
-    margin-left: auto; }
+  max-width: 560px;
+  background: transparent; }
+.single-case-studies .tools-used-text h3 {
+  font-size: 25px;
+  line-height: 30px;
+  text-transform: uppercase; }
+.single-case-studies .tools-used-text p {
+  font-size: 18px;
+  line-height: 30px; }
+.single-case-studies .tool-pager {
+  margin-bottom: 36px; }
+  .single-case-studies .tool-pager a {
+    display: inline-block;
+    margin: 0 12px;
+    opacity: .4; }
+    .single-case-studies .tool-pager a.active, .single-case-studies .tool-pager a:hover {
+      opacity: 1; }
+  .single-case-studies .tool-pager .tool-icon {
+    display: block; }
+    .single-case-studies .tool-pager .tool-icon.isSketch {
+      width: 43px;
+      height: 38px;
+      background-image: url(../img/icons/tool-used-sketch.png);
+      background-size: 43px 38px; }
+    .single-case-studies .tool-pager .tool-icon.isPhotoshop {
+      width: 39px;
+      height: 38px;
+      background-image: url(../img/icons/tool-used-photoshop.png);
+      background-size: 39px 38px; }
+    .single-case-studies .tool-pager .tool-icon.isIllustrator {
+      width: 39px;
+      height: 38px;
+      background-image: url(../img/icons/tool-used-illustrator.png);
+      background-size: 39px 38px; }
+    .single-case-studies .tool-pager .tool-icon.isInvision {
+      width: 99px;
+      height: 34px;
+      background-image: url(../img/icons/tool-used-invision.png);
+      background-size: 99px 34px; }
+    .single-case-studies .tool-pager .tool-icon.isSublime {
+      width: 41px;
+      height: 37px;
+      background-image: url(../img/icons/tool-used-sublime.png);
+      background-size: 41px 37px; }
+.single-case-studies .tools-used-images .tool-image {
+  padding-bottom: 39.38%; }
 
-.weatherbug-earth-networks .prev-page-cta {
+.weatherbug .prev-page-cta {
   background-position: center right; }
-.weatherbug-earth-networks.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
+.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12,
+.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
   width: 48%; }
-.weatherbug-earth-networks.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
+.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12,
+.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
   width: 48%; }
-.weatherbug-earth-networks.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image img {
+.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image img,
+.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image img {
   max-width: 340px;
   display: block;
   margin: 0 auto; }
-.weatherbug-earth-networks .weather-icons-wrapper .container, .weatherbug-earth-networks .weather-icons-wrapper .project-planner .gform_body, .project-planner .weatherbug-earth-networks .weather-icons-wrapper .gform_body {
+.weatherbug .weather-icons-wrapper .container, .weatherbug .weather-icons-wrapper .project-planner .gform_body, .project-planner .weatherbug .weather-icons-wrapper .gform_body {
   max-width: 1000px; }
-.weatherbug-earth-networks .weather-icons-wrapper .text-wrapper {
+.weatherbug .weather-icons-wrapper .text-wrapper {
   text-align: center;
   color: #fff;
   margin: 0 auto 24px;
   max-width: 700px; }
-  .weatherbug-earth-networks .weather-icons-wrapper .text-wrapper h3 {
+  .weatherbug .weather-icons-wrapper .text-wrapper h3 {
     font-size: 25px;
     line-height: 30px;
     text-transform: uppercase;
     margin-bottom: 16px; }
-  .weatherbug-earth-networks .weather-icons-wrapper .text-wrapper p {
+  .weatherbug .weather-icons-wrapper .text-wrapper p {
     font-size: 18px;
     line-height: 30px; }
-.weatherbug-earth-networks .weather-icons-wrapper .day-night-toggle {
+.weatherbug .weather-icons-wrapper .day-night-toggle {
   width: 32px;
   height: 32px;
   background-image: url(../img/icons/wb-day-night-toggle.png);
   background-size: 32px 32px;
   display: block;
   margin: 0 auto; }
-.weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper {
+.weatherbug .weather-icons-wrapper .icons-wrapper {
   width: 100%; }
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk {
+  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk {
     position: relative; }
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
+  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
     padding-bottom: 50%; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
       background-image: url(../img/icons/wb-day-night-mobile.png);
       background-size: cover;
       background-repeat: no-repeat; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day {
       background-position: 0 0; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
       background-position-x: 0;
       background-position-y: top;
       opacity: 0; }
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
+  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
     padding-bottom: 50%; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
       background-image: url(../img/icons/wb-day-night-tablet.png);
       background-size: cover;
       background-repeat: no-repeat; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day {
       background-position: 0 0; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
       background-position-x: 0;
       background-position-y: top;
       opacity: 0; }
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
+  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
     padding-bottom: 50%; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
       background-image: url(../img/icons/wb-day-night-desktop.png);
       background-size: cover;
       background-repeat: no-repeat; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day {
       background-position: 0 0; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
       background-position-x: 0;
       background-position-y: top;
       opacity: 0; }
-.weatherbug-earth-networks .weather-icons-wrapper.isDayTime {
+.weatherbug .weather-icons-wrapper.isDayTime {
   background-color: #2e98e3; }
-.weatherbug-earth-networks .weather-icons-wrapper.isNightTime {
+.weatherbug .weather-icons-wrapper.isNightTime {
   background-color: #113C62; }
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .day-night-toggle {
+  .weatherbug .weather-icons-wrapper.isNightTime .day-night-toggle {
     background-color: #62e920; }
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-day,
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-day {
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-day,
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-day {
     opacity: 0; }
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-night,
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-night {
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-night,
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-night {
     opacity: 1; }
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-day {
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-day {
     opacity: 0; }
-  .weatherbug-earth-networks .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-night {
+  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-night {
     opacity: 1; }
 
 @media only screen and (max-width: 900px) {
-  .weatherbug-earth-networks.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
+  .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12,
+  .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
     width: 100%; }
-  .weatherbug-earth-networks.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
+  .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12,
+  .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
     width: 100%;
     margin-left: 0; } }
 @media only screen and (max-width: 768px) {
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper {
+  .weatherbug .weather-icons-wrapper .icons-wrapper {
     max-width: 500px;
     margin: 0 auto; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile,
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile,
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
       width: 50%;
       padding-bottom: 100%; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
       display: none; } }
 @media only screen and (max-width: 400px) {
-  .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper {
+  .weatherbug .weather-icons-wrapper .icons-wrapper {
     max-width: 250px; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
       width: 100%;
       padding-bottom: 200%; }
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet,
-    .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet,
+    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
       display: none; } }
-@media only screen and (max-width: 1400px) {
-  .single.single-case-studies .hero .section-heading h1 {
-    font-size: 62px;
-    line-height: 70px;
-    letter-spacing: 3px; } }
-@media only screen and (max-width: 1140px) {
-  .single.single-case-studies .hero .section-heading h1 {
-    font-size: 54px;
-    line-height: 62px; } }
-@media only screen and (max-width: 980px) {
-  .single.single-case-studies .hero .section-heading h1 {
-    font-size: 46px;
-    line-height: 54px;
-    letter-spacing: 2px; } }
 @media only screen and (max-width: 900px) {
   .single.single-case-studies .feature-highlight-slider .slide-text,
-  .single.single-case-studies .feature-highlight-slider .slide-image {
+  .single.single-case-studies .feature-highlight-slider .slide-image,
+  .single.single-case-studies .second-feature-highlight-slider .slide-text,
+  .single.single-case-studies .second-feature-highlight-slider .slide-image {
     width: 100%;
     display: block;
     position: relative; }
-  .single.single-case-studies .feature-highlight-slider .slide-text {
+  .single.single-case-studies .feature-highlight-slider .slide-text,
+  .single.single-case-studies .second-feature-highlight-slider .slide-text {
     top: 0;
-    margin-bottom: 5%; }
-  .single.single-case-studies .feature-highlight-slider .slide-image {
+    margin-bottom: 5%;
+    margin-top: 80px; }
+  .single.single-case-studies .feature-highlight-slider .slide-image,
+  .single.single-case-studies .second-feature-highlight-slider .slide-image {
     width: 95%;
     margin-left: 5%; }
+  .single.single-case-studies .feature-highlight-slider-wrapper .bx-wrapper .bx-controls,
+  .single.single-case-studies .second-feature-highlight-slider-wrapper .bx-wrapper .bx-controls {
+    top: 3%;
+    bottom: inherit; }
 
   .single-case-studies .narrow-centered-content h2 {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 20px; } }
 @media only screen and (max-width: 768px) {
-  .single.single-case-studies .hero {
-    overflow: hidden; }
-    .single.single-case-studies .hero .hero-highlight-image {
-      width: 90%;
-      position: relative;
-      margin: 5% 5% 0; }
-    .single.single-case-studies .hero .section-heading {
-      max-width: 100%;
-      display: block;
-      position: relative;
-      top: 0 !important;
-      margin-left: 0;
-      margin-top: 110px;
-      padding-right: 0;
-      padding: 0 5%;
-      text-align: center; }
-      .single.single-case-studies .hero .section-heading .divWave {
-        margin-right: auto;
-        margin-left: auto; }
-      .single.single-case-studies .hero .section-heading h1 {
-        font-size: 50px;
-        line-height: 56px;
-        letter-spacing: 3px; }
-
   .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
     width: 95%;
     margin-bottom: 10px; }
@@ -2748,13 +2812,6 @@ input:focus {
   .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
     margin-right: 10px; } }
 @media only screen and (max-width: 650px) {
-  .single.single-case-studies .hero .section-heading {
-    margin-top: 90px; }
-    .single.single-case-studies .hero .section-heading h1 {
-      font-size: 38px;
-      line-height: 44px;
-      letter-spacing: 2px; }
-
   .single-case-studies .narrow-centered-content h2 {
     font-size: 36px;
     line-height: 46px;
@@ -2763,19 +2820,23 @@ input:focus {
     font-size: 17px;
     line-height: 26px; } }
 @media only screen and (max-width: 580px) {
-  .single.single-case-studies .feature-highlight-slider .slide-text h3 {
+  .single.single-case-studies .feature-highlight-slider .slide-text h3,
+  .single.single-case-studies .second-feature-highlight-slider .slide-text h3 {
     font-size: 22px;
     line-height: 27px; }
-  .single.single-case-studies .feature-highlight-slider .slide-text p {
+  .single.single-case-studies .feature-highlight-slider .slide-text p,
+  .single.single-case-studies .second-feature-highlight-slider .slide-text p {
     font-size: 16px;
     line-height: 27px; }
 
   .single-case-studies .full-width-image-centered-text .text-wrapper h3,
-  .single-case-studies .img-gal-intro-text .text-wrapper h3 {
+  .single-case-studies .img-gal-intro-text .text-wrapper h3,
+  .single-case-studies .tools-used-text .text-wrapper h3 {
     font-size: 22px;
     line-height: 27px; }
   .single-case-studies .full-width-image-centered-text .text-wrapper p,
-  .single-case-studies .img-gal-intro-text .text-wrapper p {
+  .single-case-studies .img-gal-intro-text .text-wrapper p,
+  .single-case-studies .tools-used-text .text-wrapper p {
     font-size: 16px;
     line-height: 27px; }
   .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
@@ -2822,11 +2883,6 @@ input:focus {
   .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
     margin-right: 0; } }
 @media only screen and (max-width: 500px) {
-  .single.single-case-studies .hero .section-heading h1 {
-    font-size: 32px;
-    line-height: 38px;
-    letter-spacing: 1px; }
-
   .single-case-studies .narrow-centered-content h2 {
     font-size: 32px;
     line-height: 42px;
@@ -2867,7 +2923,15 @@ input:focus {
 .well--s {
   padding-top: 7%;
   padding-bottom: 7%; }
-  .well--s.well--noBottom, .weatherbug-earth-networks.single-case-studies .feature-highlight-slider .well--s.hasPhoneImage {
+  .well--s.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--s.hasPhoneImage,
+  .weatherbug.single-case-studies .second-feature-highlight-slider .well--s.hasPhoneImage {
+    padding-bottom: 0; }
+
+.well--xs {
+  padding-top: 4.5%;
+  padding-bottom: 4.5%; }
+  .well--xs.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--xs.hasPhoneImage,
+  .weatherbug.single-case-studies .second-feature-highlight-slider .well--xs.hasPhoneImage {
     padding-bottom: 0; }
 
 .divWave {
@@ -3062,6 +3126,25 @@ input:focus {
 .popQuaternary .gform_wrapper .gform_page_footer .button:hover, .popQuaternary .gform_wrapper .gform_page_footer .button:focus {
   border-color: #F7D974; }
 
+.popWhite .clrPop {
+  color: #fff; }
+.popWhite .divWave {
+  background-position: 0 0; }
+.popWhite .downArrow,
+.popWhite .upArrow {
+  background-position: 0 -500px; }
+.popWhite .gform_wrapper ul li input:focus,
+.popWhite .gform_wrapper ul li input[type=text]:focus,
+.popWhite .gform_wrapper ul li input[type=url]:focus,
+.popWhite .gform_wrapper ul li input[type=email]:focus,
+.popWhite .gform_wrapper ul li input[type=tel]:focus,
+.popWhite .gform_wrapper ul li input[type=number]:focus,
+.popWhite .gform_wrapper ul li input[type=password]:focus,
+.popWhite .gform_wrapper ul li textarea:focus {
+  border-color: #fff; }
+.popWhite .gform_wrapper .gform_page_footer .button:hover, .popWhite .gform_wrapper .gform_page_footer .button:focus {
+  border-color: #fff; }
+
 .flexWrap {
   display: -webkit-box;
   display: -webkit-flex;
@@ -3169,6 +3252,10 @@ input:focus {
       font-size: 60px;
       line-height: 68px; } }
 @media only screen and (max-width: 768px) {
+  .well--xs {
+    padding-top: 7%;
+    padding-bottom: 7%; }
+
   .section-heading {
     margin-top: 17%;
     margin-bottom: 11%; }
@@ -3445,7 +3532,7 @@ input:focus {
 
   .downArrow {
     background-position: -50px 0;
-    background-size: 100px 250px; }
+    background-size: 100px 300px; }
 
   .divWave,
   .menu-links-wrapper .littleLinks .divWave {

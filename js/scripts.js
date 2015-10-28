@@ -9,6 +9,7 @@
 // @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-media.js"
 // @codekit-prepend "libs/wow.min.js"
 // @codekit-prepend "libs/jquery.fullPage.js"
+// @codekit-prepend "libs/jquery.stellar.min.js"
 
 
 // fix for *flash* of animated elements before animation happens.
@@ -37,14 +38,18 @@ new WOW().init();
 
 
     // Add dynamic accent color body classes:
-    if ( $('body').hasClass('home') || $('body').hasClass('culture') || $('body').hasClass('post-type-archive-case-studies') || $('body').hasClass('single-case-studies') ) {
+    if ( $('body').hasClass('home') || $('body').hasClass('culture') || $('body').hasClass('single-case-studies') ) {
       $('body').addClass('popPrimary');
+    } else if ( $('body').hasClass('post-type-archive-case-studies') && $('body').hasClass('archive') ) {
+      $('body').addClass('popWhite');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
       $('body').addClass('popTertiary');
     } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') ) {
       $('body').addClass('popQuaternary');
+    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
+      $('body').addClass('popSecondary');
     }
 
 
@@ -406,6 +411,26 @@ new WOW().init();
 
 
 
+    // add script for parallax hero backgrounds
+    var stellarJS = function(){
+      $.stellar({
+        responsive: true,
+        horizontalScrolling: false
+      });
+    };
+    stellarJS();
+
+    $(window).load(function() {
+      $(window).data('plugin_stellar').refresh();
+
+      $.stellar({
+        responsive: true,
+        horizontalScrolling: false
+      });
+    });
+
+
+
     // bxSlider(s)
     $('.stat-slider').bxSlider({
       auto: ($(".stat-slider>.slide").length > 1) ? true: false,
@@ -466,11 +491,16 @@ new WOW().init();
       pause: 6000,
       speed: 5,
       mode: 'fade',
-      controls: true,
-      nextSelector: '.next-stat',
-      prevSelector: '.prev-stat',
+      adaptiveHeight: 'true',
+      controls: false,
       nextText: '',
       prevText: '',
+      onSliderLoad: function () {
+        $(window).data('plugin_stellar').refresh();
+        stellarJS();
+        vAlignShow();
+        vAlignFun();
+      },
       onSlideBefore: function(){
         $('.feature-highlight-slider .slide').animate({
           opacity: 0
@@ -480,14 +510,80 @@ new WOW().init();
         });
       },
       onSlideAfter: function(){
+        vAlignFun();
+        $(window).data('plugin_stellar').refresh();
+
         $('.feature-highlight-slider .slide').animate({
           opacity: 1
+        }, 600);
+      },
+      pager: ($(".feature-highlight-slider>.slide").length > 1) ? true: false
+    });
+
+    $('.second-feature-highlight-slider').bxSlider({
+      auto: false,
+      pause: 6000,
+      speed: 5,
+      mode: 'fade',
+      adaptiveHeight: 'true',
+      controls: false,
+      nextText: '',
+      prevText: '',
+      onSliderLoad: function () {
+        $(window).data('plugin_stellar').refresh();
+        stellarJS();
+        vAlignShow();
+        vAlignFun();
+      },
+      onSlideBefore: function(){
+        $('.second-feature-highlight-slider .slide').animate({
+          opacity: 0
         }, 600, function() {
           vAlignFun();
           // Animation complete.
         });
       },
-      pager: ($(".feature-highlight-slider>.slide").length > 1) ? true: false
+      onSlideAfter: function(){
+        vAlignFun();
+        $(window).data('plugin_stellar').refresh();
+
+        $('.second-feature-highlight-slider .slide').animate({
+          opacity: 1
+        }, 600);
+      },
+      pager: ($(".second-feature-highlight-slider>.slide").length > 1) ? true: false
+    });
+
+    $('.tools-used-slider').bxSlider({
+      auto: false,
+      mode: 'fade',
+      adaptiveHeight: 'true',
+      controls: false,
+      pagerCustom: '.tool-pager',
+      nextText: '',
+      prevText: ''//,
+      // onSliderLoad: function () {
+      //   $(window).data('plugin_stellar').refresh();
+      //   stellarJS();
+      //   vAlignShow();
+      //   vAlignFun();
+      // },
+      // onSlideBefore: function(){
+      //   $('.second-feature-highlight-slider .slide').animate({
+      //     opacity: 0
+      //   }, 600, function() {
+      //     vAlignFun();
+      //     // Animation complete.
+      //   });
+      // },
+      // onSlideAfter: function(){
+      //   vAlignFun();
+      //   $(window).data('plugin_stellar').refresh();
+
+      //   $('.second-feature-highlight-slider .slide').animate({
+      //     opacity: 1
+      //   }, 600);
+      // }
     });
 
 

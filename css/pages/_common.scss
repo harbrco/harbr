@@ -42,6 +42,14 @@
       padding-bottom: 0;
    }
 }
+.well--xs {
+   padding-top: 4.5%;
+   padding-bottom: 4.5%;
+
+   &.well--noBottom {
+      padding-bottom: 0;
+   }
+}
 
 .divWave {
    display: block;
@@ -370,6 +378,48 @@
       }
    }
 }
+.popWhite {
+   .clrPop {
+      color: $white;
+   }
+
+   .divWave {
+      background-position: 0 0;
+   }
+
+   .downArrow,
+   .upArrow {
+      background-position: 0 -500px;
+   }
+
+   .gform_wrapper {
+      ul {
+         li {
+            input,
+            input[type=text],
+            input[type=url],
+            input[type=email],
+            input[type=tel],
+            input[type=number],
+            input[type=password],
+            textarea, {
+               &:focus {
+                  border-color: $white;
+               }
+            }
+         }
+      }
+
+      .gform_page_footer {
+         .button {
+            &:hover,
+            &:focus {
+               border-color: $white;
+            }
+         }
+      }
+   }
+}
 
 
 // flexbox - - - - - - -
@@ -535,6 +585,11 @@
 }
 
 @media only screen and (max-width:768px) {
+   .well--xs {
+      padding-top: 7%;
+      padding-bottom: 7%;
+   }
+
    .section-heading {
       margin-top: 17%;
       margin-bottom: 11%;

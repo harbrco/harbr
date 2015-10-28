@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19051",
+"creatorBuild": "19076",
 "files": {
 	"\/404.php": {
 		"fileType": 8192,
@@ -688,24 +688,134 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-feat-wbug-sq-min.jpg": {
+	"\/img\/cs-ff\/cs-ff-fw-big-bg-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 73315,
-		"inputAbbreviatedPath": "\/img\/cs-feat-wbug-sq-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-feat-wbug-sq-min.jpg",
+		"initialSize": 511164,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-fw-big-bg-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-fw-big-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-ff-hero-highlight-min.png": {
+	"\/img\/cs-ff\/cs-ff-fw-big-min.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 605965,
-		"inputAbbreviatedPath": "\/img\/cs-ff-hero-highlight-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-ff-hero-highlight-min.png",
+		"initialSize": 948834,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-fw-big-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-fw-big-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-hero-highlight-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 660861,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-hero-highlight-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-hero-highlight-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide-img1-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 369067,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img1-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide-img2-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 259983,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img2-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img2-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide-img3-bg-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 224058,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img3-bg-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img3-bg-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide-img3-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 263714,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img3-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img3-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide-img4-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 353279,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img4-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide-img4-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide2-img1-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 196897,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img1-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide2-img2-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 245274,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img2-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img2-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide2-img3-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 72371,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img3-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img3-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-ff\/cs-ff-slide2-img4-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 73285,
+		"inputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img4-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-ff\/cs-ff-slide2-img4-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -721,189 +831,244 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-fw-big-min.png": {
-		"fileType": 32768,
+	"\/img\/cs-wbug\/cs-feat-wbug-sq-min.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 816633,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-fw-big-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-fw-big-min.png",
+		"initialSize": 73315,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-feat-wbug-sq-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-feat-wbug-sq-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-40p-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-fw-big-bg-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 716489,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-bg-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-bg-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-fw-big-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.13679e+06,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-gal-40p-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 114470,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-40p-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-40p-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-40p-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-40p-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-60p-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-60p-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 162415,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-60p-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-60p-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-60p-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-60p-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-fw-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-fw-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 280876,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-fw-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-fw-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-fw-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-fw-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-hwl-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-hwl-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 189905,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-hwl-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-hwl-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-hwl-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-hwl-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-hwr-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-hwr-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 140905,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-hwr-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-hwr-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-hwr-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-hwr-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-sq1-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-sq1-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 145995,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-sq1-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-sq1-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-sq1-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-sq1-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-sq2-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-sq2-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 172897,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-sq2-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-sq2-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-sq2-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-sq2-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-stack1-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-stack1-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 115246,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack1-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack1-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack1-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack1-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-stack2-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-stack2-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 108748,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack2-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack2-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack2-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack2-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-stack3-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-stack3-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 59466,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack3-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack3-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack3-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack3-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-gal-stack4-min.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-gal-stack4-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 80369,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-gal-stack4-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-gal-stack4-min.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack4-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-gal-stack4-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-hero-bg-min.png": {
+	"\/img\/cs-wbug\/cs-wbug-hero-bg-min.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 84076,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-hero-bg-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-hero-bg-min.png",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-hero-bg-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-hero-bg-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-hero-highlight-min.png": {
+	"\/img\/cs-wbug\/cs-wbug-hero-highlight-min.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 146250,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-hero-highlight-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-hero-highlight-min.png",
+		"initialSize": 728400,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-hero-highlight-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-hero-highlight-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-slide-img1-min.png": {
+	"\/img\/cs-wbug\/cs-wbug-slide-img1-min.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 309954,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-slide-img1-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-slide-img1-min.png",
+		"initialSize": 624996,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide-img1-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-wbug-slide-img2-min.png": {
+	"\/img\/cs-wbug\/cs-wbug-slide-img2-min.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 123370,
-		"inputAbbreviatedPath": "\/img\/cs-wbug-slide-img2-min.png",
-		"outputAbbreviatedPath": "\/img\/cs-wbug-slide-img2-min.png",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide-img2-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide-img2-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-weather-bug-featured.jpg": {
+	"\/img\/cs-wbug\/cs-wbug-slide2-img1-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 339759,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide2-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-slide2-img1-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-tool-invision-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 113154,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-tool-invision-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-tool-invision-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-tool-sketch-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 265237,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-tool-sketch-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-tool-sketch-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-weather-bug-featured.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 282109,
-		"inputAbbreviatedPath": "\/img\/cs-weather-bug-featured.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-weather-bug-featured.jpg",
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-weather-bug-featured.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-weather-bug-featured.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1146,6 +1311,61 @@
 		"initialSize": 20059,
 		"inputAbbreviatedPath": "\/img\/icons\/statIcon-sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/statIcon-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/tool-used-illustrator.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3274,
+		"inputAbbreviatedPath": "\/img\/icons\/tool-used-illustrator.png",
+		"outputAbbreviatedPath": "\/img\/icons\/tool-used-illustrator.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/tool-used-invision.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3132,
+		"inputAbbreviatedPath": "\/img\/icons\/tool-used-invision.png",
+		"outputAbbreviatedPath": "\/img\/icons\/tool-used-invision.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/tool-used-photoshop.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2064,
+		"inputAbbreviatedPath": "\/img\/icons\/tool-used-photoshop.png",
+		"outputAbbreviatedPath": "\/img\/icons\/tool-used-photoshop.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/tool-used-sketch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3610,
+		"inputAbbreviatedPath": "\/img\/icons\/tool-used-sketch.png",
+		"outputAbbreviatedPath": "\/img\/icons\/tool-used-sketch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/tool-used-sublime.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2664,
+		"inputAbbreviatedPath": "\/img\/icons\/tool-used-sublime.png",
+		"outputAbbreviatedPath": "\/img\/icons\/tool-used-sublime.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1594,6 +1814,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/js\/libs\/jquery.slimscroll.min.js",
 		"outputAbbreviatedPath": "\/js\/libs\/min\/jquery.slimscroll.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/js\/libs\/jquery.stellar.min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/libs\/jquery.stellar.min.js",
+		"outputAbbreviatedPath": "\/js\/libs\/min\/jquery.stellar.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -2503,7 +2734,9 @@
 	"typescriptAutoOutputPathStyle": 2,
 	"typescriptCreateDeclarationFile": 0,
 	"typescriptCreateSourceMap": 0,
+	"typescriptJSXMode": 0,
 	"typescriptMinifyOutput": 0,
+	"typescriptModuleResolutionType": 0,
 	"typescriptModuleType": 0,
 	"typescriptNoImplicitAny": 0,
 	"typescriptPreserveConstEnums": 0,

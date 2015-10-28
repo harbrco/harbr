@@ -4,6 +4,36 @@
    article {
       @extend %bgCover--center;
    }
+
+   .downArrow,
+   .upArrow {
+      right: inherit;
+      left: 7%;
+   }
+}
+
+
+// Both Case Study Archive and Single - - - - - - -
+.post-type-archive-case-studies,
+.single-case-studies {
+   .hero {
+      .hero-highlight-image {
+         position: absolute;
+         bottom: 0;
+         right: 0;
+         width: 70%;
+         //height: calc(100% - 130px);
+         height: 100%;
+         background-size: contain;
+         background-repeat: no-repeat;
+         background-position: right bottom;
+      }
+
+      .section-heading {
+         max-width: 48%;
+         margin-top: -100px;
+      }
+   }
 }
 
 
@@ -11,6 +41,12 @@
 // Case Study Internal Styles - - - - - - -
 
 .single-case-studies {
+   .isContentArea {
+      background-color: $white;
+      position: relative;
+      z-index: 0;
+   }
+
    &.popPrimary {
       .clrPop {
          color: $white;
@@ -28,6 +64,8 @@
    }
 
    .hero {
+      z-index: 0;
+
       .colorOverlay {
          @extend %absFill;
          z-index: 1;
@@ -40,20 +78,10 @@
          z-index: 0;
       }
 
-      .hero-highlight-image {
-         position: absolute;
-         bottom: 0;
-         right: 0;
-         width: 45%;
-         height: calc(100% - 130px);
-         background-size: contain;
-         background-repeat: no-repeat;
-         background-position: center bottom;
-      }
-
       .section-heading {
-         max-width: 48%;
-         margin-top: -5%;
+         h1 {
+            padding-bottom: 58px;
+         }
       }
    }
 
@@ -167,7 +195,8 @@
    }
 
    // Feature Highlight Slider - - -
-   .feature-highlight-slider-wrapper {
+   .feature-highlight-slider-wrapper,
+   .second-feature-highlight-slider-wrapper {
       position: relative;
 
       .bx-controls {
@@ -180,9 +209,15 @@
             bottom: inherit;
          }
       }
+
+      .bx-wrapper .bx-controls .bx-pager.bx-default-pager {
+         text-align: left;
+         padding-left: 5%;
+      }
    }
 
-   .feature-highlight-slider {
+   .feature-highlight-slider,
+   .second-feature-highlight-slider {
       @extend %clear;
       height: 100%;
 
@@ -206,6 +241,7 @@
 
       .slide-image {
          max-height: 800px;
+         margin-top: 5%;
       }
    }
 
@@ -230,32 +266,133 @@
       }
    }
 
+   .full-width-image-centered-text {
+      position: relative;
+      padding-bottom: 42%;
+      overflow: hidden;
+      @extend %bgCover--center;
 
-   // Previous Case Study
-   .prev-page-cta {
+      .container,
+      .fw-img {
+         position: relative;
+         z-index: 1;
+      }
+
+      .fw-img {
+         //display: block !important;
+         z-index: 2;
+         position: absolute;
+      }
+   }
+
+
+   .prev-cs {
       .section-heading {
-         text-align: center;
-         padding-right: 0;
-         margin-right: auto;
-         margin-left: auto;
+         margin-top: -100px;
+      }
+   }
 
-         .divWave {
-            margin-right: auto;
-            margin-left: auto;
+
+   // Tools Used
+   .tools-used-wrapper {
+      .container {
+         max-width: 1300px;
+      }
+   }
+
+   .tools-used-text {
+      .text-wrapper {
+         margin: 0 auto 30px;
+         text-align: center;
+         max-width: 560px;
+         background: transparent;
+      }
+
+      h3 {
+         font-size: 25px;
+         line-height: 30px;
+         text-transform: uppercase;
+      }
+
+      p {
+         font-size: 18px;
+         line-height: 30px;
+      }
+   }
+
+   .tool-pager {
+      margin-bottom: 36px;
+
+      a {
+         display: inline-block;
+         margin: 0 12px;
+         opacity: .4;
+         @extend %hoverTrans;
+
+         &.active,
+         &:hover {
+            opacity: 1;
          }
+      }
+
+      .tool-icon {
+         display: block;
+
+         &.isSketch {
+            width: 43px;
+            height: 38px;
+            background-image: url(../img/icons/tool-used-sketch.png);
+            background-size: 43px 38px;
+         }
+
+         &.isPhotoshop {
+            width: 39px;
+            height: 38px;
+            background-image: url(../img/icons/tool-used-photoshop.png);
+            background-size: 39px 38px;
+         }
+
+         &.isIllustrator {
+            width: 39px;
+            height: 38px;
+            background-image: url(../img/icons/tool-used-illustrator.png);
+            background-size: 39px 38px;
+         }
+
+         &.isInvision {
+            width: 99px;
+            height: 34px;
+            background-image: url(../img/icons/tool-used-invision.png);
+            background-size: 99px 34px;
+         }
+
+         &.isSublime {
+            width: 41px;
+            height: 37px;
+            background-image: url(../img/icons/tool-used-sublime.png);
+            background-size: 41px 37px;
+         }
+      }
+   }
+
+   .tools-used-images {
+      .tool-image {
+         @extend %bgCover;
+         padding-bottom: 39.38%;
       }
    }
 }
 
 
 // Individual Custom Case Study Styles - - - - - - -
-.weatherbug-earth-networks {
+.weatherbug {
    .prev-page-cta {
       background-position: center right;
    }
 
    &.single-case-studies {
-      .feature-highlight-slider {
+      .feature-highlight-slider,
+      .second-feature-highlight-slider {
          .hasPhoneImage {
             @extend .well--noBottom;
 
@@ -434,9 +571,10 @@
    }
 }
 @media only screen and (max-width:900px) {
-   .weatherbug-earth-networks {
+   .weatherbug {
       &.single-case-studies {
-         .feature-highlight-slider {
+         .feature-highlight-slider,
+         .second-feature-highlight-slider {
             .hasPhoneImage {
                .slide-text {
                   &.span_5_of_12 {
@@ -456,7 +594,7 @@
    }
 }
 @media only screen and (max-width:768px) {
-   .weatherbug-earth-networks {
+   .weatherbug {
       .weather-icons-wrapper {
          .icons-wrapper {
             max-width: 500px;
@@ -476,7 +614,7 @@
    }
 }
 @media only screen and (max-width:400px) {
-   .weatherbug-earth-networks {
+   .weatherbug {
       .weather-icons-wrapper {
          .icons-wrapper {
             max-width: 250px;
@@ -500,51 +638,52 @@
 
 
 // CASE STUDIES BREAKPOINTS = = = = = = =
-@media only screen and (max-width:1400px) {
-   .single.single-case-studies {
-      .hero {
-         .section-heading {
-            h1 {
-               font-size: 62px;
-               line-height: 70px;
-               @include letSpc(3px);
-            }
-         }
-      }
-   }
-}
+// @media only screen and (max-width:1400px) {
+//    .single.single-case-studies {
+//       .hero {
+//          .section-heading {
+//             h1 {
+//                font-size: 62px;
+//                line-height: 70px;
+//                @include letSpc(3px);
+//             }
+//          }
+//       }
+//    }
+// }
 
-@media only screen and (max-width:1140px) {
-   .single.single-case-studies {
-      .hero {
-         .section-heading {
-            h1 {
-               font-size: 54px;
-               line-height: 62px;
-            }
-         }
-      }
-   }
-}
+// @media only screen and (max-width:1140px) {
+//    .single.single-case-studies {
+//       .hero {
+//          .section-heading {
+//             h1 {
+//                font-size: 54px;
+//                line-height: 62px;
+//             }
+//          }
+//       }
+//    }
+// }
 
-@media only screen and (max-width:980px) {
-   .single.single-case-studies {
-      .hero {
-         .section-heading {
-            h1 {
-               font-size: 46px;
-               line-height: 54px;
-               @include letSpc(2px);
-            }
-         }
-      }
-   }
-}
+// @media only screen and (max-width:980px) {
+//    .single.single-case-studies {
+//       .hero {
+//          .section-heading {
+//             h1 {
+//                font-size: 46px;
+//                line-height: 54px;
+//                @include letSpc(2px);
+//             }
+//          }
+//       }
+//    }
+// }
 
 
 @media only screen and (max-width:900px) {
    .single.single-case-studies {
-      .feature-highlight-slider {
+      .feature-highlight-slider,
+      .second-feature-highlight-slider {
          .slide-text,
          .slide-image {
             width: 100%;
@@ -555,11 +694,21 @@
          .slide-text {
             top: 0;
             margin-bottom: 5%;
+            margin-top: 80px;
+            //padding-top: 30px;
          }
 
          .slide-image {
             width: 95%;
             margin-left: 5%;
+         }
+      }
+
+      .feature-highlight-slider-wrapper,
+      .second-feature-highlight-slider-wrapper {
+         .bx-wrapper .bx-controls {
+            top: 3%;
+            bottom: inherit;
          }
       }
    }
@@ -576,40 +725,40 @@
 }
 
 @media only screen and (max-width:768px) {
-   .single.single-case-studies {
-      .hero {
-         overflow: hidden;
+   // .single.single-case-studies {
+   //    .hero {
+   //       overflow: hidden;
 
-         .hero-highlight-image {
-            width: 90%;
-            position: relative;
-            margin: 5% 5% 0;
-         }
+   //       .hero-highlight-image {
+   //          width: 90%;
+   //          position: relative;
+   //          margin: 5% 5% 0;
+   //       }
 
-         .section-heading {
-            max-width: 100%;
-            display: block;
-            position: relative;
-            top: 0 !important;
-            margin-left: 0;
-            margin-top: 110px;
-            padding-right: 0;
-            padding: 0 5%;
-            text-align: center;
+   //       .section-heading {
+   //          max-width: 100%;
+   //          display: block;
+   //          position: relative;
+   //          top: 0 !important;
+   //          margin-left: 0;
+   //          margin-top: 110px;
+   //          padding-right: 0;
+   //          padding: 0 5%;
+   //          text-align: center;
 
-            .divWave {
-               margin-right: auto;
-               margin-left: auto;
-            }
+   //          .divWave {
+   //             margin-right: auto;
+   //             margin-left: auto;
+   //          }
 
-            h1 {
-               font-size: 50px;
-               line-height: 56px;
-               @include letSpc(3px);
-            }
-         }
-      }
-   }
+   //          h1 {
+   //             font-size: 50px;
+   //             line-height: 56px;
+   //             @include letSpc(3px);
+   //          }
+   //       }
+   //    }
+   // }
 
    .single-case-studies {
       .img-gal {
@@ -670,19 +819,19 @@
 }
 
 @media only screen and (max-width:650px) {
-   .single.single-case-studies {
-      .hero {
-         .section-heading {
-            margin-top: 90px;
+   // .single.single-case-studies {
+   //    .hero {
+   //       .section-heading {
+   //          margin-top: 90px;
 
-            h1 {
-               font-size: 38px;
-               line-height: 44px;
-               @include letSpc(2px);
-            }
-         }
-      }
-   }
+   //          h1 {
+   //             font-size: 38px;
+   //             line-height: 44px;
+   //             @include letSpc(2px);
+   //          }
+   //       }
+   //    }
+   // }
 
    .single-case-studies {
       .narrow-centered-content {
@@ -702,7 +851,8 @@
 
 @media only screen and (max-width:580px) {
    .single.single-case-studies {
-      .feature-highlight-slider {
+      .feature-highlight-slider,
+      .second-feature-highlight-slider {
          .slide-text {
             h3 {
                font-size: 22px;
@@ -719,7 +869,8 @@
 
    .single-case-studies {
       .full-width-image-centered-text,
-      .img-gal-intro-text {
+      .img-gal-intro-text,
+      .tools-used-text {
          .text-wrapper {
             h3 {
                font-size: 22px;
@@ -795,17 +946,17 @@
 }
 
 @media only screen and (max-width:500px) {
-   .single.single-case-studies {
-      .hero {
-         .section-heading {
-            h1 {
-               font-size: 32px;
-               line-height: 38px;
-               @include letSpc(1px);
-            }
-         }
-      }
-   }
+   // .single.single-case-studies {
+   //    .hero {
+   //       .section-heading {
+   //          h1 {
+   //             font-size: 32px;
+   //             line-height: 38px;
+   //             @include letSpc(1px);
+   //          }
+   //       }
+   //    }
+   // }
 
    .single-case-studies {
       .narrow-centered-content {
