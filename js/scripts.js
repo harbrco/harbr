@@ -132,7 +132,7 @@ new WOW().init();
 
           // If is Blog or Case Studies Archive page, don't add height to ".sticky-header-wrapper"
           if ( !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies') ) {
-            nav_container.css({ 'height': '70px' });
+            nav_container.css({ 'height': '73px' });
           }
 
         } else {
