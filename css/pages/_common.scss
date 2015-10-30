@@ -50,6 +50,59 @@
       padding-bottom: 0;
    }
 }
+@media only screen and (max-width:768px) {
+   .well {
+      padding-top: 12%;
+      padding-bottom: 12%;
+   }
+   .well--l {
+      padding-top: 17%;
+      padding-bottom: 17%;
+   }
+   .well--s {
+      padding-top: 9%;
+      padding-bottom: 9%;
+
+      &.well--noBottom {
+         padding-bottom: 0;
+      }
+   }
+   .well--xs {
+      padding-top: 6.5%;
+      padding-bottom: 6.5%;
+
+      &.well--noBottom {
+         padding-bottom: 0;
+      }
+   }
+}
+@media only screen and (max-width:560px) {
+   .well {
+      padding-top: 15%;
+      padding-bottom: 15%;
+   }
+   .well--l {
+      padding-top: 20%;
+      padding-bottom: 20%;
+   }
+   .well--s {
+      padding-top: 11%;
+      padding-bottom: 11%;
+
+      &.well--noBottom {
+         padding-bottom: 0;
+      }
+   }
+   .well--xs {
+      padding-top: 8.5%;
+      padding-bottom: 8.5%;
+
+      &.well--noBottom {
+         padding-bottom: 0;
+      }
+   }
+}
+
 
 .divWave {
    display: block;
@@ -549,7 +602,6 @@
 }
 
 
-
 // COMMON BREAKPOINTS = = = = = = =
 @media only screen and (max-width:1140px) {
    .number-cards {
@@ -585,11 +637,6 @@
 }
 
 @media only screen and (max-width:768px) {
-   .well--xs {
-      padding-top: 7%;
-      padding-bottom: 7%;
-   }
-
    .section-heading {
       margin-top: 17%;
       margin-bottom: 11%;
@@ -697,6 +744,13 @@
          margin-bottom: 8px;
       }
    }
+
+   .section-heading {
+      a.btn {
+         font-size: 15px;
+         line-height: 18px;
+      }
+   }
 }
 
 @media only screen and (max-width:400px) {
@@ -708,6 +762,13 @@
          font-size: 28px;
          line-height: 34px;
          @include letSpc(2px);
+      }
+   }
+
+   .section-heading {
+      a.btn {
+         font-size: 14px;
+         line-height: 17px;
       }
    }
 }

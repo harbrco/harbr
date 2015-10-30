@@ -46,7 +46,7 @@ new WOW().init();
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
       $('body').addClass('popTertiary');
-    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') ) {
+    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
@@ -141,7 +141,7 @@ new WOW().init();
       }
     });
 
-    if (!$('body').hasClass('contact') && !$('body').hasClass('single') && !$('body').hasClass('project-planner') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
+    if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('project-planner') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
       var stickyWrap = $('.sticky-header-wrapper').one();
       var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
       var lastScrollTop = 0;
@@ -161,17 +161,42 @@ new WOW().init();
 
 
 
+    // Remove Hero from 404 error page
+    if ( $('body').hasClass('error404') ) {
+      $('.hero').remove();
+    }
+
+
+
     // Menu toggle & fullPage menu initialization
     $('body').on('click', '.menu-button', function(event) {
       event.preventDefault();
       $('body').addClass('menuActive');
 
       //menuBuild();
+
+      // Menu link animation on open/close
+      $('#menu-main-menu a').each(function(i){
+          var link = $(this);
+          setTimeout(function(){ link.addClass('linkVisible'); }, (i+1) * 140);
+      });
+
+      $('.left-icons .social-icon').find('.icon').addClass('isVisible');
     });
 
     $('body').on('click', '.menu-close', function(event) {
       event.preventDefault();
       $('body').removeClass('menuActive');
+
+      // Menu link animation on open/close
+      $('#menu-main-menu a').each(function(i){
+          var link = $(this);
+          setTimeout(function(){ link.removeClass('linkVisible'); }, (i+1) * 140);
+      });
+
+      //setTimeout(function(){
+        $('.left-icons .social-icon').find('.icon').removeClass('isVisible');
+      //}, 1000);
 
       // remove fullPage.js
       // setTimeout(function() {
@@ -184,6 +209,11 @@ new WOW().init();
       //   menuActiveClass();
       // }, 400);
     });
+
+
+    // Menu link - add wrapper to each <a>
+    $('#menu-main-menu li').find('a').wrap("<span class='link-wrap'></span>");
+
 
 
 
@@ -226,7 +256,7 @@ new WOW().init();
 
 
     // Add 'darkHeader' class to proper pages
-    if ( $('body').hasClass('project-planner') ) {
+    if ( $('body').hasClass('project-planner') || $('body').hasClass('error404') ) {
       $('.sticky-header-wrapper').addClass('darkHeader');
     }
 

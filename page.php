@@ -7,6 +7,9 @@
    <?php } /* CONTACT */ elseif ( is_page( 'contact' ) ) { ?>
       <!-- CONTACT is populated only with "hero" content located in "header.php" -->
 
+   <?php } /* 404 */ elseif ( is_page( 'error404' ) ) { ?>
+      <!-- 404 is populated only with "hero" content located in "header.php" -->
+
    <?php } /* PROJECT PLANNER */ elseif ( is_page( 'project-planner' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'project-planner' ); ?>
 

@@ -47,9 +47,16 @@
          </div>
 
 
+         <div id="scrollmain" class="float-post-header-wrapper dark-btns sticky-header-wrapper">
+            <div class="sticky-header">
+               <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
+            </div>
+         </div>
+
+
+         <div class="isContentArea">
          <!-- FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
          <?php if( get_field('flexible_layouts') ): ?>
-         <div class="isContentArea">
             <?php while ( has_sub_field('flexible_layouts') ) : ?>
 
                <!-- Text/Content Layouts -->
@@ -235,11 +242,11 @@
                <?php endif; ?>
             <?php endwhile; ?>
 
-         </div>
          <?php else : ?>
             <!-- no layouts found -->
          <?php endif; ?>
          <!-- ENDS FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
+         </div>
 
 
          <!-- Custom page specific sections -->

@@ -464,6 +464,10 @@
             margin-bottom: 18px;
          }
       }
+
+      .post-hero-spacer {
+         height: 75vh;
+      }
    }
 }
 
@@ -661,8 +665,8 @@
       .section-heading,
       .modal .share-modal {
          h1 {
-            font-size: 28px;
-            line-height: 34px;
+            // font-size: 28px;
+            // line-height: 34px;
             @include letSpc(1px);
          }
 

@@ -30,7 +30,7 @@
       }
 
       .section-heading {
-         max-width: 48%;
+         max-width: 60%;
          margin-top: -100px;
       }
    }
@@ -279,7 +279,6 @@
       }
 
       .fw-img {
-         //display: block !important;
          z-index: 2;
          position: absolute;
       }
@@ -379,6 +378,19 @@
       .tool-image {
          @extend %bgCover;
          padding-bottom: 39.38%;
+      }
+   }
+}
+
+
+.touch .single-case-studies {
+   .full-width-image-centered-text {
+      padding-bottom: 0;
+
+      .fw-img {
+         top: inherit !important;
+         display: block;
+         position: relative;
       }
    }
 }
@@ -638,47 +650,6 @@
 
 
 // CASE STUDIES BREAKPOINTS = = = = = = =
-// @media only screen and (max-width:1400px) {
-//    .single.single-case-studies {
-//       .hero {
-//          .section-heading {
-//             h1 {
-//                font-size: 62px;
-//                line-height: 70px;
-//                @include letSpc(3px);
-//             }
-//          }
-//       }
-//    }
-// }
-
-// @media only screen and (max-width:1140px) {
-//    .single.single-case-studies {
-//       .hero {
-//          .section-heading {
-//             h1 {
-//                font-size: 54px;
-//                line-height: 62px;
-//             }
-//          }
-//       }
-//    }
-// }
-
-// @media only screen and (max-width:980px) {
-//    .single.single-case-studies {
-//       .hero {
-//          .section-heading {
-//             h1 {
-//                font-size: 46px;
-//                line-height: 54px;
-//                @include letSpc(2px);
-//             }
-//          }
-//       }
-//    }
-// }
-
 
 @media only screen and (max-width:900px) {
    .single.single-case-studies {
@@ -725,40 +696,14 @@
 }
 
 @media only screen and (max-width:768px) {
-   // .single.single-case-studies {
-   //    .hero {
-   //       overflow: hidden;
-
-   //       .hero-highlight-image {
-   //          width: 90%;
-   //          position: relative;
-   //          margin: 5% 5% 0;
-   //       }
-
-   //       .section-heading {
-   //          max-width: 100%;
-   //          display: block;
-   //          position: relative;
-   //          top: 0 !important;
-   //          margin-left: 0;
-   //          margin-top: 110px;
-   //          padding-right: 0;
-   //          padding: 0 5%;
-   //          text-align: center;
-
-   //          .divWave {
-   //             margin-right: auto;
-   //             margin-left: auto;
-   //          }
-
-   //          h1 {
-   //             font-size: 50px;
-   //             line-height: 56px;
-   //             @include letSpc(3px);
-   //          }
-   //       }
-   //    }
-   // }
+   .post-type-archive-case-studies,
+   .single-case-studies {
+      .hero {
+         .hero-highlight-image {
+            display: none;
+         }
+      }
+   }
 
    .single-case-studies {
       .img-gal {
@@ -819,20 +764,6 @@
 }
 
 @media only screen and (max-width:650px) {
-   // .single.single-case-studies {
-   //    .hero {
-   //       .section-heading {
-   //          margin-top: 90px;
-
-   //          h1 {
-   //             font-size: 38px;
-   //             line-height: 44px;
-   //             @include letSpc(2px);
-   //          }
-   //       }
-   //    }
-   // }
-
    .single-case-studies {
       .narrow-centered-content {
          h2 {
@@ -946,18 +877,6 @@
 }
 
 @media only screen and (max-width:500px) {
-   // .single.single-case-studies {
-   //    .hero {
-   //       .section-heading {
-   //          h1 {
-   //             font-size: 32px;
-   //             line-height: 38px;
-   //             @include letSpc(1px);
-   //          }
-   //       }
-   //    }
-   // }
-
    .single-case-studies {
       .narrow-centered-content {
          h2 {
@@ -992,6 +911,30 @@
             font-size: 28px;
             line-height: 34px;
             margin-bottom: 15px;
+         }
+      }
+   }
+}
+
+
+// Vertical breakpoints - - - - - - -
+@media only screen and (max-height:700px) {
+   .post-type-archive-case-studies,
+   .single-case-studies {
+      .hero {
+         .section-heading {
+            margin-top: -50px;
+         }
+      }
+   }
+}
+
+@media only screen and (max-height:550px) {
+   .post-type-archive-case-studies,
+   .single-case-studies {
+      .hero {
+         .section-heading {
+            margin-top: -20px;
          }
       }
    }

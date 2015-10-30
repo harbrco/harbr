@@ -193,6 +193,7 @@
 .project-planner,
 .blog,
 .category,
+.error404,
 .post-type-archive-case-studies {
    .sticky-header-wrapper {
       &.darkHeader {
@@ -209,9 +210,73 @@
    }
 }
 
+.error404 {
+   .sticky-header-wrapper {
+      position: absolute;
+
+      .sticky-header {
+         opacity: 1;
+      }
+   }
+
+   .section-heading {
+      margin-top: 0;
+      margin-bottom: 0;
+   }
+
+   .hero-text {
+      h1 {
+         margin-left: 3px;
+      }
+
+      h3 {
+         margin-bottom: 40px;
+      }
+   }
+}
+@media only screen and (max-width:1024px) {
+   .error404 {
+      .hero-text h3 {
+         margin-bottom: 5%;
+      }
+   }
+}
+
+@media only screen and (max-width:460px) {
+   .error404 {
+      .hero-text h3 {
+         margin-bottom: 6%;
+      }
+   }
+}
+
+@media only screen and (max-width:400px) {
+   .error404 {
+      .hero-text h3 {
+         margin-bottom: 7%;
+      }
+   }
+}
+
 
 .sticky-header-wrapper.menuHidden .sticky-header {
    margin-top: -70px;
+}
+
+.single .sticky-header-wrapper.menuHidden .sticky-header {
+   margin-top: -104px;
+}
+
+.single {
+   .float-post-header-wrapper {
+      z-index: 99;
+
+      .post-header-wrapper {
+         position: absolute !important;
+         padding: 20px 0 12px;
+         background-color: rgba($white, .97);
+      }
+   }
 }
 
 
@@ -240,6 +305,26 @@
                   display: block;
                }
             }
+         }
+      }
+   }
+}
+
+@media only screen and (max-width:768px) {
+   .single {
+      .header-wrapper {
+         .header {
+            padding: 4px 0;
+         }
+      }
+
+      .sticky-header-wrapper.menuHidden .sticky-header {
+         margin-top: -76px;
+      }
+
+      .float-post-header-wrapper {
+         .post-header-wrapper {
+            padding: 4px 0 0;
          }
       }
    }

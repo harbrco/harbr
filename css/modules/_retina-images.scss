@@ -4,6 +4,12 @@
 
    // Common elements = = = = = = =
 
+   .downArrow,
+   .upArrow {
+      background-position: -50px 0;
+      background-size: 100px 300px;
+   }
+
    .popPrimary {
       .downArrow,
       .divWave {
@@ -29,9 +35,15 @@
       }
    }
 
-   .downArrow {
-      background-position: -50px 0;
-      background-size: 100px 300px;
+   .popWhite {
+      .downArrow,
+      .upArrow {
+         background-position: -50px -250px;
+      }
+
+      .divWave {
+         background-position: -50px 0px;
+      }
    }
 
    .divWave,
@@ -82,17 +94,4 @@
    }
 
 
-}
-
-
-@media only screen
-and (max-width:580px)
-and (-webkit-min-device-pixel-ratio: 1.5)
-and (min-resolution: 144dpi) {
-   .landing-section .overlay {
-      &.right-overlay.h-brand {
-         background-image: url(../img/landing-h-brand-mobile@2x.png);
-         background-size: 1200px 1000px;
-      }
-   }
 }

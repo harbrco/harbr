@@ -26,6 +26,12 @@
          <div class="post-hero-spacer">
          </div>
 
+         <div id="scrollmain" class="float-post-header-wrapper dark-btns sticky-header-wrapper">
+            <div class="sticky-header">
+               <?php get_template_part( 'partials/partial', 'single-post-header' ); ?>
+            </div>
+         </div>
+
          <?php if(get_field('post_intro_text')) { ?>
          <div class="isContentArea wrapper">
             <div class="single-column-content wrapper well isWhite">

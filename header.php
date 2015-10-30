@@ -30,6 +30,23 @@
          background-repeat: no-repeat;
          background-position: left top;
       }
+
+      .js div#preloader .wave-brand {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         width: 122px;
+         height: 122px;
+         overflow: hidden;
+         -ms-transform: translate(-50%,-50%); /* IE 9 */
+         -webkit-transform: translate(-50%,-50%); /* Safari */
+         transform: translate(-50%,-50%);
+         background-image: url(<?php echo get_template_directory_uri();?>/img/loading-wave-brand-min.png);
+         -webkit-background-size: 122px 122px;
+         background-size: 122px 122px;
+         background-repeat: no-repeat;
+         background-position: left top;
+      }
       </style>
       <?php if(is_page('home')) { ?>
          <style>
@@ -152,8 +169,10 @@
    <body <?php body_class(); ?>>
 
       <div id="preloader">
-         <div class="h-brand">
+         <div class="wave-brand">
          </div>
+         <!-- <div class="h-brand">
+         </div> -->
       </div>
 
    <?php if(!is_page('home') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
@@ -226,7 +245,7 @@
          <div class="landing-overlay">
          </div>
 
-         <video autoplay muted loop poster="<?php the_field('video_still_image'); ?>" id="bgvid" data-stellar-ratio="0.5">
+         <video autoplay muted loop poster="<?php the_field('video_still_image'); ?>" id="bgvid">
             <source src="<?php the_field('video_url_webm'); ?>" type="video/webm">
             <source src="<?php the_field('video_url_mp4'); ?>" type="video/mp4">
             <source src="<?php the_field('video_url_ogv'); ?>" type="video/ogv">

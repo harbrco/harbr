@@ -28,3 +28,32 @@
 
 // CONTACT PAGE BREAKPOINTS = = = = = = =
 
+@media only screen and (max-width:560px) {
+   .hero-text {
+      h4 {
+         font-size: 20px;
+         line-height: 25px;
+         margin: 5% 0 6%;
+      }
+   }
+}
+
+@media only screen and (max-width:460px) {
+   .hero-text {
+      h4 {
+         font-size: 18px;
+         line-height: 23px;
+         margin: 6% 0;
+      }
+   }
+}
+
+@media only screen and (max-width:400px) {
+   .hero-text {
+      h4 {
+         font-size: 16px;
+         line-height: 21px;
+         margin: 7% 0;
+      }
+   }
+}

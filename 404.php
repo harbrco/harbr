@@ -1,22 +1,14 @@
 <?php get_header(); ?>
 
-   <!-- section -->
-   <section role="main">
+<div class="section big-cta isDarkGray">
+   <div class="hero-text section-heading vAlign">
+      <h1 class="clrPop">404</h1>
+      <span class="divWave"></span>
+      <h3>Go home you're <br />Drunk</h3>
 
-      <!-- article -->
-      <article id="post-404">
+      <a href="/" class="btn btn--uline">Home</a>
+   </div>
+</div>
 
-         <h1><?php _e( 'Page not found', 'html5blank' ); ?></h1>
-         <h2>
-            <a href="<?php echo home_url(); ?>"><?php _e( 'Return home?', 'html5blank' ); ?></a>
-         </h2>
-
-      </article>
-      <!-- /article -->
-
-   </section>
-   <!-- /section -->
-
-<?php get_sidebar(); ?>
 
 <?php get_footer(); ?>

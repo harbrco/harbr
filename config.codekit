@@ -1260,6 +1260,72 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/social\/social-dribbble.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3590,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-dribbble.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-dribbble.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/social\/social-facebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2587,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-facebook.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-facebook.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/social\/social-linkedin.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2722,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-linkedin.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-linkedin.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/social\/social-map.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2928,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-map.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-map.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/social\/social-pinterest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3417,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-pinterest.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-pinterest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/social\/social-twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2981,
+		"inputAbbreviatedPath": "\/img\/icons\/social\/social-twitter.png",
+		"outputAbbreviatedPath": "\/img\/icons\/social\/social-twitter.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/stat-music-blue.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1553,6 +1619,17 @@
 		"initialSize": 6422,
 		"inputAbbreviatedPath": "\/img\/loading-h-brand-sprite.png",
 		"outputAbbreviatedPath": "\/img\/loading-h-brand-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/loading-wave-brand-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1169,
+		"inputAbbreviatedPath": "\/img\/loading-wave-brand-min.png",
+		"outputAbbreviatedPath": "\/img\/loading-wave-brand-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1977,11 +2054,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/partials\/partial-menu.php": {
+	"\/partials\/partial-old-menu.php": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/partial-menu.php",
+		"inputAbbreviatedPath": "\/partials\/partial-old-menu.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
