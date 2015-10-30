@@ -1457,6 +1457,10 @@ input:focus {
       .sticky-header-wrapper.darkHeader .sticky-header .logo {
         color: #fff; }
 
+.single .sticky-header-wrapper {
+  height: 73px;
+  position: absolute; }
+
 .project-planner .sticky-header-wrapper.darkHeader .sticky-header,
 .blog .sticky-header-wrapper.darkHeader .sticky-header,
 .category .sticky-header-wrapper.darkHeader .sticky-header,

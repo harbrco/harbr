@@ -190,6 +190,13 @@
    }
 }
 
+.single {
+   .sticky-header-wrapper {
+      height: 73px;
+      position: absolute;
+   }
+}
+
 .project-planner,
 .blog,
 .category,
