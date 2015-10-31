@@ -7,22 +7,22 @@
          position: fixed;
          left: 0;
          top: 0;
-         z-index: 9999;
+         z-index: 9998;
          width: 100%;
          height: 100%;
          overflow: visible;
          background-color: #292728;
       }
 
-      .js div#preloader .h-brand {
+      /*.js div#preloader .h-brand {
          position: absolute;
          top: 50%;
          left: 50%;
          width: 110px;
          height: 110px;
          overflow: hidden;
-         -ms-transform: translate(-50%,-50%); /* IE 9 */
-         -webkit-transform: translate(-50%,-50%); /* Safari */
+         -ms-transform: translate(-50%,-50%);
+         -webkit-transform: translate(-50%,-50%);
          transform: translate(-50%,-50%);
          background-image: url(<?php echo get_template_directory_uri();?>/img/loading-h-brand-sprite-min.png);
          -webkit-background-size: 110px 330px;
@@ -38,19 +38,77 @@
          width: 122px;
          height: 122px;
          overflow: hidden;
-         -ms-transform: translate(-50%,-50%); /* IE 9 */
-         -webkit-transform: translate(-50%,-50%); /* Safari */
+         -ms-transform: translate(-50%,-50%);
+         -webkit-transform: translate(-50%,-50%);
          transform: translate(-50%,-50%);
          background-image: url(<?php echo get_template_directory_uri();?>/img/loading-wave-brand-min.png);
          -webkit-background-size: 122px 122px;
          background-size: 122px 122px;
          background-repeat: no-repeat;
          background-position: left top;
+      }*/
+
+      .pace {
+        -webkit-pointer-events: none;
+        pointer-events: none;
+
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+
+        z-index: 9999;
+        position: fixed;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 122px;
+        height: 122px;
+        border: 0px;
+        height: 130px;
+        overflow: hidden;
+        background-image: url(<?php echo get_template_directory_uri();?>/img/loading-wave-brand-min.png);
+        -webkit-background-size: 122px 122px;
+        background-size: 122px 122px;
+        background-repeat: no-repeat;
+      }
+
+      .pace .pace-progress {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        box-sizing: border-box;
+
+        max-width: 400px;
+        position: fixed;
+        z-index: 2000;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        background: #61A4EA;
+      }
+
+      .pace {
+         opacity: 1;
+         transition: opacity .6s ease-in-out;
+         -moz-transition: opacity .6s ease-in-out;
+         -webkit-transition: opacity .6s ease-in-out;
+      }
+      .pace.pace-inactive {
+        opacity: 0 !important;
       }
       </style>
       <?php if(is_page('home')) { ?>
          <style>
             .js div#preloader {
+               background-color: #61A4EA; /* blue */
+            }
+            .pace .pace-progress {
                background-color: #61A4EA; /* blue */
             }
             .js div#preloader .h-brand {
@@ -62,6 +120,11 @@
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
+
+            .pace .pace-progress {
+               background-color: #61A4EA; /* blue */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -71,6 +134,11 @@
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
+
+            .pace .pace-progress {
+               background-color: #61A4EA; /* blue */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -80,6 +148,11 @@
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
+
+            .pace .pace-progress {
+               background-color: #61A4EA; /* blue */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -89,6 +162,11 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
+
+            .pace .pace-progress {
+               background-color: #78B97F; /* green */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -98,6 +176,11 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
+
+            .pace .pace-progress {
+               background-color: #78B97F; /* green */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -107,6 +190,11 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
+
+            .pace .pace-progress {
+               background-color: #78B97F; /* green */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -116,6 +204,11 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
+
+            .pace .pace-progress {
+               background-color: #78B97F; /* green */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -125,6 +218,11 @@
             .js div#preloader {
                background-color: #FCCDC6; /* pink */
             }
+
+            .pace .pace-progress {
+               background-color: #FCCDC6; /* pink */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -134,6 +232,11 @@
             .js div#preloader {
                background-color: #F7D974; /* yellow */
             }
+
+            .pace .pace-progress {
+               background-color: #F7D974; /* yellow */
+            }
+
             .js div#preloader .h-brand {
                background-position: 0 -220px;
             }
@@ -157,11 +260,17 @@
 
       <?php wp_head(); ?>
 
+      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/pace.min.js"></script>
+
       <script type="text/javascript">
-         $(window).load(function(){
-            setTimeout(function(){
-               $('#preloader').fadeOut('slow',function(){$(this).remove();});
-            },500);
+         paceOptions = {
+           ajax: false,
+           document: true,
+           eventLag: false
+         };
+
+         Pace.on('done', function() {
+           $('#preloader').fadeOut(600, function(){$(this).remove();});
          });
       </script>
 
@@ -169,10 +278,6 @@
    <body <?php body_class(); ?>>
 
       <div id="preloader">
-         <div class="wave-brand">
-         </div>
-         <!-- <div class="h-brand">
-         </div> -->
       </div>
 
    <?php if(!is_page('home') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
