@@ -51,37 +51,4 @@
       </div>
    </div>
 
-   <!-- <a class="menu-close close-btn menu-toggle"><i class="close-icon"></i></a>
-
-   <ul class="social-links">
-      <li>
-         <a target="_blank" href="https://www.pinterest.com/harbrco/" class="icon isDribbble">Dribbble</a>
-      </li>
-      <li>
-         <a target="_blank" href="https://www.facebook.com/harbrco" class="icon isFacebook">Facebook</a>
-      </li>
-      <li>
-         <a target="_blank" href="https://www.pinterest.com/harbrco/" class="icon isPinterest">Pinterest</a>
-      </li>
-      <li>
-         <a target="_blank" href="https://twitter.com/harbrco" class="icon isLinkedIn">LinkedIn</a>
-      </li>
-      <li>
-         <a target="_blank" href="https://twitter.com/harbrco" class="icon isTwitter">Twitter</a>
-      </li>
-      <li>
-         <a target="_blank" href="https://www.google.com/maps/place/1023+E+Columbus+Dr,+Tampa,+FL+33605/@27.966664,-82.4558797,15z/data=!4m2!3m1!1s0x88c2c444616921b5:0xccd889d30c0e3a8" class="icon isMap">Map</a>
-      </li>
-   </ul> -->
-
-   <!-- <div class="menu-container vAlign">
-      <div class="main-menu-links">
-         <?php //wp_nav_menu( //array('menu' => 'main-menu' )); ?>
-      </div>
-
-      <!- - <div class="centerBtn">
-         <span class="divWave"></span>
-      </div> - ->
-   </div> -->
-
 </div>

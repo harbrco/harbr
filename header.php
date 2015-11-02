@@ -14,40 +14,6 @@
          background-color: #292728;
       }
 
-      /*.js div#preloader .h-brand {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         width: 110px;
-         height: 110px;
-         overflow: hidden;
-         -ms-transform: translate(-50%,-50%);
-         -webkit-transform: translate(-50%,-50%);
-         transform: translate(-50%,-50%);
-         background-image: url(<?php echo get_template_directory_uri();?>/img/loading-h-brand-sprite-min.png);
-         -webkit-background-size: 110px 330px;
-         background-size: 110px 330px;
-         background-repeat: no-repeat;
-         background-position: left top;
-      }
-
-      .js div#preloader .wave-brand {
-         position: absolute;
-         top: 50%;
-         left: 50%;
-         width: 122px;
-         height: 122px;
-         overflow: hidden;
-         -ms-transform: translate(-50%,-50%);
-         -webkit-transform: translate(-50%,-50%);
-         transform: translate(-50%,-50%);
-         background-image: url(<?php echo get_template_directory_uri();?>/img/loading-wave-brand-min.png);
-         -webkit-background-size: 122px 122px;
-         background-size: 122px 122px;
-         background-repeat: no-repeat;
-         background-position: left top;
-      }*/
-
       .pace {
         -webkit-pointer-events: none;
         pointer-events: none;
@@ -111,22 +77,14 @@
             .pace .pace-progress {
                background-color: #61A4EA; /* blue */
             }
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
-            }
          </style>
       <?php } elseif(is_page('culture')) { ?>
          <style>
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
-
             .pace .pace-progress {
                background-color: #61A4EA; /* blue */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_post_type_archive('case-studies')) { ?>
@@ -134,13 +92,8 @@
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
-
             .pace .pace-progress {
                background-color: #61A4EA; /* blue */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } /* case studies internal post */ elseif(is_singular('case-studies')) { ?>
@@ -148,13 +101,8 @@
             .js div#preloader {
                background-color: #61A4EA; /* blue */
             }
-
             .pace .pace-progress {
                background-color: #61A4EA; /* blue */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective */ elseif(is_home()) { ?>
@@ -162,13 +110,8 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
-
             .pace .pace-progress {
                background-color: #78B97F; /* green */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective internal post */ elseif(is_single()) { ?>
@@ -176,13 +119,8 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
-
             .pace .pace-progress {
                background-color: #78B97F; /* green */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } /* blog/collective category */ elseif(is_category()) { ?>
@@ -190,13 +128,8 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
-
             .pace .pace-progress {
                background-color: #78B97F; /* green */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_archive()) { ?>
@@ -204,13 +137,8 @@
             .js div#preloader {
                background-color: #78B97F; /* green */
             }
-
             .pace .pace-progress {
                background-color: #78B97F; /* green */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_page('strategy')) { ?>
@@ -218,13 +146,8 @@
             .js div#preloader {
                background-color: #FCCDC6; /* pink */
             }
-
             .pace .pace-progress {
                background-color: #FCCDC6; /* pink */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } elseif(is_page('contact') || is_page('project-planner') ) { ?>
@@ -232,13 +155,8 @@
             .js div#preloader {
                background-color: #F7D974; /* yellow */
             }
-
             .pace .pace-progress {
                background-color: #F7D974; /* yellow */
-            }
-
-            .js div#preloader .h-brand {
-               background-position: 0 -220px;
             }
          </style>
       <?php } ?>

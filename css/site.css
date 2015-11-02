@@ -1077,69 +1077,6 @@ body.menuActive {
 @media only screen and (max-height: 650px) {
   .right-links .main-menu-links {
     height: 90%; } }
-@media only screen and (max-width: 500px) {
-  .main-menu-wrapper .social-links li {
-    margin-left: 5px !important;
-    margin-right: 5px !important; } }
-@media only screen and (max-width: 500px) {
-  .menu-close {
-    top: 10px;
-    left: 10px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none; }
-
-  .main-menu-wrapper .menu-container {
-    margin-top: 0; } }
-@media only screen and (max-height: 800px) {
-  .menu-close {
-    top: 20px; }
-
-  .main-menu-links li {
-    font-size: 18px;
-    margin-bottom: 24px; } }
-@media only screen and (max-height: 720px) {
-  .menu-close {
-    top: 15px; }
-
-  .main-menu-links li {
-    margin-bottom: 22px; }
-
-  .main-menu-wrapper .centerBtn {
-    margin-top: 1.75%;
-    margin-bottom: 1.5%; } }
-@media only screen and (max-height: 640px) {
-  .main-menu-links li {
-    margin-bottom: 18px; } }
-@media only screen and (max-height: 550px) {
-  .main-menu-wrapper .centerBtn {
-    margin-top: .75%;
-    margin-bottom: .5%; }
-  .main-menu-wrapper .social-links li {
-    margin: 0 10px 25px; }
-
-  .main-menu-links li {
-    margin-bottom: 12px; } }
-@media only screen and (max-height: 500px) {
-  .main-menu-wrapper .centerBtn {
-    display: none; }
-  .main-menu-wrapper .social-links {
-    margin-top: 28px; } }
-@media only screen and (max-height: 450px) {
-  .menu-close {
-    top: 10px;
-    left: 10px;
-    -webkit-transform: none;
-        -ms-transform: none;
-            transform: none; }
-
-  .main-menu-wrapper .menu-container {
-    margin-top: 0; } }
-@media only screen and (max-height: 380px) {
-  .main-menu-wrapper .social-links {
-    margin-top: 2%; }
-    .main-menu-wrapper .social-links li {
-      margin: 0 10px 20px; } }
 .gform_wrapper .gform_body,
 .gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, .footer, .single-case-studies .feature-highlight-slider,
 .single-case-studies .second-feature-highlight-slider, .section, .big-cta {
