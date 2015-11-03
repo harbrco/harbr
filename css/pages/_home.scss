@@ -1,7 +1,7 @@
 .landing-section {
    position: relative;
    z-index: 99;
-   background-image: url(../img/section-bgs/landing-hero-bg.jpg);
+   background-image: url(../img/section-bgs/landing-hero-bg2.jpg);
    @extend %bgCover--center;
    overflow: hidden;
 
@@ -12,12 +12,20 @@
    .header {
       .menu-button,
       .logo {
-         color: $darkGray;
+         //color: $darkGray;
+         color: $white;
+      }
+   }
+
+   .hero-text {
+      h3 {
+         color: $white;
       }
    }
 
    .landing-overlay {
-      background-color: rgba($white, .9);
+      //background-color: rgba($white, .9);
+      background-color: rgba($darkGray, .25);
       @extend %absFill;
       z-index: 1;
    }

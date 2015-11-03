@@ -546,7 +546,7 @@ th {
   display: block;
   cursor: pointer; }
 
-.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .view-post-cta,
+.landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
@@ -556,7 +556,7 @@ th {
   background-repeat: no-repeat;
   background-position: center top; }
 
-.landing-section, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .blog .view-post-cta,
+.landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
@@ -566,7 +566,7 @@ th {
 .single-case-studies .hero .hero-background-image {
   background-position-y: bottom; }
 
-.landing-section .landing-overlay, .media-boxes .next-slide, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
+.landing-section .landing-overlay, .project-planner .hero-overlay, .media-boxes .next-slide, .strategy .hero-overlay, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
 .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-night, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
   position: absolute;
   top: 0;
@@ -1478,15 +1478,17 @@ input:focus {
 .landing-section {
   position: relative;
   z-index: 99;
-  background-image: url(../img/section-bgs/landing-hero-bg.jpg);
+  background-image: url(../img/section-bgs/landing-hero-bg2.jpg);
   overflow: hidden; }
   .landing-section .header-wrapper {
     position: absolute; }
   .landing-section .header .menu-button,
   .landing-section .header .logo {
-    color: #292728; }
+    color: #fff; }
+  .landing-section .hero-text h3 {
+    color: #fff; }
   .landing-section .landing-overlay {
-    background-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(41, 39, 40, 0.25);
     z-index: 1; }
   .landing-section .video-play-btn {
     margin-top: 25px; }
@@ -1540,6 +1542,11 @@ input:focus {
     font-size: 16px;
     line-height: 21px;
     margin: 7% 0; } }
+.project-planner .hero {
+  background-image: url(../img/section-bgs/project-planner-hero-bg.jpg); }
+.project-planner .hero-overlay {
+  background-color: rgba(41, 39, 40, 0.58);
+  z-index: 1; }
 .project-planner .sticky-header.sticky {
   position: static; }
 .project-planner #main {
@@ -1556,10 +1563,12 @@ input:focus {
   text-align: center;
   margin-bottom: 7%; }
   .project-planner .step-heading h3 {
-    font-size: 18px;
-    line-height: 24px;
+    color: #F7D974;
+    font-size: 16px;
+    line-height: 19px;
     text-transform: uppercase;
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    letter-spacing: 2px; }
   .project-planner .step-heading h2 {
     font-size: 74px;
     line-height: 80px; }
@@ -1808,15 +1817,20 @@ input:focus {
 
 .culture .media-boxes .stat-slider .slide-icon,
 .home .media-boxes .stat-slider .slide-icon {
-  background-position-y: 0; }
+  background-position: 0 0; }
 .culture .media-boxes .quote-slider .slide-icon,
 .home .media-boxes .quote-slider .slide-icon {
-  background-position-y: 0; }
+  background-position: 0 0; }
 
+.strategy .hero {
+  background-image: url(../img/section-bgs/strategy-hero-bg.jpg); }
+.strategy .hero-overlay {
+  background-color: rgba(41, 39, 40, 0.75);
+  z-index: 1; }
 .strategy .media-boxes .stat-slider .slide-icon {
-  background-position-y: -200px; }
+  background-position: 0 -200px; }
 .strategy .media-boxes .quote-slider .slide-icon {
-  background-position-y: -200px; }
+  background-position: 0 -200px; }
 
 .latest-post,
 .featured-case-study {

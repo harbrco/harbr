@@ -1627,7 +1627,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1169,
+		"initialSize": 1895,
 		"inputAbbreviatedPath": "\/img\/loading-wave-brand-min.png",
 		"outputAbbreviatedPath": "\/img\/loading-wave-brand-min.png",
 		"outputPathIsOutsideProject": 0,
@@ -1678,6 +1678,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/section-bgs\/landing-hero-bg2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 546863,
+		"inputAbbreviatedPath": "\/img\/section-bgs\/landing-hero-bg2.jpg",
+		"outputAbbreviatedPath": "\/img\/section-bgs\/landing-hero-bg2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/section-bgs\/pp-fs1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1718,6 +1729,28 @@
 		"initialSize": 514020,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/pp-fs4.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/pp-fs4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/section-bgs\/project-planner-hero-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 525041,
+		"inputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/section-bgs\/strategy-hero-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 358589,
+		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

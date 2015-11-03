@@ -141,29 +141,40 @@
    .media-boxes {
       .stat-slider {
          .slide-icon {
-            background-position-y: 0;
+            background-position: 0 0;
          }
       }
 
       .quote-slider {
          .slide-icon {
-            background-position-y: 0;
+            background-position: 0 0;
          }
       }
    }
 }
 
 .strategy {
+   .hero {
+      background-image: url(../img/section-bgs/strategy-hero-bg.jpg);
+      @extend %bgCover--center;
+   }
+
+   .hero-overlay {
+      background-color: rgba($darkGray, .75);
+      @extend %absFill;
+      z-index: 1;
+   }
+
    .media-boxes {
       .stat-slider {
          .slide-icon {
-            background-position-y: -200px;
+            background-position: 0 -200px;
          }
       }
 
       .quote-slider {
          .slide-icon {
-            background-position-y: -200px;
+            background-position: 0 -200px;
          }
       }
    }

@@ -210,6 +210,8 @@
          </div><!-- /.header-wrapper -->
 
          <?php if(is_page('strategy')) { ?>
+            <div class="hero-overlay">
+            </div>
             <div class="hero-text section-heading vAlign">
                <h1 class="clrPop">Strategy</h1>
                <span class="divWave"></span>
@@ -268,11 +270,11 @@
          <div class="landing-overlay">
          </div>
 
-         <video autoplay muted loop poster="<?php the_field('video_still_image'); ?>" id="bgvid">
-            <source src="<?php the_field('video_url_webm'); ?>" type="video/webm">
-            <source src="<?php the_field('video_url_mp4'); ?>" type="video/mp4">
-            <source src="<?php the_field('video_url_ogv'); ?>" type="video/ogv">
-         </video>
+         <!-- <video autoplay muted loop poster="<?php //the_field('video_still_image'); ?>" id="bgvid">
+            <source src="<?php //the_field('video_url_webm'); ?>" type="video/webm">
+            <source src="<?php //the_field('video_url_mp4'); ?>" type="video/mp4">
+            <source src="<?php //the_field('video_url_ogv'); ?>" type="video/ogv">
+         </video> -->
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
@@ -307,6 +309,8 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
       <div class="hero section big-cta isDarkGray">
+         <div class="hero-overlay">
+         </div>
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
