@@ -62,6 +62,48 @@
    }
 
 
+   .media-boxes {
+      .stat-slider {
+         .slide-icon {
+            background-size: 150px 200px;
+         }
+      }
+      .quote-slider {
+         .slide-icon {
+            background-size: 150px 200px;
+         }
+      }
+   }
+   .home {
+      .media-boxes {
+         .stat-slider {
+            .slide-icon {
+               background-position: -50px 0;
+            }
+         }
+         .quote-slider {
+            .slide-icon {
+               background-position: -50px 0;
+            }
+         }
+      }
+   }
+   .strategy {
+      .media-boxes {
+         .stat-slider {
+            .slide-icon {
+               background-position: -50px -100px;
+            }
+         }
+         .quote-slider {
+            .slide-icon {
+               background-position: -50px -100px;
+            }
+         }
+      }
+   }
+
+
 
    // Page specific = = = = = = =
 

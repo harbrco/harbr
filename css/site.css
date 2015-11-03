@@ -3718,6 +3718,21 @@ input:focus {
   .main-menu-wrapper .centerBtn .divWave {
     background-position: -50px 0; }
 
+  .media-boxes .stat-slider .slide-icon {
+    background-size: 150px 200px; }
+  .media-boxes .quote-slider .slide-icon {
+    background-size: 150px 200px; }
+
+  .home .media-boxes .stat-slider .slide-icon {
+    background-position: -50px 0; }
+  .home .media-boxes .quote-slider .slide-icon {
+    background-position: -50px 0; }
+
+  .strategy .media-boxes .stat-slider .slide-icon {
+    background-position: -50px -100px; }
+  .strategy .media-boxes .quote-slider .slide-icon {
+    background-position: -50px -100px; }
+
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
   .weatherbug-earth-networks .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
     background-image: url(../img/icons/wb-day-night-mobile@2x.png); }
