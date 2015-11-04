@@ -3,7 +3,7 @@
 <div class="post-feed-wrapper">
 
    <!-- section -->
-   <section role="main">
+   <section class="scroll-wrap" role="main">
       <?php get_template_part('loop'); ?>
    </section>
    <!-- /section -->

@@ -8,7 +8,7 @@
 // @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-buttons.js"
 // @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-media.js"
 // @codekit-prepend "libs/wow.min.js"
-// @codekit-prepend "libs/jquery.fullPage.js"
+// @codekit-prepend "libs/blockscroll.js"
 // @codekit-prepend "libs/jquery.stellar.min.js"
 
 
@@ -615,6 +615,15 @@ new WOW().init();
       //   }, 600);
       // }
     });
+
+
+
+    // BlockScroller - "snapping" scroll  -  Source file required heavy modification from the original to work.
+    var blockScroller = $('.scroll-wrap').blockScroll({
+      //scrollDuration: 350,
+      fadeBlocks: false
+    });
+    blockScroller();
 
 
   });
