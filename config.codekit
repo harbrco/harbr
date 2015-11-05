@@ -1689,6 +1689,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/section-bgs\/landing-hero-bg3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 343742,
+		"inputAbbreviatedPath": "\/img\/section-bgs\/landing-hero-bg3.jpg",
+		"outputAbbreviatedPath": "\/img\/section-bgs\/landing-hero-bg3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/section-bgs\/pp-fs1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1737,7 +1748,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 525041,
+		"initialSize": 703415,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1748,7 +1759,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 621440,
+		"initialSize": 358589,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
