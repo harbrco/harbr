@@ -620,10 +620,12 @@ new WOW().init();
 
 
     // BlockScroller - "snapping" scroll  -  Source file required heavy modification from the original to work.
-    var blockScroller = $('.scroll-wrap').blockScroll({
-      //scrollDuration: 350,
-      fadeBlocks: false
-    });
+    var blockScroller = function(){
+      $('.scroll-wrap').blockScroll({
+        //scrollDuration: 350,
+        fadeBlocks: false
+      });
+    };
     blockScroller();
 
 
