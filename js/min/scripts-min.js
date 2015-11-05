@@ -3059,13 +3059,14 @@ new WOW().init();
 
     // Blog/Collective Category Menu Toggle
     if ($('html').hasClass('touch')) {
-      $('.mobile-cat-menu-toggle').on('click', function(){
+      $('.mobile-cat-menu-toggle').on('click', function(event){
+        event.preventDefault();
         $(this).toggleClass('catMenuVisible');
         $('.mobile-cat-menu-wrapper').toggleClass('catMenuVisible');
       });
 
     } else {
-      $('.mobile-cat-menu-toggle').hover(
+      $('.mobile-cat-menu-toggle').on('click', function(event){ event.preventDefault(); }).hover(
         function() {
           $(this).addClass('catMenuVisible');
           $('.mobile-cat-menu-wrapper').addClass('catMenuVisible');

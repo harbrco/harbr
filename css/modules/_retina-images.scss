@@ -18,6 +18,10 @@
    }
    .popSecondary {
       .downArrow,
+      .upArrow {
+         background-position: -50px -100px;
+      }
+
       .divWave {
          background-position: -50px -100px;
       }

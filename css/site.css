@@ -3693,6 +3693,8 @@ input:focus {
     background-position: -50px -50px; }
 
   .popSecondary .downArrow,
+  .popSecondary .upArrow {
+    background-position: -50px -100px; }
   .popSecondary .divWave {
     background-position: -50px -100px; }
 
