@@ -1078,18 +1078,18 @@ body.menuActive {
   .right-links .main-menu-links {
     height: 90%; } }
 .gform_wrapper .gform_body,
-.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, .footer, .single-case-studies .feature-highlight-slider,
+.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feature-highlight-slider,
 .single-case-studies .second-feature-highlight-slider, .section, .big-cta {
   *zoom: 1; }
   .gform_wrapper .gform_body:before,
-  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, .footer:before, .single-case-studies .feature-highlight-slider:before,
+  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feature-highlight-slider:before,
   .single-case-studies .second-feature-highlight-slider:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
   .single-case-studies .second-feature-highlight-slider:after, .section:after, .big-cta:after {
     content: " ";
     display: table; }
   .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
   .single-case-studies .second-feature-highlight-slider:after, .section:after, .big-cta:after {
     clear: both; }
 
@@ -1187,6 +1187,38 @@ input:focus {
 .snap-section {
   width: 100%;
   position: relative; }
+
+#fancyWrap {
+  background-color: rgba(0, 0, 0, 0.9);
+  display: block;
+  position: absolute;
+  top: 100vh !important;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  -webkit-transition: z-index 0.5s step-end, top 0.5s cubic-bezier(0.666, 0, 0.333, 1);
+          transition: z-index 0.5s step-end, top 0.5s cubic-bezier(0.666, 0, 0.333, 1); }
+  #fancyWrap.isOpen {
+    height: 100%;
+    top: 0vh !important;
+    z-index: 1;
+    -webkit-transition: z-index 0.4s step-start, top 0.4s cubic-bezier(0.666, 0, 0.333, 1);
+            transition: z-index 0.4s step-start, top 0.4s cubic-bezier(0.666, 0, 0.333, 1); }
+  #fancyWrap .close-btn {
+    top: 24px;
+    z-index: 9999; }
+  #fancyWrap .fancybox-item.fancybox-close {
+    display: none; }
+
+.fancybox-wrap {
+  position: absolute !important; }
+
+.fancybox-overlay,
+#fancybox-loading {
+  background-color: transparent !important;
+  position: absolute !important; }
 
 .fancybox-close {
   position: fixed;
@@ -1375,6 +1407,7 @@ input:focus {
   top: 0; }
 
 .sticky-header-wrapper {
+  background-color: #fff;
   z-index: 3; }
   .sticky-header-wrapper .sticky-header {
     width: 100%;
@@ -1395,8 +1428,7 @@ input:focus {
         color: #fff; }
 
 .single .sticky-header-wrapper {
-  height: 73px;
-  position: absolute; }
+  height: 73px; }
 
 .project-planner .sticky-header-wrapper.darkHeader .sticky-header,
 .blog .sticky-header-wrapper.darkHeader .sticky-header,

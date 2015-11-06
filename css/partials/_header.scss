@@ -154,6 +154,7 @@
 }
 
 .sticky-header-wrapper {
+   background-color: $white;
    @extend .wrapper;
    z-index: 3;
 
@@ -193,7 +194,7 @@
 .single {
    .sticky-header-wrapper {
       height: 73px;
-      position: absolute;
+      //position: absolute;
    }
 }
 

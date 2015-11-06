@@ -2982,8 +2982,16 @@ new WOW().init();
     });
 
     if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('project-planner') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
+
+      var menuAppearBuffer;
+
+      if ( $('body').hasClass('single') ) {
+        menuAppearBuffer = $('.belowHero').position().top + 500;
+      } else {
+        menuAppearBuffer = $('.sticky-header-wrapper').position().top + 500;
+      }
+
       var stickyWrap = $('.sticky-header-wrapper').one();
-      var menuAppearBuffer = $('.sticky-header-wrapper').position().top + 400;
       var lastScrollTop = 0;
       $(window).scroll(function(){
         if ( $(nav).hasClass('sticky') ) {
@@ -3053,7 +3061,6 @@ new WOW().init();
 
     // Menu link - add wrapper to each <a>
     $('#menu-main-menu li').find('a').wrap("<span class='link-wrap'></span>");
-
 
 
 
@@ -3257,19 +3264,56 @@ new WOW().init();
 
 
     // Fancybox - Modal popup
+
+
       // video modal
       var viewportWidth = $(window).width();
       if (viewportWidth >= 450){
+
+        // (function ($, F) {
+        //   F.transitions.slideIn = function() {
+        //     $('.fancybox-overlay').slideUp();
+
+        //     // var endPos = F._getPosition(true);
+
+        //     // endPos.top = (parseInt(endPos.top, 10) - 200) + 'px';
+
+        //     // F.wrap.css(endPos).show().animate({
+        //     //   // gone
+        //     // }, {
+        //     //   duration: F.current.openSpeed,
+        //     //   complete: F._afterZoomIn
+        //     // });
+        //   };
+
+        //   F.transitions.slideOut = function() {
+        //     $('.fancybox-overlay').slideDown();
+
+        //     // F.wrap.removeClass('fancybox-opened').animate({
+        //     //   // gone
+        //     // }, {
+        //     //   duration: F.current.closeSpeed,
+        //     //   complete: F._afterZoomOut
+        //     // });
+        //   };
+
+        // }(jQuery, jQuery.fancybox));
+
 
         $(".fancybox-video").fancybox({
           width: "100%",
           height: "85%",
           type:'iframe',
+          openOpacity: true,
+
           helpers: {
-            overlay: {
-              locked: false
-            },
             media :{}
+          },
+          beforeLoad: function() {
+            $('#fancybox-loading').appendTo('#fancyWrap');
+          },
+          beforeShow: function() {
+            $('.fancybox-wrap, .fancybox-overlay, #fancybox-loading').appendTo('#fancyWrap');
           },
           afterShow: function() {
             $('.fancybox-close').addClass('close-btn').prepend("<i class='close-icon'></i>");
@@ -3279,6 +3323,16 @@ new WOW().init();
       } else {
         //mobile video action - vimeo embed currently not supported on mobile
       }
+
+
+      $('body').on('click', '.video-play-btn', function(){
+        $('#fancyWrap').addClass('isOpen');
+      });
+
+      $('#fancyWrap').click(function(){
+        $('#fancyWrap').removeClass('isOpen');
+      });
+
 
 
 

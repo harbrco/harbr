@@ -159,6 +159,15 @@
                background-color: #F7D974; /* yellow */
             }
          </style>
+      <?php } else { ?>
+         <style>
+            .js div#preloader {
+               background-color: #292728; /* gray */
+            }
+            .pace .pace-progress {
+               background-color: #292728; /* gray */
+            }
+         </style>
       <?php } ?>
 
 
@@ -262,7 +271,7 @@
             <span class="divWave"></span>
             <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
 
-            <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
+            <a href="https://vimeo .com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
                <i class="video-play-icon"></i>
             </a>
          </div>
