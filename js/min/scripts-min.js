@@ -3270,36 +3270,6 @@ new WOW().init();
       var viewportWidth = $(window).width();
       if (viewportWidth >= 450){
 
-        // (function ($, F) {
-        //   F.transitions.slideIn = function() {
-        //     $('.fancybox-overlay').slideUp();
-
-        //     // var endPos = F._getPosition(true);
-
-        //     // endPos.top = (parseInt(endPos.top, 10) - 200) + 'px';
-
-        //     // F.wrap.css(endPos).show().animate({
-        //     //   // gone
-        //     // }, {
-        //     //   duration: F.current.openSpeed,
-        //     //   complete: F._afterZoomIn
-        //     // });
-        //   };
-
-        //   F.transitions.slideOut = function() {
-        //     $('.fancybox-overlay').slideDown();
-
-        //     // F.wrap.removeClass('fancybox-opened').animate({
-        //     //   // gone
-        //     // }, {
-        //     //   duration: F.current.closeSpeed,
-        //     //   complete: F._afterZoomOut
-        //     // });
-        //   };
-
-        // }(jQuery, jQuery.fancybox));
-
-
         $(".fancybox-video").fancybox({
           width: "100%",
           height: "85%",
