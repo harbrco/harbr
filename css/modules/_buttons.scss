@@ -60,6 +60,18 @@
          background: transparent;
       }
    }
+
+   &.onWhite {
+      color: $darkGray;
+
+      &:after {
+         background-color: $darkGray;
+      }
+
+      &:hover {
+         color: $darkGray;
+      }
+   }
 }
 
 

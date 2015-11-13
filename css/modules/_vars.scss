@@ -22,6 +22,7 @@ $test: #62e920;      // Test is a bright green just for testing purposes
 
 
 $sans: 'Montserrat', Helvetica, sans-serif;  // Montserrat has weights of 400 & 700
+$sansAlt: 'Lato', Helvetica, sans-serif;  // Lato has weights of 100, 300, & 400
 $serif: 'Playfair Display', Times, Serif;  // Playfair Display has normal (400) weight with italic option
 
 %sans {
@@ -32,6 +33,16 @@ $serif: 'Playfair Display', Times, Serif;  // Playfair Display has normal (400) 
 %sansB {
    font-family: $sans;
    font-weight: 700;
+}
+
+%sansAlt {
+   font-family: $sansAlt;
+   font-weight: 400;
+}
+
+%sansAltLt {
+   font-family: $sansAlt;
+   font-weight: 300;
 }
 
 %serif {

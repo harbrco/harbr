@@ -11,6 +11,8 @@
 // @codekit-prepend "libs/blockscroll.js"
 // @codekit-prepend "libs/jquery.stellar.min.js"
 
+// @codekit-append "shop-scripts.js";
+
 
 // fix for *flash* of animated elements before animation happens.
 $('.wow').fadeIn(50).css('visibility', 'visible');
@@ -48,7 +50,7 @@ new WOW().init();
       $('body').addClass('popTertiary');
     } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
-    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
+    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('woocommerce') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     }
 
@@ -145,7 +147,7 @@ new WOW().init();
 
       var menuAppearBuffer;
 
-      if ( $('body').hasClass('single') ) {
+      if ( $('body').hasClass('single') && !$('body').hasClass('single-product') ) {
         menuAppearBuffer = $('.belowHero').position().top + 500;
       } else {
         menuAppearBuffer = $('.sticky-header-wrapper').position().top + 500;
@@ -639,6 +641,39 @@ new WOW().init();
       //     opacity: 1
       //   }, 600);
       // }
+    });
+
+
+    // Product Image Slider
+    $('.product-images').bxSlider({
+      auto: ($(".product-images>.slide").length > 1) ? true: false,
+      pause: 7000,
+      speed: 50,
+      mode: 'fade',
+      controls: false,
+      // nextSelector: '.next-image',
+      // prevSelector: '.prev-image',
+      // nextText: '',
+      // prevText: '',
+      onSliderLoad: function () {
+        vAlignShow();
+        vAlignFun();
+      },
+      onSlideBefore: function(){
+        $('.product-images .product-image').animate({
+          opacity: 0
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      onSlideAfter: function(){
+        $('.product-images .product-image').animate({
+          opacity: 1
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      pager: ($(".product-images>.product-image").length > 1) ? true: false
     });
 
 

@@ -1,0 +1,311 @@
+.woocommerce {
+   background-color: $white;
+
+   .main-content {
+      .container {
+         max-width: 1580px;
+         @extend .well--xs;
+      }
+   }
+
+   .woocommerce-breadcrumb {
+      @extend %sans;
+      color: $darkGray;
+      margin-bottom: 30px;
+   }
+
+
+   // Main Shop Page
+   .woocommerce-result-count {
+      float: right;
+   }
+
+   ul.products {
+      li.product {
+         width: 48.5%;
+         margin-right: 3%;
+         margin-bottom: 3%;
+
+         &.last {
+            margin-right: 0;
+         }
+
+         a img {
+            margin: 0;
+         }
+
+
+         .price {
+            position: absolute;
+            top: 4%;
+            left: 4%;
+            //width: auto;
+            height: auto;
+            @extend %clear;
+            color: $darkGray;
+            font-size: 32px;
+            @extend %sansAltLt;
+
+            .amount {
+               display: inline-block;
+               vertical-align: top;
+            }
+
+            del {
+               float: right;
+               font-size: 20px;
+               margin-top: 6px;
+               opacity: .6;
+               display: block;
+               position: relative;
+               text-decoration: none;
+
+               &:after {
+                  position: absolute;
+                  top: 17px;
+                  left: -5%;
+                  content: "";
+                  width: 120%;
+                  border-bottom: 1px solid $darkGray;
+                  opacity: .6;
+               }
+            }
+
+            ins {
+               font-weight: unset;
+               float: left;
+               text-decoration: none;
+               margin-right: 14px;
+            }
+
+            .currencyChar {
+               display: inline-block;
+               font-size: 18px;
+               margin-right: 2px;
+               margin-top: 4px;
+               @extend %sansAltLt;
+            }
+         }
+
+
+         .prod-overlay {
+            @extend %absFill;
+            opacity: 0;
+            background-color: rgba($white, .9);
+            @extend %hoverTrans;
+
+            h3 {
+               font-size: 22px;
+               line-height: 25px;
+               text-align: center;
+               margin-bottom: 13px;
+            }
+
+            h4 {
+               text-align: center;
+               @extend %sans;
+               font-size: 15px;
+               line-height: 16px;
+               text-transform: uppercase;
+               @include letSpc(1px);
+               margin-bottom: 0;
+            }
+         }
+
+         &:hover {
+            .prod-overlay {
+               opacity: 1;
+            }
+         }
+      }
+   }
+
+
+   // Single Product page
+   &.single {
+      .sticky-header-wrapper {
+         position: relative;
+      }
+
+      .product-top {
+         display: flex;
+
+         &:before,
+         &:after {
+            display: none;
+         }
+      }
+
+      .product-images-wrapper {
+         width: 48%;
+
+         .product-images {
+            width: 100%;
+            height: 100%;
+
+            .product-image {
+               width: 100%;
+               height: auto;
+               padding-bottom: 100%;
+               @extend %bgCover;
+            }
+         }
+
+         .bx-wrapper .bx-controls .bx-pager-item a {
+            background-color: $medLtGray;
+         }
+      }
+
+      .summary {
+         text-align: center;
+         margin-left: 4%;
+
+         .inner {
+            display: block;
+            //margin-top: -130px;
+         }
+
+         .price {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            @extend %clear;
+            color: $darkGray;
+            font-size: 32px;
+            @extend %sansAltLt;
+            margin-bottom: 10px;
+
+            .amount {
+               display: inline-block;
+               vertical-align: top;
+            }
+
+            del {
+               float: right;
+               font-size: 20px;
+               margin-top: 6px;
+               opacity: .6;
+               display: block;
+               position: relative;
+               text-decoration: none;
+
+               &:after {
+                  position: absolute;
+                  top: 17px;
+                  left: -5%;
+                  content: "";
+                  width: 120%;
+                  border-bottom: 1px solid $darkGray;
+                  opacity: .6;
+               }
+            }
+
+            ins {
+               font-weight: unset;
+               float: left;
+               text-decoration: none;
+               margin-right: 14px;
+            }
+
+            .currencyChar {
+               display: inline-block;
+               font-size: 18px;
+               margin-right: 2px;
+               margin-top: 4px;
+               @extend %sansAltLt;
+            }
+         }
+
+         .product_title {
+            margin-bottom: 30px;
+         }
+
+         div[itemprop="description"] {
+            max-width: 550px;
+            margin: 0 auto 30px;
+
+            p {
+               color: $medGray;
+               font-size: 16px;
+               line-height: 27px;
+            }
+         }
+
+         .quantity {
+            float: none !important;
+         }
+
+         .button {
+            @extend .btn;
+            @extend .btn--uline;
+            @extend .onWhite;
+            background-color: transparent;
+            float: none !important;
+            outline: none;
+
+            &:hover {
+               background-color: transparent;
+            }
+         }
+      }
+
+      .variations {
+         width: 100%;
+
+         .label {
+            //display: none;
+         }
+
+         .value {
+            strong {
+               display: none;
+            }
+
+            fieldset {
+               border: none;
+               padding: 0;
+            }
+
+            input {
+               display: none;
+            }
+
+            label {
+               span {
+                  @extend %sans;
+                  width: 46px;
+                  height: 46px;
+                  display: inline-block;
+                  border: 1px solid $white;
+                  @extend %hoverTrans;
+                  padding: 11px 0 0;
+                  margin: 0 2px;
+               }
+
+               &.checked {
+                  span {
+                     border-color: $darkGray;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+}
+
+
+
+// SHOP PAGES BREAKPOINTS = = = = = = =
+
+@media only screen and (max-width:560px) {
+
+}
+
+@media only screen and (max-width:460px) {
+
+}
+
+@media only screen and (max-width:400px) {
+
+}

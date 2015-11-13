@@ -23,6 +23,11 @@ time, mark, audio, video {
   vertical-align: baseline;
   font-weight: 400;
 }
+
+del, ins, span {
+  font-weight: unset;
+}
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {

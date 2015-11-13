@@ -183,7 +183,7 @@
       <meta name="description" content="<?php bloginfo('description'); ?>">
 
       <!-- Google Fonts -->
-      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat:400,700' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat:400,700|Lato:100,300,400' rel='stylesheet' type='text/css'>
 
       <?php wp_head(); ?>
 
@@ -207,7 +207,7 @@
       <div id="preloader">
       </div>
 
-   <?php if(!is_page('home') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
+   <?php if(!is_page('home') && !is_page('shop') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -332,6 +332,20 @@
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
+
+
+   <?php } elseif(is_woocommerce() ) { ?>
+   <!-- Shop - Main Shop Header -->
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
+      </div>
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
 
 
 

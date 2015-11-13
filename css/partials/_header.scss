@@ -28,7 +28,8 @@
          margin-top: 3px;
       }
 
-      .blog-categories {
+      .blog-categories,
+      .shop-categories {
          width: calc(100% - 243px);
          float: left;
          margin-left: 40px;
@@ -129,6 +130,18 @@
          }
       }
 
+      .shop-categories {
+         .mobile-cat-menu-toggle {
+            color: $darkGray;
+         }
+
+         li {
+            a {
+               color: $darkGray;
+            }
+         }
+      }
+
       .logo {
          color: $white;
          @extend %sansB;
@@ -195,6 +208,7 @@
    .sticky-header-wrapper {
       height: 73px;
       position: absolute;
+      background-color: transparent;
    }
 }
 
@@ -292,7 +306,8 @@
 @media only screen and (max-width:850px) {
    .header-wrapper {
       .header {
-         .blog-categories {
+         .blog-categories,
+         .shop-categories {
             ul {
                display: none;
             }

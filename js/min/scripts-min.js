@@ -2851,6 +2851,8 @@ d[0].offsetTop||15===d[0].offsetTop;d.remove();a.fixedPosition=e}f.extend(b.defa
 // @codekit-prepend "libs/blockscroll.js"
 // @codekit-prepend "libs/jquery.stellar.min.js"
 
+// @codekit-append "shop-scripts.js";
+
 
 // fix for *flash* of animated elements before animation happens.
 $('.wow').fadeIn(50).css('visibility', 'visible');
@@ -2888,7 +2890,7 @@ new WOW().init();
       $('body').addClass('popTertiary');
     } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
-    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
+    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('woocommerce') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     }
 
@@ -2985,7 +2987,7 @@ new WOW().init();
 
       var menuAppearBuffer;
 
-      if ( $('body').hasClass('single') ) {
+      if ( $('body').hasClass('single') && !$('body').hasClass('single-product') ) {
         menuAppearBuffer = $('.belowHero').position().top + 500;
       } else {
         menuAppearBuffer = $('.sticky-header-wrapper').position().top + 500;
@@ -3482,6 +3484,39 @@ new WOW().init();
     });
 
 
+    // Product Image Slider
+    $('.product-images').bxSlider({
+      auto: ($(".product-images>.slide").length > 1) ? true: false,
+      pause: 7000,
+      speed: 50,
+      mode: 'fade',
+      controls: false,
+      // nextSelector: '.next-image',
+      // prevSelector: '.prev-image',
+      // nextText: '',
+      // prevText: '',
+      onSliderLoad: function () {
+        vAlignShow();
+        vAlignFun();
+      },
+      onSlideBefore: function(){
+        $('.product-images .product-image').animate({
+          opacity: 0
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      onSlideAfter: function(){
+        $('.product-images .product-image').animate({
+          opacity: 1
+        }, 600, function() {
+          // Animation complete.
+        });
+      },
+      pager: ($(".product-images>.product-image").length > 1) ? true: false
+    });
+
+
 
     // BlockScroller - "snapping" scroll  -  Source file required heavy modification from the original to work.
     var blockScroller = function(){
@@ -3491,6 +3526,64 @@ new WOW().init();
       });
     };
     blockScroller();
+
+
+  });
+
+})(jQuery, window);
+
+// DOM Ready
+(function($, window, undefined) {
+  $(function() {
+
+    if ( $('body').hasClass('woocommerce') ) {
+
+      var $currencyCharOrig = $('.price del .amount');
+      $currencyCharOrig.html(function(i, html) {
+        return html.replace('$', '');
+      });
+
+      // Find "$" in .price element and add wrapping <sup>
+      var $currencyCharSale = $('.price .amount');
+      $currencyCharSale.html(function(i, html) {
+        return html.replace('$', '<sup class="currencyChar">$</sup>');
+      });
+
+
+      // Single Product
+      if ( $('body').hasClass('single-product') ) {
+        // Remove variation labels and <br> tags in variation radio's
+        $('.variations').find('.label').remove();
+        $('.variations .value').find('br, strong').remove();
+
+        // Make variation option text clickable for the radio input
+        $('.variations .value').find('input').each(function() {
+          //console.log( index + ": " + $( this ).attr('value') );
+          //$(this).find()
+
+          var thisInput = $(this);
+          var postInputText = $(this)[0].nextSibling;
+          var both = thisInput.add(postInputText);
+
+          $(both).wrapAll('<label></label>');
+
+          $(postInputText).wrap('<span></span>');
+        });
+
+        $('.variations input').change(function () {
+          if ($(this).prop('checked')) {
+            $('.variations input').parent('label').removeClass('checked');
+            $(this).parent('label').addClass('checked');
+          }
+        }).change();
+
+
+        // Add to Bag button wrap
+        $('.single_add_to_cart_button').wrap('<div class="centerBtn"></div>');
+      }
+    }
+
+    // Find and remove "$" in .price element of original price of sale item
 
 
   });

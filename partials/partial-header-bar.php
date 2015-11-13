@@ -13,6 +13,18 @@
       </div>
    <?php } ?>
 
+   <?php if(is_woocommerce()) { ?>
+      <div class="shop-categories">
+         <?php wp_nav_menu( array('menu' => 'shop-categories' )); ?>
+
+         <a href="#" class="mobile-cat-menu-toggle">Categories <span class="down-arrow"></span></a>
+
+         <div class="mobile-cat-menu-wrapper">
+            <?php wp_nav_menu( array('menu' => 'shop-categories' )); ?>
+         </div>
+      </div>
+   <?php } ?>
+
    <div class="logo">
       <a href="<?php echo home_url(); ?>" alt="Logo" class="logo">Harbr<span class="clrPop">.</span></a>
    </div>

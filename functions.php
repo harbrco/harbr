@@ -37,6 +37,9 @@ if (function_exists('add_theme_support'))
 
    // Localisation Support
    load_theme_textdomain('html5blank', get_template_directory() . '/languages');
+
+   // Add WooCommerce Support
+   add_theme_support('woocommerce');
 }
 
 /*------------------------------------*\
@@ -460,5 +463,122 @@ function html5_shortcode_demo_2($atts, $content = null) // Demo Heading H2 short
 {
    return '<h2>' . $content . '</h2>';
 }
+
+
+
+
+/*------------------------------------*\
+   WooCommerce Functions
+\*------------------------------------*/
+
+// Main Shop Wrappers
+remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+function my_theme_wrapper_start() {
+   echo '<div id="main" class="main-content section isWhite">';
+   echo '<div class="container">';
+}
+
+function my_theme_wrapper_end() {
+   echo '</div><!-- /.container -->';
+   echo '</div><!-- /.main-content -->';
+}
+
+
+// Change Breadcrumb menu
+add_filter( 'woocommerce_breadcrumb_defaults', 'jk_woocommerce_breadcrumbs' );
+function jk_woocommerce_breadcrumbs() {
+   return array(
+      'delimiter'   => ' &#47; ',
+      'wrap_before' => '<nav class="woocommerce-breadcrumb" itemprop="breadcrumb">',
+      'wrap_after'  => '</nav>',
+      'before'      => '',
+      'after'       => '',
+      'home'        => _x( 'Shop', 'breadcrumb', 'woocommerce' ),
+   );
+}
+
+add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' );
+function woo_custom_breadrumb_home_url() {
+   return '/shop/';
+}
+
+
+// Remove Sidebar
+remove_action('woocommerce_sidebar', 'woocommerce_get_sidebar', 10);
+
+
+// Main Shop Page = = = = = = =
+
+// Remove breadcrumbs on Shop landing
+add_filter('woocommerce_before_main_content', 'shop_home_breadcrumb_remove');
+function shop_home_breadcrumb_remove() {
+   if ( is_shop() ) {
+      remove_action('woocommerce_before_main_content', 'woocommerce_breadcrumb', 20);
+   }
+}
+
+// Remove sort option dropdown
+remove_action('woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30);
+
+// Add Price to main shop loop & remove Title, Price, Add to Cart button
+add_action('woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+remove_action('woocommerce_before_shop_loop_item_title', 'woocommerce_show_product_loop_sale_flash', 10);
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_rating', 5);
+remove_action('woocommerce_after_shop_loop_item_title', 'woocommerce_template_loop_price', 10);
+remove_action('woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10);
+
+
+
+// Single Product Page = = = = = = =
+
+// Reorder Product Summary
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 5);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_rating', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 10);
+remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_meta', 40);
+
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 5);
+add_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 10);
+
+// Gray out out-of-stock variations
+add_filter( 'woocommerce_variation_is_active', 'grey_out_variations_when_out_of_stock', 10, 2 );
+function grey_out_variations_when_out_of_stock( $grey_out, $variation ) {
+   if ( ! $variation->is_in_stock() )
+      return false;
+   return true;
+}
+
+
+// Always show 'add to cart' on variable products
+add_action( 'woocommerce_before_add_to_cart_button', function(){
+    // start output buffering
+    ob_start();
+} );
+
+add_action( 'woocommerce_before_single_variation', function(){
+    // end output buffering
+    ob_end_clean();
+    // output custom div
+    echo '<div class="single_variation_wrap_custom">';
+} );
+
+
+
+// Change "Add to cart" button text
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
+function woo_custom_cart_button_text() {
+   return __( 'Add to Bag', 'woocommerce' );
+}
+
+
+// Remove Tabs, Reviews, Related, Upsales, etc
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
+remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
 
 ?>
