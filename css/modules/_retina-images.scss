@@ -108,6 +108,43 @@
    }
 
 
+   // left-right arrows for shop product slider
+   .bx-wrapper {
+      .bx-prev,
+      .bx-next {
+         background-size: 100px 100px;
+      }
+      .bx-prev {
+         background-position: 0 -50px;
+
+         &:hover {
+            background-position: 0 -50px;
+         }
+      }
+      .bx-next {
+         background-position: -50px -50px;
+
+         &:hover {
+            background-position: -50px -50px;
+         }
+      }
+   }
+
+   .woocommerce,
+   .woocommerce-page {
+      &.woocommerce-cart {
+         .cart-heading {
+            a {
+               .left-arrow {
+                  background-position: 0 -50px;
+                  background-size: 50px 100px;
+               }
+            }
+         }
+      }
+   }
+
+
 
    // Page specific = = = = = = =
 

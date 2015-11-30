@@ -353,6 +353,12 @@
 
 }
 
+/* hover style just for information */
+label:hover:before {
+  border: 1px solid #4778d9!important;
+}
+
+
 
 @media only screen and (max-width:840px) {
    .gform_wrapper {

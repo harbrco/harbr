@@ -171,6 +171,32 @@ input:focus {
 // Reset bxSlider
 .bx-wrapper {
    margin-bottom: 0;
+   z-index: 2;
+
+   .bx-prev,
+   .bx-next {
+      background-image: url(../img/icons/left-right-arrow-sprite.png);
+      background-size: 200px 200px;
+      @extend %hoverTrans;
+
+      &:hover {
+         @extend %hoverFade;
+      }
+   }
+   .bx-prev {
+      background-position: 0 0;
+
+      &:hover {
+         background-position: 0 0;
+      }
+   }
+   .bx-next {
+      background-position: -100px 0;
+
+      &:hover {
+         background-position: -100px 0;
+      }
+   }
 }
 .bx-wrapper .bx-viewport {
    -moz-box-shadow: none;
@@ -195,6 +221,8 @@ input:focus {
 // Scaling pagination dots
 .bx-wrapper {
    .bx-controls {
+      z-index: 51;
+
       .bx-pager.bx-default-pager {
          position: relative;
          display: inline-block;

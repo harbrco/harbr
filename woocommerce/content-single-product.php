@@ -42,29 +42,69 @@ if ( ! defined( 'ABSPATH' ) ) {
 			//do_action( 'woocommerce_before_single_product_summary' );
 		?>
 
-		<div class="product-images-wrapper">
-			<div class="product-images">
-				<?php
-				// First, get main Product Image
-				$productImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
-				?>
-				<div class="product-image" style="background-image: url(<?php echo $productImg['0']; ?>);"></div>
 
-				<?php
-				global $product;
-				$attachment_ids = $product->get_gallery_attachment_ids();
+		<?php
+		// First, get main Product Image
+		$productImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' );
 
-				// Loop through gallery images
-				foreach( $attachment_ids as $attachment_id ){
+		global $product;
+		$attachment_ids = $product->get_gallery_attachment_ids();
+		?>
 
-					$full_url = wp_get_attachment_image_src( $attachment_id, 'full' )[0];
-					?>
+		<div class="product-image-column">
+			<div class="product-images-wrapper">
+				<div class="product-images">
 
-					<div class="product-image" style="background-image: url(<?php echo $full_url; ?>);"></div>
-				<?php } ?>
+					<div class="product-image-wrap">
+						<div class="product-image" style="background-image: url(<?php echo $productImg['0']; ?>);"></div>
+					</div>
 
-			</div><!-- /.product-images -->
-		</div><!-- /.product-images-wrapper -->
+					<?php
+					// Loop through gallery images
+					foreach( $attachment_ids as $attachment_id ){
+
+						$full_url = wp_get_attachment_image_src( $attachment_id, 'full' )[0];
+						?>
+
+						<div class="product-image-wrap">
+							<div class="product-image" style="background-image: url(<?php echo $full_url; ?>);"></div>
+						</div>
+					<?php } ?>
+
+				</div><!-- /.product-images -->
+			</div><!-- /.product-images-wrapper -->
+
+			<div class="product-pager-wrapper">
+				<div id="product-pager">
+					<div class="product-image-page-link" data-slide-index="0">
+						<a href="">
+							<div class="product-image" style="background-image: url(<?php echo $productImg['0']; ?>);">
+							</div>
+						</a>
+					</div>
+
+					<?php $product_pager_index = 1; ?>
+
+					<?php
+					// Loop through gallery images
+					foreach( $attachment_ids as $attachment_id ){
+
+						$full_url = wp_get_attachment_image_src( $attachment_id, 'full' )[0];
+						?>
+
+						<div class="product-image-page-link" data-slide-index="<?php echo $product_pager_index; ?>">
+							<a href="">
+								<div class="product-image" style="background-image: url(<?php echo $full_url; ?>);">
+								</div>
+							</a>
+						</div>
+
+						<?php $product_pager_index++; ?>
+
+					<?php } ?>
+				</div>
+			</div>
+		</div><!-- /.product-image-column -->
 
 		<div class="summary entry-summary">
 

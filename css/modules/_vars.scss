@@ -45,6 +45,11 @@ $serif: 'Playfair Display', Times, Serif;  // Playfair Display has normal (400) 
    font-weight: 300;
 }
 
+%sansAltB {
+   font-family: $sansAlt;
+   font-weight: 700;
+}
+
 %serif {
    font-family: $serif;
    font-weight: 400;

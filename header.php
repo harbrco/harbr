@@ -105,6 +105,15 @@
                background-color: #61A4EA; /* blue */
             }
          </style>
+      <?php } /* shop pages */ elseif(is_page('shop-intro') || is_woocommerce() || is_cart() || is_checkout()) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #78B97F; /* green */
+            }
+            .pace .pace-progress {
+               background-color: #78B97F; /* green */
+            }
+         </style>
       <?php } /* blog/collective */ elseif(is_home()) { ?>
          <style>
             .js div#preloader {
@@ -183,7 +192,7 @@
       <meta name="description" content="<?php bloginfo('description'); ?>">
 
       <!-- Google Fonts -->
-      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat:400,700|Lato:100,300,400' rel='stylesheet' type='text/css'>
+      <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat:400,700|Lato:300,400,700' rel='stylesheet' type='text/css'>
 
       <?php wp_head(); ?>
 
@@ -207,7 +216,50 @@
       <div id="preloader">
       </div>
 
-   <?php if(!is_page('home') && !is_page('shop') && !is_single() && !is_home() && !is_archive() && !is_page('project-planner')) { ?>
+   <?php if(is_page('home')) { ?>
+   <!-- Home page -->
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
+      </div>
+
+      <div class="landing-section hero section big-cta">
+         <div class="header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="landing-hero hero-text section-heading vAlign">
+            <h1 class="clrPop">Digital Agency</h1>
+            <span class="divWave"></span>
+            <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
+
+            <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
+               <i class="video-play-icon"></i>
+            </a>
+         </div>
+
+         <div class="landing-overlay">
+         </div>
+
+         <!-- <video autoplay muted loop poster="<?php //the_field('video_still_image'); ?>" id="bgvid">
+            <source src="<?php //the_field('video_url_webm'); ?>" type="video/webm">
+            <source src="<?php //the_field('video_url_mp4'); ?>" type="video/mp4">
+            <source src="<?php //the_field('video_url_ogv'); ?>" type="video/ogv">
+         </video> -->
+
+         <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
+      </div>
+
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+
+
+   <?php } elseif( is_page('strategy') || is_page('contact') ) { ?>
+   <!-- Strategy or Contact page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -255,52 +307,8 @@
       <?php } ?>
 
 
-   <?php } elseif(is_page('home')) { ?>
-   <!-- Home page -->
-      <div class="menu-wrap">
-         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
-      </div>
-
-      <div class="landing-section hero section big-cta">
-         <div class="header-wrapper">
-            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-         </div><!-- /.header-wrapper -->
-
-         <div class="landing-hero hero-text section-heading vAlign">
-            <h1 class="clrPop">Digital Agency</h1>
-            <span class="divWave"></span>
-            <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
-
-            <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
-               <i class="video-play-icon"></i>
-            </a>
-         </div>
-
-         <div class="landing-overlay">
-         </div>
-
-         <!-- <video autoplay muted loop poster="<?php //the_field('video_still_image'); ?>" id="bgvid">
-            <source src="<?php //the_field('video_url_webm'); ?>" type="video/webm">
-            <source src="<?php //the_field('video_url_mp4'); ?>" type="video/mp4">
-            <source src="<?php //the_field('video_url_ogv'); ?>" type="video/ogv">
-         </video> -->
-
-         <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
-      </div>
-
-
-      <!-- Sticky Header Bar -->
-      <?php if(!is_page('contact') && !is_home()) { ?>
-      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
-         <div class="sticky-header">
-            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-         </div>
-      </div><!-- /.header-wrapper -->
-      <?php } ?>
-
-
    <?php } elseif(is_home()) { ?>
-   <!-- Blog page -->
+   <!-- Blog / Collective page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -314,6 +322,7 @@
 
 
    <?php } elseif(is_page('project-planner')) { ?>
+   <!-- Project Planner page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -334,7 +343,21 @@
       </div>
 
 
-   <?php } elseif(is_woocommerce() ) { ?>
+   <?php } elseif(is_page('shop-intro') ) { ?>
+   <!-- Main site header for shop intro -->
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
+      </div>
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+
+
+   <?php } elseif(is_woocommerce() || is_cart() || is_checkout() ) { ?>
    <!-- Shop - Main Shop Header -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>

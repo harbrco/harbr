@@ -2890,7 +2890,7 @@ new WOW().init();
       $('body').addClass('popTertiary');
     } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
-    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('woocommerce') ) { //<- 'blog' is "collective"
+    } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('shop-intro') || $('body').hasClass('woocommerce-page') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     }
 
@@ -3106,7 +3106,7 @@ new WOW().init();
 
 
     // Add 'darkHeader' class to proper pages
-    if ( $('body').hasClass('project-planner') || $('body').hasClass('error404') ) {
+    if ( $('body').hasClass('project-planner') || $('body').hasClass('error404') || $('body').hasClass('shop-intro') ) {
       $('.sticky-header-wrapper').addClass('darkHeader');
     }
 
@@ -3484,37 +3484,84 @@ new WOW().init();
     });
 
 
-    // Product Image Slider
-    $('.product-images').bxSlider({
-      auto: ($(".product-images>.slide").length > 1) ? true: false,
-      pause: 7000,
-      speed: 50,
+    // Shop Intro - Feature Product Slider
+    $('.featured-products').bxSlider({
+      auto: true,
+      pause: 5000,
       mode: 'fade',
+      adaptiveHeight: 'true',
       controls: false,
-      // nextSelector: '.next-image',
-      // prevSelector: '.prev-image',
-      // nextText: '',
-      // prevText: '',
+      nextText: '',
+      prevText: '',
+      pager: ($(".featured-products>.product-slide").length > 1) ? true: false
+    });
+
+
+    // Product Image Slider
+    var realSlider = $(".product-images").bxSlider({
+      speed:1000,
+      pager:false,
+      nextText:'',
+      prevText:'',
+      infiniteLoop:false,
+      hideControlOnEnd:true,
       onSliderLoad: function () {
         vAlignShow();
         vAlignFun();
       },
-      onSlideBefore: function(){
-        $('.product-images .product-image').animate({
-          opacity: 0
-        }, 600, function() {
-          // Animation complete.
-        });
-      },
-      onSlideAfter: function(){
-        $('.product-images .product-image').animate({
-          opacity: 1
-        }, 600, function() {
-          // Animation complete.
-        });
-      },
-      pager: ($(".product-images>.product-image").length > 1) ? true: false
+      onSlideBefore:function($slideElement, oldIndex, newIndex){
+        changeRealThumb(realThumbSlider,newIndex);
+      }
     });
+
+    var realThumbSlider = $("#product-pager").bxSlider({
+      minSlides: 5,
+      maxSlides: 5,
+      slideWidth: 146,
+      slideMargin: 12,
+      moveSlides: 1,
+      pager:false,
+      speed:1000,
+      infiniteLoop:false,
+      hideControlOnEnd:true,
+      nextText:'<span></span>',
+      prevText:'<span></span>',
+      onSliderLoad: function () {
+        vAlignShow();
+        vAlignFun();
+      }
+    });
+
+    if($("#product-pager a").length<6){
+      $("#product-pager .bx-next").hide();
+    }
+
+    if($(".product-image-page-link").length<=1){
+      $(".product-pager-wrapper").hide();
+    }
+
+    function linkRealSliders(bigS){
+      $("#product-pager").on("click","a",function(event){
+        event.preventDefault();
+        var newIndex = $(this).parent().attr("data-slide-index");
+        bigS.goToSlide(newIndex);
+      });
+    }
+
+    linkRealSliders(realSlider,realThumbSlider);
+
+    function changeRealThumb(slider,newIndex){
+      var $thumbS = $("#product-pager");
+      $thumbS.find('.active').removeClass("active");
+      $thumbS.find('.product-image-page-link[data-slide-index="'+newIndex+'"]').addClass("active");
+
+      if(slider.getSlideCount()-newIndex>=5) {
+        slider.goToSlide(newIndex);
+      } else {
+        slider.goToSlide(slider.getSlideCount()-5);
+      }
+    }
+
 
 
 
@@ -3536,7 +3583,7 @@ new WOW().init();
 (function($, window, undefined) {
   $(function() {
 
-    if ( $('body').hasClass('woocommerce') ) {
+    if ( $('body').hasClass('woocommerce-page') ) {
 
       var $currencyCharOrig = $('.price del .amount');
       $currencyCharOrig.html(function(i, html) {
@@ -3549,18 +3596,27 @@ new WOW().init();
         return html.replace('$', '<sup class="currencyChar">$</sup>');
       });
 
+      // Remove decimal and "cents" from price
+      $('.price .amount').each(function() {
+        var el = $(this);
+        var roundAmount = el.text().split('.')[0];
+
+        el.text(roundAmount);
+      });
+
 
       // Single Product
       if ( $('body').hasClass('single-product') ) {
+        // Product Gallery Thumb - give the first item active class
+        $('.product-image-page-link').first().addClass('active');
+
+
         // Remove variation labels and <br> tags in variation radio's
         $('.variations').find('.label').remove();
         $('.variations .value').find('br, strong').remove();
 
         // Make variation option text clickable for the radio input
         $('.variations .value').find('input').each(function() {
-          //console.log( index + ": " + $( this ).attr('value') );
-          //$(this).find()
-
           var thisInput = $(this);
           var postInputText = $(this)[0].nextSibling;
           var both = thisInput.add(postInputText);
@@ -3570,20 +3626,85 @@ new WOW().init();
           $(postInputText).wrap('<span></span>');
         });
 
-        $('.variations input').change(function () {
-          if ($(this).prop('checked')) {
-            $('.variations input').parent('label').removeClass('checked');
-            $(this).parent('label').addClass('checked');
-          }
-        }).change();
-
+        $('.variations tr').each(function() {
+          var $tr = $(this);
+          var $inputs = $tr.find('input');
+          $inputs.change(function () {
+            if ($(this).prop('checked')) {
+              $inputs.parent('label').removeClass('checked');
+              $(this).parent('label').addClass('checked');
+            }
+          }).change();
+        });
 
         // Add to Bag button wrap
         $('.single_add_to_cart_button').wrap('<div class="centerBtn"></div>');
-      }
-    }
 
-    // Find and remove "$" in .price element of original price of sale item
+        setTimeout(function(){
+          $('form.variations_form .variations input:radio').change();
+        }, 200);
+
+        // Variations add to cart button fade
+        var $varLabel = $('.variations label');
+
+        var stockCheck = function() {
+          var $varStock = $('.single_variation .stock');
+          var $varBtn = $('.variations_button');
+
+          if ( $varStock.hasClass('out-of-stock') ) {
+            $varBtn.addClass('disabled');
+          } else {
+            $varBtn.removeClass('disabled');
+          }
+        };
+
+        setTimeout(function(){
+          stockCheck();
+        }, 200);
+
+        $varLabel.on('click', function () {
+          setTimeout(function(){
+            stockCheck();
+          }, 200);
+        });
+
+
+
+        // Single Product Add to bag modal
+        if (!$('.variations_form').length) {
+          $('.single_add_to_cart_button').closest('form').hide();
+          $('.add_to_cart_button').text('Add to Bag');
+        }
+
+        $(document).on('added_to_cart', function() {
+          console.log("I'm going to be a modal");
+        });
+
+      }
+
+
+      // Cart Page
+      if ( $('body').hasClass('cart') ) {
+        $('.coupon label').after('<p>Enter any valid coupon or promo code here to redeem your discount.</p>');
+
+        // Wrap coupon button with span for proper button styling
+        $('.coupon .button').wrap('<span class="span-after"></span>');
+      }
+
+
+      // Checkout Page
+      if ( $('body').hasClass('checkout') ) {
+        // Wrap coupon button with span for proper button styling (after any ajax event ends)
+        $(document).ajaxStart(function() {
+          $('.place-order input.button').unwrap();
+        });
+        $(document).ajaxComplete(function() {
+          $('.place-order input.button').wrap('<span class="span-after"></span>');
+        });
+
+      }
+
+    }
 
 
   });

@@ -232,6 +232,18 @@
    }
 }
 
+.shop-intro {
+   .sticky-header-wrapper {
+      position: absolute;
+
+      &.darkHeader {
+         .sticky-header {
+            background-color: transparent;
+         }
+      }
+   }
+}
+
 .error404 {
    .sticky-header-wrapper {
       position: absolute;

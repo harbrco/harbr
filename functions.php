@@ -545,6 +545,13 @@ remove_action('woocommerce_single_product_summary', 'woocommerce_template_single
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_price', 5);
 add_action('woocommerce_single_product_summary', 'woocommerce_template_single_title', 10);
 
+add_action('woocommerce_simple_add_to_cart', 'ajax_non_variation_atc', 10);
+function ajax_non_variation_atc() {
+   remove_action('woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30);
+   add_action('woocommerce_single_product_summary', 'woocommerce_template_loop_add_to_cart', 30);
+}
+
+
 // Gray out out-of-stock variations
 add_filter( 'woocommerce_variation_is_active', 'grey_out_variations_when_out_of_stock', 10, 2 );
 function grey_out_variations_when_out_of_stock( $grey_out, $variation ) {
@@ -580,5 +587,31 @@ function woo_custom_cart_button_text() {
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10);
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_upsell_display', 15);
 remove_action('woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20);
+
+
+
+// Cart Page = = = = = = =
+
+remove_action('woocommerce_cart_collaterals', 'woocommerce_cross_sell_display');
+
+// Show variation data for cart page
+function get_variation_data_from_variation_id( $item_id ) {
+    $_product = new WC_Product_Variation( $item_id );
+    $variation_data = $_product->get_variation_attributes();
+    $variation_detail = woocommerce_get_formatted_variation( $variation_data, true );  // this will give all variation detail in one line
+    // $variation_detail = woocommerce_get_formatted_variation( $variation_data, false);  // this will give all variation detail one by one
+    return $variation_detail; // $variation_detail will return string containing variation detail which can be used to print on website
+    // return $variation_data; // $variation_data will return only the data which can be used to store variation data
+}
+
+
+
+// Checkout Page = = = = = = =
+
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_login_form', 10 );
+remove_action( 'woocommerce_before_checkout_form', 'woocommerce_checkout_coupon_form', 10 );
+
+// Change order submit button text
+add_filter( 'woocommerce_order_button_text', create_function( '', 'return "Checkout";' ) );
 
 ?>

@@ -13,7 +13,7 @@
       </div>
    <?php } ?>
 
-   <?php if(is_woocommerce()) { ?>
+   <?php if(is_woocommerce() || is_cart() || is_checkout() ) { ?>
       <div class="shop-categories">
          <?php wp_nav_menu( array('menu' => 'shop-categories' )); ?>
 
