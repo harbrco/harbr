@@ -160,49 +160,6 @@
 
 
 
-                  <?php //elseif( get_row_layout() == 'feature_highlight_slider' ): ?>
-                  <!-- Feature Highlight Slider -->
-                     <?php //$sliderBgColor = get_sub_field('slider_background_color'); ?>
-
-                     <!-- <div class="feature-highlight-slider-wrapper wrapper">
-                     <?php //if (get_sub_field('slider_background_color')) { ?>
-                        <div class="feature-highlight-slider" style="background-color: #<?php //echo $sliderBgColor; ?>;">
-                     <?php //} else { ?>
-                        <div class="feature-highlight-slider" style="background-color: #<?php //echo $brandColor; ?>;">
-                     <?php //} ?>
-                        <?php //if( have_rows('feature_highlight_slide') ): ?>
-                        <?php //while ( have_rows('feature_highlight_slide') ) : the_row(); ?>
-
-                           <!- - Slide has a Phone image - ->
-                           <?php //if (get_sub_field('slide_image_type') == 'phone') { ?>
-                              <?php //$slideImgType = "hasPhoneImage"; ?>
-                           <!- - Slide has a Display/wide image - ->
-                           <?php //} else if (get_sub_field('slide_image_type') == 'display') { ?>
-                              <?php //$slideImgType = "hasDisplayImage"; ?>
-                           <?php //} ?>
-
-                           <div class="slide" style="background-color: #<?php //the_sub_field('slide_background_color'); ?>;">
-                              <div class="flexWrap <?php //echo $slideImgType; ?> section group">
-                                 <div class="slide-text col span_5_of_12">
-                                    <div class="inner vAlign">
-                                       <h3><?php //the_sub_field('slide_headline'); ?></h3>
-                                       <p><?php //the_sub_field('slide_text'); ?></p>
-                                    </div>
-                                 </div>
-
-                                 <div class="slide-image col span_7_of_12">
-                                    <img src="<?php //the_sub_field('slide_image'); ?>" />
-                                 </div>
-                              </div>
-                           </div>
-
-                        <?php //endwhile; ?>
-                        <?php //endif; ?>
-                        </div>
-                     </div> -->
-
-
-
                   <?php elseif( get_row_layout() == 'feature_highlight_slider' ): ?>
                   <div class="feat-highlight-wrapper wrapper isDarkGray">
                      <div class="centerBtn">
