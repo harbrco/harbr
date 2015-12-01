@@ -3383,80 +3383,12 @@ new WOW().init();
       pager: ($(".quote-slider>.slide").length > 1) ? true: false
     });
 
-    $('.feature-highlight-slider').bxSlider({
-      auto: false,
-      pause: 6000,
-      speed: 5,
-      mode: 'fade',
-      adaptiveHeight: 'true',
-      controls: false,
-      nextText: '',
-      prevText: '',
-      onSliderLoad: function () {
-        $(window).data('plugin_stellar').refresh();
-        stellarJS();
-        vAlignShow();
-        vAlignFun();
-      },
-      onSlideBefore: function(){
-        $('.feature-highlight-slider .slide').animate({
-          opacity: 0
-        }, 600, function() {
-          vAlignFun();
-          // Animation complete.
-        });
-      },
-      onSlideAfter: function(){
-        vAlignFun();
-        $(window).data('plugin_stellar').refresh();
-
-        $('.feature-highlight-slider .slide').animate({
-          opacity: 1
-        }, 600);
-      },
-      pager: ($(".feature-highlight-slider>.slide").length > 1) ? true: false
-    });
-
-    $('.second-feature-highlight-slider').bxSlider({
-      auto: false,
-      pause: 6000,
-      speed: 5,
-      mode: 'fade',
-      adaptiveHeight: 'true',
-      controls: false,
-      nextText: '',
-      prevText: '',
-      onSliderLoad: function () {
-        $(window).data('plugin_stellar').refresh();
-        stellarJS();
-        vAlignShow();
-        vAlignFun();
-      },
-      onSlideBefore: function(){
-        $('.second-feature-highlight-slider .slide').animate({
-          opacity: 0
-        }, 600, function() {
-          vAlignFun();
-          // Animation complete.
-        });
-      },
-      onSlideAfter: function(){
-        vAlignFun();
-        $(window).data('plugin_stellar').refresh();
-
-        $('.second-feature-highlight-slider .slide').animate({
-          opacity: 1
-        }, 600);
-      },
-      pager: ($(".second-feature-highlight-slider>.slide").length > 1) ? true: false
-    });
-
-    $('.tools-used-slider').bxSlider({
+    $('.feat-highlight-slider').bxSlider({
       auto: false,
       mode: 'fade',
       adaptiveHeight: 'true',
       controls: false,
-      pagerCustom: '.tool-pager',
+      pagerCustom: '.feat-slide-pager',
       nextText: '',
       prevText: ''//,
       // onSliderLoad: function () {

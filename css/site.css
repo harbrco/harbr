@@ -414,7 +414,7 @@ th {
 .gform_wrapper ul li .gfield_checkbox li,
 .gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .main-menu-links a, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle,
 .header-wrapper .header .shop-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li,
-.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .weatherbug .weather-icons-wrapper .text-wrapper h3, .woocommerce .woocommerce-breadcrumb,
+.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-social h3, .project-planner .gform_page.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .woocommerce .woocommerce-breadcrumb,
 .woocommerce-page .woocommerce-breadcrumb, .woocommerce ul.products li.product .prod-overlay h4,
 .woocommerce-page ul.products li.product .prod-overlay h4, .woocommerce.single .variations .value label span,
 .woocommerce-page.single .variations .value label span, .woocommerce.single .variations_form .single_variation .stock,
@@ -618,9 +618,7 @@ th {
 .landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
-.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
-.single-case-studies .img-gal-left-2stack-right-big .image, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single-case-studies .tools-used-images .tool-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
-.weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-night, .woocommerce.single .product-image-column .product-images .product-image,
+.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
 .woocommerce-page.single .product-image-column .product-images .product-image, .woocommerce.single .product-image-column #product-pager .product-image,
 .woocommerce-page.single .product-image-column #product-pager .product-image {
   background-size: cover;
@@ -630,15 +628,13 @@ th {
 .landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
-.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .img-gal-left-big-right-2stack .image,
-.single-case-studies .img-gal-left-2stack-right-big .image, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero {
+.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero {
   background-position-y: center; }
 
 .single-case-studies .hero .hero-background-image {
   background-position-y: bottom; }
 
-.landing-section .landing-overlay, .project-planner .hero-overlay, .media-boxes .next-slide, .strategy .hero-overlay, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-day,
-.weatherbug .weather-icons-wrapper .icons-wrapper .icons-img-night, .woocommerce ul.products li.product .prod-overlay,
+.landing-section .landing-overlay, .project-planner .hero-overlay, .media-boxes .next-slide, .strategy .hero-overlay, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .woocommerce ul.products li.product .prod-overlay,
 .woocommerce-page ul.products li.product .prod-overlay, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
   position: absolute;
   top: 0;
@@ -1154,8 +1150,7 @@ body.menuActive {
   .right-links .main-menu-links {
     height: 90%; } }
 .gform_wrapper .gform_body,
-.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feature-highlight-slider,
-.single-case-studies .second-feature-highlight-slider, .woocommerce ul.products li.product .price,
+.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feat-highlight-slider, .single-case-studies .feat-slide-text, .woocommerce ul.products li.product .price,
 .woocommerce-page ul.products li.product .price, .woocommerce.single .summary .price,
 .woocommerce-page.single .summary .price, .woocommerce.woocommerce-cart .cart-heading,
 .woocommerce-page.woocommerce-cart .cart-heading, .woocommerce.woocommerce-cart .product-thumbnail,
@@ -1164,16 +1159,14 @@ body.menuActive {
 .woocommerce-page.woocommerce-checkout form.checkout, .section, .big-cta {
   *zoom: 1; }
   .gform_wrapper .gform_body:before,
-  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feature-highlight-slider:before,
-  .single-case-studies .second-feature-highlight-slider:before, .woocommerce ul.products li.product .price:before,
+  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feat-highlight-slider:before, .single-case-studies .feat-slide-text:before, .woocommerce ul.products li.product .price:before,
   .woocommerce-page ul.products li.product .price:before, .woocommerce.single .summary .price:before,
   .woocommerce-page.single .summary .price:before, .woocommerce.woocommerce-cart .cart-heading:before,
   .woocommerce-page.woocommerce-cart .cart-heading:before, .woocommerce.woocommerce-cart .product-thumbnail:before,
   .woocommerce-page.woocommerce-cart .product-thumbnail:before, .woocommerce.woocommerce-cart .cart-collaterals:before,
   .woocommerce-page.woocommerce-cart .cart-collaterals:before, .woocommerce.woocommerce-checkout form.checkout:before,
   .woocommerce-page.woocommerce-checkout form.checkout:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
-  .single-case-studies .second-feature-highlight-slider:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1183,8 +1176,7 @@ body.menuActive {
     content: " ";
     display: table; }
   .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feature-highlight-slider:after,
-  .single-case-studies .second-feature-highlight-slider:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1234,10 +1226,7 @@ body {
 .header-wrapper .header .shop-categories li, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .gform_confirmation_message .confirm-social ul li a, .project-planner .gform_wrapper .gf_page_steps,
 .project-planner .gforms_confirmation_message .gf_page_steps, .blog .section-heading h1 a,
 .archive .section-heading h1 a,
-.single .section-heading h1 a, .single-case-studies .tool-pager a, .weatherbug .weather-icons-wrapper, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
-.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
-.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night, .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
-.weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night, .woocommerce ul.products li.product .prod-overlay,
+.single .section-heading h1 a, .woocommerce ul.products li.product .prod-overlay,
 .woocommerce-page ul.products li.product .prod-overlay, .woocommerce.single .product-image-column .bx-controls,
 .woocommerce-page.single .product-image-column .bx-controls, .woocommerce.single .product-image-column .product-pager-wrapper .product-image-page-link .product-image,
 .woocommerce-page.single .product-image-column .product-pager-wrapper .product-image-page-link .product-image, .woocommerce.single .variations .value label span,
@@ -2979,10 +2968,18 @@ input:focus {
 .single-case-studies .narrow-centered-content p {
   font-size: 18px;
   line-height: 28px; }
+.single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
+  text-align: center;
+  max-width: 700px; }
+.single-case-studies .divider-centered-content p {
+  font-size: 24px;
+  line-height: 35px; }
 .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
   width: 90%;
   max-width: 1200px;
   margin-bottom: 20px; }
+.single-case-studies .img-gal.bottom-margin {
+  padding-top: 0 !important; }
 .single-case-studies .img-gal-halves {
   font-size: 0; }
   .single-case-studies .img-gal-halves .left-half-image,
@@ -2993,96 +2990,6 @@ input:focus {
     overflow: hidden; }
   .single-case-studies .img-gal-halves .right-half-image {
     margin-left: 20px; }
-.single-case-studies .img-gal-60-40 {
-  font-size: 0; }
-  .single-case-studies .img-gal-60-40 .left-60-image,
-  .single-case-studies .img-gal-60-40 .right-40-image {
-    font-size: 18px;
-    display: inline-block;
-    vertical-align: top;
-    overflow: hidden; }
-  .single-case-studies .img-gal-60-40 .left-60-image {
-    width: calc(59% - 10px); }
-  .single-case-studies .img-gal-60-40 .right-40-image {
-    width: calc(41% - 10px);
-    margin-left: 20px; }
-.single-case-studies .img-gal-left-big-right-2stack,
-.single-case-studies .img-gal-left-2stack-right-big {
-  font-size: 0; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-big-image,
-  .single-case-studies .img-gal-left-big-right-2stack .right-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .left-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .right-big-image {
-    display: inline-block;
-    width: calc(50% - 10px);
-    overflow: hidden; }
-    .single-case-studies .img-gal-left-big-right-2stack .left-big-image .image,
-    .single-case-studies .img-gal-left-big-right-2stack .right-big-image .image,
-    .single-case-studies .img-gal-left-2stack-right-big .left-big-image .image,
-    .single-case-studies .img-gal-left-2stack-right-big .right-big-image .image {
-      padding-bottom: 100%; }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    display: inline-block;
-    width: calc(50% - 10px);
-    overflow: hidden; }
-    .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image,
-    .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image {
-      padding-bottom: calc(50% - 10px);
-      display: block; }
-      .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image:first-child {
-        margin-bottom: 20px; }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images {
-    margin-left: 20px; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    margin-right: 20px; }
-.single-case-studies .feature-highlight-slider-wrapper,
-.single-case-studies .second-feature-highlight-slider-wrapper {
-  position: relative; }
-  .single-case-studies .feature-highlight-slider-wrapper .bx-controls,
-  .single-case-studies .second-feature-highlight-slider-wrapper .bx-controls {
-    position: absolute;
-    bottom: 5%;
-    width: 100%;
-    z-index: 55; }
-    .single-case-studies .feature-highlight-slider-wrapper .bx-controls .bx-pager,
-    .single-case-studies .second-feature-highlight-slider-wrapper .bx-controls .bx-pager {
-      bottom: inherit; }
-  .single-case-studies .feature-highlight-slider-wrapper .bx-wrapper .bx-controls .bx-pager.bx-default-pager,
-  .single-case-studies .second-feature-highlight-slider-wrapper .bx-wrapper .bx-controls .bx-pager.bx-default-pager {
-    text-align: left;
-    padding-left: 5%; }
-.single-case-studies .feature-highlight-slider,
-.single-case-studies .second-feature-highlight-slider {
-  height: 100%; }
-  .single-case-studies .feature-highlight-slider .slide-text,
-  .single-case-studies .second-feature-highlight-slider .slide-text {
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #fff; }
-    .single-case-studies .feature-highlight-slider .slide-text h3,
-    .single-case-studies .second-feature-highlight-slider .slide-text h3 {
-      font-size: 25px;
-      line-height: 30px;
-      text-transform: uppercase;
-      margin-bottom: 18px; }
-    .single-case-studies .feature-highlight-slider .slide-text p,
-    .single-case-studies .second-feature-highlight-slider .slide-text p {
-      font-size: 18px;
-      line-height: 30px; }
-  .single-case-studies .feature-highlight-slider .slide-image,
-  .single-case-studies .second-feature-highlight-slider .slide-image {
-    max-height: 800px;
-    margin-top: 5%; }
 .single-case-studies .img-gal-intro-text .text-wrapper,
 .single-case-studies .full-width-image-centered-text .text-wrapper {
   margin: 0 auto 5%;
@@ -3099,68 +3006,111 @@ input:focus {
   line-height: 30px; }
 .single-case-studies .full-width-image-centered-text {
   position: relative;
-  padding-bottom: 42%;
   overflow: hidden; }
   .single-case-studies .full-width-image-centered-text .container, .single-case-studies .full-width-image-centered-text .project-planner .gform_body, .project-planner .single-case-studies .full-width-image-centered-text .gform_body,
   .single-case-studies .full-width-image-centered-text .fw-img {
     position: relative;
     z-index: 1; }
   .single-case-studies .full-width-image-centered-text .fw-img {
-    z-index: 2;
-    position: absolute; }
-.single-case-studies .prev-cs .section-heading {
-  margin-top: -100px; }
-.single-case-studies .tools-used-wrapper .container, .single-case-studies .tools-used-wrapper .project-planner .gform_body, .project-planner .single-case-studies .tools-used-wrapper .gform_body {
-  max-width: 1300px; }
-.single-case-studies .tools-used-text .text-wrapper {
-  margin: 0 auto 30px;
-  text-align: center;
-  max-width: 560px;
-  background: transparent; }
-.single-case-studies .tools-used-text h3 {
-  font-size: 25px;
-  line-height: 30px;
-  text-transform: uppercase; }
-.single-case-studies .tools-used-text p {
-  font-size: 18px;
-  line-height: 30px; }
-.single-case-studies .tool-pager {
-  margin-bottom: 36px; }
-  .single-case-studies .tool-pager a {
-    display: inline-block;
-    margin: 0 12px;
-    opacity: .4; }
-    .single-case-studies .tool-pager a.active, .single-case-studies .tool-pager a:hover {
-      opacity: 1; }
-  .single-case-studies .tool-pager .tool-icon {
     display: block; }
-    .single-case-studies .tool-pager .tool-icon.isSketch {
-      width: 43px;
-      height: 38px;
-      background-image: url(../img/icons/tool-used-sketch.png);
-      background-size: 43px 38px; }
-    .single-case-studies .tool-pager .tool-icon.isPhotoshop {
-      width: 39px;
-      height: 38px;
-      background-image: url(../img/icons/tool-used-photoshop.png);
-      background-size: 39px 38px; }
-    .single-case-studies .tool-pager .tool-icon.isIllustrator {
-      width: 39px;
-      height: 38px;
-      background-image: url(../img/icons/tool-used-illustrator.png);
-      background-size: 39px 38px; }
-    .single-case-studies .tool-pager .tool-icon.isInvision {
-      width: 99px;
-      height: 34px;
-      background-image: url(../img/icons/tool-used-invision.png);
-      background-size: 99px 34px; }
-    .single-case-studies .tool-pager .tool-icon.isSublime {
-      width: 41px;
-      height: 37px;
-      background-image: url(../img/icons/tool-used-sublime.png);
-      background-size: 41px 37px; }
-.single-case-studies .tools-used-images .tool-image {
-  padding-bottom: 39.38%; }
+.single-case-studies .feat-highlight-wrapper {
+  position: relative; }
+  .single-case-studies .feat-highlight-wrapper .container, .single-case-studies .feat-highlight-wrapper .project-planner .gform_body, .project-planner .single-case-studies .feat-highlight-wrapper .gform_body {
+    max-width: 1300px; }
+  .single-case-studies .feat-highlight-wrapper .centerBtn {
+    position: absolute;
+    top: 5%;
+    height: 40px;
+    z-index: 51; }
+  .single-case-studies .feat-highlight-wrapper .bx-controls {
+    position: absolute;
+    bottom: 5%;
+    width: 100%;
+    z-index: 55; }
+    .single-case-studies .feat-highlight-wrapper .bx-controls .bx-pager {
+      bottom: inherit; }
+  .single-case-studies .feat-highlight-wrapper .bx-wrapper .bx-controls .bx-pager.bx-default-pager {
+    text-align: left;
+    padding-left: 5%; }
+.single-case-studies .feat-highlight-slider {
+  height: 100%; }
+  .single-case-studies .feat-highlight-slider .slide-text {
+    padding-left: 5%;
+    padding-right: 5%;
+    color: #fff; }
+    .single-case-studies .feat-highlight-slider .slide-text h3 {
+      font-size: 25px;
+      line-height: 30px;
+      text-transform: uppercase;
+      margin-bottom: 18px; }
+    .single-case-studies .feat-highlight-slider .slide-text p {
+      font-size: 18px;
+      line-height: 30px; }
+  .single-case-studies .feat-highlight-slider .slide-image {
+    margin-bottom: -1px; }
+.single-case-studies .feat-slide-text {
+  height: 100%; }
+  .single-case-studies .feat-slide-text .text-wrapper {
+    margin: 0 auto 6%;
+    text-align: center;
+    max-width: 680px;
+    background: transparent; }
+  .single-case-studies .feat-slide-text h3 {
+    font-size: 25px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  .single-case-studies .feat-slide-text p {
+    font-size: 18px;
+    line-height: 30px;
+    max-width: 580px;
+    margin: 0 auto; }
+.single-case-studies .feat-slide-pager {
+  margin-bottom: 0; }
+  .single-case-studies .feat-slide-pager .bx-pager-item {
+    font-size: inherit;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 8px;
+    width: 10px;
+    height: 10px;
+    cursor: pointer; }
+  .single-case-studies .feat-slide-pager a {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.3);
+    text-indent: -999em;
+    /* make the text accessible to screen readers */
+    cursor: pointer;
+    position: absolute;
+    -webkit-transition: -webkit-transform 0.3s ease .2s, background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease .2s;
+    transition: background-color 0.3s ease, -webkit-transform 0.3s ease .2s;
+    transition: transform 0.3s ease .2s, background-color 0.3s ease;
+    transition: transform 0.3s ease .2s, background-color 0.3s ease, -webkit-transform 0.3s ease .2s; }
+    .single-case-studies .feat-slide-pager a:hover, .single-case-studies .feat-slide-pager a:focus {
+      background-color: white; }
+    .single-case-studies .feat-slide-pager a.active {
+      background-color: white;
+      -webkit-transform: scale(1.4);
+      -ms-transform: scale(1.4);
+          transform: scale(1.4);
+      -webkit-transition: -webkit-transform 0.3s ease .2s, background-color 0.3s ease .2s;
+      -webkit-transition: background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s;
+      transition: background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s;
+      transition: transform 0.3s ease .2s, background-color 0.3s ease .2s;
+      transition: transform 0.3s ease .2s, background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s; }
+.single-case-studies .feat-slide-images .slide-image img {
+  width: 100%;
+  height: auto;
+  display: block; }
 
 .touch .single-case-studies .full-width-image-centered-text {
   padding-bottom: 0; }
@@ -3171,152 +3121,17 @@ input:focus {
 
 .weatherbug .prev-page-cta {
   background-position: center right; }
-.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12,
-.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
-  width: 48%; }
-.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12,
-.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
-  width: 48%; }
-.weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image img,
-.weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image img {
-  max-width: 340px;
-  display: block;
-  margin: 0 auto; }
-.weatherbug .weather-icons-wrapper .container, .weatherbug .weather-icons-wrapper .project-planner .gform_body, .project-planner .weatherbug .weather-icons-wrapper .gform_body {
-  max-width: 1000px; }
-.weatherbug .weather-icons-wrapper .text-wrapper {
-  text-align: center;
-  color: #fff;
-  margin: 0 auto 24px;
-  max-width: 700px; }
-  .weatherbug .weather-icons-wrapper .text-wrapper h3 {
-    font-size: 25px;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin-bottom: 16px; }
-  .weatherbug .weather-icons-wrapper .text-wrapper p {
-    font-size: 18px;
-    line-height: 30px; }
-.weatherbug .weather-icons-wrapper .day-night-toggle {
-  width: 32px;
-  height: 32px;
-  background-image: url(../img/icons/wb-day-night-toggle.png);
-  background-size: 32px 32px;
-  display: block;
-  margin: 0 auto; }
-.weatherbug .weather-icons-wrapper .icons-wrapper {
-  width: 100%; }
-  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk {
-    position: relative; }
-  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
-    padding-bottom: 50%; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day,
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
-      background-image: url(../img/icons/wb-day-night-mobile.png);
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-day {
-      background-position: 0 0; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile .icons-img-night {
-      background-position-x: 0;
-      background-position-y: top;
-      opacity: 0; }
-  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
-    padding-bottom: 50%; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day,
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
-      background-image: url(../img/icons/wb-day-night-tablet.png);
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-day {
-      background-position: 0 0; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet .icons-img-night {
-      background-position-x: 0;
-      background-position-y: top;
-      opacity: 0; }
-  .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
-    padding-bottom: 50%; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day,
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
-      background-image: url(../img/icons/wb-day-night-desktop.png);
-      background-size: cover;
-      background-repeat: no-repeat; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-day {
-      background-position: 0 0; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop .icons-img-night {
-      background-position-x: 0;
-      background-position-y: top;
-      opacity: 0; }
-.weatherbug .weather-icons-wrapper.isDayTime {
-  background-color: #2e98e3; }
-.weatherbug .weather-icons-wrapper.isNightTime {
-  background-color: #113C62; }
-  .weatherbug .weather-icons-wrapper.isNightTime .day-night-toggle {
-    background-color: #62e920; }
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-day,
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-day {
-    opacity: 0; }
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-mobile .icons-img-night,
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-tablet .icons-img-night {
-    opacity: 1; }
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-day {
-    opacity: 0; }
-  .weatherbug .weather-icons-wrapper.isNightTime .icons-wrapper .icon-chunk-desktop .icons-img-night {
-    opacity: 1; }
 
 @media only screen and (max-width: 900px) {
-  .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-text.span_5_of_12 {
-    width: 100%; }
-  .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage .slide-image.span_7_of_12 {
-    width: 100%;
-    margin-left: 0; } }
-@media only screen and (max-width: 768px) {
-  .weatherbug .weather-icons-wrapper .icons-wrapper {
-    max-width: 500px;
-    margin: 0 auto; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile,
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet {
-      width: 50%;
-      padding-bottom: 100%; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
-      display: none; } }
-@media only screen and (max-width: 400px) {
-  .weatherbug .weather-icons-wrapper .icons-wrapper {
-    max-width: 250px; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-mobile {
-      width: 100%;
-      padding-bottom: 200%; }
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-tablet,
-    .weatherbug .weather-icons-wrapper .icons-wrapper .icon-chunk-desktop {
-      display: none; } }
-@media only screen and (max-width: 900px) {
-  .single.single-case-studies .feature-highlight-slider .slide-text,
-  .single.single-case-studies .feature-highlight-slider .slide-image,
-  .single.single-case-studies .second-feature-highlight-slider .slide-text,
-  .single.single-case-studies .second-feature-highlight-slider .slide-image {
-    width: 100%;
-    display: block;
-    position: relative; }
-  .single.single-case-studies .feature-highlight-slider .slide-text,
-  .single.single-case-studies .second-feature-highlight-slider .slide-text {
-    top: 0;
-    margin-bottom: 5%;
-    margin-top: 80px; }
-  .single.single-case-studies .feature-highlight-slider .slide-image,
-  .single.single-case-studies .second-feature-highlight-slider .slide-image {
-    width: 95%;
-    margin-left: 5%; }
-  .single.single-case-studies .feature-highlight-slider-wrapper .bx-wrapper .bx-controls,
-  .single.single-case-studies .second-feature-highlight-slider-wrapper .bx-wrapper .bx-controls {
-    top: 3%;
-    bottom: inherit; }
-
   .single-case-studies .narrow-centered-content h2 {
     font-size: 42px;
     line-height: 52px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
+    max-width: 640px; }
+  .single-case-studies .divider-centered-content p {
+    font-size: 20px;
+    line-height: 32px; } }
 @media only screen and (max-width: 768px) {
   .post-type-archive-case-studies .hero .hero-highlight-image,
   .single-case-studies .hero .hero-highlight-image {
@@ -3329,38 +3144,7 @@ input:focus {
   .single-case-studies .img-gal-halves .right-half-image {
     width: calc(50% - 5px); }
   .single-case-studies .img-gal-halves .right-half-image {
-    margin-left: 10px; }
-  .single-case-studies .img-gal-60-40 .left-60-image {
-    width: calc(59% - 5px); }
-  .single-case-studies .img-gal-60-40 .right-40-image {
-    width: calc(41% - 5px);
-    margin-left: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-big-image,
-  .single-case-studies .img-gal-left-big-right-2stack .right-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .left-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .right-big-image {
-    width: calc(50% - 5px); }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    width: calc(50% - 5px); }
-    .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image,
-    .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image {
-      padding-bottom: calc(50% - 5px); }
-      .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image:first-child {
-        margin-bottom: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images {
-    margin-left: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    margin-right: 10px; } }
+    margin-left: 10px; } }
 @media only screen and (max-width: 650px) {
   .single-case-studies .narrow-centered-content h2 {
     font-size: 36px;
@@ -3368,25 +3152,28 @@ input:focus {
     margin-bottom: 18px; }
   .single-case-studies .narrow-centered-content p {
     font-size: 17px;
-    line-height: 26px; } }
+    line-height: 26px; }
+  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
+    max-width: 560px; }
+  .single-case-studies .divider-centered-content p {
+    font-size: 17px;
+    line-height: 29px; } }
 @media only screen and (max-width: 580px) {
-  .single.single-case-studies .feature-highlight-slider .slide-text h3,
-  .single.single-case-studies .second-feature-highlight-slider .slide-text h3 {
+  .single.single-case-studies .feat-highlight-slider .slide-text h3 {
     font-size: 22px;
     line-height: 27px; }
-  .single.single-case-studies .feature-highlight-slider .slide-text p,
-  .single.single-case-studies .second-feature-highlight-slider .slide-text p {
+  .single.single-case-studies .feat-highlight-slider .slide-text p {
     font-size: 16px;
     line-height: 27px; }
 
   .single-case-studies .full-width-image-centered-text .text-wrapper h3,
   .single-case-studies .img-gal-intro-text .text-wrapper h3,
-  .single-case-studies .tools-used-text .text-wrapper h3 {
+  .single-case-studies .feat-slide-text .text-wrapper h3 {
     font-size: 22px;
     line-height: 27px; }
   .single-case-studies .full-width-image-centered-text .text-wrapper p,
   .single-case-studies .img-gal-intro-text .text-wrapper p,
-  .single-case-studies .tools-used-text .text-wrapper p {
+  .single-case-studies .feat-slide-text .text-wrapper p {
     font-size: 16px;
     line-height: 27px; }
   .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
@@ -3399,39 +3186,9 @@ input:focus {
     margin-bottom: 10px; }
   .single-case-studies .img-gal-halves .right-half-image {
     margin-left: 0; }
-  .single-case-studies .img-gal-60-40 .left-60-image,
-  .single-case-studies .img-gal-60-40 .right-40-image {
-    width: 100%;
-    margin-left: 0;
-    margin-bottom: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-big-image,
-  .single-case-studies .img-gal-left-big-right-2stack .right-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .left-big-image,
-  .single-case-studies .img-gal-left-2stack-right-big .right-big-image {
-    width: 100%;
-    margin-bottom: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    width: 100%;
-    margin-bottom: 10px; }
-    .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image,
-    .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image,
-    .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image {
-      padding-bottom: 50%; }
-      .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images .image:first-child,
-      .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images .image:first-child {
-        margin-bottom: 10px; }
-  .single-case-studies .img-gal-left-big-right-2stack .right-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .right-2stack-images {
-    margin-left: 0; }
-  .single-case-studies .img-gal-left-big-right-2stack .left-2stack-images,
-  .single-case-studies .img-gal-left-2stack-right-big .left-2stack-images {
-    margin-right: 0; } }
+  .single-case-studies .divider-centered-content p {
+    font-size: 16px;
+    line-height: 27px; } }
 @media only screen and (max-width: 500px) {
   .single-case-studies .narrow-centered-content h2 {
     font-size: 32px;
@@ -4583,45 +4340,19 @@ input:focus {
 .well--s {
   padding-top: 7%;
   padding-bottom: 7%; }
-  .well--s.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--s.hasPhoneImage,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .well--s.hasPhoneImage {
+  .well--s.well--noBottom, .single-case-studies .well--s.img-gal.top-margin {
     padding-bottom: 0; }
 
-.well--xs, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
+.well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
 .woocommerce-page .main-content .container,
 .woocommerce-page .main-content .project-planner .gform_body,
 .project-planner .woocommerce-page .main-content .gform_body {
   padding-top: 4.5%;
   padding-bottom: 4.5%; }
-  .well--xs.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--xs.hasPhoneImage, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body, .woocommerce .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body, .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body, .project-planner .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-  .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container,
-  .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-  .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-  .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .well--xs.hasPhoneImage,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container,
-  .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body,
-  .woocommerce .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body,
-  .project-planner .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-  .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-  .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-  .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-  .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body, .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-  .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage,
-  .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
+  .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
   .woocommerce-page .main-content .well--noBottom.container,
   .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-  .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-  .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-  .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-  .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-  .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage {
+  .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
     padding-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
@@ -4636,45 +4367,19 @@ input:focus {
   .well--s {
     padding-top: 9%;
     padding-bottom: 9%; }
-    .well--s.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--s.hasPhoneImage,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .well--s.hasPhoneImage {
+    .well--s.well--noBottom, .single-case-studies .well--s.img-gal.top-margin {
       padding-bottom: 0; }
 
-  .well--xs, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
+  .well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
   .project-planner .woocommerce-page .main-content .gform_body {
     padding-top: 6.5%;
     padding-bottom: 6.5%; }
-    .well--xs.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--xs.hasPhoneImage, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body, .woocommerce .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body, .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body, .project-planner .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .well--xs.hasPhoneImage,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container,
-    .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body, .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-    .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage,
-    .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
+    .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
     .woocommerce-page .main-content .well--noBottom.container,
     .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-    .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-    .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage {
+    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
       padding-bottom: 0; } }
 @media only screen and (max-width: 560px) {
   .well {
@@ -4688,45 +4393,19 @@ input:focus {
   .well--s {
     padding-top: 11%;
     padding-bottom: 11%; }
-    .well--s.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--s.hasPhoneImage,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .well--s.hasPhoneImage {
+    .well--s.well--noBottom, .single-case-studies .well--s.img-gal.top-margin {
       padding-bottom: 0; }
 
-  .well--xs, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
+  .well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
   .project-planner .woocommerce-page .main-content .gform_body {
     padding-top: 8.5%;
     padding-bottom: 8.5%; }
-    .well--xs.well--noBottom, .weatherbug.single-case-studies .feature-highlight-slider .well--xs.hasPhoneImage, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container, .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body, .woocommerce .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body, .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body, .project-planner .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .well--xs.hasPhoneImage,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .hasPhoneImage.container,
-    .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .hasPhoneImage.container,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.container,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .project-planner .hasPhoneImage.gform_body,
-    .woocommerce-page .main-content .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body,
-    .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .woocommerce-page .main-content .hasPhoneImage.gform_body,
-    .project-planner .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .hasPhoneImage.gform_body, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body, .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage, .woocommerce .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-    .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce .main-content .gform_body.hasPhoneImage,
-    .woocommerce .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
+    .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
     .woocommerce-page .main-content .well--noBottom.container,
     .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-    .project-planner .weatherbug.single-case-studies .feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .feature-highlight-slider .project-planner .gform_body.hasPhoneImage,
-    .project-planner .weatherbug.single-case-studies .second-feature-highlight-slider .woocommerce-page .main-content .gform_body.hasPhoneImage,
-    .woocommerce-page .main-content .weatherbug.single-case-studies .second-feature-highlight-slider .project-planner .gform_body.hasPhoneImage {
+    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
       padding-bottom: 0; } }
 .divWave {
   display: block;

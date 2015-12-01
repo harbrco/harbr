@@ -858,6 +858,50 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/cs-wbug\/cs-wbug-feat-bg1-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 83637,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-bg1-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-bg1-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-feat-img1-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.14454e+06,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img1-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img1-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-feat-img2-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 600516,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img2-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img2-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-feat-img3-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 890011,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img3-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-feat-img3-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cs-wbug\/cs-wbug-fw-big-bg-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -873,9 +917,20 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 1.13679e+06,
+		"initialSize": 707465,
 		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-min.png",
 		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-wbug\/cs-wbug-fw-big-x.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.13679e+06,
+		"inputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-x.png",
+		"outputAbbreviatedPath": "\/img\/cs-wbug\/cs-wbug-fw-big-x.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1819,7 +1874,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 621440,
+		"initialSize": 358589,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
