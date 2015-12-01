@@ -7,6 +7,10 @@ machine:
     GITHUB_PROJECT: 'harbr'
     GITHUB_BRANCH:  'master'
 
+dependencies:
+  pre:
+    - gem install bundler --version 1.10
+
 test:
   override:
     - echo 'fake tests!'
