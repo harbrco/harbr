@@ -3609,7 +3609,7 @@ new WOW().init();
         }
 
         $(document).on('added_to_cart', function() {
-          console.log("I'm going to be a modal");
+          console.log("I'm going to be a modal, someday");
         });
 
       }
