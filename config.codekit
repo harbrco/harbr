@@ -836,13 +836,68 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cs-spot-featured-min.jpg": {
+	"\/img\/cs-spot\/cs-spot-featured-min.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 171969,
-		"inputAbbreviatedPath": "\/img\/cs-spot-featured-min.jpg",
-		"outputAbbreviatedPath": "\/img\/cs-spot-featured-min.jpg",
+		"initialSize": 260599,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-featured-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-featured-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot\/cs-spot-fw-big-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 163719,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-fw-big-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-fw-big-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot\/cs-spot-fw-big-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 398979,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-fw-big-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-fw-big-min.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot\/cs-spot-gal-fw-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 208680,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-gal-fw-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-gal-fw-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot\/cs-spot-gal-fw2-min.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 271764,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-gal-fw2-min.jpg",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-gal-fw2-min.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/cs-spot\/cs-spot-hero-highlight-min.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 534536,
+		"inputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-hero-highlight-min.png",
+		"outputAbbreviatedPath": "\/img\/cs-spot\/cs-spot-hero-highlight-min.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

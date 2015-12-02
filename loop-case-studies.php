@@ -29,7 +29,7 @@
       $post_slug=$post->post_name;
    ?>
 
-   <article class="post-hero hero view-post-cta big-cta isDarkGray" style="background-color: #<?php echo $brandColor; ?>;">
+   <article class="post-hero hero view-post-cta big-cta isDarkGray <?php echo $post_slug; ?>" style="background-color: #<?php echo $brandColor; ?>;">
       <div class="section-heading vAlign">
          <h3 class="clrPop">Case Study</h3>
          <span class="divWave"></span>

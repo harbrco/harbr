@@ -128,10 +128,10 @@
                   <?php elseif( get_row_layout() == 'full_width_image_centered_text' ): ?>
                   <!-- Text/Image Combo Layouts -->
                      <div class="full-width-image-centered-text wrapper isDarkGray" style="background-image: url(<?php the_sub_field('section_background_image') ?>); background-color: #<?php echo $brandColor; ?>;">
-                        <?php if (get_sub_field('section_background_image')) { ?>
-                        <div class="darkOverlay">
-                        </div>
-                        <?php } ?>
+                        <?php //if (get_sub_field('section_background_image')) { ?>
+                        <!-- <div class="darkOverlay">
+                        </div> -->
+                        <?php //} ?>
                         <div class="container well--s well--noBottom">
                            <div class="text-wrapper">
                               <h3><?php the_sub_field('headline_text'); ?></h3>
