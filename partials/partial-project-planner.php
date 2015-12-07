@@ -1,4 +1,4 @@
-<div id="main" class="section full-section isDarkGray">
+<div id="main" class="section full-section isWhite">
    <!-- Sticky Header Bar -->
    <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
       <div class="sticky-header">
@@ -6,8 +6,16 @@
       </div>
    </div><!-- /.header-wrapper -->
 
-   <div class="darkOverlay">
+   <div class="form-pagination">
+      <div class="inner vAlign">
+         <div class="dot dot-1"><a href="#step1"></a></div>
+         <div class="dot dot-2"><a href="#step2"></a></div>
+         <div class="dot dot-3"><a href="#step3"></a></div>
+      </div>
    </div>
 
-   <?php gravity_form(1, false, false, false, '', true, 10); ?>
+   <!-- <div class="darkOverlay">
+   </div> -->
+
+   <?php gravity_form(2, false, false, false, '', true, 10); ?>
 </div>

@@ -93,8 +93,8 @@
          }
 
          ul {
-            text-align: right;
-            margin-top: 7px;
+            text-align: left;
+            margin-top: 8px;
          }
 
          li {
@@ -225,12 +225,6 @@
       }
    }
 }
-.project-planner {
-   .sticky-header-wrapper {
-      position: absolute;
-      height: 0 !important;
-   }
-}
 
 .shop-intro {
    .sticky-header-wrapper {
@@ -315,35 +309,6 @@
 
 
 // HEADER BREAKPOINTS = = = = = = =
-@media only screen and (max-width:850px) {
-   .header-wrapper {
-      .header {
-         .blog-categories,
-         .shop-categories {
-            ul {
-               display: none;
-            }
-
-            .mobile-cat-menu-toggle,
-            .mobile-cat-menu-wrapper {
-               display: block;
-            }
-
-            .mobile-cat-menu-wrapper {
-               &.catMenuVisible {
-                  height: auto;
-                  max-height: 1000px;
-                  transition: max-height 0.25s ease-in;
-               }
-
-               ul {
-                  display: block;
-               }
-            }
-         }
-      }
-   }
-}
 
 @media only screen and (max-width:768px) {
    .single {
@@ -360,6 +325,34 @@
       .float-post-header-wrapper {
          .post-header-wrapper {
             padding: 4px 0 0;
+         }
+      }
+   }
+
+   .header-wrapper {
+      .header {
+         .blog-categories,
+         .shop-categories {
+            ul {
+               display: none;
+            }
+
+            // .mobile-cat-menu-toggle,
+            // .mobile-cat-menu-wrapper {
+            //    display: block;
+            // }
+
+            // .mobile-cat-menu-wrapper {
+            //    &.catMenuVisible {
+            //       height: auto;
+            //       max-height: 1000px;
+            //       transition: max-height 0.25s ease-in;
+            //    }
+
+            //    ul {
+            //       display: block;
+            //    }
+            // }
          }
       }
    }

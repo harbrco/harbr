@@ -75,12 +75,12 @@
                &:hover {
                   input[type=checkbox]:not(old) + label:before,
                   input[type=radio   ]:not(old) + label:before{
-                     border-color: $white;
+                     border-color: $darkGray;
                   }
 
                   input[type=checkbox]:not(old):checked + label:before,
                   input[type=radio   ]:not(old):checked + label:before {
-                     border-color: $quaternary;
+                     border-color: $quaternaryDk;
                   }
                }
 
@@ -100,12 +100,12 @@
 
             &:focus + label{
                &:before{
-                  border-color: $white;
+                  border-color: $darkGray;
                }
 
                input[type=checkbox]:not(old):checked + label:before,
                input[type=radio   ]:not(old):checked + label:before {
-                  border-color: $quaternary;
+                  border-color: $quaternaryDk;
                }
             }
          }
@@ -129,7 +129,7 @@
             width            : 20px;
             height           : 20px;
             margin           : 0 12px 0 0;
-            border           : 2px solid rgba($white, .5);
+            border           : 2px solid rgba($darkGray, .5);
             border-radius    : 50em;
             background-color : transparent;
             vertical-align   : bottom;
@@ -138,13 +138,13 @@
 
          input[type=checkbox]:not(old):checked + label,
          input[type=radio   ]:not(old):checked + label {
-            color: $quaternary;
+            color: $quaternaryDk;
          }
 
          input[type=checkbox]:not(old):checked + label:before,
          input[type=radio   ]:not(old):checked + label:before {
-            border-color: $quaternary;
-            background-color: $quaternary;
+            border-color: $quaternaryDk;
+            background-color: $quaternaryDk;
          }
       }
    }
@@ -209,19 +209,36 @@
          font-family: $sans;
          padding: 6px;
          @extend %hoverTrans;
-         margin-left: 10px;
-         margin-right: 10px;
+         // margin-left: 10px;
+         // margin-right: 10px;
          text-transform: uppercase;
-      }
 
-      .gform_previous_button {
-         color: rgba($white, .5);
-         border-color: rgba($white, .5);
+         &.gform_previous_button {
+            margin-bottom: 0 !important;
+         }
 
-         &:hover {
-            color: $white;
+         &.gform_next_button {
+            margin-right: 0 !important;
          }
       }
+
+      .span-after:first-child {
+         opacity: .5;
+         @extend %hoverTrans;
+
+         &:hover {
+            opacity: 1;
+         }
+      }
+
+      // .gform_previous_button {
+      //    color: rgba($white, .5);
+      //    border-color: rgba($white, .5);
+
+      //    &:hover {
+      //       color: $white;
+      //    }
+      // }
    }
 
    textarea {
@@ -354,8 +371,61 @@
 }
 
 /* hover style just for information */
-label:hover:before {
-  border: 1px solid #4778d9!important;
+// label:hover:before {
+//   border: 1px solid #4778d9!important;
+// }
+
+
+.isWhite {
+   .gform_wrapper {
+      ul {
+         li {
+            input,
+            input[type=text],
+            input[type=url],
+            input[type=email],
+            input[type=tel],
+            input[type=number],
+            input[type=password],
+            textarea, {
+               color: $darkGray;
+               border-bottom: 2px solid rgba($medGray, .3);
+
+               &:hover {
+                  border-color: rgba($medGray, .6);
+               }
+
+               &:focus {
+                  outline: none;
+                  border-color: $quaternaryDk;
+               }
+            }
+         }
+      }
+
+      .gform_page_footer {
+         .button {
+            border-bottom: 0;
+
+            &:hover {
+               border-bottom: 0;
+            }
+         }
+
+         .span-after {
+            @extend .btn;
+            @extend .btn--uline;
+            @extend .onWhite;
+            background-color: transparent;
+            padding-right: 0;
+            padding-left: 0;
+            padding-bottom: 0 !important;
+            margin: 0 20px 20px;
+
+            &:after { bottom: 0 !important; }
+         }
+      }
+   }
 }
 
 

@@ -5,11 +5,11 @@
       <div class="blog-categories">
          <?php wp_nav_menu( array('menu' => 'blog-categories' )); ?>
 
-         <a href="#" class="mobile-cat-menu-toggle">Categories <span class="down-arrow"></span></a>
+         <!-- <a href="#" class="mobile-cat-menu-toggle">Categories <span class="down-arrow"></span></a>
 
          <div class="mobile-cat-menu-wrapper">
-            <?php wp_nav_menu( array('menu' => 'blog-categories' )); ?>
-         </div>
+            <?php //wp_nav_menu( array('menu' => 'blog-categories' )); ?>
+         </div> -->
       </div>
    <?php } ?>
 

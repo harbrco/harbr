@@ -430,6 +430,12 @@
          }
       }
    }
+
+   .isWhite {
+      .clrPop {
+         color: $quaternaryDk;
+      }
+   }
 }
 .popWhite {
    .clrPop {

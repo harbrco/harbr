@@ -266,7 +266,7 @@ new WOW().init();
 
 
     // Add 'darkHeader' class to proper pages
-    if ( $('body').hasClass('project-planner') || $('body').hasClass('error404') || $('body').hasClass('shop-intro') ) {
+    if ( $('body').hasClass('error404') || $('body').hasClass('shop-intro') ) {
       $('.sticky-header-wrapper').addClass('darkHeader');
     }
 
@@ -279,10 +279,10 @@ new WOW().init();
     // Project Planner page
     if ( $('body').hasClass('project-planner') ) {
       /* jshint ignore:start */
-      $('#field_1_1').waypoint(function(direction) {
+      $('#field_2_1').waypoint(function(direction) {
         // Add initial focus state to "name" field - Chrome needed delay to make focus work
         setTimeout(function(){
-          $('#input_1_1').focus();
+          $('#input_2_1').focus();
         }, 1);
         this.destroy();
       }, {
@@ -297,7 +297,9 @@ new WOW().init();
         $('.projectPlannerForm_wrapper').addClass('full-section');
         $('.projectPlannerForm').addClass('full-section');
         $('.gf_page_steps').wrap("<div class='gf_page_steps_wrapper'></div>");
-        $('.gform_page_footer .button').after("<div class='button-underline'></div>");
+
+        // Wrap step button with span for proper button styling
+        $('.gform_page_footer .button').wrap('<span class="span-after"></span>');
 
         $('.gform_body').waypoint({
           handler: function(direction) {
@@ -311,7 +313,7 @@ new WOW().init();
         });
 
         if ($(window).width() > 840) {
-          $('.gform_body').addClass('vAlign');
+          //$('.gform_body').addClass('vAlign');
         }
 
         vAlignShow();
@@ -350,8 +352,14 @@ new WOW().init();
 
       }); // gform_post_render
 
-      // Confirmation message
       /* jshint ignore:start */
+      $(document).bind('gform_post_render', function(){
+        $('.step-wrapper .step-inner').addClass('vAlign');
+        vAlignShow();
+        vAlignFun();
+      });
+
+      // Confirmation message
       $(document).bind('gform_confirmation_loaded', function(event, formId){
         removeClasses();
         $('#main').addClass('form-step-4');
@@ -365,6 +373,126 @@ new WOW().init();
         vAlignFun();
       });
       /* jshint ignore:end */
+
+
+      // Project Planner form step/section pagination
+      $('#scrollmain').waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            $('.form-pagination').addClass('visible');
+          } else {
+            $('.form-pagination').removeClass('visible');
+          }
+        },
+        offset: '30%'
+      });
+
+
+      var dot1a = $('.form-pagination .dot-1 a');
+      var dot2a = $('.form-pagination .dot-2 a');
+      var dot3a = $('.form-pagination .dot-3 a');
+
+      var step1headingEnterView = function() {
+        dot1a.addClass('active');
+      };
+      var step2headingEnterView = function() {
+        dot2a.addClass('active');
+      };
+      var step3headingEnterView = function() {
+        dot3a.addClass('active');
+      };
+
+      var step1headingLeaveView = function() {
+        dot1a.removeClass('active');
+      };
+      var step2headingLeaveView = function() {
+        dot2a.removeClass('active');
+      };
+      var step3headingLeaveView = function() {
+        dot3a.removeClass('active');
+      };
+
+
+      var step1heading = $('.step-1 .step-inner');
+      var step2heading = $('.step-2 .step-inner');
+      var step3heading = $('.step-3 .step-inner');
+
+      step1heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step1headingEnterView(); // top entering from the bottom
+          }
+          else {
+            step1headingLeaveView(); // top leaving from the bottom
+          }
+        }, offset: '100%'
+      });
+
+      step1heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step1headingLeaveView(); // bottom leaving from the top
+          }
+          else {
+            step1headingEnterView(); // bottom entering from top
+          }
+        }, offset: function() {
+          return -this.element.clientHeight;
+        }
+      });
+
+
+      step2heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step2headingEnterView(); // top entering from the bottom
+          }
+          else {
+            step2headingLeaveView(); // top leaving from the bottom
+          }
+        }, offset: '100%'
+      });
+
+      step2heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step2headingLeaveView(); // bottom leaving from the top
+          }
+          else {
+            step2headingEnterView(); // bottom entering from top
+          }
+        }, offset: function() {
+          return -this.element.clientHeight;
+        }
+      });
+
+
+      step3heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step3headingEnterView(); // top entering from the bottom
+          }
+          else {
+            step3headingLeaveView(); // top leaving from the bottom
+          }
+        }, offset: '100%'
+      });
+
+      step3heading.waypoint({
+        handler: function(direction) {
+          if (direction === 'down') {
+            step3headingLeaveView(); // bottom leaving from the top
+          }
+          else {
+            step3headingEnterView(); // bottom entering from top
+          }
+        }, offset: function() {
+          return -this.element.clientHeight;
+        }
+      });
+
+
+
 
     } // if body has class 'project-planner'
 

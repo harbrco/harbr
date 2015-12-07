@@ -189,7 +189,6 @@
 
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
-      <meta name="description" content="<?php bloginfo('description'); ?>">
 
       <!-- Google Fonts -->
       <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,400italic|Montserrat:400,700|Lato:300,400,700' rel='stylesheet' type='text/css'>
@@ -202,6 +201,7 @@
          paceOptions = {
            ajax: false,
            document: true,
+           restartOnPushState: true,
            eventLag: false
          };
 
@@ -222,7 +222,7 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
-      <div class="landing-section hero section big-cta">
+      <div class="landing-section hero section big-cta" style="background-image: url(<?php the_field('hero_background_image') ?>);">
          <div class="header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
@@ -232,19 +232,28 @@
             <span class="divWave"></span>
             <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
 
-            <a href="https://vimeo.com/1084537" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
+            <?php if ( get_field('popup_video_url') ) { ?>
+            <a href="<?php the_field('popup_video_url'); ?>" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
                <i class="video-play-icon"></i>
             </a>
+            <!-- Big Buck Bunny example video:  https://vimeo.com/1084537 -->
+            <?php } ?>
          </div>
 
          <div class="landing-overlay">
          </div>
 
-         <!-- <video autoplay muted loop poster="<?php //the_field('video_still_image'); ?>" id="bgvid">
-            <source src="<?php //the_field('video_url_webm'); ?>" type="video/webm">
-            <source src="<?php //the_field('video_url_mp4'); ?>" type="video/mp4">
-            <source src="<?php //the_field('video_url_ogv'); ?>" type="video/ogv">
+         <!-- Hero background video -->
+         <!-- <video autoplay muted loop poster="<?php //the_field('hero_bg_video_still_image'); ?>" id="bgvid">
+            <source src="<?php //the_field('hero_bg_video_url_webm'); ?>" type="video/webm">
+            <source src="<?php //the_field('hero_bg_video_url_mp4'); ?>" type="video/mp4">
+            <source src="<?php //the_field('hero_bg_video_url_ogv'); ?>" type="video/ogv">
          </video> -->
+
+         <!-- temp store video urls -->
+         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header.webmhd.webm -->
+         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header_1080.mp4 -->
+         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header.oggtheora.ogv -->
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
@@ -258,7 +267,41 @@
       </div><!-- /.header-wrapper -->
 
 
-   <?php } elseif( is_page('strategy') || is_page('contact') ) { ?>
+   <?php } elseif( is_page('strategy') ) { ?>
+   <!-- Strategy or Contact page -->
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
+      </div>
+
+
+      <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
+         <div class="hero-header header-wrapper">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div><!-- /.header-wrapper -->
+
+         <div class="hero-overlay">
+         </div>
+         <div class="hero-text section-heading vAlign">
+            <h1 class="clrPop">Strategy</h1>
+            <span class="divWave"></span>
+            <h3>Jacks of All Trades <br /><span class="italic">Experts</span> In All.</h3>
+         </div>
+
+         <!-- Scroll Down Button -->
+         <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
+      </div>
+
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
+
+
+
+   <?php } elseif( is_page('contact') ) { ?>
    <!-- Strategy or Contact page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
@@ -270,41 +313,20 @@
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
 
-         <?php if(is_page('strategy')) { ?>
-            <div class="hero-overlay">
-            </div>
-            <div class="hero-text section-heading vAlign">
-               <h1 class="clrPop">Strategy</h1>
-               <span class="divWave"></span>
-               <h3>Jacks of All Trades <br /><span class="italic">Experts</span> In All.</h3>
-            </div>
+         <div class="hero-overlay">
+         </div>
 
-         <?php } elseif(is_page('contact')) { ?>
-            <div class="hero-text section-heading vAlign">
-               <h1 class="clrPop">Contact</h1>
-               <span class="divWave"></span>
-               <h3>It's Good To <br /><span class="italic">Virtually</span> Meet You.</h3>
+         <div class="hero-text section-heading vAlign">
+            <h1 class="clrPop">Contact</h1>
+            <span class="divWave"></span>
+            <h3>It's Good To <br /><span class="italic">Virtually</span> Meet You.</h3>
 
-               <h4><a href="mailto:hello@harbr.co">hello@harbr.co</a> &nbsp;<span class="clrPop">•</span>&nbsp; <a href="tel:+1234567890" class="phone">(123) 456-7890</a></h4>
-               <a href="/project-planner/" class="btn btn--uline">Project Planner</a>
-            </div>
-         <?php } ?>
+            <h4><a href="mailto:hello@harbr.co">hello@harbr.co</a> &nbsp;<span class="clrPop">•</span>&nbsp; <a href="tel:+1234567890" class="phone">(123) 456-7890</a> &nbsp;<span class="clrPop">•</span>&nbsp; <a target="_blank" href="https://www.google.com/maps/place/1023+E+Columbus+Dr,+Tampa,+FL+33605/@27.966664,-82.4558797,15z/data=!4m2!3m1!1s0x88c2c444616921b5:0xccd889d30c0e3a8" class="isMap noWrap">Visit Us</a></h4>
+            <a href="/project-planner/" class="btn btn--uline">Project Planner</a>
+         </div>
 
-         <!-- Scroll Down Button -->
-         <?php if(!is_page('contact')) { ?>
-            <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
-         <?php } ?>
       </div>
 
-
-      <!-- Sticky Header Bar -->
-      <?php if(!is_page('contact') && !is_home()) { ?>
-      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
-         <div class="sticky-header">
-            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-         </div>
-      </div><!-- /.header-wrapper -->
-      <?php } ?>
 
 
    <?php } elseif(is_home()) { ?>
@@ -326,7 +348,7 @@
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
-      <div class="hero section big-cta isDarkGray">
+      <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
          <div class="hero-overlay">
          </div>
          <div class="hero-header header-wrapper">
