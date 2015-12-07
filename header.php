@@ -159,7 +159,7 @@
                background-color: #FCCDC6; /* pink */
             }
          </style>
-      <?php } elseif(is_page('contact') || is_page('project-planner') ) { ?>
+      <?php } elseif(is_page('contact') || is_page('project-planner') || is_page('project-planner-confirmation') ) { ?>
          <style>
             .js div#preloader {
                background-color: #F7D974; /* yellow */

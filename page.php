@@ -13,6 +13,9 @@
    <?php } /* PROJECT PLANNER */ elseif ( is_page( 'project-planner' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'project-planner' ); ?>
 
+   <?php } /* PROJECT PLANNER CONFIRMATION */ elseif ( is_page( 'project-planner-confirmation' ) ) { ?>
+      <?php get_template_part( 'partials/partial', 'project-planner-confirmation' ); ?>
+
    <?php } /* SHOP INTRO */ elseif ( is_page( 'shop-intro' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'shop-intro' ); ?>
 

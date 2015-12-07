@@ -1,4 +1,5 @@
-.project-planner {
+.project-planner,
+.project-planner-confirmation {
    .hero {
       //background-image: url(../img/section-bgs/project-planner-hero-bg.jpg);
       @extend %bgCover--center;
@@ -314,6 +315,14 @@
 
    .gform_footer {
       display: none;
+   }
+}
+
+
+.project-planner-confirmation {
+   .confirmation-content {
+      max-width: 900px;
+      margin: 0 auto;
    }
 }
 
