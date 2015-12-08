@@ -115,7 +115,7 @@
             <!-- ENDS FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
 
 
-            <?php $prevPost = get_previous_post(); ?>`
+            <?php $prevPost = get_previous_post(); ?>
             <?php $prevPostID = $prevPost->ID; ?>
             <?php $author_id = get_post_field ('post_author', $prevPostID); ?>
             <?php $authorName = get_the_author_meta( 'display_name', $author_id ); ?>
