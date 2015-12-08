@@ -2204,7 +2204,7 @@ input:focus {
     z-index: 1;
     bottom: 5%;
     left: 6%;
-    color: #fff; }
+    color: #292728; }
     .crew-members .crew-member .crew-text h3 {
       font-size: 20px;
       line-height: 24px;
@@ -4759,7 +4759,7 @@ input:focus {
 .next-page-cta .clrPop {
   color: #fff !important; }
 .next-page-cta .divWave {
-  background-position-y: 0px !important; }
+  background-position: left top !important; }
 .next-page-cta .btn--uline, .next-page-cta .isWhite .gform_wrapper .gform_page_footer .span-after, .isWhite .gform_wrapper .gform_page_footer .next-page-cta .span-after, .next-page-cta .woocommerce.single .summary .button, .woocommerce.single .summary .next-page-cta .button,
 .next-page-cta .woocommerce-page.single .summary .button,
 .woocommerce-page.single .summary .next-page-cta .button, .next-page-cta .woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .button, .woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .next-page-cta .button,
