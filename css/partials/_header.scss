@@ -169,7 +169,7 @@
 .sticky-header-wrapper {
    background-color: $white;
    @extend .wrapper;
-   z-index: 3;
+   z-index: 4;
 
    .sticky-header {
       width: 100%;
@@ -212,7 +212,6 @@
    }
 }
 
-.project-planner,
 .blog,
 .category,
 .error404,

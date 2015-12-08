@@ -56,6 +56,20 @@
       background-size: 100px 250px;
    }
 
+   .next-page-cta {
+   .divWave {
+         background-position: -50px top !important;
+      }
+   }
+
+   .single-case-studies {
+      &.popPrimary {
+         .divWave {
+            background-position: -50px 0;
+         }
+      }
+   }
+
 
    .main-menu-wrapper {
       .centerBtn {

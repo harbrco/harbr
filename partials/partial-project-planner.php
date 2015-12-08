@@ -1,11 +1,4 @@
-<div id="main" class="section full-section isWhite">
-   <!-- Sticky Header Bar -->
-   <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
-      <div class="sticky-header">
-         <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
-      </div>
-   </div><!-- /.header-wrapper -->
-
+<div id="main" class="main-content section isWhite">
    <div class="form-pagination">
       <div class="inner vAlign">
          <div class="dot dot-1"><a href="#step1"></a></div>

@@ -115,8 +115,10 @@
             <!-- ENDS FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
 
 
-            <?php $prevPost = get_previous_post(); ?>
+            <?php $prevPost = get_previous_post(); ?>`
             <?php $prevPostID = $prevPost->ID; ?>
+            <?php $author_id = get_post_field ('post_author', $prevPostID); ?>
+            <?php $authorName = get_the_author_meta( 'display_name', $author_id ); ?>
             <?php $category = get_the_category( $prevPostID ); ?>
             <?php if($prevPost) { ?>
 
@@ -128,7 +130,7 @@
                      <span class="divWave"></span>
                      <h1><a href="<?php echo get_permalink( $prevPost->ID ); ?>"><?php echo $prevPost->post_title; ?></a></h1>
                      <div class="post-meta">
-                        <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php the_author(); ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
+                        <span class="author"><?php _e( 'By', 'html5blank' ); ?> <?php echo $authorName; ?></span> &nbsp;<span class="clrPop">•</span>&nbsp; <span class="date"><?php the_time('F jS'); ?></span>
                      </div>
 
                      <a href="<?php echo get_permalink( $prevPost->ID ); ?>" class="btn btn--uline">View Story</a>

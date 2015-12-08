@@ -1,5 +1,4 @@
-.project-planner,
-.project-planner-confirmation {
+.project-planner {
    .hero {
       //background-image: url(../img/section-bgs/project-planner-hero-bg.jpg);
       @extend %bgCover--center;
@@ -13,11 +12,8 @@
    }
 
    .sticky-header-wrapper {
-      height: 0 !important;
-   }
-
-   .sticky-header {
-      position: fixed;
+      height: 0;
+      position: absolute;
    }
 
    #main {
@@ -319,14 +315,6 @@
 }
 
 
-.project-planner-confirmation {
-   .confirmation-content {
-      max-width: 900px;
-      margin: 0 auto;
-   }
-}
-
-
 // PROJECT PLANNER PAGE BREAKPOINTS = = = = = = =
 
 @media only screen and (max-width:1140px) {
@@ -368,6 +356,13 @@
       form {
          .step-wrapper {
             &.step-2 {
+               .step-heading {
+                  padding-top: 80px;
+               }
+               .centerBtn {
+                  padding-bottom: 40px;
+               }
+
                .top_label li.gfield {
                   &.gf_right_third {
                      width: 100% !important;
@@ -380,6 +375,10 @@
                      width: 50% !important;
                   }
                }
+            }
+
+            &.step-3 {
+               //margin-top: 40px;
             }
          }
       }

@@ -2888,7 +2888,7 @@ new WOW().init();
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
       $('body').addClass('popTertiary');
-    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('project-planner-confirmation') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
+    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('shop-intro') || $('body').hasClass('woocommerce-page') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
@@ -2983,7 +2983,7 @@ new WOW().init();
       }
     });
 
-    if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('project-planner') && !$('body').hasClass('project-planner-confirmation') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
+    if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
 
       var menuAppearBuffer;
 

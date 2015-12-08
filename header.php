@@ -268,7 +268,7 @@
 
 
    <?php } elseif( is_page('strategy') ) { ?>
-   <!-- Strategy or Contact page -->
+   <!-- Strategy page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -302,7 +302,7 @@
 
 
    <?php } elseif( is_page('contact') ) { ?>
-   <!-- Strategy or Contact page -->
+   <!-- Contact page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
@@ -348,6 +348,7 @@
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
+
       <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
          <div class="hero-overlay">
          </div>
@@ -363,6 +364,13 @@
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
 
 
    <?php } elseif(is_page('shop-intro') ) { ?>

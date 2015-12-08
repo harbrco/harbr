@@ -408,17 +408,13 @@ td,
 th {
   padding: 0; }
 
-.project-planner .step-heading h3,
-.project-planner-confirmation .step-heading h3, .single .modal .share-modal h3 {
+.project-planner .step-heading h3, .single .modal .share-modal h3 {
   color: rgba(255, 255, 255, 0.5); }
 
 .gform_wrapper ul li .gfield_checkbox li,
 .gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .main-menu-links a, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle,
 .header-wrapper .header .shop-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li,
-.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3,
-.project-planner-confirmation .step-heading h3, .project-planner .gform_confirmation_message .confirm-message h3,
-.project-planner-confirmation .gform_confirmation_message .confirm-message h3, .project-planner .step-wrapper.step-2 label.gfield_label,
-.project-planner-confirmation .step-wrapper.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .woocommerce .woocommerce-breadcrumb,
+.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-message h3, .project-planner .step-wrapper.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .woocommerce .woocommerce-breadcrumb,
 .woocommerce-page .woocommerce-breadcrumb, .woocommerce ul.products li.product .prod-overlay h4,
 .woocommerce-page ul.products li.product .prod-overlay h4, .woocommerce.single .variations .value label span,
 .woocommerce-page.single .variations .value label span, .woocommerce.single .variations_form .single_variation .stock,
@@ -622,9 +618,7 @@ th {
   display: block;
   cursor: pointer; }
 
-.landing-section, .project-planner .hero,
-.project-planner-confirmation .hero, .project-planner #main,
-.project-planner-confirmation #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
+.landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
@@ -634,9 +628,7 @@ th {
   background-repeat: no-repeat;
   background-position: center top; }
 
-.landing-section, .project-planner .hero,
-.project-planner-confirmation .hero, .project-planner #main,
-.project-planner-confirmation #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
+.landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
 .single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero {
@@ -645,8 +637,7 @@ th {
 .single-case-studies .hero .hero-background-image {
   background-position-y: bottom; }
 
-.landing-section .landing-overlay, .project-planner .hero-overlay,
-.project-planner-confirmation .hero-overlay, .media-boxes .next-slide, .strategy .hero-overlay, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .woocommerce ul.products li.product .prod-overlay,
+.landing-section .landing-overlay, .project-planner .hero-overlay, .media-boxes .next-slide, .strategy .hero-overlay, .single-case-studies .hero .colorOverlay, .single-case-studies .hero .hero-background-image, .woocommerce ul.products li.product .prod-overlay,
 .woocommerce-page ul.products li.product .prod-overlay, .darkOverlay, .medDarkOverlay, .modal .modal-overlay, .overlay50, .hoverZoomFade:before {
   position: absolute;
   top: 0;
@@ -1202,8 +1193,7 @@ body.menuActive {
   .right-links .main-menu-links {
     height: 90%; } }
 .gform_wrapper .gform_body,
-.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body,
-.project-planner-confirmation .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feat-highlight-slider, .single-case-studies .feat-slide-text, .woocommerce ul.products li.product .price,
+.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feat-highlight-slider, .single-case-studies .feat-slide-text, .woocommerce ul.products li.product .price,
 .woocommerce-page ul.products li.product .price, .woocommerce.single .summary .price,
 .woocommerce-page.single .summary .price, .woocommerce.woocommerce-cart .cart-heading,
 .woocommerce-page.woocommerce-cart .cart-heading, .woocommerce.woocommerce-cart .product-thumbnail,
@@ -1212,16 +1202,14 @@ body.menuActive {
 .woocommerce-page.woocommerce-checkout form.checkout, .section, .big-cta {
   *zoom: 1; }
   .gform_wrapper .gform_body:before,
-  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before,
-  .project-planner-confirmation .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feat-highlight-slider:before, .single-case-studies .feat-slide-text:before, .woocommerce ul.products li.product .price:before,
+  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feat-highlight-slider:before, .single-case-studies .feat-slide-text:before, .woocommerce ul.products li.product .price:before,
   .woocommerce-page ul.products li.product .price:before, .woocommerce.single .summary .price:before,
   .woocommerce-page.single .summary .price:before, .woocommerce.woocommerce-cart .cart-heading:before,
   .woocommerce-page.woocommerce-cart .cart-heading:before, .woocommerce.woocommerce-cart .product-thumbnail:before,
   .woocommerce-page.woocommerce-cart .product-thumbnail:before, .woocommerce.woocommerce-cart .cart-collaterals:before,
   .woocommerce-page.woocommerce-cart .cart-collaterals:before, .woocommerce.woocommerce-checkout form.checkout:before,
   .woocommerce-page.woocommerce-checkout form.checkout:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after,
-  .project-planner-confirmation .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1231,8 +1219,7 @@ body.menuActive {
     content: " ";
     display: table; }
   .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after,
-  .project-planner-confirmation .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1279,11 +1266,8 @@ body {
 .header-wrapper .header .shop-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle .down-arrow,
 .header-wrapper .header .shop-categories .mobile-cat-menu-toggle .down-arrow, .header-wrapper .header .blog-categories .mobile-cat-menu-wrapper,
 .header-wrapper .header .shop-categories .mobile-cat-menu-wrapper, .header-wrapper .header .blog-categories li,
-.header-wrapper .header .shop-categories li, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .form-pagination,
-.project-planner-confirmation .form-pagination, .project-planner .gform_wrapper .gf_page_steps,
-.project-planner .gforms_confirmation_message .gf_page_steps,
-.project-planner-confirmation .gform_wrapper .gf_page_steps,
-.project-planner-confirmation .gforms_confirmation_message .gf_page_steps, .blog .section-heading h1 a,
+.header-wrapper .header .shop-categories li, .sticky-header-wrapper .sticky-header, .hero-text h4 a, .project-planner .form-pagination, .project-planner .gform_wrapper .gf_page_steps,
+.project-planner .gforms_confirmation_message .gf_page_steps, .blog .section-heading h1 a,
 .archive .section-heading h1 a,
 .single .section-heading h1 a, .woocommerce ul.products li.product .prod-overlay,
 .woocommerce-page ul.products li.product .prod-overlay, .woocommerce.single .product-image-column .bx-controls,
@@ -1352,16 +1336,12 @@ input:focus {
   padding: 0;
   position: relative; }
 
-.container, .project-planner .gform_body,
-.project-planner-confirmation .gform_body {
+.container, .project-planner .gform_body {
   width: 93%;
   margin: 0 auto;
   position: relative; }
 
-.narrowContent, .project-planner .gform_confirmation_message .step-heading,
-.project-planner-confirmation .gform_confirmation_message .step-heading, .project-planner .gform_body,
-.project-planner-confirmation .gform_body, .project-planner .step-wrapper.step-2,
-.project-planner-confirmation .step-wrapper.step-2 {
+.narrowContent, .project-planner .gform_confirmation_message .step-heading, .project-planner .gform_body, .project-planner .step-wrapper.step-2 {
   max-width: 90%;
   margin: 0 auto; }
 
@@ -1695,7 +1675,7 @@ input:focus {
 
 .sticky-header-wrapper {
   background-color: #fff;
-  z-index: 3; }
+  z-index: 4; }
   .sticky-header-wrapper .sticky-header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
@@ -1719,7 +1699,6 @@ input:focus {
   position: absolute;
   background-color: transparent; }
 
-.project-planner .sticky-header-wrapper.darkHeader .sticky-header,
 .blog .sticky-header-wrapper.darkHeader .sticky-header,
 .category .sticky-header-wrapper.darkHeader .sticky-header,
 .error404 .sticky-header-wrapper.darkHeader .sticky-header,
@@ -1850,24 +1829,17 @@ input:focus {
 @media only screen and (max-width: 400px) {
   .hero-text h4 {
     margin: 7% 0; } }
-.project-planner .hero,
-.project-planner-confirmation .hero {
+.project-planner .hero {
   z-index: 3; }
-.project-planner .hero-overlay,
-.project-planner-confirmation .hero-overlay {
+.project-planner .hero-overlay {
   background-color: rgba(41, 39, 40, 0.58);
   z-index: 1; }
-.project-planner .sticky-header-wrapper,
-.project-planner-confirmation .sticky-header-wrapper {
-  height: 0 !important; }
-.project-planner .sticky-header,
-.project-planner-confirmation .sticky-header {
-  position: fixed; }
-.project-planner #main,
-.project-planner-confirmation #main {
+.project-planner .sticky-header-wrapper {
+  height: 0;
+  position: absolute; }
+.project-planner #main {
   position: relative; }
-.project-planner .form-pagination,
-.project-planner-confirmation .form-pagination {
+.project-planner .form-pagination {
   position: fixed;
   top: 0;
   right: 3%;
@@ -1875,14 +1847,11 @@ input:focus {
   height: 100vh;
   opacity: 0;
   z-index: 2; }
-  .project-planner .form-pagination.visible,
-  .project-planner-confirmation .form-pagination.visible {
+  .project-planner .form-pagination.visible {
     opacity: 1; }
-  .project-planner .form-pagination .inner,
-  .project-planner-confirmation .form-pagination .inner {
+  .project-planner .form-pagination .inner {
     display: block; }
-  .project-planner .form-pagination .dot,
-  .project-planner-confirmation .form-pagination .dot {
+  .project-planner .form-pagination .dot {
     font-size: inherit;
     position: relative;
     display: inline-block;
@@ -1891,8 +1860,7 @@ input:focus {
     width: 10px;
     height: 10px;
     cursor: pointer; }
-    .project-planner .form-pagination .dot a,
-    .project-planner-confirmation .form-pagination .dot a {
+    .project-planner .form-pagination .dot a {
       top: 0;
       left: 0;
       width: 100%;
@@ -1910,14 +1878,11 @@ input:focus {
       transition: background-color 0.3s ease, -webkit-transform 0.3s ease .2s;
       transition: transform 0.3s ease .2s, background-color 0.3s ease;
       transition: transform 0.3s ease .2s, background-color 0.3s ease, -webkit-transform 0.3s ease .2s; }
-      .project-planner .form-pagination .dot a:focus,
-      .project-planner-confirmation .form-pagination .dot a:focus {
+      .project-planner .form-pagination .dot a:focus {
         background-color: #EEEEEE; }
-      .project-planner .form-pagination .dot a:hover,
-      .project-planner-confirmation .form-pagination .dot a:hover {
+      .project-planner .form-pagination .dot a:hover {
         background-color: #777777; }
-      .project-planner .form-pagination .dot a.active,
-      .project-planner-confirmation .form-pagination .dot a.active {
+      .project-planner .form-pagination .dot a.active {
         background-color: #e3c048;
         -webkit-transform: scale(1.4);
         -ms-transform: scale(1.4);
@@ -1927,31 +1892,25 @@ input:focus {
         transition: background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s;
         transition: transform 0.3s ease .2s, background-color 0.3s ease .2s;
         transition: transform 0.3s ease .2s, background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s; }
-.project-planner .step-heading,
-.project-planner-confirmation .step-heading {
+.project-planner .step-heading {
   text-align: center;
   margin-bottom: 7%; }
-  .project-planner .step-heading h3,
-  .project-planner-confirmation .step-heading h3 {
+  .project-planner .step-heading h3 {
     color: #e3c048;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
     margin-bottom: 10px;
     letter-spacing: 2px; }
-  .project-planner .step-heading h2,
-  .project-planner-confirmation .step-heading h2 {
+  .project-planner .step-heading h2 {
     font-size: 74px;
     line-height: 80px; }
-.project-planner .gform_confirmation_message .step-heading,
-.project-planner-confirmation .gform_confirmation_message .step-heading {
+.project-planner .gform_confirmation_message .step-heading {
   max-width: 800px; }
-.project-planner .gform_confirmation_message .confirm-message,
-.project-planner-confirmation .gform_confirmation_message .confirm-message {
+.project-planner .gform_confirmation_message .confirm-message {
   text-align: center;
   margin-top: 5%; }
-  .project-planner .gform_confirmation_message .confirm-message h3,
-  .project-planner-confirmation .gform_confirmation_message .confirm-message h3 {
+  .project-planner .gform_confirmation_message .confirm-message h3 {
     color: #292728;
     font-size: 18px;
     line-height: 24px;
@@ -1959,20 +1918,14 @@ input:focus {
     margin-bottom: 0;
     margin-top: 36px; }
 .project-planner .gform_wrapper,
-.project-planner .gforms_confirmation_message,
-.project-planner-confirmation .gform_wrapper,
-.project-planner-confirmation .gforms_confirmation_message {
+.project-planner .gforms_confirmation_message {
   position: relative;
   z-index: 1; }
   .project-planner .gform_wrapper .projectPlannerForm,
-  .project-planner .gforms_confirmation_message .projectPlannerForm,
-  .project-planner-confirmation .gform_wrapper .projectPlannerForm,
-  .project-planner-confirmation .gforms_confirmation_message .projectPlannerForm {
+  .project-planner .gforms_confirmation_message .projectPlannerForm {
     overflow: scroll; }
   .project-planner .gform_wrapper .gf_page_steps_wrapper,
-  .project-planner .gforms_confirmation_message .gf_page_steps_wrapper,
-  .project-planner-confirmation .gform_wrapper .gf_page_steps_wrapper,
-  .project-planner-confirmation .gforms_confirmation_message .gf_page_steps_wrapper {
+  .project-planner .gforms_confirmation_message .gf_page_steps_wrapper {
     width: 14px;
     height: 100vh;
     position: fixed;
@@ -1980,9 +1933,7 @@ input:focus {
     right: 2%;
     z-index: 1; }
   .project-planner .gform_wrapper .gf_page_steps,
-  .project-planner .gforms_confirmation_message .gf_page_steps,
-  .project-planner-confirmation .gform_wrapper .gf_page_steps,
-  .project-planner-confirmation .gforms_confirmation_message .gf_page_steps {
+  .project-planner .gforms_confirmation_message .gf_page_steps {
     width: 14px;
     margin: 0;
     padding: 0;
@@ -1993,14 +1944,10 @@ input:focus {
             transform: translateY(-50%);
     opacity: 0; }
     .project-planner .gform_wrapper .gf_page_steps.visible,
-    .project-planner .gforms_confirmation_message .gf_page_steps.visible,
-    .project-planner-confirmation .gform_wrapper .gf_page_steps.visible,
-    .project-planner-confirmation .gforms_confirmation_message .gf_page_steps.visible {
+    .project-planner .gforms_confirmation_message .gf_page_steps.visible {
       opacity: 1; }
     .project-planner .gform_wrapper .gf_page_steps .gf_step,
-    .project-planner .gforms_confirmation_message .gf_page_steps .gf_step,
-    .project-planner-confirmation .gform_wrapper .gf_page_steps .gf_step,
-    .project-planner-confirmation .gforms_confirmation_message .gf_page_steps .gf_step {
+    .project-planner .gforms_confirmation_message .gf_page_steps .gf_step {
       width: 10px;
       height: 10px;
       display: block;
@@ -2009,9 +1956,7 @@ input:focus {
       opacity: 1;
       text-align: left; }
       .project-planner .gform_wrapper .gf_page_steps .gf_step .gf_step_number,
-      .project-planner .gforms_confirmation_message .gf_page_steps .gf_step .gf_step_number,
-      .project-planner-confirmation .gform_wrapper .gf_page_steps .gf_step .gf_step_number,
-      .project-planner-confirmation .gforms_confirmation_message .gf_page_steps .gf_step .gf_step_number {
+      .project-planner .gforms_confirmation_message .gf_page_steps .gf_step .gf_step_number {
         display: inline-block;
         float: none;
         text-indent: -9999px;
@@ -2021,66 +1966,46 @@ input:focus {
         border-radius: 50em;
         text-align: left; }
       .project-planner .gform_wrapper .gf_page_steps .gf_step.gf_step_active,
-      .project-planner .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active,
-      .project-planner-confirmation .gform_wrapper .gf_page_steps .gf_step.gf_step_active,
-      .project-planner-confirmation .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active {
+      .project-planner .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active {
         width: 14px;
         height: 14px;
         margin-left: -2px; }
         .project-planner .gform_wrapper .gf_page_steps .gf_step.gf_step_active .gf_step_number,
-        .project-planner .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active .gf_step_number,
-        .project-planner-confirmation .gform_wrapper .gf_page_steps .gf_step.gf_step_active .gf_step_number,
-        .project-planner-confirmation .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active .gf_step_number {
+        .project-planner .gforms_confirmation_message .gf_page_steps .gf_step.gf_step_active .gf_step_number {
           background-color: #e3c048 !important;
           width: 14px;
           height: 14px; }
     .project-planner .gform_wrapper .gf_page_steps .gf_step_label,
-    .project-planner .gforms_confirmation_message .gf_page_steps .gf_step_label,
-    .project-planner-confirmation .gform_wrapper .gf_page_steps .gf_step_label,
-    .project-planner-confirmation .gforms_confirmation_message .gf_page_steps .gf_step_label {
+    .project-planner .gforms_confirmation_message .gf_page_steps .gf_step_label {
       display: none; }
   .project-planner .gform_wrapper li.gfield.gf_list_2col label.gfield_label,
-  .project-planner .gforms_confirmation_message li.gfield.gf_list_2col label.gfield_label,
-  .project-planner-confirmation .gform_wrapper li.gfield.gf_list_2col label.gfield_label,
-  .project-planner-confirmation .gforms_confirmation_message li.gfield.gf_list_2col label.gfield_label {
+  .project-planner .gforms_confirmation_message li.gfield.gf_list_2col label.gfield_label {
     margin-bottom: 20px; }
   .project-planner .gform_wrapper li.gfield.gf_list_2col ul.gfield_radio li,
-  .project-planner .gforms_confirmation_message li.gfield.gf_list_2col ul.gfield_radio li,
-  .project-planner-confirmation .gform_wrapper li.gfield.gf_list_2col ul.gfield_radio li,
-  .project-planner-confirmation .gforms_confirmation_message li.gfield.gf_list_2col ul.gfield_radio li {
+  .project-planner .gforms_confirmation_message li.gfield.gf_list_2col ul.gfield_radio li {
     margin-bottom: 20px;
     min-height: inherit; }
-.project-planner .gform_body,
-.project-planner-confirmation .gform_body {
+.project-planner .gform_body {
   max-width: 80%; }
-.project-planner .html-no-margin,
-.project-planner-confirmation .html-no-margin {
+.project-planner .html-no-margin {
   margin: 0 !important; }
-.project-planner .step-wrapper,
-.project-planner-confirmation .step-wrapper {
+.project-planner .step-wrapper {
   position: relative; }
-  .project-planner .step-wrapper.step-1 label,
-  .project-planner-confirmation .step-wrapper.step-1 label {
+  .project-planner .step-wrapper.step-1 label {
     display: none; }
-  .project-planner .step-wrapper.step-2,
-  .project-planner-confirmation .step-wrapper.step-2 {
+  .project-planner .step-wrapper.step-2 {
     max-width: 900px; }
-    .project-planner .step-wrapper.step-2 label.gfield_label,
-    .project-planner-confirmation .step-wrapper.step-2 label.gfield_label {
+    .project-planner .step-wrapper.step-2 label.gfield_label {
       font-size: 18px;
       text-transform: uppercase;
       margin-bottom: 20px; }
-    .project-planner .step-wrapper.step-2 .step-inner,
-    .project-planner-confirmation .step-wrapper.step-2 .step-inner {
+    .project-planner .step-wrapper.step-2 .step-inner {
       margin: 20px 0; }
-  .project-planner .step-wrapper.step_3 .top_label .gfield_label,
-  .project-planner-confirmation .step-wrapper.step_3 .top_label .gfield_label {
+  .project-planner .step-wrapper.step_3 .top_label .gfield_label {
     display: none !important; }
-.project-planner .gform_wrapper .step-wrapper.step-3 .top_label .gfield_label,
-.project-planner-confirmation .gform_wrapper .step-wrapper.step-3 .top_label .gfield_label {
+.project-planner .gform_wrapper .step-wrapper.step-3 .top_label .gfield_label {
   display: none; }
-.project-planner form .step-wrapper.step-2 .top_label li.gfield.gf_list_2col ul.gfield_radio li,
-.project-planner-confirmation form .step-wrapper.step-2 .top_label li.gfield.gf_list_2col ul.gfield_radio li {
+.project-planner form .step-wrapper.step-2 .top_label li.gfield.gf_list_2col ul.gfield_radio li {
   width: 100% !important;
   display: block !important; }
 .project-planner form .btn, .project-planner form .isWhite .gform_wrapper .gform_page_footer .span-after, .isWhite .gform_wrapper .gform_page_footer .project-planner form .span-after, .project-planner form .woocommerce.single .summary .button, .woocommerce.single .summary .project-planner form .button,
@@ -2099,64 +2024,20 @@ input:focus {
 .project-planner form .woocommerce-page.woocommerce-checkout .order-review-column .place-order .span-after,
 .woocommerce-page.woocommerce-checkout .order-review-column .place-order .project-planner form .span-after, .project-planner form .woocommerce.woocommerce-checkout .order-review-column .place-order .button, .woocommerce.woocommerce-checkout .order-review-column .place-order .project-planner form .button,
 .project-planner form .woocommerce-page.woocommerce-checkout .order-review-column .place-order .button,
-.woocommerce-page.woocommerce-checkout .order-review-column .place-order .project-planner form .button,
-.project-planner-confirmation form .btn,
-.project-planner-confirmation form .isWhite .gform_wrapper .gform_page_footer .span-after,
-.isWhite .gform_wrapper .gform_page_footer .project-planner-confirmation form .span-after,
-.project-planner-confirmation form .woocommerce.single .summary .button,
-.woocommerce.single .summary .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.single .summary .button,
-.woocommerce-page.single .summary .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .button,
-.woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.woocommerce-cart .cart-collaterals .calculate-shipping .button,
-.woocommerce-page.woocommerce-cart .cart-collaterals .calculate-shipping .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce.woocommerce-cart .cart-collaterals .coupon .span-after,
-.woocommerce.woocommerce-cart .cart-collaterals .coupon .project-planner-confirmation form .span-after,
-.project-planner-confirmation form .woocommerce-page.woocommerce-cart .cart-collaterals .coupon .span-after,
-.woocommerce-page.woocommerce-cart .cart-collaterals .coupon .project-planner-confirmation form .span-after,
-.project-planner-confirmation form .woocommerce.woocommerce-cart .cart-collaterals .coupon .button,
-.woocommerce.woocommerce-cart .cart-collaterals .coupon .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.woocommerce-cart .cart-collaterals .coupon .button,
-.woocommerce-page.woocommerce-cart .cart-collaterals .coupon .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce.woocommerce-cart .cart-collaterals .cart_totals .button,
-.woocommerce.woocommerce-cart .cart-collaterals .cart_totals .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.woocommerce-cart .cart-collaterals .cart_totals .button,
-.woocommerce-page.woocommerce-cart .cart-collaterals .cart_totals .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce.woocommerce-cart .return-to-shop .button,
-.woocommerce.woocommerce-cart .return-to-shop .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.woocommerce-cart .return-to-shop .button,
-.woocommerce-page.woocommerce-cart .return-to-shop .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce.woocommerce-checkout .order-review-column .place-order .span-after,
-.woocommerce.woocommerce-checkout .order-review-column .place-order .project-planner-confirmation form .span-after,
-.project-planner-confirmation form .woocommerce-page.woocommerce-checkout .order-review-column .place-order .span-after,
-.woocommerce-page.woocommerce-checkout .order-review-column .place-order .project-planner-confirmation form .span-after,
-.project-planner-confirmation form .woocommerce.woocommerce-checkout .order-review-column .place-order .button,
-.woocommerce.woocommerce-checkout .order-review-column .place-order .project-planner-confirmation form .button,
-.project-planner-confirmation form .woocommerce-page.woocommerce-checkout .order-review-column .place-order .button,
-.woocommerce-page.woocommerce-checkout .order-review-column .place-order .project-planner-confirmation form .button {
+.woocommerce-page.woocommerce-checkout .order-review-column .place-order .project-planner form .button {
   text-align: center;
   margin-top: 2%; }
-.project-planner form .custom-submit-button.gfield_html,
-.project-planner-confirmation form .custom-submit-button.gfield_html {
+.project-planner form .custom-submit-button.gfield_html {
   margin-top: 7%; }
-.project-planner form .custom-submit-button button,
-.project-planner-confirmation form .custom-submit-button button {
+.project-planner form .custom-submit-button button {
   background-color: transparent;
   border: 0; }
-  .project-planner form .custom-submit-button button:focus,
-  .project-planner-confirmation form .custom-submit-button button:focus {
+  .project-planner form .custom-submit-button button:focus {
     outline: none; }
-.project-planner form .gfield_required,
-.project-planner-confirmation form .gfield_required {
+.project-planner form .gfield_required {
   color: #292728; }
-.project-planner .gform_footer,
-.project-planner-confirmation .gform_footer {
+.project-planner .gform_footer {
   display: none; }
-
-.project-planner-confirmation .confirmation-content {
-  max-width: 900px;
-  margin: 0 auto; }
 
 @media only screen and (max-width: 1140px) {
   .project-planner .step-heading h2 {
@@ -2171,6 +2052,10 @@ input:focus {
     font-size: 56px;
     line-height: 62px; } }
 @media only screen and (max-width: 840px) {
+  .project-planner form .step-wrapper.step-2 .step-heading {
+    padding-top: 80px; }
+  .project-planner form .step-wrapper.step-2 .centerBtn {
+    padding-bottom: 40px; }
   .project-planner form .step-wrapper.step-2 .top_label li.gfield.gf_right_third {
     width: 100% !important;
     max-width: 600px;
@@ -2698,15 +2583,11 @@ input:focus {
     line-height: 18px; }
 .single .quote-block-section .right-image .inner {
   padding-bottom: 100%; }
-.single .single-column-content .container, .single .single-column-content .project-planner .gform_body, .project-planner .single .single-column-content .gform_body,
-.single .single-column-content .project-planner-confirmation .gform_body,
-.project-planner-confirmation .single .single-column-content .gform_body {
+.single .single-column-content .container, .single .single-column-content .project-planner .gform_body, .project-planner .single .single-column-content .gform_body {
   width: 86%;
   margin-left: 7%;
   margin-right: 7%; }
-  .single .single-column-content .container .inner, .single .single-column-content .project-planner .gform_body .inner, .project-planner .single .single-column-content .gform_body .inner,
-  .single .single-column-content .project-planner-confirmation .gform_body .inner,
-  .project-planner-confirmation .single .single-column-content .gform_body .inner {
+  .single .single-column-content .container .inner, .single .single-column-content .project-planner .gform_body .inner, .project-planner .single .single-column-content .gform_body .inner {
     max-width: 800px; }
 .single .single-column-content h2 {
   font-size: 45px;
@@ -2856,7 +2737,7 @@ input:focus {
 @media only screen and (max-width: 730px) {
   .single .boxPadding,
   .archive .boxPadding {
-    padding: 5% 7%; }
+    padding: 12% 7%; }
   .single .isContentArea h3,
   .archive .isContentArea h3 {
     font-size: 28px;
@@ -3158,7 +3039,7 @@ input:focus {
   color: #fff; }
 .single-case-studies.popPrimary .downArrow,
 .single-case-studies.popPrimary .divWave {
-  background-position-y: 0; }
+  background-position: 0 0; }
 .single-case-studies .header-wrapper {
   position: absolute;
   top: 0; }
@@ -3171,9 +3052,7 @@ input:focus {
     z-index: 0; }
   .single-case-studies .hero .section-heading h1 {
     padding-bottom: 58px; }
-.single-case-studies .narrow-centered-content .container, .single-case-studies .narrow-centered-content .project-planner .gform_body, .project-planner .single-case-studies .narrow-centered-content .gform_body,
-.single-case-studies .narrow-centered-content .project-planner-confirmation .gform_body,
-.project-planner-confirmation .single-case-studies .narrow-centered-content .gform_body {
+.single-case-studies .narrow-centered-content .container, .single-case-studies .narrow-centered-content .project-planner .gform_body, .project-planner .single-case-studies .narrow-centered-content .gform_body {
   text-align: center;
   max-width: 700px; }
 .single-case-studies .narrow-centered-content h2 {
@@ -3183,17 +3062,13 @@ input:focus {
 .single-case-studies .narrow-centered-content p {
   font-size: 18px;
   line-height: 28px; }
-.single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body,
-.single-case-studies .divider-centered-content .project-planner-confirmation .gform_body,
-.project-planner-confirmation .single-case-studies .divider-centered-content .gform_body {
+.single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
   text-align: center;
   max-width: 700px; }
 .single-case-studies .divider-centered-content p {
   font-size: 24px;
   line-height: 35px; }
-.single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body,
-.single-case-studies .img-gal .project-planner-confirmation .gform_body,
-.project-planner-confirmation .single-case-studies .img-gal .gform_body {
+.single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
   width: 90%;
   max-width: 1200px;
   margin-bottom: 20px; }
@@ -3227,8 +3102,6 @@ input:focus {
   position: relative;
   overflow: hidden; }
   .single-case-studies .full-width-image-centered-text .container, .single-case-studies .full-width-image-centered-text .project-planner .gform_body, .project-planner .single-case-studies .full-width-image-centered-text .gform_body,
-  .single-case-studies .full-width-image-centered-text .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .full-width-image-centered-text .gform_body,
   .single-case-studies .full-width-image-centered-text .fw-img {
     position: relative;
     z-index: 1; }
@@ -3236,9 +3109,7 @@ input:focus {
     display: block; }
 .single-case-studies .feat-highlight-wrapper {
   position: relative; }
-  .single-case-studies .feat-highlight-wrapper .container, .single-case-studies .feat-highlight-wrapper .project-planner .gform_body, .project-planner .single-case-studies .feat-highlight-wrapper .gform_body,
-  .single-case-studies .feat-highlight-wrapper .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .feat-highlight-wrapper .gform_body {
+  .single-case-studies .feat-highlight-wrapper .container, .single-case-studies .feat-highlight-wrapper .project-planner .gform_body, .project-planner .single-case-studies .feat-highlight-wrapper .gform_body {
     max-width: 1300px; }
   .single-case-studies .feat-highlight-wrapper .centerBtn {
     position: absolute;
@@ -3354,9 +3225,7 @@ input:focus {
     font-size: 42px;
     line-height: 52px;
     margin-bottom: 20px; }
-  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body,
-  .single-case-studies .divider-centered-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .divider-centered-content .gform_body {
+  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
     max-width: 640px; }
   .single-case-studies .divider-centered-content p {
     font-size: 20px;
@@ -3366,9 +3235,7 @@ input:focus {
   .single-case-studies .hero .hero-highlight-image {
     display: none; }
 
-  .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body,
-  .single-case-studies .img-gal .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .img-gal .gform_body {
+  .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
     width: 95%;
     margin-bottom: 10px; }
   .single-case-studies .img-gal-halves .left-half-image,
@@ -3384,9 +3251,7 @@ input:focus {
   .single-case-studies .narrow-centered-content p {
     font-size: 17px;
     line-height: 26px; }
-  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body,
-  .single-case-studies .divider-centered-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .divider-centered-content .gform_body {
+  .single-case-studies .divider-centered-content .container, .single-case-studies .divider-centered-content .project-planner .gform_body, .project-planner .single-case-studies .divider-centered-content .gform_body {
     max-width: 560px; }
   .single-case-studies .divider-centered-content p {
     font-size: 17px;
@@ -3409,9 +3274,7 @@ input:focus {
   .single-case-studies .feat-slide-text .text-wrapper p {
     font-size: 16px;
     line-height: 27px; }
-  .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body,
-  .single-case-studies .img-gal .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .single-case-studies .img-gal .gform_body {
+  .single-case-studies .img-gal .container, .single-case-studies .img-gal .project-planner .gform_body, .project-planner .single-case-studies .img-gal .gform_body {
     margin-bottom: 0; }
   .single-case-studies .img-gal-full-width {
     margin-bottom: 10px; }
@@ -3483,13 +3346,9 @@ input:focus {
   /* disabled checkbox */
   /* accessibility */ }
   .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
-  .woocommerce .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
-  .project-planner .woocommerce-page .main-content .gform_body,
-  .woocommerce-page .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce-page .main-content .gform_body {
+  .project-planner .woocommerce-page .main-content .gform_body {
     max-width: 1580px; }
   .woocommerce .woocommerce-breadcrumb,
   .woocommerce-page .woocommerce-breadcrumb {
@@ -4583,23 +4442,15 @@ input:focus {
     padding-bottom: 0; }
 
 .well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
-.woocommerce .main-content .project-planner-confirmation .gform_body,
-.project-planner-confirmation .woocommerce .main-content .gform_body,
 .woocommerce-page .main-content .container,
 .woocommerce-page .main-content .project-planner .gform_body,
-.project-planner .woocommerce-page .main-content .gform_body,
-.woocommerce-page .main-content .project-planner-confirmation .gform_body,
-.project-planner-confirmation .woocommerce-page .main-content .gform_body {
+.project-planner .woocommerce-page .main-content .gform_body {
   padding-top: 4.5%;
   padding-bottom: 4.5%; }
   .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
-  .woocommerce .main-content .project-planner-confirmation .well--noBottom.gform_body,
-  .project-planner-confirmation .woocommerce .main-content .well--noBottom.gform_body,
   .woocommerce-page .main-content .well--noBottom.container,
   .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-  .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-  .woocommerce-page .main-content .project-planner-confirmation .well--noBottom.gform_body,
-  .project-planner-confirmation .woocommerce-page .main-content .well--noBottom.gform_body {
+  .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
     padding-bottom: 0; }
 
 @media only screen and (max-width: 768px) {
@@ -4618,23 +4469,15 @@ input:focus {
       padding-bottom: 0; }
 
   .well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
-  .woocommerce .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
-  .project-planner .woocommerce-page .main-content .gform_body,
-  .woocommerce-page .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce-page .main-content .gform_body {
+  .project-planner .woocommerce-page .main-content .gform_body {
     padding-top: 6.5%;
     padding-bottom: 6.5%; }
     .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
-    .woocommerce .main-content .project-planner-confirmation .well--noBottom.gform_body,
-    .project-planner-confirmation .woocommerce .main-content .well--noBottom.gform_body,
     .woocommerce-page .main-content .well--noBottom.container,
     .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-    .woocommerce-page .main-content .project-planner-confirmation .well--noBottom.gform_body,
-    .project-planner-confirmation .woocommerce-page .main-content .well--noBottom.gform_body {
+    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
       padding-bottom: 0; } }
 @media only screen and (max-width: 560px) {
   .well {
@@ -4652,23 +4495,15 @@ input:focus {
       padding-bottom: 0; }
 
   .well--xs, .single-case-studies .img-gal.top-margin, .single-case-studies .img-gal.bottom-margin, .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
-  .woocommerce .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
-  .project-planner .woocommerce-page .main-content .gform_body,
-  .woocommerce-page .main-content .project-planner-confirmation .gform_body,
-  .project-planner-confirmation .woocommerce-page .main-content .gform_body {
+  .project-planner .woocommerce-page .main-content .gform_body {
     padding-top: 8.5%;
     padding-bottom: 8.5%; }
     .well--xs.well--noBottom, .single-case-studies .img-gal.top-margin, .single-case-studies .well--noBottom.img-gal.bottom-margin, .woocommerce .main-content .well--noBottom.container, .woocommerce .main-content .project-planner .well--noBottom.gform_body, .project-planner .woocommerce .main-content .well--noBottom.gform_body,
-    .woocommerce .main-content .project-planner-confirmation .well--noBottom.gform_body,
-    .project-planner-confirmation .woocommerce .main-content .well--noBottom.gform_body,
     .woocommerce-page .main-content .well--noBottom.container,
     .woocommerce-page .main-content .project-planner .well--noBottom.gform_body,
-    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body,
-    .woocommerce-page .main-content .project-planner-confirmation .well--noBottom.gform_body,
-    .project-planner-confirmation .woocommerce-page .main-content .well--noBottom.gform_body {
+    .project-planner .woocommerce-page .main-content .well--noBottom.gform_body {
       padding-bottom: 0; } }
 .divWave {
   display: block;
@@ -5443,6 +5278,12 @@ input:focus {
   .menu-links-wrapper .littleLinks .divWave {
     background-position: -50px 0;
     background-size: 100px 250px; }
+
+  .next-page-cta .divWave {
+    background-position: -50px top !important; }
+
+  .single-case-studies.popPrimary .divWave {
+    background-position: -50px 0; }
 
   .main-menu-wrapper .centerBtn .divWave {
     background-position: -50px 0; }
