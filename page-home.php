@@ -90,7 +90,7 @@
                            <!-- the loop -->
                            <?php while ( $blogPostQuery->have_posts() ) : $blogPostQuery->the_post(); ?>
                            <div class="latest-post hoverZoomFade card card--sq wow fadeIn" data-wow-delay=".25s">
-                              <div class="background-image" style="background-image: url(<?php the_field('feature_image') ?>);">
+                              <div class="background-image" style="background-image: url(<?php the_field('featured_square') ?>);">
                               </div>
                               <div class="inner vAlign vAlign-abs">
                                  <h3 class="clrPop">Latest Story</h3>

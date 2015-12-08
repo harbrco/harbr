@@ -1929,7 +1929,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 621440,
+		"initialSize": 358589,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2277,15 +2277,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/partial-main-menu.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/partial-project-planner-confirmation.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/partial-project-planner-confirmation.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
