@@ -195,26 +195,26 @@
 
       <?php wp_head(); ?>
 
-      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/pace.min.js"></script>
+      <!-- <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/libs/pace.min.js"></script> -->
 
       <script type="text/javascript">
-         paceOptions = {
-           ajax: false,
-           document: true,
-           restartOnPushState: true,
-           eventLag: false
-         };
+         // paceOptions = {
+         //   ajax: false,
+         //   document: true,
+         //   restartOnPushState: true,
+         //   eventLag: false
+         // };
 
-         Pace.on('done', function() {
-           $('#preloader').fadeOut(600, function(){$(this).remove();});
-         });
+         // Pace.on('done', function() {
+         //   $('#preloader').fadeOut(600, function(){$(this).remove();});
+         // });
       </script>
 
    </head>
    <body <?php body_class(); ?>>
 
-      <div id="preloader">
-      </div>
+      <!-- <div id="preloader">
+      </div> -->
 
    <?php if(is_page('home')) { ?>
    <!-- Home page -->

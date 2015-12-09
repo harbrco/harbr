@@ -621,7 +621,7 @@ th {
 .landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
-.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
+.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single .wallpaper-detail, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
 .woocommerce-page.single .product-image-column .product-images .product-image, .woocommerce.single .product-image-column #product-pager .product-image,
 .woocommerce-page.single .product-image-column #product-pager .product-image {
   background-size: cover;
@@ -2655,12 +2655,43 @@ input:focus {
       height: 32px;
       display: inline-block;
       margin: 0 20px 20px; }
+.single .wallpaper-detail {
+  background-attachment: fixed;
+  width: 100%;
+  padding-bottom: 25%; }
+.single .wallpaper-download-wrapper h3 {
+  text-align: center;
+  color: #78B97F; }
+.single .wallpaper-download-links .btn, .single .wallpaper-download-links .isWhite .gform_wrapper .gform_page_footer .span-after, .isWhite .gform_wrapper .gform_page_footer .single .wallpaper-download-links .span-after, .woocommerce.single .wallpaper-download-links .summary .button, .woocommerce.single .summary .wallpaper-download-links .button,
+.woocommerce-page.single .wallpaper-download-links .summary .button,
+.woocommerce-page.single .summary .wallpaper-download-links .button, .single .wallpaper-download-links .woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .button, .woocommerce.woocommerce-cart .cart-collaterals .calculate-shipping .single .wallpaper-download-links .button,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-cart .cart-collaterals .calculate-shipping .button,
+.woocommerce-page.woocommerce-cart .cart-collaterals .calculate-shipping .single .wallpaper-download-links .button, .single .wallpaper-download-links .woocommerce.woocommerce-cart .cart-collaterals .coupon .span-after, .woocommerce.woocommerce-cart .cart-collaterals .coupon .single .wallpaper-download-links .span-after,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-cart .cart-collaterals .coupon .span-after,
+.woocommerce-page.woocommerce-cart .cart-collaterals .coupon .single .wallpaper-download-links .span-after, .single .wallpaper-download-links .woocommerce.woocommerce-cart .cart-collaterals .coupon .button, .woocommerce.woocommerce-cart .cart-collaterals .coupon .single .wallpaper-download-links .button,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-cart .cart-collaterals .coupon .button,
+.woocommerce-page.woocommerce-cart .cart-collaterals .coupon .single .wallpaper-download-links .button, .single .wallpaper-download-links .woocommerce.woocommerce-cart .cart-collaterals .cart_totals .button, .woocommerce.woocommerce-cart .cart-collaterals .cart_totals .single .wallpaper-download-links .button,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-cart .cart-collaterals .cart_totals .button,
+.woocommerce-page.woocommerce-cart .cart-collaterals .cart_totals .single .wallpaper-download-links .button, .single .wallpaper-download-links .woocommerce.woocommerce-cart .return-to-shop .button, .woocommerce.woocommerce-cart .return-to-shop .single .wallpaper-download-links .button,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-cart .return-to-shop .button,
+.woocommerce-page.woocommerce-cart .return-to-shop .single .wallpaper-download-links .button, .single .wallpaper-download-links .woocommerce.woocommerce-checkout .order-review-column .place-order .span-after, .woocommerce.woocommerce-checkout .order-review-column .place-order .single .wallpaper-download-links .span-after,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-checkout .order-review-column .place-order .span-after,
+.woocommerce-page.woocommerce-checkout .order-review-column .place-order .single .wallpaper-download-links .span-after, .single .wallpaper-download-links .woocommerce.woocommerce-checkout .order-review-column .place-order .button, .woocommerce.woocommerce-checkout .order-review-column .place-order .single .wallpaper-download-links .button,
+.single .wallpaper-download-links .woocommerce-page.woocommerce-checkout .order-review-column .place-order .button,
+.woocommerce-page.woocommerce-checkout .order-review-column .place-order .single .wallpaper-download-links .button {
+  margin: 14px; }
 
 .touch .single .post-hero {
   position: absolute; }
 .touch .single .post-header-wrapper {
   position: absolute; }
+.touch .single .wallpaper-detail {
+  background-position: center center;
+  background-attachment: scroll !important; }
 
+@media only screen and (max-width: 1140px) {
+  .single .wallpaper-detail {
+    padding-bottom: 30%; } }
 @media only screen and (max-width: 1024px) {
   .blog .section-heading h1,
   .blog .modal .share-modal h1,
@@ -2691,7 +2722,10 @@ input:focus {
   .archive .quote-block-section .left-content h4 {
     font-size: 36px;
     line-height: 52px;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .single .wallpaper-detail {
+    padding-bottom: 34%; } }
 @media only screen and (max-width: 860px) {
   .single .isContentArea h3,
   .archive .isContentArea h3 {
@@ -2731,7 +2765,10 @@ input:focus {
   .archive .quote-block-section .left-content h4 {
     font-size: 32px;
     line-height: 48px;
-    margin-bottom: 18px; } }
+    margin-bottom: 18px; }
+
+  .single .wallpaper-detail {
+    padding-bottom: 38%; } }
 @media only screen and (max-width: 768px) {
   .blog .section-heading h1,
   .blog .modal .share-modal h1,
@@ -2807,7 +2844,10 @@ input:focus {
         padding-bottom: 100%; }
   .single .quote-block-section .left-content p.quote-author-name,
   .archive .quote-block-section .left-content p.quote-author-name {
-    margin-bottom: 6px; } }
+    margin-bottom: 6px; }
+
+  .single .wallpaper-detail {
+    padding-bottom: 42%; } }
 @media only screen and (max-width: 580px) {
   .blog .isContentArea h3,
   .single .isContentArea h3,
@@ -2857,7 +2897,10 @@ input:focus {
   .single .left-content-right-image .left-content h3,
   .archive .left-content-right-image .left-content h3 {
     font-size: 24px;
-    line-height: 30px; } }
+    line-height: 30px; }
+
+  .single .wallpaper-detail {
+    padding-bottom: 46%; } }
 @media only screen and (max-width: 460px) {
   .blog .hero-text .btn, .blog .hero-text .isWhite .gform_wrapper .gform_page_footer .span-after, .isWhite .gform_wrapper .gform_page_footer .blog .hero-text .span-after, .blog .hero-text .woocommerce.single .summary .button, .woocommerce.single .summary .blog .hero-text .button,
   .blog .hero-text .woocommerce-page.single .summary .button,
@@ -2943,7 +2986,10 @@ input:focus {
     .single .modal .share-modal .social-links li a,
     .archive .section-heading .social-links li a,
     .archive .modal .share-modal .social-links li a {
-      font-size: 14px; } }
+      font-size: 14px; }
+
+  .single .wallpaper-detail {
+    padding-bottom: 50%; } }
 @media only screen and (max-width: 400px) {
   .blog .hero-text .post-meta,
   .archive .hero-text .post-meta {

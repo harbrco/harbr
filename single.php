@@ -115,6 +115,41 @@
             <!-- ENDS FLEXIBLE / CUSTOMIZABLE CONTENT LAYOUT SECTION -->
 
 
+            <?php if ( in_category('wallpapers') ) { ?>
+            <!-- Wallpaper Posts -->
+
+               <?php if(get_field('wallpaper_detail_image')) { ?>
+                  <div class="wallpaper-detail wrapper" style="background-image: url(<?php the_field('wallpaper_detail_image'); ?>);">
+                  </div>
+               <?php } ?>
+
+               <div class="wallpaper-download-wrapper wrapper isWhite well--l">
+                  <div class="container isContentArea">
+                     <h3>Choose Your Size</h3>
+
+                     <div class="wallpaper-download-links centerBtn">
+                        <?php if(get_field('desktop_size_url')) { ?>
+                           <a href="<?php the_field('desktop_size_url');?>" target="_blank" class="btn btn--uline onWhite">Desktop</a>
+                        <?php } ?>
+
+                        <?php if(get_field('ipad_size_url')) { ?>
+                           <a href="<?php the_field('ipad_size_url');?>" target="_blank" class="btn btn--uline onWhite">iPad | Tablet</a>
+                        <?php } ?>
+
+                        <?php if(get_field('iphone_size_url')) { ?>
+                           <a href="<?php the_field('iphone_size_url');?>" target="_blank" class="btn btn--uline onWhite">iPhone | Mobile</a>
+                        <?php } ?>
+
+                        <?php if(get_field('apple_watch_size_url')) { ?>
+                           <a href="<?php the_field('apple_watch_size_url');?>" target="_blank" class="btn btn--uline onWhite">Apple Watch</a>
+                        <?php } ?>
+                     </div>
+                  </div>
+               </div>
+
+            <?php } ?>
+
+
             <?php $prevPost = get_previous_post(); ?>
             <?php $prevPostID = $prevPost->ID; ?>
             <?php $author_id = get_post_field ('post_author', $prevPostID); ?>
