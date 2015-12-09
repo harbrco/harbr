@@ -94,13 +94,13 @@
 
    .post-hero-spacer {
       width: 100%;
-      height: 82vh;
+      //height: 82vh; <- height set in javascript
       display: block;
    }
 
    .belowHero {
       position: relative;
-      z-index: 98;
+      z-index: 2;
    }
 
    .header-wrapper {
@@ -329,7 +329,17 @@
 // = = = = = = = = = = = = = = = = = = = = = = //
 
 
+.touch {
+   .single {
+      .post-hero {
+         position: absolute;
+      }
 
+      .post-header-wrapper {
+         position: absolute;
+      }
+   }
+}
 
 
 
@@ -469,10 +479,6 @@
             line-height: 48px;
             margin-bottom: 18px;
          }
-      }
-
-      .post-hero-spacer {
-         height: 75vh;
       }
    }
 }

@@ -18,10 +18,12 @@
       <!-- /footer -->
    <?php } ?>
 
-   <div id="fancyWrap" class="">
-      <a href="javascript:parent.$.fancybox.close();" class="close-share-modal close-btn modal-toggle">
-         <i class="close-icon"></i>
-      </a>
+   <div class="fancy-positioner">
+      <div id="fancyWrap" class="">
+         <a href="javascript:parent.$.fancybox.close();" class="close-share-modal close-btn modal-toggle">
+            <i class="close-icon"></i>
+         </a>
+      </div>
    </div>
 
       <?php wp_footer(); ?>

@@ -2963,6 +2963,29 @@ new WOW().init();
 
 
 
+    // Single posts - Calculate space for hero "spacer" element
+    if ( $('body').hasClass('single') ) {
+      var heroSpcrHeight = function() {
+        var spacerHeight;
+
+        if ($(window).width() > 768) {
+          spacerHeight = 1.21;
+          $('.post-hero-spacer').height($(window).height() / spacerHeight);
+        } else {
+          spacerHeight = 1.33;
+          $('.post-hero-spacer').height($(window).height() / spacerHeight);
+        }
+      };
+      heroSpcrHeight();
+
+      $(window).resize(function() {
+        heroSpcrHeight();
+      }).resize();
+    }
+
+
+
+
     // Sticky Header waypoint
     var nav_container = $('.sticky-header-wrapper');
     var nav = $('.sticky-header');
@@ -3331,9 +3354,6 @@ new WOW().init();
         }
       });
 
-
-
-
     } // if body has class 'project-planner'
 
 
@@ -3397,8 +3417,8 @@ new WOW().init();
 
 
       // video modal
-      var viewportWidth = $(window).width();
-      if (viewportWidth >= 450){
+      // var viewportWidth = $(window).width();
+      // if (viewportWidth >= 450){
 
         $(".fancybox-video").fancybox({
           width: "100%",
@@ -3417,21 +3437,20 @@ new WOW().init();
           },
           afterShow: function() {
             $('.fancybox-close').addClass('close-btn').prepend("<i class='close-icon'></i>");
+          },
+          afterClose: function() {
+            $('#fancyWrap, .fancy-positioner').removeClass('isOpen');
           }
         });
 
-      } else {
+      //} else {
         //mobile video action - vimeo embed currently not supported on mobile
-      }
-
+      //}
 
       $('body').on('click', '.video-play-btn', function(){
-        $('#fancyWrap').addClass('isOpen');
+        $('#fancyWrap, .fancy-positioner').addClass('isOpen');
       });
 
-      $('#fancyWrap').click(function(){
-        $('#fancyWrap').removeClass('isOpen');
-      });
 
 
 
