@@ -259,6 +259,25 @@ body.menuActive {
       }
    }
 }
+@media only screen and (max-width:380px) {
+   .left-icons-wrapper {
+      width: 90px;
+   }
+   .left-icons {
+      padding-left: 10px;
+   }
+
+   .main-menu-links {
+      li {
+         font-size: 16px;
+         line-height: 22px;
+      }
+   }
+
+   .right-links {
+      width: calc(100% - 100px);
+   }
+}
 
 
 @media only screen and (max-height:650px) {
