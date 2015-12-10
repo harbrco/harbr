@@ -897,15 +897,17 @@ th {
     height: 100px; }
   .gform_wrapper .expandingArea.active > textarea {
     /* Hide any scrollbars */
-    -ms-overflow-style: none;
-    overflow: -moz-scrollbars-none;
     overflow: scroll;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     /* Remove WebKit user-resize widget */
-    resize: none; }
+    resize: none;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+  .gform_wrapper .expandingArea.active > textarea::-webkit-scrollbar {
+    width: 0 !important; }
   .gform_wrapper .expandingArea.active > pre {
     display: block;
     /* Hide the text; just using it for sizing */
@@ -4871,7 +4873,6 @@ input:focus {
     z-index: 9999;
     left: 50%;
     overflow-y: scroll;
-    -ms-overflow-style: none;
     margin-top: -30px;
     max-height: 75vh;
     width: 100%;
@@ -4882,7 +4883,11 @@ input:focus {
     opacity: 0;
     -webkit-transition: opacity .2s linear 0s, margin-top 1s linear .5s;
     transition: opacity .2s linear 0s, margin-top 1s linear .5s;
-    padding: 0 5%; }
+    padding: 0 5%;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none; }
+  .modal .modal-wrapper::-webkit-scrollbar {
+    width: 0 !important; }
   .modal.is-visible {
     opacity: 1;
     z-index: 999;

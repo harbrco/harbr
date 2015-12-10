@@ -349,8 +349,6 @@
 
    .expandingArea.active > textarea {
      /* Hide any scrollbars */
-     -ms-overflow-style: none;
-     overflow: -moz-scrollbars-none;
      overflow: scroll;
      position: absolute;
      top: 0;
@@ -358,7 +356,10 @@
      height: 100%;
      /* Remove WebKit user-resize widget */
      resize: none;
+     -ms-overflow-style: none;
+     overflow: -moz-scrollbars-none;
    }
+   .expandingArea.active > textarea::-webkit-scrollbar { width: 0 !important }
 
    .expandingArea > pre {
      //display: none;
