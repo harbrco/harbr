@@ -350,6 +350,7 @@
    .expandingArea.active > textarea {
      /* Hide any scrollbars */
      -ms-overflow-style: none;
+     overflow: -moz-scrollbars-none;
      overflow: scroll;
      position: absolute;
      top: 0;
