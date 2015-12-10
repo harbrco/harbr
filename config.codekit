@@ -649,6 +649,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/img\/christmas-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.40574e+06,
+		"inputAbbreviatedPath": "\/img\/christmas-bg.jpg",
+		"outputAbbreviatedPath": "\/img\/christmas-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/crew-chris-temp.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1918,7 +1929,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 525041,
+		"initialSize": 703415,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -1929,7 +1940,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 358589,
+		"initialSize": 621440,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
