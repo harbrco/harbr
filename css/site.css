@@ -1194,7 +1194,7 @@ body.menuActive {
   .right-links .main-menu-links {
     height: 90%; } }
 .gform_wrapper .gform_body,
-.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .footer, .single-case-studies .feat-highlight-slider, .single-case-studies .feat-slide-text, .woocommerce ul.products li.product .price,
+.gform_wrapper .gform_body ul, .wrapper, .header-wrapper, .sticky-header-wrapper, .single .post-hero, .hero, .container, .project-planner .gform_body, .snap-section, #fancyWrap, .sticky-header-wrapper .sticky-header, .footer, .single-case-studies .feat-highlight-slider, .single-case-studies .feat-slide-text, .woocommerce ul.products li.product .price,
 .woocommerce-page ul.products li.product .price, .woocommerce.single .summary .price,
 .woocommerce-page.single .summary .price, .woocommerce.woocommerce-cart .cart-heading,
 .woocommerce-page.woocommerce-cart .cart-heading, .woocommerce.woocommerce-cart .product-thumbnail,
@@ -1203,14 +1203,14 @@ body.menuActive {
 .woocommerce-page.woocommerce-checkout form.checkout, .section, .big-cta {
   *zoom: 1; }
   .gform_wrapper .gform_body:before,
-  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .footer:before, .single-case-studies .feat-highlight-slider:before, .single-case-studies .feat-slide-text:before, .woocommerce ul.products li.product .price:before,
+  .gform_wrapper .gform_body ul:before, .wrapper:before, .header-wrapper:before, .sticky-header-wrapper:before, .single .post-hero:before, .hero:before, .container:before, .project-planner .gform_body:before, .snap-section:before, #fancyWrap:before, .sticky-header-wrapper .sticky-header:before, .footer:before, .single-case-studies .feat-highlight-slider:before, .single-case-studies .feat-slide-text:before, .woocommerce ul.products li.product .price:before,
   .woocommerce-page ul.products li.product .price:before, .woocommerce.single .summary .price:before,
   .woocommerce-page.single .summary .price:before, .woocommerce.woocommerce-cart .cart-heading:before,
   .woocommerce-page.woocommerce-cart .cart-heading:before, .woocommerce.woocommerce-cart .product-thumbnail:before,
   .woocommerce-page.woocommerce-cart .product-thumbnail:before, .woocommerce.woocommerce-cart .cart-collaterals:before,
   .woocommerce-page.woocommerce-cart .cart-collaterals:before, .woocommerce.woocommerce-checkout form.checkout:before,
   .woocommerce-page.woocommerce-checkout form.checkout:before, .section:before, .big-cta:before, .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .sticky-header-wrapper .sticky-header:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1220,7 +1220,7 @@ body.menuActive {
     content: " ";
     display: table; }
   .gform_wrapper .gform_body:after,
-  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
+  .gform_wrapper .gform_body ul:after, .wrapper:after, .header-wrapper:after, .sticky-header-wrapper:after, .single .post-hero:after, .hero:after, .container:after, .project-planner .gform_body:after, .snap-section:after, #fancyWrap:after, .sticky-header-wrapper .sticky-header:after, .footer:after, .single-case-studies .feat-highlight-slider:after, .single-case-studies .feat-slide-text:after, .woocommerce ul.products li.product .price:after,
   .woocommerce-page ul.products li.product .price:after, .woocommerce.single .summary .price:after,
   .woocommerce-page.single .summary .price:after, .woocommerce.woocommerce-cart .cart-heading:after,
   .woocommerce-page.woocommerce-cart .cart-heading:after, .woocommerce.woocommerce-cart .product-thumbnail:after,
@@ -1698,7 +1698,9 @@ input:focus {
   .sticky-header-wrapper .sticky-header {
     width: 100%;
     background-color: rgba(255, 255, 255, 0.97);
-    opacity: 0; }
+    opacity: 0;
+    overflow: hidden;
+    height: auto; }
     .sticky-header-wrapper .sticky-header.sticky {
       opacity: 1; }
     .sticky-header-wrapper .sticky-header .menu-button,
@@ -1759,7 +1761,6 @@ input:focus {
 .single .float-post-header-wrapper {
   z-index: 99; }
   .single .float-post-header-wrapper .post-header-wrapper {
-    position: absolute !important;
     padding: 20px 0 12px;
     background-color: rgba(255, 255, 255, 0.97); }
 
@@ -2541,8 +2542,6 @@ input:focus {
   z-index: 2; }
 .single .header-wrapper {
   z-index: 1; }
-.single .post-header-wrapper {
-  position: fixed; }
 .single .close-btn {
   float: right; }
 .single .section-heading {
