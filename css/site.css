@@ -897,6 +897,7 @@ th {
     height: 100px; }
   .gform_wrapper .expandingArea.active > textarea {
     /* Hide any scrollbars */
+    -ms-overflow-style: none;
     overflow: scroll;
     position: absolute;
     top: 0;
@@ -4870,10 +4871,11 @@ input:focus {
     z-index: 9999;
     left: 50%;
     overflow-y: scroll;
+    -ms-overflow-style: none;
     margin-top: -30px;
     max-height: 75vh;
     width: 100%;
-    max-width: 840px;
+    max-width: 900px;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
