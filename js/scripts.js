@@ -84,7 +84,9 @@ new WOW().init();
       })(jQuery);
       $('.vAlign').parent().vAlign();
     };
-    vAlignFun();
+    $(window).load(function() {
+      vAlignFun();
+    });
 
     $(window).resize(function() {
       vAlignFun();
