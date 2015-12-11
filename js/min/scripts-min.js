@@ -2964,7 +2964,6 @@ new WOW().init();
 
 
 
-
     // Single posts - Calculate space for hero "spacer" element
     if ( $('body').hasClass('single') ) {
       var heroSpcrHeight = function() {
