@@ -8,7 +8,7 @@
 // @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-buttons.js"
 // @codekit-prepend "libs/fancybox-helpers/jquery.fancybox-media.js"
 // @codekit-prepend "libs/wow.min.js"
-// @codekit-prepend "libs/blockscroll.js"
+// @codekit-prepend "libs/jquery.fullpage.min.js"
 // @codekit-prepend "libs/jquery.stellar.min.js"
 
 // @codekit-append "shop-scripts.js";
@@ -553,13 +553,12 @@ new WOW().init();
         e.preventDefault();
         var $this = $(this),
             $next = $this.parent().next();
-
-        $next.scrollTo(900, 'easeInOutQuint');
+        $.fn.fullpage.moveSectionDown();
     });
 
     $('.blog, .case-studies-wrapper').on('click', '.next-post-section.upArrow', function(e) {
       e.preventDefault();
-      $('html, body').animate({scrollTop : 0}, 900, "easeInOutQuint");
+      $.fn.fullpage.moveSectionUp();
       return false;
     });
 
@@ -808,7 +807,7 @@ new WOW().init();
     // BlockScroller - "snapping" scroll  -  Source file required heavy modification from the original to work.
     var blockScroller = function(){
       $('.scroll-wrap').blockScroll({
-        //scrollDuration: 350,
+        scrollDuration: 30000,
         fadeBlocks: false
       });
     };

@@ -258,14 +258,12 @@
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
 
-
       <!-- Sticky Header Bar -->
       <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
          <div class="sticky-header">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div>
       </div><!-- /.header-wrapper -->
-
 
    <?php } elseif( is_page('strategy') ) { ?>
    <!-- Strategy page -->
