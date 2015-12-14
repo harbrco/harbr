@@ -29,7 +29,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        width: 122px;
+        width: 123px; /* <- 1px extra needed for safari? */
         height: 122px;
         border: 0px;
         height: 130px;
