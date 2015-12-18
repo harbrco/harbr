@@ -551,8 +551,8 @@ new WOW().init();
 
     $('.blog, .case-studies-wrapper').on('click', '.next-post-section.downArrow', function(e) {
         e.preventDefault();
-        var $this = $(this),
-            $next = $this.parent().next();
+        // var $this = $(this),
+        //     $next = $this.parent().next();
         $.fn.fullpage.moveSectionDown();
     });
 
@@ -694,32 +694,10 @@ new WOW().init();
       auto: false,
       mode: 'fade',
       adaptiveHeight: 'true',
-      controls: false,
+      controls: true,
       pagerCustom: '.feat-slide-pager',
       nextText: '',
-      prevText: ''//,
-      // onSliderLoad: function () {
-      //   $(window).data('plugin_stellar').refresh();
-      //   stellarJS();
-      //   vAlignShow();
-      //   vAlignFun();
-      // },
-      // onSlideBefore: function(){
-      //   $('.second-feature-highlight-slider .slide').animate({
-      //     opacity: 0
-      //   }, 600, function() {
-      //     vAlignFun();
-      //     // Animation complete.
-      //   });
-      // },
-      // onSlideAfter: function(){
-      //   vAlignFun();
-      //   $(window).data('plugin_stellar').refresh();
-
-      //   $('.second-feature-highlight-slider .slide').animate({
-      //     opacity: 1
-      //   }, 600);
-      // }
+      prevText: ''
     });
 
 
@@ -803,15 +781,15 @@ new WOW().init();
 
 
 
-
-    // BlockScroller - "snapping" scroll  -  Source file required heavy modification from the original to work.
-    var blockScroller = function(){
-      $('.scroll-wrap').blockScroll({
-        scrollDuration: 30000,
-        fadeBlocks: false
+    // "snapping" scroll
+    if ($('.scroll-wrap').length) {
+      $('.scroll-wrap').fullpage({
+        css3: true,
+        autoScrolling: false,
+        scrollingSpeed: 1250,
+        fitToSectionDelay: 750
       });
-    };
-    blockScroller();
+    }
 
 
   });
