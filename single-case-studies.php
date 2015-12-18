@@ -137,10 +137,10 @@
                               <h3><?php the_sub_field('headline_text'); ?></h3>
                               <?php the_sub_field('paragraph_text'); ?>
                            </div>
+                        </div>
 
-                           <div class="fw-img">
-                              <img src="<?php the_sub_field('full_width_image'); ?>" />
-                           </div>
+                        <div class="fw-img">
+                           <img src="<?php the_sub_field('full_width_image'); ?>" />
                         </div>
 
                         <!-- <div class="fw-img" data-stellar-ratio="1.35">
@@ -182,13 +182,14 @@
                                  <h3><?php the_sub_field('slide_headline'); ?></h3>
                                  <p><?php the_sub_field('slide_text'); ?></p>
                               </div>
+
+                              <?php if (get_sub_field('slide_image')) { ?>
+                                 <div class="slide-image">
+                                    <img src="<?php the_sub_field('slide_image') ?>" alt="">
+                                 </div>
+                              <?php } ?>
                            </div>
 
-                           <?php if (get_sub_field('slide_image')) { ?>
-                              <div class="slide-image">
-                                 <img src="<?php the_sub_field('slide_image') ?>" alt="">
-                              </div>
-                           <?php } ?>
                         </div>
                      <?php endwhile; ?>
                      </div><!-- /.feat-highlight-slider -->

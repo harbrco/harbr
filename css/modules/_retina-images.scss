@@ -164,31 +164,28 @@
 
 
    // Case Studies - - -
-   // WeatherBug
-   .weatherbug-earth-networks {
-      .weather-icons-wrapper {
-         .icons-wrapper {
-            .icon-chunk-mobile {
-               .icons-img-day,
-               .icons-img-night {
-                  background-image: url(../img/icons/wb-day-night-mobile@2x.png);
+   .single-case-studies {
+      .feat-highlight-wrapper {
+         .bx-wrapper {
+            .bx-prev {
+               background-position: 5px -16px;
+
+               &:hover {
+                  background-position: 5px -16px;
                }
             }
-            .icon-chunk-tablet {
-               .icons-img-day,
-               .icons-img-night {
-                  background-image: url(../img/icons/wb-day-night-tablet@2x.png);
-               }
-            }
-            .icon-chunk-desktop {
-               .icons-img-day,
-               .icons-img-night {
-                  background-image: url(../img/icons/wb-day-night-desktop@2x.png);
+            .bx-next {
+               background-position: -42px -16px;
+
+               &:hover {
+                  background-position: -42px -16px;
                }
             }
          }
       }
    }
+
+
 
 
 }

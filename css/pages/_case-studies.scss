@@ -206,7 +206,7 @@
       position: relative;
 
       .container {
-         max-width: 1300px;
+         width: 90%;
       }
 
       .centerBtn {
@@ -220,6 +220,47 @@
       .bx-wrapper .bx-controls .bx-pager.bx-default-pager {
          text-align: left;
          padding-left: 5%;
+      }
+
+      .bx-wrapper {
+         .bx-prev,
+         .bx-next {
+            background-color: $white;
+
+            &:hover {
+               @extend %hoverFade;
+            }
+         }
+         .bx-prev {
+            background-position: 5px 33px;
+            height: 90px;
+            width: 45px;
+            border-radius: 0 90px 90px 0;
+            -moz-border-radius: 0 90px 90px 0;
+            -webkit-border-radius: 0 90px 90px 0;
+            left: 0;
+
+            &:hover {
+               background-position: 5px 33px;
+            }
+         }
+         .bx-next {
+            background-position: -92px 33px;
+            height: 90px;
+            width: 45px;
+            border-radius: 90px 0 0 90px;
+            -moz-border-radius: 90px 0 0 90px;
+            -webkit-border-radius: 90px 0 0 90px;
+            right: 0;
+
+            &:hover {
+               background-position: -92px 33px;
+            }
+         }
+
+         .bx-controls-direction a {
+            margin-top: -45px;
+         }
       }
    }
 
@@ -428,6 +469,10 @@
             margin-left: 10px;
          }
       }
+
+      .feat-highlight-wrapper .centerBtn {
+         margin-top: 5%;
+      }
    }
 }
 
@@ -520,6 +565,14 @@
             font-size: 16px;
             line-height: 27px;
          }
+      }
+   }
+}
+
+@media only screen and (max-width:560px) {
+   .single-case-studies {
+      .feat-highlight-wrapper .centerBtn {
+         margin-top: 6%;
       }
    }
 }
