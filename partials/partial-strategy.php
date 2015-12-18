@@ -6,53 +6,17 @@
    </div>
 
    <div class="approach-steps number-cards section group flexWrap">
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-            <span class="card-number clrPop">01</span>
-            <h3 class="card-title sansBUpperSpc">Consult</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
+   <?php if( have_rows('number_card') ): ?>
+      <?php while ( have_rows('number_card') ) : the_row(); ?>
+         <div class="card col span_6_of_12">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
+               <span class="card-number clrPop"><?php the_sub_field('number_unit'); ?></span>
+               <h3 class="card-title sansBUpperSpc"><?php the_sub_field('number_card_title'); ?></h3>
+               <p class="card-text"><?php the_sub_field('number_card_text'); ?></p>
+            </div>
          </div>
-      </div>
-
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-            <span class="card-number clrPop">02</span>
-            <h3 class="card-title sansBUpperSpc">Plan</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
-         </div>
-      </div>
-
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-         <span class="card-number clrPop">03</span>
-            <h3 class="card-title sansBUpperSpc">Architect</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
-         </div>
-      </div>
-
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-            <span class="card-number clrPop">04</span>
-            <h3 class="card-title sansBUpperSpc">Develop</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
-         </div>
-      </div>
-
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-            <span class="card-number clrPop">05</span>
-            <h3 class="card-title sansBUpperSpc">Launch</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
-         </div>
-      </div>
-
-      <div class="card col span_6_of_12">
-         <div class="inner wow fadeInUp" data-wow-delay=".25s">
-            <span class="card-number clrPop">06</span>
-            <h3 class="card-title sansBUpperSpc">Maintain</h3>
-            <p class="card-text">We aim to work with teams that deeply care about creating products that add meaning and value to people’s lives.</p>
-         </div>
-      </div>
+      <?php endwhile; ?>
+   <?php endif; ?>
    </div>
 
 
