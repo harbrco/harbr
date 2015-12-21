@@ -178,10 +178,12 @@
                      <?php while( have_rows('feature_highlight_slide') ): the_row(); ?>
                         <div class="slide well--s well--noBottom" style="background-image: url(<?php the_sub_field('slide_background_image') ?>); background-color: #<?php the_sub_field('slide_background_color'); ?>;">
                            <div class="container">
-                              <div class="text-wrapper isContentArea">
-                                 <h3><?php the_sub_field('slide_headline'); ?></h3>
-                                 <p><?php the_sub_field('slide_text'); ?></p>
-                              </div>
+                              <?php if (get_sub_field('slide_headline')) { ?>
+                                 <div class="text-wrapper isContentArea">
+                                    <h3><?php the_sub_field('slide_headline'); ?></h3>
+                                    <p><?php the_sub_field('slide_text'); ?></p>
+                                 </div>
+                              <?php } ?>
 
                               <?php if (get_sub_field('slide_image')) { ?>
                                  <div class="slide-image">

@@ -2126,7 +2126,7 @@ input:focus {
     z-index: 1;
     bottom: 5%;
     left: 6%;
-    color: #292728; }
+    color: #fff; }
     .crew-members .crew-member .crew-text h3 {
       font-size: 20px;
       line-height: 24px;
@@ -2187,7 +2187,8 @@ input:focus {
       margin: 0 auto;
       background-position: left top; }
   .media-boxes .stat-slider .slide-icon {
-    background-image: url("../img/icons/statIcon-sprite.png"); }
+    background-image: url("../img/icons/statIcon-sprite.png");
+    background-size: 1500px 400px; }
   .media-boxes .stat-slider h3 {
     font-size: 55px;
     line-height: 60px;
@@ -2206,9 +2207,21 @@ input:focus {
     font-size: 20px;
     line-height: 24px; }
 
-.culture .media-boxes .stat-slider .slide-icon,
-.home .media-boxes .stat-slider .slide-icon {
+.culture .media-boxes .stat-slider .slide-icon.isMusic,
+.home .media-boxes .stat-slider .slide-icon.isMusic {
   background-position: 0 0; }
+.culture .media-boxes .stat-slider .slide-icon.isCode,
+.home .media-boxes .stat-slider .slide-icon.isCode {
+  background-position: -300px 0; }
+.culture .media-boxes .stat-slider .slide-icon.isDesign,
+.home .media-boxes .stat-slider .slide-icon.isDesign {
+  background-position: -600px 0; }
+.culture .media-boxes .stat-slider .slide-icon.isPizza,
+.home .media-boxes .stat-slider .slide-icon.isPizza {
+  background-position: -900px 0; }
+.culture .media-boxes .stat-slider .slide-icon.isBeer,
+.home .media-boxes .stat-slider .slide-icon.isBeer {
+  background-position: -1200px 0; }
 .culture .media-boxes .quote-slider .slide-icon,
 .home .media-boxes .quote-slider .slide-icon {
   background-position: 0 0; }
@@ -2216,8 +2229,16 @@ input:focus {
 .strategy .hero-overlay {
   background-color: rgba(41, 39, 40, 0.75);
   z-index: 1; }
-.strategy .media-boxes .stat-slider .slide-icon {
+.strategy .media-boxes .stat-slider .slide-icon.isMusic {
   background-position: 0 -200px; }
+.strategy .media-boxes .stat-slider .slide-icon.isCode {
+  background-position: -300px -200px; }
+.strategy .media-boxes .stat-slider .slide-icon.isDesign {
+  background-position: -600px -200px; }
+.strategy .media-boxes .stat-slider .slide-icon.isPizza {
+  background-position: -900px -200px; }
+.strategy .media-boxes .stat-slider .slide-icon.isBeer {
+  background-position: -1200px -200px; }
 .strategy .media-boxes .quote-slider .slide-icon {
   background-position: 0 -200px; }
 
@@ -3240,11 +3261,12 @@ input:focus {
       font-size: 18px;
       line-height: 30px; }
   .single-case-studies .feat-highlight-slider .slide-image {
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+    margin-top: 2%; }
 .single-case-studies .feat-slide-text {
   height: 100%; }
   .single-case-studies .feat-slide-text .text-wrapper {
-    margin: 0 auto 6%;
+    margin: 0 auto 5%;
     text-align: center;
     max-width: 680px;
     background: transparent; }
@@ -3300,10 +3322,6 @@ input:focus {
       transition: background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s;
       transition: transform 0.3s ease .2s, background-color 0.3s ease .2s;
       transition: transform 0.3s ease .2s, background-color 0.3s ease .2s, -webkit-transform 0.3s ease .2s; }
-.single-case-studies .feat-slide-images .slide-image img {
-  width: 100%;
-  height: auto;
-  display: block; }
 
 .touch .single-case-studies .full-width-image-centered-text {
   padding-bottom: 0; }
@@ -3371,6 +3389,8 @@ input:focus {
   .single.single-case-studies .feat-highlight-slider .slide-text p {
     font-size: 16px;
     line-height: 27px; }
+  .single.single-case-studies .feat-highlight-slider .slide-image {
+    margin-top: 3%; }
 
   .single-case-studies .full-width-image-centered-text .text-wrapper h3,
   .single-case-studies .img-gal-intro-text .text-wrapper h3,
@@ -5404,17 +5424,35 @@ input:focus {
     background-position: -50px 0; }
 
   .media-boxes .stat-slider .slide-icon {
-    background-size: 150px 200px; }
+    background-size: 750px 200px; }
   .media-boxes .quote-slider .slide-icon {
     background-size: 150px 200px; }
 
-  .home .media-boxes .stat-slider .slide-icon {
+  .home .media-boxes .stat-slider .slide-icon.isMusic {
     background-position: -50px 0; }
+  .home .media-boxes .stat-slider .slide-icon.isCode {
+    background-position: -200px 0; }
+  .home .media-boxes .stat-slider .slide-icon.isDesign {
+    background-position: -350px 0; }
+  .home .media-boxes .stat-slider .slide-icon.isPizza {
+    background-position: -500px 0; }
+  .home .media-boxes .stat-slider .slide-icon.isBeer {
+    background-position: -650px 0; }
   .home .media-boxes .quote-slider .slide-icon {
     background-position: -50px 0; }
 
   .strategy .media-boxes .stat-slider .slide-icon {
     background-position: -50px -100px; }
+  .strategy .media-boxes .stat-slider .slide-icon.isMusic {
+    background-position: -50px -100px; }
+  .strategy .media-boxes .stat-slider .slide-icon.isCode {
+    background-position: -200px -100px; }
+  .strategy .media-boxes .stat-slider .slide-icon.isDesign {
+    background-position: -350px -100px; }
+  .strategy .media-boxes .stat-slider .slide-icon.isPizza {
+    background-position: -500px -100px; }
+  .strategy .media-boxes .stat-slider .slide-icon.isBeer {
+    background-position: -650px -100px; }
   .strategy .media-boxes .quote-slider .slide-icon {
     background-position: -50px -100px; }
 

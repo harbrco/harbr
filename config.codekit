@@ -1555,7 +1555,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 20059,
+		"initialSize": 18673,
 		"inputAbbreviatedPath": "\/img\/icons\/statIcon-sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/statIcon-sprite.png",
 		"outputPathIsOutsideProject": 0,
@@ -1940,7 +1940,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 621440,
+		"initialSize": 358589,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2272,15 +2272,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/pagination.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/partial-culture.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/partial-culture.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

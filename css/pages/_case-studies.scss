@@ -288,6 +288,7 @@
 
       .slide-image {
          margin-bottom: -1px;
+         margin-top: 2%;
       }
    }
 
@@ -296,7 +297,7 @@
       height: 100%;
 
       .text-wrapper {
-         margin: 0 auto 6%;
+         margin: 0 auto 5%;
          text-align: center;
          max-width: 680px;
          background: transparent;
@@ -362,16 +363,6 @@
             transform: scale(1.4);
             -webkit-transition: -webkit-transform 0.3s ease .2s, background-color 0.3s ease .2s;
             transition: transform 0.3s ease .2s, background-color 0.3s ease .2s;
-         }
-      }
-   }
-
-   .feat-slide-images {
-      .slide-image {
-         img {
-            width: 100%;
-            height: auto;
-            display: block;
          }
       }
    }
@@ -517,6 +508,10 @@
                font-size: 16px;
                line-height: 27px;
             }
+         }
+
+         .slide-image {
+            margin-top: 3%;
          }
       }
    }

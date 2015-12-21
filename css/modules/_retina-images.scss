@@ -83,7 +83,7 @@
    .media-boxes {
       .stat-slider {
          .slide-icon {
-            background-size: 150px 200px;
+            background-size: 750px 200px;
          }
       }
       .quote-slider {
@@ -96,7 +96,21 @@
       .media-boxes {
          .stat-slider {
             .slide-icon {
-               background-position: -50px 0;
+               &.isMusic {
+                  background-position: -50px 0;
+               }
+               &.isCode {
+                  background-position: -200px 0;
+               }
+               &.isDesign {
+                  background-position: -350px 0;
+               }
+               &.isPizza {
+                  background-position: -500px 0;
+               }
+               &.isBeer {
+                  background-position: -650px 0;
+               }
             }
          }
          .quote-slider {
@@ -111,6 +125,23 @@
          .stat-slider {
             .slide-icon {
                background-position: -50px -100px;
+            }
+            .slide-icon {
+               &.isMusic {
+                  background-position: -50px -100px;
+               }
+               &.isCode {
+                  background-position: -200px -100px;
+               }
+               &.isDesign {
+                  background-position: -350px -100px;
+               }
+               &.isPizza {
+                  background-position: -500px -100px;
+               }
+               &.isBeer {
+                  background-position: -650px -100px;
+               }
             }
          }
          .quote-slider {

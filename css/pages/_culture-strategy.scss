@@ -9,7 +9,7 @@
          z-index: 1;
          bottom: 5%;
          left: 6%;
-         color: $darkGray;
+         color: $white;
 
          h3 {
             @extend %sansB;
@@ -103,6 +103,7 @@
    .stat-slider {
       .slide-icon {
          background-image: url('../img/icons/statIcon-sprite.png');
+         background-size: 1500px 400px;
       }
       h3 {
          font-size: 55px;
@@ -141,7 +142,21 @@
    .media-boxes {
       .stat-slider {
          .slide-icon {
-            background-position: 0 0;
+            &.isMusic {
+               background-position: 0 0;
+            }
+            &.isCode {
+               background-position: -300px 0;
+            }
+            &.isDesign {
+               background-position: -600px 0;
+            }
+            &.isPizza {
+               background-position: -900px 0;
+            }
+            &.isBeer {
+               background-position: -1200px 0;
+            }
          }
       }
 
@@ -168,7 +183,21 @@
    .media-boxes {
       .stat-slider {
          .slide-icon {
-            background-position: 0 -200px;
+            &.isMusic {
+               background-position: 0 -200px;
+            }
+            &.isCode {
+               background-position: -300px -200px;
+            }
+            &.isDesign {
+               background-position: -600px -200px;
+            }
+            &.isPizza {
+               background-position: -900px -200px;
+            }
+            &.isBeer {
+               background-position: -1200px -200px;
+            }
          }
       }
 

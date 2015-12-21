@@ -43,9 +43,9 @@
 
 
       <div id="hustle" class="section-heading">
-         <h1 class="clrPop">Hustle</h1>
+         <h1 class="clrPop">Culture</h1>
          <span class="divWave"></span>
-         <h3>Finding Our Flow <br />On The Daily</h3>
+         <h3>It's not what we do,<br />but who we are</h3>
       </div>
 
       <div class="media-boxes">
@@ -98,8 +98,16 @@
                            <div class="stat-slider card card--sq">
                            <?php if( have_rows('stat_slide') ): ?>
                               <?php while ( have_rows('stat_slide') ) : the_row(); ?>
+                              <?php
+                                 if (get_sub_field('stat_type') == "music") { $slideIconType = "isMusic"; }
+                                 elseif (get_sub_field('stat_type') == "code") { $slideIconType = "isCode"; }
+                                 elseif (get_sub_field('stat_type') == "design") { $slideIconType = "isDesign"; }
+                                 elseif (get_sub_field('stat_type') == "pizza") { $slideIconType = "isPizza"; }
+                                 elseif (get_sub_field('stat_type') == "beer") { $slideIconType = "isBeer"; }
+                              ?>
+
                               <div class="slide">
-                                 <span class="slide-icon"></span>
+                                 <span class="slide-icon <?php echo $slideIconType; ?>"></span>
                                  <h3><?php the_sub_field('stat_headline'); ?></h3>
                                  <p><?php the_sub_field('stat_text'); ?></p>
                               </div>
