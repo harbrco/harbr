@@ -1,8 +1,42 @@
 <div id="main" class="main-content section isWhite">
-   <div id="approach" class="section-heading intro-section">
+   <div id="capabilities" class="section-heading intro-section">
+      <h1 class="clrPop">Capabilities</h1>
+      <span class="divWave"></span>
+      <h3>Here's a list <br />of things we do.</h3>
+   </div>
+
+   <div class="capabilities-list number-cards section group flexWrap">
+   <?php if( have_rows('service_card') ): ?>
+      <?php while ( have_rows('service_card') ) : the_row(); ?>
+         <div class="card col span_6_of_12">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
+               <span class="card-number clrPop"><?php the_sub_field('service_unit'); ?></span>
+               <h3 class="card-title sansBUpperSpc"><?php the_sub_field('service_card_title'); ?></h3>
+               <p class="card-text"><?php the_sub_field('service_card_text'); ?></p>
+            </div>
+         </div>
+      <?php endwhile; ?>
+   <?php endif; ?>
+   </div>
+
+
+   <?php if(get_field('left_image')) { ?>
+      <div class="capabilities-approach-separator wrapper section group">
+         <div class="left-half-image col span_6_of_12">
+            <img src="<?php the_field('left_image'); ?>" />
+         </div>
+
+         <div class="right-half-image col span_6_of_12">
+            <img src="<?php the_field('right_image'); ?>" />
+         </div>
+      </div>
+   <?php } ?>
+
+
+   <div id="approach" class="section-heading">
       <h1 class="clrPop">Approach</h1>
       <span class="divWave"></span>
-      <h3>There are a Couple Ways <br />To Skin a Cat.</h3>
+      <h3>There's a Few Ways <br />To Skin a Cat.</h3>
    </div>
 
    <div class="approach-steps number-cards section group flexWrap">
@@ -18,6 +52,19 @@
       <?php endwhile; ?>
    <?php endif; ?>
    </div>
+
+
+   <?php if( have_rows('left_image') ): ?>
+      <?php while ( have_rows('left_image') ) : the_row(); ?>
+         <div class="card col span_6_of_12">
+            <div class="inner wow fadeInUp" data-wow-delay=".25s">
+               <span class="card-number clrPop"><?php the_sub_field('number_unit'); ?></span>
+               <h3 class="card-title sansBUpperSpc"><?php the_sub_field('number_card_title'); ?></h3>
+               <p class="card-text"><?php the_sub_field('number_card_text'); ?></p>
+            </div>
+         </div>
+      <?php endwhile; ?>
+   <?php endif; ?>
 
 
    <div id="hustle" class="section-heading">

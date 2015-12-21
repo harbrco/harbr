@@ -207,6 +207,12 @@
    }
 }
 
+.touch {
+   .sticky-header-wrapper .sticky-header {
+      display: none;
+   }
+}
+
 .single {
    .sticky-header-wrapper {
       height: 73px;

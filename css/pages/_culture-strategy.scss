@@ -422,6 +422,15 @@
    }
 }
 
+@media only screen and (max-width:680px) {
+   .capabilities-approach-separator {
+      .span_6_of_12 {
+         display: block;
+         width: 100%;
+      }
+   }
+}
+
 @media only screen and (max-width:550px) {
    .stat-slider-lg-sq-sm-sq,
    .quote-slider-sm-sq {

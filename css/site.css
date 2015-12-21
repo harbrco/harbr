@@ -897,7 +897,8 @@ th {
     height: 100px; }
   .gform_wrapper .expandingArea.active > textarea {
     /* Hide any scrollbars */
-    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: scroll;
     position: absolute;
     top: 0;
     left: 0;
@@ -1732,6 +1733,9 @@ input:focus {
       .sticky-header-wrapper.darkHeader .sticky-header .logo {
         color: #fff; }
 
+.touch .sticky-header-wrapper .sticky-header {
+  display: none; }
+
 .single .sticky-header-wrapper {
   height: 73px;
   position: absolute;
@@ -2031,7 +2035,11 @@ input:focus {
   .project-planner .step-wrapper.step-1 label {
     display: none; }
   .project-planner .step-wrapper.step-2 {
-    max-width: 900px; }
+    max-width: 960px; }
+    .project-planner .step-wrapper.step-2 ul.gform_fields {
+      padding-left: 80px; }
+    .project-planner .step-wrapper.step-2 .step-heading {
+      margin-left: -80px; }
     .project-planner .step-wrapper.step-2 label.gfield_label {
       font-size: 18px;
       text-transform: uppercase;
@@ -2082,6 +2090,11 @@ input:focus {
     line-height: 72px; }
   .project-planner .gform_body {
     max-width: 86%; } }
+@media only screen and (max-width: 1000px) {
+  .project-planner .step-wrapper.step-2 ul.gform_fields {
+    padding-left: 40px; }
+  .project-planner .step-wrapper.step-2 .step-heading {
+    margin-left: -40px; } }
 @media only screen and (max-width: 900px) {
   .project-planner .step-heading h3 {
     margin-bottom: 8px; }
@@ -2106,6 +2119,11 @@ input:focus {
   .project-planner .step-heading h2 {
     font-size: 46px;
     line-height: 52px; } }
+@media only screen and (max-width: 620px) {
+  .project-planner .step-wrapper.step-2 ul.gform_fields {
+    padding-left: 0; }
+  .project-planner .step-wrapper.step-2 .step-heading {
+    margin-left: 0; } }
 @media only screen and (max-width: 550px) {
   .project-planner form .step-wrapper.step-2 .top_label li.gfield.gf_list_2col ul.gfield_radio li {
     width: 100% !important;
@@ -2367,6 +2385,10 @@ input:focus {
   .media-boxes .sm-sq {
     padding-bottom: 50%;
     display: inline-block; } }
+@media only screen and (max-width: 680px) {
+  .capabilities-approach-separator .span_6_of_12 {
+    display: block;
+    width: 100%; } }
 @media only screen and (max-width: 550px) {
   .stat-slider-lg-sq-sm-sq .span_4_of_12 .card--sq,
   .quote-slider-sm-sq .span_4_of_12 .card--sq {
