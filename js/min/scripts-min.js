@@ -3186,12 +3186,14 @@ new WOW().init();
         e.preventDefault();
         // var $this = $(this),
         //     $next = $this.parent().next();
+        // $next.scrollTo(900, 'easeInOutQuint');
         $.fn.fullpage.moveSectionDown();
     });
 
     $('.blog, .case-studies-wrapper').on('click', '.next-post-section.upArrow', function(e) {
       e.preventDefault();
-      $.fn.fullpage.moveSectionUp();
+      $('html, body').animate({scrollTop : 0}, 900, "easeInOutQuint");
+      //$.fn.fullpage.moveSectionUp();
       return false;
     });
 
@@ -3208,37 +3210,29 @@ new WOW().init();
 
     // Fancybox - Modal popup
 
-
       // video modal
-      // var viewportWidth = $(window).width();
-      // if (viewportWidth >= 450){
+      $(".fancybox-video").fancybox({
+        width: "100%",
+        height: "85%",
+        type:'iframe',
+        openOpacity: true,
 
-        $(".fancybox-video").fancybox({
-          width: "100%",
-          height: "85%",
-          type:'iframe',
-          openOpacity: true,
-
-          helpers: {
-            media :{}
-          },
-          beforeLoad: function() {
-            $('#fancybox-loading').appendTo('#fancyWrap');
-          },
-          beforeShow: function() {
-            $('.fancybox-wrap, .fancybox-overlay, #fancybox-loading').appendTo('#fancyWrap');
-          },
-          afterShow: function() {
-            $('.fancybox-close').addClass('close-btn').prepend("<i class='close-icon'></i>");
-          },
-          afterClose: function() {
-            $('#fancyWrap, .fancy-positioner').removeClass('isOpen');
-          }
-        });
-
-      //} else {
-        //mobile video action - vimeo embed currently not supported on mobile
-      //}
+        helpers: {
+          media :{}
+        },
+        beforeLoad: function() {
+          $('#fancybox-loading').appendTo('#fancyWrap');
+        },
+        beforeShow: function() {
+          $('.fancybox-wrap, .fancybox-overlay, #fancybox-loading').appendTo('#fancyWrap');
+        },
+        afterShow: function() {
+          $('.fancybox-close').addClass('close-btn').prepend("<i class='close-icon'></i>");
+        },
+        afterClose: function() {
+          $('#fancyWrap, .fancy-positioner').removeClass('isOpen');
+        }
+      });
 
       $('body').on('click', '.video-play-btn', function(){
         $('#fancyWrap, .fancy-positioner').addClass('isOpen');
