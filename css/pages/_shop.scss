@@ -42,6 +42,16 @@
 .woocommerce-page {
    background-color: $white;
 
+   .no-products-available {
+      margin-top: 10%;
+
+      h2 {
+         font-size: 28px;
+         line-height: 35px;
+         margin-bottom: 50px;
+      }
+   }
+
    .main-content {
       .container {
          max-width: 1580px;

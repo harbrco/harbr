@@ -3533,6 +3533,14 @@ input:focus {
   /* checked mark aspect changes */
   /* disabled checkbox */
   /* accessibility */ }
+  .woocommerce .no-products-available,
+  .woocommerce-page .no-products-available {
+    margin-top: 10%; }
+    .woocommerce .no-products-available h2,
+    .woocommerce-page .no-products-available h2 {
+      font-size: 28px;
+      line-height: 35px;
+      margin-bottom: 50px; }
   .woocommerce .main-content .container, .woocommerce .main-content .project-planner .gform_body, .project-planner .woocommerce .main-content .gform_body,
   .woocommerce-page .main-content .container,
   .woocommerce-page .main-content .project-planner .gform_body,
