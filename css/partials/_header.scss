@@ -211,6 +211,13 @@
    .sticky-header-wrapper .sticky-header {
       display: none;
    }
+
+   .blog,
+   .case-studies {
+      .sticky-header-wrapper .sticky-header {
+         display: block;
+      }
+   }
 }
 
 .single {

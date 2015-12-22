@@ -414,7 +414,7 @@ th {
 .gform_wrapper ul li .gfield_checkbox li,
 .gform_wrapper ul li .gfield_radio li, .gform_wrapper.projectPlannerForm_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description, .main-menu-links a, .header-wrapper .header .menu-button, .header-wrapper .header .blog-categories .mobile-cat-menu-toggle,
 .header-wrapper .header .shop-categories .mobile-cat-menu-toggle, .header-wrapper .header .blog-categories li,
-.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-message h3, .project-planner .step-wrapper.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .modal .share-modal h3, .woocommerce .woocommerce-breadcrumb,
+.header-wrapper .header .shop-categories li, .hero-text h4, .project-planner .step-heading h3, .project-planner .gform_confirmation_message .confirm-message h3, .project-planner .step-wrapper.step-2 label.gfield_label, .media-boxes .quote-slider p.quote-text, .single .isContentArea h3, .single .quote-block-section .left-content p, .single .single-column-content h4, .single .modal .share-modal h3, .woocommerce .woocommerce-breadcrumb,
 .woocommerce-page .woocommerce-breadcrumb, .woocommerce ul.products li.product .prod-overlay h4,
 .woocommerce-page ul.products li.product .prod-overlay h4, .woocommerce.single .variations .value label span,
 .woocommerce-page.single .variations .value label span, .woocommerce.single .variations_form .single_variation .stock,
@@ -1735,6 +1735,9 @@ input:focus {
 
 .touch .sticky-header-wrapper .sticky-header {
   display: none; }
+.touch .blog .sticky-header-wrapper .sticky-header,
+.touch .case-studies .sticky-header-wrapper .sticky-header {
+  display: block; }
 
 .single .sticky-header-wrapper {
   height: 73px;
@@ -2672,11 +2675,20 @@ input:focus {
   margin-bottom: 22px; }
 .single .single-column-content h3 {
   color: #78B97F; }
+.single .single-column-content h4 {
+  color: #292728;
+  font-size: 24px;
+  line-height: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-transform: uppercase; }
 .single .single-column-content p {
   color: #8b8b8b;
   margin-bottom: 20px; }
   .single .single-column-content p:last-child {
     margin-bottom: 0; }
+.single .single-column-content img {
+  float: none; }
 .single .single-column-content ul,
 .single .single-column-content ol {
   margin-bottom: 20px; }
@@ -2747,6 +2759,13 @@ input:focus {
   background-position: center center;
   background-attachment: scroll !important; }
 
+@media only screen and (max-width: 1200px) {
+  .blog .quote-block-section .left-content h4,
+  .single .quote-block-section .left-content h4,
+  .archive .quote-block-section .left-content h4 {
+    font-size: 36px;
+    line-height: 52px;
+    margin-bottom: 20px; } }
 @media only screen and (max-width: 1140px) {
   .single .wallpaper-detail {
     padding-bottom: 30%; } }
@@ -2778,9 +2797,9 @@ input:focus {
   .blog .quote-block-section .left-content h4,
   .single .quote-block-section .left-content h4,
   .archive .quote-block-section .left-content h4 {
-    font-size: 36px;
-    line-height: 52px;
-    margin-bottom: 20px; }
+    font-size: 32px;
+    line-height: 48px;
+    margin-bottom: 19px; }
 
   .single .wallpaper-detail {
     padding-bottom: 34%; } }
@@ -2821,8 +2840,8 @@ input:focus {
     line-height: 28px; }
   .single .quote-block-section .left-content h4,
   .archive .quote-block-section .left-content h4 {
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 26px;
+    line-height: 38px;
     margin-bottom: 18px; }
 
   .single .wallpaper-detail {
@@ -2900,6 +2919,11 @@ input:focus {
       .archive .left-content-right-image .right-image .inner,
       .archive .quote-block-section .right-image .inner {
         padding-bottom: 100%; }
+  .single .quote-block-section .left-content h4,
+  .archive .quote-block-section .left-content h4 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-bottom: 12px; }
   .single .quote-block-section .left-content p.quote-author-name,
   .archive .quote-block-section .left-content p.quote-author-name {
     margin-bottom: 6px; }
@@ -2951,6 +2975,11 @@ input:focus {
     font-size: 34px;
     line-height: 42px;
     margin-bottom: 14px; }
+  .single .isContentArea h4 {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 26px;
+    margin-bottom: 16px; }
 
   .single .left-content-right-image .left-content h3,
   .archive .left-content-right-image .left-content h3 {
@@ -3045,6 +3074,12 @@ input:focus {
     .archive .section-heading .social-links li a,
     .archive .modal .share-modal .social-links li a {
       font-size: 14px; }
+  .blog .quote-block-section .left-content h4,
+  .single .quote-block-section .left-content h4,
+  .archive .quote-block-section .left-content h4 {
+    font-size: 24px;
+    line-height: 38px;
+    margin-bottom: 12px; }
 
   .single .wallpaper-detail {
     padding-bottom: 50%; } }
