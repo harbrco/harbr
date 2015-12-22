@@ -271,14 +271,13 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
-
       <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
 
-         <div class="hero-overlay">
-         </div>
+         <!-- <div class="hero-overlay">
+         </div> -->
          <div class="hero-text section-heading vAlign">
             <h1 class="clrPop">Strategy</h1>
             <span class="divWave"></span>
@@ -305,14 +304,10 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
-
       <div class="hero section big-cta isDarkGray">
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
-
-         <div class="hero-overlay">
-         </div>
 
          <div class="hero-text section-heading vAlign">
             <h1 class="clrPop">Contact</h1>
@@ -348,8 +343,8 @@
       </div>
 
       <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
-         <div class="hero-overlay">
-         </div>
+         <!-- <div class="hero-overlay">
+         </div> -->
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
