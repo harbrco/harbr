@@ -187,6 +187,10 @@
       <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon-16x16.png" sizes="16x16" />
       <link href="<?php echo get_template_directory_uri(); ?>/img/icons/favicon.ico" rel="shortcut icon">
 
+      <link rel="apple-touch-icon-precomposed" href="site-icon.png"/>
+      <link rel="apple-touch-icon" sizes="72x72" href="site-icon.png"/>
+      <link rel="apple-touch-icon" sizes="114x114" href="site-icon.png"/>
+
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
