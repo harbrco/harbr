@@ -3391,6 +3391,18 @@ input:focus {
 .weatherbug .prev-page-cta {
   background-position: center right; }
 
+.post-type-archive-case-studies .oxen-made .hero-highlight-image,
+.single-case-studies.oxen-made .hero .hero-highlight-image {
+  width: 88%; }
+
+.post-type-archive-case-studies .sound-cloud .hero-highlight-image,
+.single-case-studies.sound-cloud .hero .hero-highlight-image {
+  width: 64%; }
+
+.post-type-archive-case-studies .family-first .hero-highlight-image,
+.single-case-studies.family-first .hero .hero-highlight-image {
+  width: 68%; }
+
 .post-type-archive-case-studies .skatepark-of-tampa .hero-highlight-image,
 .single-case-studies.skatepark-of-tampa .hero .hero-highlight-image {
   position: absolute;
