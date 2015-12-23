@@ -2688,7 +2688,8 @@ input:focus {
   .single .single-column-content p:last-child {
     margin-bottom: 0; }
 .single .single-column-content img {
-  float: none; }
+  float: none;
+  height: auto; }
 .single .single-column-content ul,
 .single .single-column-content ol {
   margin-bottom: 20px; }
