@@ -395,6 +395,15 @@ new WOW().init();
         $('.gform_confirmation_message').addClass('vAlign');
         vAlignShow();
         vAlignFun();
+
+        // Force scroll down after form submission
+        if(formId == 2) {
+          $('html, body').animate({
+             scrollTop: $(document).height()-$(window).height()},
+             500,
+             "easeInOutQuint"
+          );
+        }
       });
       /* jshint ignore:end */
 
