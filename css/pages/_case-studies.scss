@@ -492,6 +492,15 @@
             line-height: 29px;
          }
       }
+
+      .feat-highlight-wrapper {
+         .bx-wrapper {
+            .bx-prev,
+            .bx-next {
+               display: none;
+            }
+         }
+      }
    }
 }
 
