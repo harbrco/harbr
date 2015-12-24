@@ -2,7 +2,7 @@
    <div id="capabilities" class="section-heading intro-section">
       <h1 class="clrPop">Capabilities</h1>
       <span class="divWave"></span>
-      <h3>Here's a list <br />of things we do.</h3>
+      <h3>Here's a List <br />Of Things We Do.</h3>
    </div>
 
    <div class="capabilities-list number-cards section group flexWrap">

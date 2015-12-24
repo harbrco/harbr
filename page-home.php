@@ -45,7 +45,7 @@
       <div id="hustle" class="section-heading">
          <h1 class="clrPop">Culture</h1>
          <span class="divWave"></span>
-         <h3>It's not what we do,<br />but who we are</h3>
+         <h3>It's not what we do,<br />But who we are</h3>
       </div>
 
       <div class="media-boxes">

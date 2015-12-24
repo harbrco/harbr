@@ -207,8 +207,6 @@ new WOW().init();
       event.preventDefault();
       $('body').addClass('menuActive');
 
-      //menuBuild();
-
       // Menu link animation on open/close
       $('#menu-main-menu a').each(function(i){
           var link = $(this);
@@ -228,20 +226,7 @@ new WOW().init();
           setTimeout(function(){ link.removeClass('linkVisible'); }, (i+1) * 140);
       });
 
-      //setTimeout(function(){
-        $('.left-icons .social-icon').find('.icon').removeClass('isVisible');
-      //}, 1000);
-
-      // remove fullPage.js
-      // setTimeout(function() {
-      //   $.fn.fullpage.destroy('all');
-
-      //   // re-render big hero section
-      //   bigHero();
-
-      //   // re-render current page active class in menu
-      //   menuActiveClass();
-      // }, 400);
+      $('.left-icons .social-icon').find('.icon').removeClass('isVisible');
     });
 
 
@@ -313,7 +298,6 @@ new WOW().init();
         offset: '65%'
       });
       /* jshint ignore:end */
-
 
 
       $(document).bind('gform_post_render', function(){

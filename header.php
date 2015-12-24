@@ -346,7 +346,7 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
-      <div class="hero section big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
+      <div class="hero big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
          <!-- <div class="hero-overlay">
          </div> -->
          <div class="hero-header header-wrapper">

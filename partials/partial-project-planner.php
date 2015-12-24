@@ -1,4 +1,4 @@
-<div id="main" class="main-content section isWhite">
+<div id="main" class="main-content isWhite">
    <div class="form-pagination">
       <div class="inner vAlign">
          <div class="dot dot-1"><a href="#step1"></a></div>
