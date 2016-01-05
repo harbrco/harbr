@@ -2677,6 +2677,8 @@ new WOW().init();
       $('body').addClass('popPrimary');
     } else if ( $('body').hasClass('post-type-archive-case-studies') && $('body').hasClass('archive') ) {
       $('body').addClass('popWhite');
+    } else if ( $('body').hasClass('tax-case_study_type') && $('body').hasClass('archive') ) {
+      $('body').addClass('popWhite');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') ) {
@@ -2790,7 +2792,7 @@ new WOW().init();
           nav.stop().addClass('sticky');
 
           // If is Blog or Case Studies Archive page, don't add height to ".sticky-header-wrapper"
-          if ( !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies') ) {
+          if ( !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies') && !$('body').hasClass('tax-case_study_type') ) {
             nav_container.css({ 'height': '73px' });
           }
 
@@ -2800,7 +2802,7 @@ new WOW().init();
       }
     });
 
-    if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies')) {
+    if (!$('body').hasClass('contact') && !$('body').hasClass('error404') && !$('body').hasClass('blog') && !$('body').hasClass('category') && !$('body').hasClass('post-type-archive-case-studies') && !$('body').hasClass('tax-case_study_type')) {
 
       var menuAppearBuffer;
 

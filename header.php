@@ -66,7 +66,7 @@
          -webkit-transition: opacity .6s ease-in-out;
       }
       .pace.pace-inactive {
-        opacity: 0 !important;
+         opacity: 0 !important;
       }
       </style>
       <?php if(is_page('home')) { ?>
@@ -203,14 +203,14 @@
 
       <script type="text/javascript">
          paceOptions = {
-           ajax: false,
-           document: true,
-           restartOnPushState: true,
-           eventLag: false
+            ajax: false,
+            document: true,
+            restartOnPushState: true,
+            eventLag: false
          };
 
          Pace.on('done', function() {
-           $('#preloader').fadeOut(600, function(){$(this).remove();});
+            $('#preloader').fadeOut(600, function(){$(this).remove();});
          });
       </script>
 
@@ -292,14 +292,12 @@
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
 
-
       <!-- Sticky Header Bar -->
       <div id="scrollmain" class="sticky-header-wrapper header-wrapper">
          <div class="sticky-header">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div>
       </div><!-- /.header-wrapper -->
-
 
 
    <?php } elseif( is_page('contact') ) { ?>
@@ -321,9 +319,7 @@
             <h4><a href="mailto:hello@harbr.co">hello@harbr.co</a> &nbsp;<span class="clrPop">•</span>&nbsp; <a href="tel:+1234567890" class="phone">(813) 546-6376</a> &nbsp;<span class="clrPop">•</span>&nbsp; <a target="_blank" href="https://www.google.com/maps/place/1023+E+Columbus+Dr,+Tampa,+FL+33605/@27.966664,-82.4558797,15z/data=!4m2!3m1!1s0x88c2c444616921b5:0xccd889d30c0e3a8" class="isMap noWrap">Visit Us</a></h4>
             <a href="/project-planner/" class="btn btn--uline">Project Planner</a>
          </div>
-
       </div>
-
 
 
    <?php } elseif(is_home()) { ?>
@@ -398,7 +394,6 @@
       </div><!-- /.header-wrapper -->
 
 
-
    <?php } elseif(is_archive()) { ?>
    <!-- Archive Page -->
       <div class="menu-wrap">
@@ -411,6 +406,5 @@
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div>
       </div><!-- /.header-wrapper -->
-
 
    <?php } ?>

@@ -213,7 +213,8 @@
    }
 
    .blog,
-   .post-type-archive-case-studies {
+   .post-type-archive-case-studies,
+   .tax-case_study_type {
       .sticky-header-wrapper .sticky-header {
          display: block;
       }
@@ -231,7 +232,8 @@
 .blog,
 .category,
 .error404,
-.post-type-archive-case-studies {
+.post-type-archive-case-studies,
+.tax-case_study_type {
    .sticky-header-wrapper {
       &.darkHeader {
          .sticky-header {

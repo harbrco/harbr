@@ -621,7 +621,8 @@ th {
 .landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
-.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single .wallpaper-detail, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
+.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article,
+.tax-case_study_type article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero, .single-case-studies .hero .hero-background-image, .single .wallpaper-detail, .single-case-studies .feat-slide-text .slide, .woocommerce.single .product-image-column .product-images .product-image,
 .woocommerce-page.single .product-image-column .product-images .product-image, .woocommerce.single .product-image-column #product-pager .product-image,
 .woocommerce-page.single .product-image-column #product-pager .product-image {
   background-size: cover;
@@ -631,7 +632,8 @@ th {
 .landing-section, .project-planner .hero, .project-planner #main, .crew-members .crew-member, .media-boxes .card--sq, .strategy .hero, .blog .view-post-cta,
 .archive .view-post-cta,
 .single .view-post-cta, .single .left-content-right-image .right-image .inner,
-.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero {
+.single .quote-block-section .right-image .inner, .single .modal, .post-type-archive-case-studies article,
+.tax-case_study_type article, .single-case-studies .full-width-image-centered-text, .shop-intro .product-slide, .hero {
   background-position-y: center; }
 
 .single-case-studies .hero .hero-background-image {
@@ -1736,7 +1738,8 @@ input:focus {
 .touch .sticky-header-wrapper .sticky-header {
   display: none; }
 .touch .blog .sticky-header-wrapper .sticky-header,
-.touch .post-type-archive-case-studies .sticky-header-wrapper .sticky-header {
+.touch .post-type-archive-case-studies .sticky-header-wrapper .sticky-header,
+.touch .tax-case_study_type .sticky-header-wrapper .sticky-header {
   display: block; }
 
 .single .sticky-header-wrapper {
@@ -1747,7 +1750,8 @@ input:focus {
 .blog .sticky-header-wrapper.darkHeader .sticky-header,
 .category .sticky-header-wrapper.darkHeader .sticky-header,
 .error404 .sticky-header-wrapper.darkHeader .sticky-header,
-.post-type-archive-case-studies .sticky-header-wrapper.darkHeader .sticky-header {
+.post-type-archive-case-studies .sticky-header-wrapper.darkHeader .sticky-header,
+.tax-case_study_type .sticky-header-wrapper.darkHeader .sticky-header {
   background-color: transparent; }
 
 .shop-intro .sticky-header-wrapper {
@@ -3172,11 +3176,14 @@ input:focus {
     font-size: 22px;
     line-height: 26px; } }
 .post-type-archive-case-studies .downArrow,
-.post-type-archive-case-studies .upArrow {
+.post-type-archive-case-studies .upArrow,
+.tax-case_study_type .downArrow,
+.tax-case_study_type .upArrow {
   right: inherit;
   left: 7%; }
 
 .post-type-archive-case-studies .hero .hero-highlight-image,
+.tax-case_study_type .hero .hero-highlight-image,
 .single-case-studies .hero .hero-highlight-image {
   position: absolute;
   bottom: 0;
@@ -3187,6 +3194,7 @@ input:focus {
   background-repeat: no-repeat;
   background-position: right bottom; }
 .post-type-archive-case-studies .hero .section-heading,
+.tax-case_study_type .hero .section-heading,
 .single-case-studies .hero .section-heading {
   max-width: 60%;
   margin-top: -100px; }
@@ -3392,18 +3400,22 @@ input:focus {
   background-position: center right; }
 
 .post-type-archive-case-studies .oxen-made .hero-highlight-image,
+.tax-case_study_type .oxen-made .hero-highlight-image,
 .single-case-studies.oxen-made .hero .hero-highlight-image {
   width: 88%; }
 
 .post-type-archive-case-studies .sound-cloud .hero-highlight-image,
+.tax-case_study_type .sound-cloud .hero-highlight-image,
 .single-case-studies.sound-cloud .hero .hero-highlight-image {
   width: 64%; }
 
 .post-type-archive-case-studies .family-first .hero-highlight-image,
+.tax-case_study_type .family-first .hero-highlight-image,
 .single-case-studies.family-first .hero .hero-highlight-image {
   width: 68%; }
 
 .post-type-archive-case-studies .skatepark-of-tampa .hero-highlight-image,
+.tax-case_study_type .skatepark-of-tampa .hero-highlight-image,
 .single-case-studies.skatepark-of-tampa .hero .hero-highlight-image {
   position: absolute;
   bottom: auto !important;
@@ -3426,6 +3438,7 @@ input:focus {
     line-height: 32px; } }
 @media only screen and (max-width: 768px) {
   .post-type-archive-case-studies .hero .hero-highlight-image,
+  .tax-case_study_type .hero .hero-highlight-image,
   .single-case-studies .hero .hero-highlight-image {
     display: none; }
 
@@ -3510,10 +3523,12 @@ input:focus {
     margin-bottom: 15px; } }
 @media only screen and (max-height: 700px) {
   .post-type-archive-case-studies .hero .section-heading,
+  .tax-case_study_type .hero .section-heading,
   .single-case-studies .hero .section-heading {
     margin-top: -50px; } }
 @media only screen and (max-height: 550px) {
   .post-type-archive-case-studies .hero .section-heading,
+  .tax-case_study_type .hero .section-heading,
   .single-case-studies .hero .section-heading {
     margin-top: -20px; } }
 .shop-intro .bx-wrapper .bx-controls {

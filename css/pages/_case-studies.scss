@@ -1,6 +1,7 @@
 // Case Study Archive Styles - - - - - - -
 
-.post-type-archive-case-studies {
+.post-type-archive-case-studies,
+.tax-case_study_type {
    article {
       @extend %bgCover--center;
    }
@@ -15,6 +16,7 @@
 
 // Both Case Study Archive and Single - - - - - - -
 .post-type-archive-case-studies,
+.tax-case_study_type,
 .single-case-studies {
    .hero {
       .hero-highlight-image {
@@ -391,6 +393,7 @@
 
 
 .post-type-archive-case-studies .oxen-made,
+.tax-case_study_type .oxen-made,
 .single-case-studies.oxen-made .hero {
    .hero-highlight-image {
       width: 88%;
@@ -398,6 +401,7 @@
 }
 
 .post-type-archive-case-studies .sound-cloud,
+.tax-case_study_type .sound-cloud,
 .single-case-studies.sound-cloud .hero {
    .hero-highlight-image {
       width: 64%;
@@ -405,6 +409,7 @@
 }
 
 .post-type-archive-case-studies .family-first,
+.tax-case_study_type .family-first,
 .single-case-studies.family-first .hero {
    .hero-highlight-image {
       width: 68%;
@@ -413,6 +418,7 @@
 
 
 .post-type-archive-case-studies .skatepark-of-tampa,
+.tax-case_study_type .skatepark-of-tampa,
 .single-case-studies.skatepark-of-tampa .hero {
    .hero-highlight-image {
       position: absolute;
@@ -456,6 +462,7 @@
 
 @media only screen and (max-width:768px) {
    .post-type-archive-case-studies,
+   .tax-case_study_type,
    .single-case-studies {
       .hero {
          .hero-highlight-image {
@@ -647,6 +654,7 @@
 // Vertical breakpoints - - - - - - -
 @media only screen and (max-height:700px) {
    .post-type-archive-case-studies,
+   .tax-case_study_type,
    .single-case-studies {
       .hero {
          .section-heading {
@@ -658,6 +666,7 @@
 
 @media only screen and (max-height:550px) {
    .post-type-archive-case-studies,
+   .tax-case_study_type,
    .single-case-studies {
       .hero {
          .section-heading {
