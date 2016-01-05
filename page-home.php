@@ -4,7 +4,7 @@
       <div id="values" class="section-heading intro-section">
          <h1 class="clrPop">Values</h1>
          <span class="divWave"></span>
-         <h3>It's Not a Job, <br />It's a Lifestyle</h3>
+         <h3>It's Not a Job, <br />It's a Lifestyle.</h3>
       </div>
 
       <div class="core-values number-cards section group flexWrap">
@@ -25,7 +25,7 @@
       <div id="crew" class="section-heading">
          <h1 class="clrPop">Crew</h1>
          <span class="divWave"></span>
-         <h3>Meet Your Creative <br />Geek Squad</h3>
+         <h3>Meet Your Creative <br />Geek Squad.</h3>
       </div>
 
       <div class="crew-members crew-cards section group">
@@ -45,7 +45,7 @@
       <div id="hustle" class="section-heading">
          <h1 class="clrPop">Culture</h1>
          <span class="divWave"></span>
-         <h3>It's not what we do,<br />But who we are</h3>
+         <h3>It's not what we do,<br />But who we are.</h3>
       </div>
 
       <div class="media-boxes">

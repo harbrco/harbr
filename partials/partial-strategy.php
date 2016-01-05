@@ -70,7 +70,7 @@
    <div id="hustle" class="section-heading">
       <h1 class="clrPop">Hustle</h1>
       <span class="divWave"></span>
-      <h3>Finding Our Flow <br />On The Daily</h3>
+      <h3>Finding Our Flow <br />On The Daily.</h3>
    </div>
 
    <div class="media-boxes">
