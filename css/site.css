@@ -650,29 +650,6 @@ th {
   height: 100%; }
 
 .gform_wrapper {
-  display: block !important; }
-  .gform_wrapper ul {
-    list-style: none;
-    padding: 0;
-    margin: 0; }
-    .gform_wrapper ul li {
-      margin-bottom: 20px; }
-      .gform_wrapper ul li input,
-      .gform_wrapper ul li textarea {
-        font-size: 20px;
-        line-height: 20px;
-        border-radius: 4px;
-        padding: 10px 18px; }
-        .gform_wrapper ul li input:focus,
-        .gform_wrapper ul li textarea:focus {
-          outline: none; }
-      .gform_wrapper ul li textarea {
-        width: 100%;
-        padding: 12px 17px; }
-  .gform_wrapper label.gfield_label {
-    display: none; }
-
-.gform_wrapper {
   display: block !important;
   max-width: 100% !important;
   margin: 0 !important; }
@@ -789,6 +766,8 @@ th {
       .gform_wrapper ul li input[type=radio]:not(old):checked + label:before {
         border-color: #e3c048;
         background-color: #e3c048; }
+  .gform_wrapper label.gfield_label {
+    display: none; }
   .gform_wrapper form .top_label li.gfield.gf_left_third {
     width: 29.33% !important;
     margin-left: 0 !important;
@@ -916,7 +895,6 @@ th {
     /* Hide the text; just using it for sizing */
     visibility: hidden; }
 
-/* hover style just for information */
 .isWhite .gform_wrapper ul li input,
 .isWhite .gform_wrapper ul li input[type=text],
 .isWhite .gform_wrapper ul li input[type=url],

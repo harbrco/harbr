@@ -1,31 +1,21 @@
 .footer {
-	@extend %clear;
+   @extend %clear;
 }
-
-.footer-copyright {
-
-}
-
 
 // FOOTER TYPOGRAPHY = = = = = = =
 
 .footer-copyright {
+   p {
+      font-family: $serif;
+      font-size: 16px;
+      line-height: 26px;
+   }
 
-	p {
-		font-family: $serif;
-		font-size: 16px;
-		line-height: 26px;
-	}
+   a {
+      color: $white;
 
-	a {
-		color: $white;
-
-		&:hover {
-			color: $secondary;
-		}
-	}
+      &:hover {
+         color: $secondary;
+      }
+   }
 }
-
-
-// FOOTER BREAKPOINTS = = = = = = =
-

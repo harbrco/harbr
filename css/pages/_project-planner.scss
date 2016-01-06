@@ -1,6 +1,5 @@
 .project-planner {
    .hero {
-      //background-image: url(../img/section-bgs/project-planner-hero-bg.jpg);
       @extend %bgCover--center;
       z-index: 3;  // for form pagination dots
    }
@@ -18,21 +17,7 @@
 
    #main {
       position: relative;
-      //margin-top: -70px;
       @extend %bgCover--center;
-
-      // &.form-step-1 {
-      //    background-image: url(../img/section-bgs/pp-fs1.jpg);
-      // }
-      // &.form-step-2 {
-      //    background-image: url(../img/section-bgs/pp-fs2.jpg);
-      // }
-      // &.form-step-3 {
-      //    background-image: url(../img/section-bgs/pp-fs3.jpg);
-      // }
-      // &.form-step-4 {
-      //    background-image: url(../img/section-bgs/pp-fs4.jpg);
-      // }
    }
 
    .form-pagination {
@@ -373,10 +358,6 @@
 
 @media only screen and (max-width:840px) {
    .project-planner {
-      .gform_body {
-         //padding: 70px 0 50px;
-      }
-
       form {
          .step-wrapper {
             &.step-2 {
@@ -399,10 +380,6 @@
                      width: 50% !important;
                   }
                }
-            }
-
-            &.step-3 {
-               //margin-top: 40px;
             }
          }
       }
@@ -470,10 +447,6 @@
             font-size: 32px;
             line-height: 40px;
          }
-      }
-
-      .gform_body {
-         //padding: 70px 0 50px;
       }
    }
 }

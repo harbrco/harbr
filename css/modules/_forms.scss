@@ -149,6 +149,11 @@
       }
    }
 
+   label.gfield_label {
+      display: none;
+   }
+
+
    // grid layouts
    form .top_label {
       li.gfield.gf_left_third {
@@ -209,8 +214,6 @@
          font-family: $sans;
          padding: 6px;
          @extend %hoverTrans;
-         // margin-left: 10px;
-         // margin-right: 10px;
          text-transform: uppercase;
 
          &.gform_previous_button {
@@ -230,20 +233,10 @@
             opacity: 1;
          }
       }
-
-      // .gform_previous_button {
-      //    color: rgba($white, .5);
-      //    border-color: rgba($white, .5);
-
-      //    &:hover {
-      //       color: $white;
-      //    }
-      // }
    }
 
    textarea {
       min-height: 20px;
-      //height: inherit !important;
    }
 
 
@@ -300,7 +293,6 @@
    }
 
 
-
    // Expanding Textarea
    .hasTextarea {
       display: block;
@@ -310,14 +302,12 @@
    }
 
    textarea.small {
-      //height: inherit !important;
       text-align: center;
    }
 
    .expandingArea {
      position: relative;
      border: 0;
-     //border-bottom: 2px solid rgba($white, .5);
      background-color: transparent;
    }
 
@@ -363,21 +353,14 @@
    .expandingArea.active > textarea::-webkit-scrollbar { width: 0 !important }
 
    .expandingArea > pre {
-     //display: none;
    }
    .expandingArea.active > pre {
      display: block;
      /* Hide the text; just using it for sizing */
      visibility: hidden;
-     //height: 0;
    }
 
 }
-
-/* hover style just for information */
-// label:hover:before {
-//   border: 1px solid #4778d9!important;
-// }
 
 
 .isWhite {
@@ -431,7 +414,6 @@
       }
    }
 }
-
 
 
 @media only screen and (max-width:840px) {

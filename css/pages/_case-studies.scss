@@ -177,7 +177,6 @@
 
    .full-width-image-centered-text {
       position: relative;
-      //padding-bottom: 42%;
       overflow: hidden;
       @extend %bgCover--center;
 
@@ -188,19 +187,9 @@
       }
 
       .fw-img {
-         // z-index: 2;
-         // position: absolute;
          display: block;
       }
    }
-
-
-   .prev-cs {
-      .section-heading {
-         //margin-top: -100px;
-      }
-   }
-
 
 
    // Feature Highlight Slider - - -
@@ -213,7 +202,6 @@
 
       .centerBtn {
          position: absolute;
-         //top: 5%;
          margin-top: 4%;
          height: 40px;
          z-index: 51;
@@ -416,7 +404,6 @@
    }
 }
 
-
 .post-type-archive-case-studies .skatepark-of-tampa,
 .tax-case_study_type .skatepark-of-tampa,
 .single-case-studies.skatepark-of-tampa .hero {
@@ -431,8 +418,6 @@
       background-size: cover;
    }
 }
-
-
 
 
 // CASE STUDIES BREAKPOINTS = = = = = = =

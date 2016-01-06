@@ -90,7 +90,6 @@
             position: absolute;
             top: 4%;
             left: 4%;
-            //width: auto;
             height: auto;
             @extend %clear;
             color: $darkGray;
@@ -252,7 +251,6 @@
 
          .inner {
             display: block;
-            //margin-top: -130px;
          }
 
          .price {
@@ -345,10 +343,6 @@
 
       .variations {
          width: 100%;
-
-         .label {
-            //display: none;
-         }
 
          .value {
             strong {
@@ -988,7 +982,6 @@
                @extend .onWhite;
                margin: 0;
                padding: 0;
-               //float: right;
 
                &:after { bottom: 0 !important; }
             }

@@ -13,18 +13,11 @@
    }
 }
 
-// fix for *flash* of animated elements before animation happens.
-.wow {
-   //opacity: 0;
-}
-
 .section {
    @extend %clear;
 }
 
-
 // * Note: MENU styles are in _menu.scss
-
 
 .well {
    padding-top: 10%;
@@ -539,7 +532,6 @@
 }
 
 
-
 // misc font styles
 .italic {
    @extend %serifIt;
@@ -555,7 +547,6 @@
    @extend .sansUpperSpc;
    @extend %sansB;
 }
-
 
 
 // Social Share modal - - - - - - - -
