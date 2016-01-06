@@ -601,7 +601,7 @@
 		"outputAbbreviatedPath": "\/css\/site.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 0
@@ -2228,7 +2228,7 @@
 		"outputAbbreviatedPath": "\/js\/min\/scripts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/js\/shop-scripts.js": {
