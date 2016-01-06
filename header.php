@@ -17,11 +17,9 @@
       .pace {
         -webkit-pointer-events: none;
         pointer-events: none;
-
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
-
         z-index: 9999;
         position: fixed;
         margin: auto;
@@ -240,7 +238,6 @@
             <a href="<?php the_field('popup_video_url'); ?>" class="video-play-btn primaryPop fancybox-video" data-width="1280" data-height="720">
                <i class="video-play-icon"></i>
             </a>
-            <!-- Big Buck Bunny example video:  https://vimeo.com/1084537 -->
             <?php } ?>
          </div>
 
@@ -253,11 +250,6 @@
             <source src="<?php //the_field('hero_bg_video_url_mp4'); ?>" type="video/mp4">
             <source src="<?php //the_field('hero_bg_video_url_ogv'); ?>" type="video/ogv">
          </video> -->
-
-         <!-- temp store video urls -->
-         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header.webmhd.webm -->
-         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header_1080.mp4 -->
-         <!-- http://built.harbrdev.net/wp-content/uploads/2015/10/ulele_header.oggtheora.ogv -->
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
@@ -280,8 +272,6 @@
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
 
-         <!-- <div class="hero-overlay">
-         </div> -->
          <div class="hero-text section-heading vAlign">
             <h1 class="clrPop">Strategy</h1>
             <span class="divWave"></span>
@@ -343,8 +333,6 @@
       </div>
 
       <div class="hero big-cta isDarkGray" style="background-image: url(<?php the_field('hero_background_image') ?>);">
-         <!-- <div class="hero-overlay">
-         </div> -->
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->

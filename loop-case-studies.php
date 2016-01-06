@@ -48,5 +48,5 @@
 
    <?php get_template_part('pagination'); ?>
 
-   <?php else: ?>
+<?php else: ?>
 <?php endif; ?>

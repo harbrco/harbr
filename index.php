@@ -10,5 +10,4 @@
 
 </div><!-- /.post-feed-wrapper -->
 
-
 <?php get_footer(); ?>

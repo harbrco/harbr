@@ -1,30 +1,10 @@
-   <?php if(!is_page('home')) { ?>
-      <!-- footer -->
-      <!-- <footer class="footer" role="contentinfo">
-
-         <div class="footer-social">
-            <ul>
-               <li class="fb"><a href="#">Fb</a></li>
-               <li class="twt"><a href="#">Twt</a></li>
-               <li class="gplus"><a href="#">G+</a></li>
-            </ul>
+      <div class="fancy-positioner">
+         <div id="fancyWrap" class="">
+            <a href="javascript:parent.$.fancybox.close();" class="close-share-modal close-btn modal-toggle">
+               <i class="close-icon"></i>
+            </a>
          </div>
-
-         <div class="footer-copyright">
-            <p class="copyright">&copy; <?php //echo date('Y'); ?> <?php //bloginfo('name'); ?> - All rights reserved</p>
-         </div>
-
-      </footer> -->
-      <!-- /footer -->
-   <?php } ?>
-
-   <div class="fancy-positioner">
-      <div id="fancyWrap" class="">
-         <a href="javascript:parent.$.fancybox.close();" class="close-share-modal close-btn modal-toggle">
-            <i class="close-icon"></i>
-         </a>
       </div>
-   </div>
 
       <?php wp_footer(); ?>
 

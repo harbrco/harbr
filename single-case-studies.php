@@ -98,6 +98,7 @@
                         </div>
                      </div>
 
+
                   <?php elseif( get_row_layout() == 'img_gal_halves' ): ?>
                      <?php
                      $topMargin = '';
@@ -124,7 +125,6 @@
                      </div>
 
 
-
                   <?php elseif( get_row_layout() == 'full_width_image_centered_text' ): ?>
                   <!-- Text/Image Combo Layouts -->
                      <div class="full-width-image-centered-text wrapper isDarkGray" style="background-image: url(<?php the_sub_field('section_background_image') ?>); background-color: #<?php echo $brandColor; ?>;">
@@ -149,7 +149,6 @@
                      </div>
 
 
-
                   <?php elseif( get_row_layout() == 'divider_centered_content' ): ?>
                   <!-- Text/Content Layouts -->
                      <div class="divider-centered-content wrapper well--s isWhite">
@@ -157,7 +156,6 @@
                            <p><?php the_sub_field('centered_text'); ?></p>
                         </div>
                      </div>
-
 
 
                   <?php elseif( get_row_layout() == 'feature_highlight_slider' ): ?>
@@ -207,8 +205,6 @@
             </div>
 
 
-
-
             <?php $prevPost = get_previous_post(); ?>
             <?php $prevPostID = $prevPost->ID; ?>
             <?php $category = get_the_category( $prevPostID ); ?>
@@ -234,7 +230,6 @@
 
    <?php endwhile; ?>
    <?php endif; ?>
-
 
    <!-- Social Share Modal -->
    <?php get_template_part( 'partials/partial', 'share-modal' ); ?>
