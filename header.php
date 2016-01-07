@@ -230,7 +230,7 @@
          </div><!-- /.header-wrapper -->
 
          <div class="landing-hero hero-text section-heading vAlign">
-            <h1 class="clrPop">Digital Agency</h1>
+            <h1 class="clrPop">Digital Creative Agency</h1>
             <span class="divWave"></span>
             <h3>A Crew of <br /><span class="italic">Creative</span> Doers.</h3>
 
