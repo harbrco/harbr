@@ -1265,6 +1265,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/close-x-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 689,
+		"inputAbbreviatedPath": "\/img\/icons\/close-x-sprite.png",
+		"outputAbbreviatedPath": "\/img\/icons\/close-x-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/close-x@2x.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1272,6 +1283,17 @@
 		"initialSize": 1427,
 		"inputAbbreviatedPath": "\/img\/icons\/close-x@2x.png",
 		"outputAbbreviatedPath": "\/img\/icons\/close-x@2x.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/icons\/divWave-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2930,
+		"inputAbbreviatedPath": "\/img\/icons\/divWave-sprite.png",
+		"outputAbbreviatedPath": "\/img\/icons\/divWave-sprite.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -1313,7 +1335,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2111,
+		"initialSize": 471,
 		"inputAbbreviatedPath": "\/img\/icons\/left-back-arrow-sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/left-back-arrow-sprite.png",
 		"outputPathIsOutsideProject": 0,
@@ -1324,7 +1346,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 954,
+		"initialSize": 860,
 		"inputAbbreviatedPath": "\/img\/icons\/left-right-arrow-sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/left-right-arrow-sprite.png",
 		"outputPathIsOutsideProject": 0,
@@ -1386,6 +1408,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/icons\/quoteIcon-sprite.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6212,
+		"inputAbbreviatedPath": "\/img\/icons\/quoteIcon-sprite.png",
+		"outputAbbreviatedPath": "\/img\/icons\/quoteIcon-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/icons\/select-arrow.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -1401,7 +1434,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 2903,
+		"initialSize": 1183,
 		"inputAbbreviatedPath": "\/img\/icons\/share-icon-sprite.png",
 		"outputAbbreviatedPath": "\/img\/icons\/share-icon-sprite.png",
 		"outputPathIsOutsideProject": 0,
