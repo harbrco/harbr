@@ -1,0 +1,47 @@
+.service-case-study {
+   position: relative;
+}
+
+.queried-case-study {
+   text-align: center;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+
+   &.hoverZoomFade {
+      &:before {
+         background-color: rgba($darkGray, .55);
+      }
+
+      &.linkHovered {
+         &:before {
+            background-color: rgba($darkGray, .8);
+         }
+      }
+   }
+
+   .inner {
+      padding: 0 4%;
+      width: 100%;
+   }
+
+   h3 {
+      @extend .sansUpperSpc;
+      font-size: 16px;
+      line-height: 19px;
+      margin-bottom: 2%;
+
+      &.clrPop {
+         color: $primary;
+      }
+   }
+
+   .case-study-title {
+      h2 {
+         color: $white;
+         font-size: 55px;
+         line-height: 64px;
+         margin-bottom: 24px;
+      }
+   }
+}

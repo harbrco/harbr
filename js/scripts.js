@@ -48,7 +48,7 @@ new WOW().init();
       $('body').addClass('popWhite');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
-    } else if ( $('body').hasClass('strategy') ) {
+    } else if ( $('body').hasClass('strategy') || $('body').hasClass('page-template-template-service') ) {
       $('body').addClass('popTertiary');
     } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');

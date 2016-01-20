@@ -148,7 +148,7 @@
                background-color: #78B97F; /* green */
             }
          </style>
-      <?php } elseif(is_page('strategy')) { ?>
+      <?php } elseif(is_page('strategy') || is_page_template('template-service.php')) { ?>
          <style>
             .js div#preloader {
                background-color: #FCCDC6; /* pink */
