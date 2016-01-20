@@ -33,11 +33,6 @@ new WOW().init();
     // Also needed to add "-webkit-tap-highlight-color: rgba(0,0,0,0);" to the "a" tag in _defaults.scss to get rid of gray overlay
     document.addEventListener("touchstart", function(){}, true);
 
-    // Removes iOS link popups when long tap
-    // $("a").bind('taphold', function(event) {
-    //   event.preventDefault();
-    // });
-
 
     // Add dynamic accent color body classes:
     if ( $('body').hasClass('home') || $('body').hasClass('culture') || $('body').hasClass('single-case-studies') ) {
