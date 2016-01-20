@@ -10,9 +10,13 @@
       </div><!-- /.header-wrapper -->
 
       <div class="hero-text section-heading vAlign">
-         <h1 class="clrPop">Branding</h1>
+         <?php if ( get_field('service_title')) { ?>
+            <h1 class="clrPop"><?php the_field('service_title'); ?></h1>
+         <?php } else { ?>
+            <h1 class="clrPop"><?php the_title(); ?></h1>
+         <?php } ?>
          <span class="divWave"></span>
-         <h3><span class="italic">More</span> Than a Logo<br />It's Your <span class="italic">Identity</span>.</h3>
+         <h3><?php the_field('service_descriptor'); ?></h3>
       </div>
 
       <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
@@ -29,12 +33,12 @@
    <div id="main" class="main-content section isWhite">
 
       <div id="branding-services" class="section-heading intro-section">
-         <h1 class="clrPop">Branding Services</h1>
+         <h1 class="clrPop"><?php the_field('section_heading_title'); ?></h1>
          <span class="divWave"></span>
-         <h3>Here's a List of <br />Branding Things.</h3>
+         <h3><?php the_field('section_heading_descriptor'); ?></h3>
       </div>
 
-      <div class="capabilities-list number-cards section group flexWrap">
+      <div class="branding-services-list number-cards section group flexWrap">
       <?php if( have_rows('service_card') ): ?>
          <?php while ( have_rows('service_card') ) : the_row(); ?>
             <div class="card col span_6_of_12">
@@ -131,18 +135,26 @@
       </div>
 
 
-      <div id="capabilities" class="section-heading intro-section">
-         <h1 class="clrPop">Branding Work</h1>
+      <div id="related-case-studies" class="section-heading">
+         <h1 class="clrPop"><?php the_field('related_case_study_title'); ?></h1>
          <span class="divWave"></span>
-         <h3>Examples of Our<br /><span class="italic">Branding</span> Projects.</h3>
+         <h3><?php the_field('related_case_study_descriptor'); ?></h3>
       </div>
 
       <div class="services-case-studies media-boxes wrapper section group">
          <?php
+            $term = get_field('related_case_study_type');
+
+            if( $term ):
+               $caseStudyType = $term->slug;
+            endif;
+         ?>
+
+         <?php
          $args = array(
             'post_type' => 'case-studies',
             'taxonomy' => 'case_study_type',
-            'term' => 'design'
+            'term' => $caseStudyType
          );
          $caseStudiesQuery = new WP_Query( $args ); ?>
          <?php if ( $caseStudiesQuery->have_posts() ) : ?>
@@ -176,22 +188,22 @@
 
       <div class="next-page-cta big-cta isQuaternary">
          <div id="project-planner" class="section-heading vAlign">
-            <h1 class="clrPop">Project Planner</h1>
+            <h1 class="clrPop"><?php the_field('cta_small_text'); ?></h1>
             <span class="divWave"></span>
-            <h3>We're Accepting <br /><span class="italic">Projects</span> Today.</h3>
-            <a href="/project-planner/" class="btn btn--uline">Get Started</a>
+            <h3><?php the_field('cta_large_text'); ?></h3>
+            <a href="/project-planner/" class="btn btn--uline"><?php the_field('cta_button_text'); ?></a>
          </div>
       </div>
 
 
-      <div class="next-page-cta big-cta isTertiary">
+      <!-- <div class="next-page-cta big-cta isTertiary">
          <div id="project-planner" class="section-heading vAlign">
             <h1 class="clrPop">Design</h1>
             <span class="divWave"></span>
             <h3>This Will <span class="italic">Feature</span><br />A <span class="italic">Special</span> Headline.</h3>
             <a href="/project-planner/" class="btn btn--uline">Learn About Design</a>
          </div>
-      </div>
+      </div> -->
 
    </div><!-- /.main-content -->
 
