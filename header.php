@@ -76,7 +76,7 @@
                background-color: #61A4EA; /* blue */
             }
          </style>
-      <?php } elseif(is_page('culture')) { ?>
+      <?php } elseif(is_page('culture') || is_singular('project-proposals')) { ?>
          <style>
             .js div#preloader {
                background-color: #61A4EA; /* blue */
@@ -110,6 +110,15 @@
             }
             .pace .pace-progress {
                background-color: #78B97F; /* green */
+            }
+         </style>
+      <?php } elseif(is_page('strategy') || is_page_template('template-service.php')) { ?>
+         <style>
+            .js div#preloader {
+               background-color: #FCCDC6; /* pink */
+            }
+            .pace .pace-progress {
+               background-color: #FCCDC6; /* pink */
             }
          </style>
       <?php } /* blog/collective */ elseif(is_home()) { ?>
@@ -146,15 +155,6 @@
             }
             .pace .pace-progress {
                background-color: #78B97F; /* green */
-            }
-         </style>
-      <?php } elseif(is_page('strategy') || is_page_template('template-service.php')) { ?>
-         <style>
-            .js div#preloader {
-               background-color: #FCCDC6; /* pink */
-            }
-            .pace .pace-progress {
-               background-color: #FCCDC6; /* pink */
             }
          </style>
       <?php } elseif(is_page('contact') || is_page('project-planner') || is_page('project-planner-confirmation') ) { ?>

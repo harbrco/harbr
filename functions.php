@@ -349,6 +349,7 @@ add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comment
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_case_studies'); // Add our Case Studies Custom Post Type
+add_action('init', 'create_post_type_project_proposals'); // Add our Project Proposals Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -399,7 +400,7 @@ add_shortcode('html5_shortcode_demo_2', 'html5_shortcode_demo_2'); // Place [htm
    Custom Post Types
 \*------------------------------------*/
 
-// Create Custom Post Type
+// Create Case Studies Post Type
 function create_post_type_case_studies() {
    register_taxonomy_for_object_type('category', 'case-studies'); // Register Taxonomies for Category
    register_taxonomy_for_object_type('post_tag', 'case-studies');
@@ -447,6 +448,93 @@ function case_study_taxonomy() {
    );
 }
 add_action( 'init', 'case_study_taxonomy' );
+
+
+// Create Project Proposals Post Type
+function create_post_type_project_proposals() {
+   register_taxonomy_for_object_type('category', 'project-proposals'); // Register Taxonomies for Category
+   register_taxonomy_for_object_type('post_tag', 'project-proposals');
+   register_post_type('project-proposals', // Register Custom Post Type
+   array(
+      'labels' => array(
+         'name' => __('Project Proposals', 'projectProposals'), // Rename these to suit
+         'singular_name' => __('Project Proposal', 'projectProposals'),
+         'add_new' => __('Add New', 'projectProposals'),
+         'add_new_item' => __('Add New Project Proposal', 'projectProposals'),
+         'edit' => __('Edit', 'projectProposals'),
+         'edit_item' => __('Edit Project Proposal', 'projectProposals'),
+         'new_item' => __('New Project Proposal', 'projectProposals'),
+         'view' => __('View Project Proposals', 'projectProposals'),
+         'view_item' => __('View Project Proposal', 'projectProposals'),
+         'search_items' => __('Search Project Proposals', 'projectProposals'),
+         'not_found' => __('No Project Proposals found', 'projectProposals'),
+         'not_found_in_trash' => __('No Project Proposals found in Trash', 'projectProposals')
+      ),
+      'public' => true,
+      'hierarchical' => false, // If true, allows your posts to behave like Hierarchy Pages
+      'has_archive' => true,
+      'menu_position' => 5,
+      'menu_icon' => '',
+      'supports' => array(
+         'title',
+         'editor',
+         'excerpt',
+         'thumbnail'
+      ), // Go to Dashboard Custom HTML5 Blank post for supports
+      'can_export' => true, // Allows export in Tools > Export
+      'taxonomies' => array(
+         //'category'
+      ) // Add Category and Post Tags support
+   ));
+}
+function project_proposal_taxonomy() {
+   register_taxonomy(
+      'project_proposal_type',
+      'project-proposals',
+      array(
+         'hierarchical' => true,
+         'label' => 'Project Proposal Type',
+         'query_var' => true
+      )
+   );
+}
+add_action( 'init', 'project_proposal_taxonomy' );
+
+// Custom icon for Project Proposal menu item in admin sidebar
+function add_menu_icons_styles(){
+?>
+
+<style>
+#adminmenu .menu-icon-project-proposals div.wp-menu-image:before {
+  content: '\f112';
+}
+</style>
+
+<?php
+}
+add_action( 'admin_head', 'add_menu_icons_styles' );
+
+
+// Customize password protection form text
+function my_password_form() {
+    global $post;
+    $label = 'pwbox-'.( empty( $post->ID ) ? rand() : $post->ID );
+    $o = '<form action="' . esc_url( site_url( 'wp-login.php?action=postpass', 'login_post' ) ) . '" method="post">
+    ' . __( "<p>To view your proposal, please enter your password below:</p>" ) . '
+    <label for="' . $label . '">' . __( "Password:" ) . ' </label><input name="post_password" id="' . $label . '" type="password" placeholder="PASSWORD" size="20" maxlength="20" /><div class="submit-button"><input class="btn btn--uline" type="submit" name="Submit" value="' . esc_attr__( "View Proposal" ) . '" /><span class="span-after"></span></div>
+    </form>
+    ';
+    return $o;
+}
+add_filter( 'the_password_form', 'my_password_form' );
+
+
+
+// remove "protected" text from protected post titles
+add_filter('protected_title_format', 'blank');
+function blank($title) {
+   return '%s';
+}
 
 /*------------------------------------*\
    ShortCode Functions

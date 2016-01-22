@@ -221,7 +221,8 @@
    }
 }
 
-.single {
+.single-case-studies,
+.single-post {
    .sticky-header-wrapper {
       height: 73px;
       position: absolute;
@@ -308,11 +309,15 @@
    margin-top: -73px;
 }
 
-.single .sticky-header-wrapper.menuHidden .sticky-header {
-   margin-top: -104px;
+.single-case-studies,
+.single-post {
+   .sticky-header-wrapper.menuHidden .sticky-header {
+      margin-top: -104px;
+   }
 }
 
-.single {
+.single-case-studies,
+.single-post {
    .float-post-header-wrapper {
       z-index: 99;
 
@@ -327,7 +332,8 @@
 // HEADER BREAKPOINTS = = = = = = =
 
 @media only screen and (max-width:768px) {
-   .single {
+   .single-case-studies,
+   .single-post {
       .header-wrapper {
          .header {
             padding: 4px 0;

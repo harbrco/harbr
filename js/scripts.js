@@ -35,7 +35,7 @@ new WOW().init();
 
 
     // Add dynamic accent color body classes:
-    if ( $('body').hasClass('home') || $('body').hasClass('culture') || $('body').hasClass('single-case-studies') ) {
+    if ( $('body').hasClass('home') || $('body').hasClass('culture') || $('body').hasClass('single-case-studies') || $('body').hasClass('single-project-proposals') ) {
       $('body').addClass('popPrimary');
     } else if ( $('body').hasClass('post-type-archive-case-studies') && $('body').hasClass('archive') ) {
       $('body').addClass('popWhite');
@@ -168,7 +168,7 @@ new WOW().init();
 
       var menuAppearBuffer;
 
-      if ( $('body').hasClass('single') && !$('body').hasClass('single-product') ) {
+      if ( $('body').hasClass('single-case-studies') && $('body').hasClass('single-post') && !$('body').hasClass('single-product') ) {
         menuAppearBuffer = $('.belowHero').position().top + 500;
       } else {
         menuAppearBuffer = $('.sticky-header-wrapper').position().top + 500;
