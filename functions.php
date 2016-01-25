@@ -92,7 +92,7 @@ function html5blank_header_scripts()
 {
    if (!is_admin()) {
       wp_deregister_script('jquery');
-      wp_register_script('jquery', get_template_directory_uri() . "/js/libs/jquery.js", array(), '2.1.3');
+      wp_register_script('jquery', get_template_directory_uri() . "/js/libs/min/jquery-min.js", array(), '2.1.3');
       wp_enqueue_script('jquery');
       wp_register_script('html5blankscripts', get_template_directory_uri() . '/js/min/scripts-min.js', array(), '1.0.0', false); // Custom scripts - "true" loads scripts in footer
       wp_enqueue_script('html5blankscripts'); // Enqueue it!
@@ -152,6 +152,9 @@ function add_slug_to_body_class($classes)
       $classes[] = sanitize_html_class($post->post_name);
    } elseif (is_singular()) {
       $classes[] = sanitize_html_class($post->post_name);
+   }
+   if (! ( is_user_logged_in() ) ) {
+      $classes[] = 'logged-out';
    }
 
    return $classes;
@@ -527,7 +530,6 @@ function my_password_form() {
     return $o;
 }
 add_filter( 'the_password_form', 'my_password_form' );
-
 
 
 // remove "protected" text from protected post titles

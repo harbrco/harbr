@@ -66,15 +66,23 @@
          <div class="proposal-item-list number-cards section group flexWrap">
          <?php if( have_rows('proposal_item_card') ): ?>
             <?php while ( have_rows('proposal_item_card') ) : the_row(); ?>
-               <div class="card col span_12_of_12">
+               <div class="proposal-item card col span_12_of_12">
                   <div class="inner wow fadeInUp" data-wow-delay=".25s">
-                     <span class="card-number clrPop"><?php the_sub_field('service_unit'); ?></span>
                      <h4 class="card-title sansBUpperSpc"><?php the_sub_field('proposal_item_title'); ?> &nbsp;|&nbsp; <span class="proposal-item-price">$<?php the_sub_field('proposal_item_price'); ?></span></h4>
                      <?php the_sub_field('proposal_item_description'); ?>
                   </div>
                </div>
             <?php endwhile; ?>
          <?php endif; ?>
+
+         <?php if ( get_field('proposal_total_price') ){ ?>
+            <div class="proposal-total card col span_12_of_12 isDarkGray">
+               <div class="inner wow fadeInUp" data-wow-delay=".25s">
+                  <h4 class="card-title sansBUpperSpc"><?php the_field('proposal_total_title'); ?> &nbsp;|&nbsp; <span class="proposal-item-price">$<?php the_field('proposal_total_price'); ?></span></h4>
+                  <?php the_field('proposal_total_description'); ?>
+               </div>
+            </div>
+         <?php } ?>
          </div>
 
          <div class="media-boxes">
@@ -171,7 +179,7 @@
 
    <?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
-      <div id="project-proposal-password-screen" class="main-content section isDark">
+      <div id="project-proposal-password-screen" class="main-content section full-section isDark">
          <div class="container vAlign">
             <div class="step-heading">
             <h3><?php the_field('client_name'); ?></h3>
