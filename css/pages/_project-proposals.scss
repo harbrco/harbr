@@ -250,6 +250,19 @@
    }
 
 
+   // Flexible Content Areas - - - - - - -
+   .divider-centered-content {
+      .container {
+         text-align: center;
+         max-width: 700px;
+      }
+
+      p {
+         font-size: 24px;
+         line-height: 35px;
+      }
+   }
+
    .left-content-right-image {
       .left-content {
          background-color: $darkGray;
@@ -353,6 +366,17 @@
             }
          }
       }
+
+      .divider-centered-content {
+         .container {
+            max-width: 640px;
+         }
+
+         p {
+            font-size: 20px;
+            line-height: 32px;
+         }
+      }
    }
 }
 
@@ -416,6 +440,19 @@
    }
 }
 
+@media only screen and (max-width:650px) {
+   .divider-centered-content {
+      .container {
+         max-width: 560px;
+      }
+
+      p {
+         font-size: 17px;
+         line-height: 29px;
+      }
+   }
+}
+
 @media only screen and (max-width:580px) {
    .single-project-proposals {
       &.single {
@@ -430,6 +467,13 @@
                line-height: 48px;
                @include letSpc(3px);
             }
+         }
+      }
+
+      .divider-centered-content {
+         p {
+            font-size: 16px;
+            line-height: 27px;
          }
       }
    }

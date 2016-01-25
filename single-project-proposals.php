@@ -161,6 +161,14 @@
                      </div>
                   </div>
 
+               <?php elseif( get_row_layout() == 'divider_centered_content' ): ?>
+               <!-- Text/Content Layouts -->
+                  <div class="divider-centered-content wrapper well--s isWhite">
+                     <div class="container">
+                        <p><?php the_sub_field('centered_text'); ?></p>
+                     </div>
+                  </div>
+
                <?php endif; ?>
 
             <?php endwhile; ?>
