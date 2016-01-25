@@ -168,10 +168,10 @@ new WOW().init();
 
       var menuAppearBuffer;
 
-      if ($('body').hasClass('single-project-proposals') && $('body').hasClass('logged-out')){
+      if ($('body').hasClass('single-project-proposals') && $( "#project-proposal-password-screen" ).length ){
       // User is on Project Proposal Password Page
         menuAppearBuffer = '';
-      } else if ($('body').hasClass('single-project-proposals') && $('body').hasClass('logged-in')){
+      } else if ($('body').hasClass('single-project-proposals')){
       // User is logged in and on Project Proposal Page
         menuAppearBuffer = $('.sticky-header-wrapper').position().top + 500;
       } else if ( $('body').hasClass('single-case-studies') || $('body').hasClass('single-post') && !$('body').hasClass('single-product') ) {
