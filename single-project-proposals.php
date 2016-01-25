@@ -68,7 +68,7 @@
             <?php while ( have_rows('proposal_item_card') ) : the_row(); ?>
                <div class="proposal-item card col span_12_of_12">
                   <div class="inner wow fadeInUp" data-wow-delay=".25s">
-                     <h4 class="card-title sansBUpperSpc"><?php the_sub_field('proposal_item_title'); ?> &nbsp;|&nbsp; <span class="proposal-item-price">$<?php the_sub_field('proposal_item_price'); ?></span></h4>
+                     <h4 class="card-title sansBUpperSpc"><?php the_sub_field('proposal_item_title'); ?> <?php if ( get_sub_field('proposal_item_time') ){ ?>&nbsp;<span class="noWrap">|&nbsp; <span class="proposal-item-time"><?php the_sub_field('proposal_item_time'); ?></span></span><?php } ?> <?php if ( get_sub_field('proposal_item_price') ){ ?>&nbsp;<span class="noWrap">|&nbsp; <span class="proposal-item-price">$<?php the_sub_field('proposal_item_price'); ?></span></span><?php } ?></h4>
                      <?php the_sub_field('proposal_item_description'); ?>
                   </div>
                </div>
@@ -78,7 +78,7 @@
          <?php if ( get_field('proposal_total_price') ){ ?>
             <div class="proposal-total card col span_12_of_12 isDarkGray">
                <div class="inner wow fadeInUp" data-wow-delay=".25s">
-                  <h4 class="card-title sansBUpperSpc"><?php the_field('proposal_total_title'); ?> &nbsp;|&nbsp; <span class="proposal-item-price">$<?php the_field('proposal_total_price'); ?></span></h4>
+                  <h4 class="card-title sansBUpperSpc"><?php the_field('proposal_total_title'); ?> <?php if ( get_field('proposal_total_time') ){ ?>&nbsp;<span class="noWrap">|&nbsp; <span class="proposal-item-time"><?php the_field('proposal_total_time'); ?></span></span><?php } ?> <?php if ( get_field('proposal_total_price') ){ ?>&nbsp;<span class="noWrap">|&nbsp; <span class="proposal-item-price">$<?php the_field('proposal_total_price'); ?></span></span><?php } ?></h4>
                   <?php the_field('proposal_total_description'); ?>
                </div>
             </div>
