@@ -22,8 +22,7 @@
 
 <?php
 $args = array(
-   'post_type' => 'case-studies',
-   'orderby' => 'menu_order'
+   'post_type' => 'case-studies'
 );
 $caseStudiesQuery = new WP_Query( $args ); ?>
 <?php if ( $caseStudiesQuery->have_posts() ) : ?>
