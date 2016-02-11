@@ -72,8 +72,10 @@
                         <div class="left-content boxPadding col span_6_of_12">
                            <div class="inner vAlign">
                               <h4 class="quote-text">“<?php the_sub_field('quote_text'); ?>”</h4>
-                              <p class="quote-author-name">– <?php the_sub_field('quote_author_name'); ?></p>
-                              <p class="quote-author-title"><?php the_sub_field('quote_author_title'); ?></p>
+                              <?php if (get_sub_field('quote_author_name')) { ?>
+                                 <p class="quote-author-name">– <?php the_sub_field('quote_author_name'); ?></p>
+                                 <p class="quote-author-title"><?php the_sub_field('quote_author_title'); ?></p>
+                              <?php } ?>
                            </div>
                         </div>
 
