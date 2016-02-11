@@ -78,6 +78,12 @@
 
 // Single Post -------
 .single {
+
+   .header-wrapper {
+      position: absolute;
+      top: 0;
+   }
+
    .post-hero {
       position: fixed;
       @extend .wrapper;
