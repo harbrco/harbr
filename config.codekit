@@ -1981,7 +1981,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 703415,
+		"initialSize": 525041,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2353,15 +2353,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/partials\/partial-main-menu.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/partials\/partial-project-planner.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/partial-project-planner.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

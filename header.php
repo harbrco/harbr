@@ -44,7 +44,6 @@
         -ms-box-sizing: border-box;
         -o-box-sizing: border-box;
         box-sizing: border-box;
-
         max-width: 400px;
         position: fixed;
         z-index: 2000;
