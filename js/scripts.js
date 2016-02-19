@@ -45,7 +45,7 @@ new WOW().init();
       $('body').addClass('popSecondary');
     } else if ( $('body').hasClass('strategy') || $('body').hasClass('page-template-template-service') ) {
       $('body').addClass('popTertiary');
-    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
+    } else if ( $('body').hasClass('project-planner') || $('body').hasClass('page-template-template-sectioned-form') || $('body').hasClass('contact') || $('body').hasClass('error404') ) {
       $('body').addClass('popQuaternary');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('shop-intro') || $('body').hasClass('woocommerce-page') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
@@ -291,12 +291,12 @@ new WOW().init();
 
 
     // Project Planner page
-    if ( $('body').hasClass('project-planner') ) {
+    if ( $('body').hasClass('page-template-template-sectioned-form') ) {
       /* jshint ignore:start */
-      $('#field_2_1').waypoint(function(direction) {
+      $('.focus-first-field').waypoint(function(direction) {
         // Add initial focus state to "name" field - Chrome needed delay to make focus work
         setTimeout(function(){
-          $('#input_2_1').focus();
+          $('.focus-first-field').find('input').focus();
         }, 1);
         this.destroy();
       }, {
@@ -307,8 +307,8 @@ new WOW().init();
 
       $(document).bind('gform_post_render', function(){
         // active form section actions
-        $('.projectPlannerForm_wrapper').addClass('full-section');
-        $('.projectPlannerForm').addClass('full-section');
+        $('.sectionedForm_wrapper').addClass('full-section');
+        $('.sectionedForm').addClass('full-section');
         $('.gf_page_steps').wrap("<div class='gf_page_steps_wrapper'></div>");
 
         // Wrap step button with span for proper button styling
@@ -513,7 +513,7 @@ new WOW().init();
         }
       });
 
-    } // if body has class 'project-planner'
+    } // if body has class 'page-template-template-sectioned-form'
 
 
 

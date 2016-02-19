@@ -1,4 +1,4 @@
-.project-planner {
+.page-template-template-sectioned-form {
    .hero {
       @extend %bgCover--center;
       z-index: 3;  // for form pagination dots
@@ -132,7 +132,7 @@
       position: relative;
       z-index: 1;
 
-      .projectPlannerForm {
+      .sectionedForm {
          overflow: scroll;
       }
 
@@ -231,15 +231,7 @@
 
       &.step-2 {
          @extend .narrowContent;
-         max-width: 960px;
-
-         ul.gform_fields {
-            padding-left: 80px;
-         }
-
-         .step-heading {
-            margin-left: -80px;
-         }
+         max-width: 1130px;
 
          label.gfield_label {
             @extend %sans;
@@ -265,6 +257,32 @@
       }
    }
 
+
+   &.project-planner {
+      .step-2 {
+         max-width: 960px;
+
+         ul.gform_fields {
+            padding-left: 80px;
+         }
+
+         .step-heading {
+            margin-left: -80px;
+         }
+      }
+   }
+
+
+   .checkbox-column-wrap {
+      display: flex;
+      justify-content: center;
+
+      li {
+         flex-grow: 1;
+         margin-left: 3% !important;
+      }
+   }
+
    form {
       .step-wrapper {
          &.step-2 {
@@ -272,6 +290,12 @@
                &.gf_list_2col ul.gfield_radio li {
                   width: 100% !important;
                   display: block !important;
+               }
+            }
+
+            .checkbox-column-wrap {
+               li.html-no-margin {
+                  flex-grow: 0;
                }
             }
          }
@@ -311,7 +335,7 @@
 // PROJECT PLANNER PAGE BREAKPOINTS = = = = = = =
 
 @media only screen and (max-width:1140px) {
-   .project-planner {
+   .page-template-template-sectioned-form {
       .step-heading {
          h2 {
             font-size: 66px;
@@ -326,15 +350,17 @@
 }
 
 @media only screen and (max-width:1000px) {
-   .project-planner {
-      .step-wrapper {
-         &.step-2 {
-            ul.gform_fields {
-               padding-left: 40px;
-            }
+   .page-template-template-sectioned-form {
+      &.project-planner {
+         .step-wrapper {
+            &.step-2 {
+               ul.gform_fields {
+                  padding-left: 40px;
+               }
 
-            .step-heading {
-               margin-left: -40px;
+               .step-heading {
+                  margin-left: -40px;
+               }
             }
          }
       }
@@ -342,7 +368,7 @@
 }
 
 @media only screen and (max-width:900px) {
-   .project-planner {
+   .page-template-template-sectioned-form {
       .step-heading {
          h3 {
             margin-bottom: 8px;
@@ -357,29 +383,48 @@
 }
 
 @media only screen and (max-width:840px) {
-   .project-planner {
-      form {
-         .step-wrapper {
-            &.step-2 {
-               .step-heading {
-                  padding-top: 80px;
-               }
-               .centerBtn {
-                  padding-bottom: 40px;
-               }
-
-               .top_label li.gfield {
-                  &.gf_right_third {
-                     width: 100% !important;
-                     max-width: 600px;
-                     margin-left: 0 !important;
+   .page-template-template-sectioned-form {
+      &.project-planner {
+         form {
+            .step-wrapper {
+               &.step-2 {
+                  .step-heading {
+                     padding-top: 80px;
+                  }
+                  .centerBtn {
+                     padding-bottom: 40px;
                   }
 
-                  &.gf_list_2col ul.gfield_radio li {
-                     display: inline-block !important;
-                     width: 50% !important;
+                  .top_label li.gfield {
+                     &.gf_right_third {
+                        width: 100% !important;
+                        max-width: 600px;
+                        margin-left: 0 !important;
+                     }
+
+                     &.gf_list_2col ul.gfield_radio li {
+                        display: inline-block !important;
+                        width: 50% !important;
+                     }
                   }
                }
+            }
+         }
+      }
+
+      .checkbox-column-wrap {
+         display: block;
+         justify-content: flex-start;
+
+         & > li {
+            flex-grow: 0;
+            margin-left: 3% !important;
+            display: inline-block;
+            width: 48.5% !important;
+            vertical-align: top;
+
+            &:nth-child(odd) {
+               margin-left: 0 !important;
             }
          }
       }
@@ -387,7 +432,7 @@
 }
 
 @media only screen and (max-width:700px) {
-   .project-planner {
+   .page-template-template-sectioned-form {
       .step-heading {
          h3 {
             margin-bottom: 6px;
@@ -402,30 +447,42 @@
 }
 
 @media only screen and (max-width:620px) {
-   .project-planner {
-      .step-wrapper {
-         &.step-2 {
-            ul.gform_fields {
-               padding-left: 0;
-            }
+   .page-template-template-sectioned-form {
+      &.project-planner {
+         .step-wrapper {
+            &.step-2 {
+               ul.gform_fields {
+                  padding-left: 0;
+               }
 
-            .step-heading {
-               margin-left: 0;
+               .step-heading {
+                  margin-left: 0;
+               }
             }
+         }
+      }
+
+      .checkbox-column-wrap {
+         & > li {
+            margin-left: 0% !important;
+            width: 100% !important;
+            margin-bottom: 0;
          }
       }
    }
 }
 
 @media only screen and (max-width:550px) {
-   .project-planner {
-      form {
-         .step-wrapper {
-            &.step-2 {
-               .top_label li.gfield {
-                  &.gf_list_2col ul.gfield_radio li {
-                     width: 100% !important;
-                     display: block !important;
+   .page-template-template-sectioned-form {
+      &.project-planner {
+         form {
+            .step-wrapper {
+               &.step-2 {
+                  .top_label li.gfield {
+                     &.gf_list_2col ul.gfield_radio li {
+                        width: 100% !important;
+                        display: block !important;
+                     }
                   }
                }
             }
@@ -435,7 +492,7 @@
 }
 
 @media only screen and (max-width:500px) {
-   .project-planner {
+   .page-template-template-sectioned-form {
       .step-heading {
          h3 {
             font-size: 16px;

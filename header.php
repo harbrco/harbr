@@ -157,7 +157,7 @@
                background-color: #78B97F; /* green */
             }
          </style>
-      <?php } elseif(is_page('contact') || is_page('project-planner') || is_page('project-planner-confirmation') ) { ?>
+      <?php } elseif(is_page('contact') || is_page('project-planner') || is_page('project-planner-confirmation') || is_page_template('template-sectioned-form.php') ) { ?>
          <style>
             .js div#preloader {
                background-color: #F7D974; /* yellow */
@@ -326,7 +326,7 @@
       </div><!-- /.header-wrapper -->
 
 
-   <?php } elseif(is_page('project-planner')) { ?>
+   <?php } elseif(is_page_template('template-sectioned-form.php')) { ?>
    <!-- Project Planner page -->
       <div class="menu-wrap">
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
@@ -338,9 +338,13 @@
          </div><!-- /.header-wrapper -->
 
          <div class="hero-text section-heading vAlign">
-            <h1 class="clrPop">Project Planner</h1>
+            <?php if ( get_field('hero_small_text') ) { ?>
+              <h1 class="clrPop"><?php the_field('hero_small_text'); ?></h1>
+            <?php } else { ?>
+              <h1 class="clrPop"><?php the_title(); ?></h1>
+            <?php } ?>
             <span class="divWave"></span>
-            <h3>Let's Create <br />Something <span class="italic">Great</span>.</h3>
+            <h3><?php the_field('hero_large_text'); ?></h3>
          </div>
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
