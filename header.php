@@ -331,7 +331,7 @@
          <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
 
-      <div class="hero big-cta isDarkGray" style="background-image: url('<?php the_field('hero_background_image') ?>');">
+      <div class="hero big-cta isDarkGray" style="background-image: url(<?php the_field('hero_bg_image') ?>);">
          <div class="hero-header header-wrapper">
             <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
          </div><!-- /.header-wrapper -->
