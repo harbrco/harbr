@@ -529,6 +529,22 @@
          border-top: 1px solid $lightGray;
       }
    }
+
+   a {
+      .card-number,
+      .card-title,
+      .card-text {
+         @extend %hoverTrans;
+      }
+
+      &:hover {
+         .card-number,
+         .card-title,
+         .card-text {
+            @extend %hoverFade;
+         }
+      }
+   }
 }
 
 
