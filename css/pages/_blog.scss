@@ -63,6 +63,36 @@
          margin-top: 34px;
       }
    }
+
+   .pagination {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba($darkGray, 0.7);
+      z-index: 1;
+      padding: 10px 7%;
+
+      .page-numbers {
+         color: $white;
+         font-size: 18px;
+         padding: 5px;
+         @extend %hoverTrans;
+
+         &:hover {
+            color: $secondary;
+         }
+
+         &.current {
+            color: $white;
+            background-color: $secondaryDk;
+
+            &:hover {
+               color: $white;
+               background-color: $secondaryDk;
+            }
+         }
+      }
+   }
 }
 
 
