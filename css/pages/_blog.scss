@@ -70,7 +70,7 @@
       width: 100%;
       background-color: rgba($darkGray, 0.7);
       z-index: 1;
-      padding: 10px 7%;
+      padding: 12px 7% 15px;
 
       .page-numbers {
          color: $white;
@@ -89,6 +89,13 @@
             &:hover {
                color: $white;
             }
+         }
+
+         &.next {
+            padding-right: 0;
+         }
+         &.prev {
+            padding-left: 0;
          }
       }
    }
@@ -707,6 +714,14 @@
             }
          }
       }
+
+      .pagination {
+         padding: 10px 7% 13px;
+
+         .page-numbers {
+            font-size: 16px;
+         }
+      }
    }
 
    .single {
@@ -746,6 +761,15 @@
       .hero-text {
          .btn {
             margin-top: 7%;
+         }
+      }
+
+      .pagination {
+         padding: 10px 7% 13px;
+
+         .next,
+         .prev {
+            display: none;
          }
       }
    }
