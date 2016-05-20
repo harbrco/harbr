@@ -330,9 +330,19 @@
             @extend .onWhite;
             background-color: transparent;
             float: none !important;
+            outline: none !important;
 
             &:hover {
                background-color: transparent;
+            }
+
+            &.loading {
+               padding-right: 1em !important;
+
+               &:after {
+                  right: auto !important;
+                  animation: none !important;
+               }
             }
          }
 
@@ -366,13 +376,20 @@
                   display: inline-block;
                   border: 1px solid $white;
                   @extend %hoverTrans;
-                  padding: 11px 0 0;
+                  padding: 8px 0 0;
                   margin: 0 2px;
                }
 
                &.checked {
                   span {
                      border-color: $darkGray;
+                  }
+               }
+
+               &:hover {
+                  span {
+                     @extend %hoverFade;
+                     cursor: pointer;
                   }
                }
             }
@@ -402,6 +419,42 @@
             &.disabled {
                opacity: .3;
                pointer-events: none;
+            }
+         }
+      }
+
+      .modal {
+         @extend %bgCover--center;
+
+         .share-modal {
+            text-align: center;
+            color: $white;
+
+            h3 {
+               @extend %white50;
+               @extend %sans;
+               text-transform: uppercase;
+               font-size: 18px;
+               line-height: 22px;
+               margin-bottom: 10px;
+            }
+
+            h1 {
+               font-size: 64px;
+               line-height: 74px;
+               @include letSpc(1px);
+            }
+
+            .social-links {
+               margin-top: 7%;
+               overflow: visible;
+               display: block;
+
+               li {
+                  height: 32px;
+                  display: inline-block;
+                  margin: 0 20px 20px;
+               }
             }
          }
       }
@@ -1223,6 +1276,20 @@
    }
 }
 
+@media only screen and (max-width:1024px) {
+   .woocommerce,
+   .woocommerce-page {
+      &.single {
+         .modal .share-modal {
+            h1 {
+               font-size: 54px;
+               line-height: 62px;
+            }
+         }
+      }
+   }
+}
+
 @media only screen and (max-width:1020px) {
    .woocommerce,
    .woocommerce-page {
@@ -1308,6 +1375,16 @@
 @media only screen and (max-width:768px) {
    .woocommerce,
    .woocommerce-page {
+      &.single {
+         .modal .share-modal {
+            h1 {
+               font-size: 46px;
+               line-height: 54px;
+               @include letSpc(3px);
+            }
+         }
+      }
+
       &.woocommerce-cart {
          table.shop_table {
             td {
@@ -1420,6 +1497,16 @@
 @media only screen and (max-width:580px) {
    .woocommerce,
    .woocommerce-page {
+      &.single {
+         .modal .share-modal {
+            h1 {
+               font-size: 36px;
+               line-height: 44px;
+               @include letSpc(2px);
+            }
+         }
+      }
+
       &.woocommerce-cart {
          .cart-collaterals {
             .calculate-shipping,
@@ -1488,6 +1575,21 @@
 @media only screen and (max-width:460px) {
    .woocommerce,
    .woocommerce-page {
+      &.single {
+         .modal .share-modal {
+            h3 {
+               font-size: 15px;
+               line-height: 18px;
+            }
+
+            h1 {
+               font-size: 32px;
+               line-height: 40px;
+               @include letSpc(2px);
+            }
+         }
+      }
+
       &.woocommerce-cart {
          .product-thumbnail {
             .product-img {
@@ -1507,6 +1609,17 @@
 }
 
 @media only screen and (max-width:400px) {
+   .woocommerce,
+   .woocommerce-page {
+      &.single {
+         .modal .share-modal {
+            h1 {
+               @include letSpc(1px);
+            }
+         }
+      }
+   }
+
    .shop-intro {
       .featured-product-text {
          h2 {

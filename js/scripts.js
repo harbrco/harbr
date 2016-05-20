@@ -695,7 +695,7 @@ new WOW().init();
 
     // Shop Intro - Feature Product Slider
     $('.featured-products').bxSlider({
-      auto: true,
+      auto: ($(".featured-products>.product-slide").length > 1) ? true: false,
       pause: 5000,
       mode: 'fade',
       adaptiveHeight: 'true',

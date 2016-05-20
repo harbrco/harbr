@@ -13,7 +13,7 @@
    <?php } /* SHOP INTRO */ elseif ( is_page( 'shop-intro' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'shop-intro' ); ?>
 
-   <?php } /* SHOP CART */ elseif ( is_page( 'cart' ) ) { ?>
+   <?php } /* SHOP CART */ elseif ( is_page( 'bag' ) ) { ?>
       <?php get_template_part( 'partials/partial', 'shop-cart' ); ?>
 
    <?php } /* SHOP CHECKOUT */ elseif ( is_page( 'checkout' ) ) { ?>

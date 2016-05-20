@@ -65,10 +65,10 @@
 
         // Variations add to cart button fade
         var $varLabel = $('.variations label');
+        var $varBtn = $('.variations_button');
 
         var stockCheck = function() {
           var $varStock = $('.single_variation .stock');
-          var $varBtn = $('.variations_button');
 
           if ( $varStock.hasClass('out-of-stock') ) {
             $varBtn.addClass('disabled');
@@ -96,14 +96,15 @@
         }
 
         $(document).on('added_to_cart', function() {
-          console.log("I'm going to be a modal, someday");
+          $('.modal').toggleClass('is-visible');
+          $('body').toggleClass('modalOpen');
         });
 
       }
 
 
       // Cart Page
-      if ( $('body').hasClass('cart') ) {
+      if ( $('body').hasClass('bag') ) {
         $('.coupon label').after('<p>Enter any valid coupon or promo code here to redeem your discount.</p>');
 
         // Wrap coupon button with span for proper button styling
@@ -124,7 +125,6 @@
       }
 
     }
-
 
   });
 
