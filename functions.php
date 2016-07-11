@@ -115,6 +115,13 @@ function html5blank_styles()
    wp_enqueue_style('html5blank'); // Enqueue it!
 }
 
+// Load HTML5 Blank styles
+function hubspot_override_styles()
+{
+   wp_register_style('hubspotharbr', get_template_directory_uri() . '/css/hubspot-override.css', array(), '1.0', 'all');
+   wp_enqueue_style('hubspotharbr'); // Enqueue it!
+}
+
 // Register HTML5 Blank Navigation
 function register_html5_menu()
 {
@@ -350,6 +357,7 @@ add_action('init', 'html5blank_header_scripts'); // Add Custom Scripts to wp_hea
 add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditional Page Scripts
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
+add_action('wp_enqueue_scripts', 'hubspot_override_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
 add_action('init', 'create_post_type_case_studies'); // Add our Case Studies Custom Post Type
 add_action('init', 'create_post_type_project_proposals'); // Add our Project Proposals Custom Post Type

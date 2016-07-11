@@ -21,24 +21,40 @@
 
    <?php } /* GENERIC PAGES */ else { ?>
 
-      <!-- section -->
-      <section role="main">
+   <div class="menu-wrap">
+      <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
+   </div>
 
-         <h1><?php the_title(); ?></h1>
+   <!-- Sticky Header Bar -->
+   <div id="scrollmain" class="sticky-header-wrapper header-wrapper popSecondary">
+      <div class="sticky-header">
+         <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+      </div>
+   </div><!-- /.header-wrapper -->
 
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
+      <div id="main" class="main-content section isWhite">
+         <!-- section -->
+         <section role="main" class="popSecondary">
 
-         <!-- article -->
-         <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <div id="main" class="main-content section isWhite">
+               <div id="values" class="section-heading intro-section">
+                  <!-- <h1 class="clrPop">Values</h1> -->
+                  <span class="divWave"></span>
+                  <h3><?php the_title(); ?></h3>
+               </div>
+            </div>
 
-            <?php the_content(); ?>
+            <!-- article -->
+            <article id="post-<?php the_ID(); ?>" <?php post_class('container narrowContentSm isContentArea well well--noTop'); ?>>
 
-            <br class="clear">
+               <?php the_content(); ?>
 
-            <?php edit_post_link(); ?>
-
-         </article>
-         <!-- /article -->
+            </article>
+            <!-- /article -->
+         </section>
+         <!-- /section -->
+      </div>
 
       <?php endwhile; ?>
 
@@ -53,11 +69,6 @@
          <!-- /article -->
 
       <?php endif; ?>
-
-      </section>
-      <!-- /section -->
-
-      <?php get_sidebar(); ?>
 
    <?php } ?>
 
