@@ -715,6 +715,20 @@
    .inner {
       max-width: 800px;
    }
+
+   .next-page-cta {
+      text-align: center;
+
+      .divWave {
+         margin-right: auto;
+         margin-left: auto;
+      }
+
+      p {
+         font-size: 18px;
+         line-height: 29px;
+      }
+   }
 }
 
 

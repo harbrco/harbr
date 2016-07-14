@@ -56,4 +56,25 @@
 
 <?php endif; ?>
 
+
+<div class="next-page-cta big-cta isDarkGray" style="background-image: url(<?php the_field('cta_background_image') ?>);">
+   <div class="section-heading vAlign">
+      <!-- <h1 class="clrPop">Design</h1> -->
+      <?php if ( get_field('cta_headline') ){ ?>
+         <h3><?php the_field('cta_headline'); ?></h3>
+         <span class="divWave"></span>
+      <?php } ?>
+
+      <?php if ( get_field('cta_text') ){ ?>
+         <p><?php the_field('cta_text'); ?></p>
+      <?php } ?>
+
+      <?php if ( get_field('cta_button_new_tab') ){ ?>
+         <a href="<?php the_field('cta_button_url'); ?>" class="btn btn--uline" target="_blank"><?php the_field('cta_button_text'); ?></a>
+      <?php } else { ?>
+         <a href="<?php the_field('cta_button_url'); ?>" class="btn btn--uline"><?php the_field('cta_button_text'); ?></a>
+      <?php } ?>
+   </div>
+</div>
+
 <?php get_footer(); ?>
