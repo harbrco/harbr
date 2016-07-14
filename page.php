@@ -21,16 +21,16 @@
 
    <?php } /* GENERIC PAGES */ else { ?>
 
-   <div class="menu-wrap">
-      <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
-   </div>
-
-   <!-- Sticky Header Bar -->
-   <div id="scrollmain" class="sticky-header-wrapper header-wrapper popSecondary">
-      <div class="sticky-header">
-         <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+      <div class="menu-wrap">
+         <?php get_template_part( 'partials/partial', 'main-menu' ); ?>
       </div>
-   </div><!-- /.header-wrapper -->
+
+      <!-- Sticky Header Bar -->
+      <div id="scrollmain" class="sticky-header-wrapper header-wrapper popSecondary">
+         <div class="sticky-header">
+            <?php get_template_part( 'partials/partial', 'header-bar' ); ?>
+         </div>
+      </div><!-- /.header-wrapper -->
 
       <?php if (have_posts()): while (have_posts()) : the_post(); ?>
       <div id="main" class="main-content section isWhite">

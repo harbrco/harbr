@@ -1,3 +1,139 @@
-.section-heading h3 {
-   color: #e3c048;
+.hs-form label {
+	display: none;
 }
+
+.hs_firstname,
+.hs_lastname,
+.hs_email {
+	position: relative;
+	float: none;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.hs_submit {
+	clear: both;
+	text-align: center;
+}
+
+.hbspt-form input[type=text],
+.hbspt-form input[type=email],
+.hbspt-form input[type=submit] {
+	font-family: "Montserrat", Helvetica, sans-serif !important;
+	line-height: 19px;
+	text-transform: uppercase;
+	
+	transition: all 0.2s ease;
+}
+
+.hbspt-form input[type=text],
+.hbspt-form input[type=email] {
+	width: 100%;
+	padding: 5px 0 !important;
+
+	font-size: 15px !important; 
+	font-family: "Montserrat", Helvetica, sans-serif !important;
+	text-transform: uppercase;
+
+	border-top: 0 !important;
+	border-right: 0 !important;
+	border-bottom: 2px solid rgba(119,119,119,0.3) !important;
+	border-left: 0 !important;
+}
+
+.hbspt-form input[type=text]:hover,
+.hbspt-form input[type=email]:hover {
+	border-color: rgba(119,119,119,0.6) !important;
+}
+
+.hbspt-form input[type=text]:focus,
+.hbspt-form input[type=email]:focus {
+	border-color: #F7D974 !important;
+}
+
+
+.hbspt-form input[type=submit] {
+	display: inline-block;
+	position: relative;
+
+	background: none;
+	margin-top: 2%;
+	padding: 0 0 7px 0 !important;
+	font-size: 16px;
+	letter-spacing: 1px;
+
+	color: rgb(41, 39, 40);
+	text-align: center;
+	border: 0;
+	border-bottom: 2px solid #292728 !important;
+
+	transition: all .5s ease;
+}
+
+.hbspt-form input[type=submit]:hover {
+	color: #F7D974;
+	border-bottom: 2px solid #F7D974 !important;
+	transition: all .5s ease;
+}
+
+ul.hs-error-msgs.inputs-list {
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+ul.hs-error-msgs.inputs-list li {
+	position: absolute;
+	right: -10px;
+	color: #F7D974;
+}
+
+
+@media screen and (min-width: 550px) {
+
+
+.hs_firstname {
+	width: 47% !important;
+	margin-left: 0 !important;
+	float: left;
+}
+
+.hs_lastname {
+	width: 47% !important;
+	margin-left: 6% !important;
+	float: left;
+}
+
+.hbspt-form input[type=email] {
+	clear: both;
+}
+
+
+}
+
+
+@media screen and (min-width: 840px) {
+
+
+.hs_firstname {
+	width: 29.33% !important;
+	margin-left: 0 !important;
+	float: left;
+}
+
+.hs_lastname {
+	width: 29.33% !important;
+	margin-left: 6% !important;
+	float: left;
+}
+
+.hs_email {
+	width: 29.33% !important;
+	margin-left: 6% !important;
+	float: left;
+}
+
+
+}
+
+

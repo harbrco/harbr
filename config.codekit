@@ -1990,7 +1990,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 525041,
+		"initialSize": 703415,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/project-planner-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2001,7 +2001,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 621440,
+		"initialSize": 358589,
 		"inputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg.jpg",
 		"outputAbbreviatedPath": "\/img\/section-bgs\/strategy-hero-bg-min.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2508,6 +2508,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/taxonomy-case_study_type.php",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/template-hubspot-page.php": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/template-hubspot-page.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

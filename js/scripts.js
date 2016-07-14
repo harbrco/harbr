@@ -49,6 +49,8 @@ new WOW().init();
       $('body').addClass('popQuaternary');
     } else if ( $('body').hasClass('blog') || $('body').hasClass('archive') || $('body').hasClass('shop-intro') || $('body').hasClass('woocommerce-page') ) { //<- 'blog' is "collective"
       $('body').addClass('popSecondary');
+    } else { //<- generic page templates
+      $('body').addClass('popSecondary');
     }
 
 
