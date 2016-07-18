@@ -57,6 +57,7 @@
 <?php endif; ?>
 
 
+<?php if ( get_field('cta_background_image') ){ ?>
 <div class="next-page-cta big-cta isDarkGray" style="background-image: url(<?php the_field('cta_background_image') ?>);">
    <div class="section-heading vAlign">
       <!-- <h1 class="clrPop">Design</h1> -->
@@ -76,5 +77,6 @@
       <?php } ?>
    </div>
 </div>
+<?php } ?>
 
 <?php get_footer(); ?>
