@@ -718,6 +718,7 @@
 
    .next-page-cta {
       text-align: center;
+      @extend %bgCover--center;
 
       .divWave {
          margin-right: auto;
