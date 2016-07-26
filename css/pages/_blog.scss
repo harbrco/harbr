@@ -228,6 +228,20 @@
             line-height: 26px;
          }
       }
+
+      .left-content-right-image,
+      .quote-block-section {
+         .left-content {
+            h4 {
+               color: $white;
+               font-size: inherit;
+               line-height: inherit;
+               margin-top: 0;
+               margin-bottom: 0;
+               text-transform: none;
+            }
+         }
+      }
    }
 
    // flexible content sections
