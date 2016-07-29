@@ -20,7 +20,7 @@
             <i class="share-icon"></i>
          </a>
 
-         <a href="/collective/" class="close-post close-btn">
+         <a href="/explore/" class="close-post close-btn">
             <i class="close-icon"></i>
          </a>
       </header>
