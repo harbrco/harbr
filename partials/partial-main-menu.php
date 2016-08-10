@@ -25,7 +25,7 @@
             </li>
             <li class="left-icon social-icon">
                <span class="icon">
-                  <a target="_blank" href="https://www.linkedin.com/company/knock-knock-factory" class="isLinkedin"></a>
+                  <a target="_blank" href="https://www.linkedin.com/company/harbr-co-?trk=biz-companies-cym" class="isLinkedin"></a>
                </span>
             </li>
             <li class="left-icon social-icon">
