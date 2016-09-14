@@ -46,6 +46,16 @@
       background-color: $white;
       position: relative;
       z-index: 0;
+
+      .full-width-image-centered-text {
+         h3 {
+            color: $white;
+         }
+
+         p {
+            color: $white;
+         }
+      }
    }
 
    &.popPrimary {

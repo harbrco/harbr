@@ -259,11 +259,11 @@
          </div>
 
          <!-- Hero background video -->
-         <!-- <video autoplay muted loop poster="<?php //the_field('hero_bg_video_still_image'); ?>" id="bgvid">
-            <source src="<?php //the_field('hero_bg_video_url_webm'); ?>" type="video/webm">
-            <source src="<?php //the_field('hero_bg_video_url_mp4'); ?>" type="video/mp4">
-            <source src="<?php //the_field('hero_bg_video_url_ogv'); ?>" type="video/ogv">
-         </video> -->
+         <video autoplay muted loop poster="<?php the_field('hero_bg_video_still_image'); ?>" id="bgvid">
+            <source src="<?php the_field('hero_bg_video_url_webm'); ?>" type="video/webm">
+            <source src="<?php the_field('hero_bg_video_url_mp4'); ?>" type="video/mp4">
+            <source src="<?php the_field('hero_bg_video_url_ogv'); ?>" type="video/ogv">
+         </video>
 
          <a href="#scrollmain" class="downArrow wow slideInUp" data-wow-delay="1.25s"></a>
       </div>
