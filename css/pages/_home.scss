@@ -49,11 +49,20 @@
    }
 }
 
+.touch .landing-section #bgvid {
+   display: none !important;
+}
+
 @media only screen and (max-width: 800px) {
    #bgvid {
       display: none !important;
    }
+
    .landing-section {
       background-position-y: top !important;
+
+      .landing-overlay {
+         background-color: rgba($darkGray, .4);
+      }
    }
 }
