@@ -22,7 +22,7 @@
    }
 
    .landing-overlay {
-      background-color: rgba($darkGray, .25);
+      background-color: rgba($black, .6);
       @extend %absFill;
       z-index: 1;
    }
