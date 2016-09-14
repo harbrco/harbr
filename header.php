@@ -176,7 +176,6 @@
          </style>
       <?php } ?>
 
-
       <meta charset="<?php bloginfo('charset'); ?>">
       <title><?php wp_title(''); ?></title>
 
